@@ -100,6 +100,15 @@
 	leafcutterAntRepopulateFeedings = 25
 	#Whether wandering traders offer items like acacia blossoms, mosquito larva, crocodile egg, etc.
 	wanderingTraderOffers = true
+	#Whether cats, ocelots and foxes should target jerboa mobs.
+	catsAndFoxesAttackJerboas = true
+	#Whether cachalots can destroy wood blocks if angry.
+	cachalotDestruction = true
+	#The visual zoom of the rainbow pattern on the rainbow glass block. Higher number = bigger pattern.
+	#Range: 1.0 ~ 10000.0
+	rainbowGlassFidelity = 16.0
+	#Whether Rabbits can transform into Bunfungus if fed Mungal spores.
+	bunfungusTransformation = true
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -480,6 +489,48 @@
 		#Minimum world y-level that gelada monkeys can spawn at
 		#Range: -64 ~ 320
 		geladaMonkeySpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		jerboaSpawnWeight = 12
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		jerboaSpawnRolls = 2
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		terrapinSpawnWeight = 4
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		terrapinSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		combJellySpawnWeight = 5
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		combJellySpawnRolls = 1
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		cosmicCodSpawnWeight = 5
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		cosmicCodSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		bunfungusSpawnWeight = 3
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		bunfungusSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		bisonSpawnWeight = 9
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		bisonSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		giantSquidSpawnWeight = 3
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		giantSquidSpawnRolls = 0
 
 		[general.spawning.uniqueSpawning]
 			#Delay (in ticks) between attempts to spawn beached cachalot whales. Default is a single day. Works like wandering traders.
@@ -493,4 +544,8 @@
 			#Percent chance increase for each failed attempt to spawn a beached cachalot whale. Higher value = more spawns.
 			#Range: 0 ~ 100
 			beachedCachalotWhaleSpawnChance = 5
+
+			[general.spawning.uniqueSpawning.dangerZone]
+				#Its been so long...
+				superSecretSettings = false
 
