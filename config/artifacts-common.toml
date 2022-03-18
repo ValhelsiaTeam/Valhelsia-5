@@ -5,7 +5,7 @@
 #Setting this to 10000 will completely prevent artifacts from spawning
 #When set to 0, every container that can contain artifacts will contain an artifact
 #Range: 0.0 ~ 10000.0
-artifact_rarity = 1.0
+artifact_rarity = 1.5
 
 [campsite]
 	#Whether to use wooden chests from other mods when generating campsites
@@ -17,7 +17,7 @@ artifact_rarity = 1.0
 	biome_blacklist = ["minecraft:void", "undergarden:*", "the_bumblezone:*", "twilightforest:*"]
 	#Probability that a campsite has a mimic instead of a chest
 	#Range: 0.0 ~ 1.0
-	mimic_chance = 0.3
+	mimic_chance = 0.35
 	#Rarity of campsites generating in the world
 	#The chance a campsite generates in a specific chunk is 1/rarity
 	#With a rarity of 1, a campsite will attempt to generate in every chunk
