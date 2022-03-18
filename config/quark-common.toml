@@ -26,6 +26,8 @@
 	"Use Fast Worldgen" = false
 	#Enables quark network profiling features. Do not enable this unless requested to.
 	"Enable Network Profiling" = false
+	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
+	"Use Screen List Blacklist" = false
 
 [categories]
 	Automation = true
@@ -162,6 +164,8 @@
 
 	[building.glass_item_frame]
 		"Glass Item Frames Update Maps" = true
+		#The scale at which items render in the Glass Item Frame. To match the vanilla Item Frame size, set to 1.0
+		"Item Render Scale" = 1.5
 
 	[building.compressed_blocks]
 		"Charcoal Block and Blaze Lantern Stay On Fire Forever" = true
@@ -203,6 +207,7 @@
 	"Expanded Item Interactions" = true
 	"Easy Transfering" = true
 	"Chests In Boats" = true
+	"Quick Armor Swapping" = true
 
 	[management.item_sharing]
 		"Render Items In Chat" = true
@@ -222,6 +227,9 @@
 	[management.easy_transfering]
 		"Enable Shift Lock" = true
 
+	[management.quick_armor_swapping]
+		"Swap Off Hand" = true
+
 [tools]
 	Trowel = true
 	"Slime In A Bucket" = true
@@ -231,7 +239,7 @@
 	"Endermosh Music Disc" = true
 	"Color Runes" = true
 	Camera = true
-	"Bundle Recipe" = false
+	"Bundle Recipe" = true
 	"Bottled Cloud" = true
 	"Beacon Redirection" = true
 	"Ancient Tomes" = true
@@ -252,9 +260,9 @@
 	[tools.pickarang]
 		#How long it takes before the pickarang starts returning to the player if it doesn't hit anything.
 		Timeout = 20
-		#2 is Iron, 3 is Diamond.
+		#2 is Iron, 3 is Diamond, 4 is Netherite.
 		"Harvest Level" = 3
-		#2 is Iron, 3 is Diamond.
+		#2 is Iron, 3 is Diamond, 4 is Netherite.
 		"Netherite Harvest Level" = 3
 		#Set to -1 to have the Pickarang be unbreakable.
 		Durability = 800
@@ -278,7 +286,7 @@
 		# - <level> being the Cartographer villager level required for the map to be unlockable
 		# - <min_price> being the cheapest (in Emeralds) the map can be
 		# - <max_price> being the most expensive (in Emeralds) the map can be
-		# - <color> being a hex color (without the #) for the map to display. You can generate one here - http://htmlcolorcodes.com/
+		# - <color> being a hex color (without the #) for the map to display. You can generate one here - https://htmlcolorcodes.com/
 		# - <name> being the display name of the map
 		#
 		#Here's an example of a map to locate Ice Mountains:
@@ -325,6 +333,7 @@
 		"Normal Upgrade Cost" = 10
 		"Limit Break Upgrade Cost" = 30
 		"Valid Enchantments" = ["minecraft:feather_falling", "minecraft:thorns", "minecraft:sharpness", "minecraft:smite", "minecraft:bane_of_arthropods", "minecraft:knockback", "minecraft:fire_aspect", "minecraft:looting", "minecraft:sweeping", "minecraft:efficiency", "minecraft:unbreaking", "minecraft:fortune", "minecraft:power", "minecraft:punch", "minecraft:luck_of_the_sea", "minecraft:lure", "minecraft:loyalty", "minecraft:riptide", "minecraft:impaling", "minecraft:piercing"]
+		"Overleveled Books Glow Rainbow" = true
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -413,6 +422,10 @@
 	[tweaks.pat_the_dogs]
 		#How many ticks it takes for a dog to want affection after being pet/tamed; leave -1 to disable
 		"Dogs Want Love" = -1
+		#Whether you can pet all mobs
+		"Pet All Mobs" = false
+		#If `petAllMobs` is set, these mobs still can't be pet
+		"Pettable Denylist" = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:armor_stand"]
 
 	[tweaks.more_banner_layers]
 		#Allowed values: [1,16]
@@ -454,6 +467,8 @@
 		"Ignored Recipes" = []
 		"Force Limited Crafting" = false
 		"Disable Recipe Book" = false
+		#If enabled, advancements granting recipes will be stopped from loading, potentially reducing the lagspike on first world join.
+		"Filter Recipe Advancements" = true
 
 	[tweaks.skull_pikes]
 		"Pike Range" = 5.0
@@ -470,6 +485,8 @@
 	"Blossom Trees" = true
 	"Big Stone Clusters" = true
 	"Big Dungeon" = true
+	"Glimmering Weald" = true
+	"Azalea Wood" = true
 
 	[world.spiral_spires]
 		Rarity = 200
@@ -1073,8 +1090,6 @@
 		"Min Start Y" = -10
 		"Max Start Y" = 10
 		"Chest Chance" = 0.5
-		"Average Distance" = 20
-		"Minimum Distance" = 11
 
 		[world.big_dungeon.biome_config]
 
@@ -1344,6 +1359,7 @@
 	"Chest Searching" = true
 	"Back Button Keybind" = true
 	"Auto Walk Keybind" = true
+	"Soul Candles" = true
 
 	[client.variant_animal_textures]
 		"Enable Cow" = true
@@ -1356,6 +1372,8 @@
 		"Every Bee Is L G B T" = false
 		#The chance for an animal to have a special "Shiny" skin, like a shiny pokemon. This is 1 in X. Set to 0 to disable.
 		"Shiny Animal Chance" = 2048
+		#If a shiny animal should emit occasional sparkles.
+		"Shiny Sparkles" = true
 
 	[client.usage_ticker]
 		#Switch the armor display to the off hand side and the hand display to the main hand side
@@ -1433,7 +1451,7 @@
 [oddities]
 	"Totem Of Holding" = true
 	Pipes = true
-	"Matrix Enchanting" = true
+	"Matrix Enchanting" = false
 	Magnets = true
 	Crate = true
 	Backpack = true
