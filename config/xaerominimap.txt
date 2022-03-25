@@ -9,7 +9,7 @@ debugEntityVariantIds:false
 updateNotification:false
 minimap:true
 caveMaps:2
-caveZoom:1
+caveZoom:2
 showWaypoints:true
 showIngameWaypoints:true
 displayRedstone:true
@@ -39,7 +39,8 @@ showFlowers:true
 keepWaypointNames:true
 waypointsDistanceExp:0
 waypointsDistanceMin:0.0
-waypointTPCommand:/tp @s
+defaultWaypointTPCommandFormat:/tp @s {x} {y} {z}
+defaultWaypointTPCommandRotationFormat:/tp @s {x} {y} {z} {yaw} ~
 arrowScale:1.5
 arrowColour:0
 smoothDots:true
@@ -76,12 +77,13 @@ lightOverlayType:0
 lightOverlayMaxLight:7
 lightOverlayMinLight:0
 lightOverlayColor:13
-uiScale:11
+uiScale:2
 bossHealthPushBox:1
 potionEffectPushBox:1
 minimapFrame:0
 minimapFrameColor:9
 compassColor:9
+northCompassColor:-1
 showDimensionName:false
 displayMultipleWaypointInfo:1
 entityRadar:false
@@ -89,6 +91,9 @@ adjustHeightForCarpetLikeBlocks:true
 autoConvertWaypointDistanceToKmThreshold:10000
 waypointDistancePrecision:1
 mainDotSize:2
+partialYTeleportation:true
+deleteReachedDeathpoints:true
+hideMinimapUnderScreen:true
 interface:dummy:0:36:true:false:false:false
 interface:dummy:0:10000:true:false:false:false
 interface:dummy:0:0:false:false:true:false
