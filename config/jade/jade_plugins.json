@@ -6,6 +6,7 @@
     "jukebox": true,
     "horse_stat": true,
     "brewing_stand": true,
+    "animal_owner": false,
     "note_block": true,
     "inventory": true,
     "beehive": true,
