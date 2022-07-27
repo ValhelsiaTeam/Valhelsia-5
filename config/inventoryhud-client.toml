@@ -29,7 +29,7 @@
 	#Allowed Values: PERCENTAGE, DAMAGE, DAMAGE_LEFT, OFF
 	armView = "DAMAGE_LEFT"
 	#Show/Hide empty slot icon
-	showEmpty = true
+	showEmpty = false
 	#Move all items at once or each one
 	moveAll = true
 	#Show overall count of items in main/off hand
@@ -138,7 +138,7 @@
 	helmPosY = 54
 	#Inventory HUD position (Y)
 	#Range: -9999 ~ 9999
-	yPos = 154
+	yPos = 125
 	#Helmet position (X)
 	#Range: -9999 ~ 9999
 	helmPosX = 103
