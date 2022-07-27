@@ -25,6 +25,8 @@
 	#the spawn weight of the pet store in villages, set to 0 to disable it entirely
 	#Range: 0 ~ 1000
 	petstore_village_weight = 12
+	#true if frogs are fully tameable (rabbit must be tamed with spider eyes)
+	tameable_frog = true
 
 [loot]
 	#percent chance of woodland mansion loot table containing sinister carrot:
@@ -39,6 +41,12 @@
 	#percent chance of end city loot table containing Void Cloud book:
 	#Range: 0.0 ~ 1.0
 	void_cloud_loot_chance = 0.09
+	#percent chance of mineshaft loot table containing Ore Scenting book:
+	#Range: 0.0 ~ 1.0
+	ore_scenting_loot_chance = 0.1
+	#percent chance of ancient city loot table containing Muffled book:
+	#Range: 0.0 ~ 1.0
+	muffled_loot_chance = 0.15
 
 [enchantments]
 	#true if health boost enchant is enabled, false if disabled
@@ -81,4 +89,28 @@
 	undead_curse_enabled = true
 	#true if infamy curse enchant is enabled, false if disabled
 	infamy_curse_enabled = true
+	#true if shadow hands enchant is enabled, false if disabled
+	shadow_hands_enabled = true
+	#true if disc jockey enchant is enabled, false if disabled
+	disc_jockey_enabled = true
+	#true if defusal enchant is enabled, false if disabled
+	defusal_enabled = true
+	#true if warping bite enchant is enabled, false if disabled
+	warping_bite_enabled = true
+	#true if ore scenting enchant is enabled, false if disabled
+	ore_scenting_enabled = true
+	#true if gluttonous enchant is enabled, false if disabled
+	gluttonous_enabled = true
+	#true if psychic wall enchant is enabled, false if disabled
+	psychic_wall_enabled = true
+	#true if intimidation enchant is enabled, false if disabled
+	intimidation_enabled = true
+	#true if tethered teleport enchant is enabled, false if disabled
+	tethered_teleport_enabled = true
+	#true if muffled enchant is enabled, false if disabled
+	muffled_enabled = true
+	#true if blight curse enchant is enabled, false if disabled
+	blight_curse_enabled = true
+	#true if immaturity curse enchant is enabled, false if disabled
+	immaturity_curse_enabled = true
 
