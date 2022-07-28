@@ -13,11 +13,11 @@
 		#Range: > 0
 		traderSpawnDelay = 24000
 		#The minimum level the trader can spawn
-		#Range: 0 ~ 256
-		traderMinSpawnLevel = 0
+		#Range: -64 ~ 320
+		traderMinSpawnLevel = -34
 		#The maximum level the trader can spawn
-		#Range: 0 ~ 256
-		traderMaxSpawnLevel = 40
+		#Range: -64 ~ 320
+		traderMaxSpawnLevel = 24
 		#The amount of ticks before the trader will replenish it's trades. Set to -1 to disable restocking
 		#Range: > -1
 		restockDelay = 48000
@@ -25,22 +25,22 @@
 		canAttackBack = true
 		#Goblins will make a grunt noise while walking around. If you find it happening too often, you can increase the interval. Value is represented in ticks.
 		#Range: 1 ~ 1000
-		gruntNoiseInterval = 80
+		gruntNoiseInterval = 120
 
 	#Vein Goblin Trader settings
 	[common.vein_goblin_trader]
 		#The chance out of one hundred that the trader will spawn in the over world
 		#Range: 1 ~ 100
-		traderSpawnChance = 25
+		traderSpawnChance = 15
 		#The amount of ticks before the trader will spawn again
 		#Range: > 0
 		traderSpawnDelay = 24000
 		#The minimum level the trader can spawn
-		#Range: 0 ~ 256
-		traderMinSpawnLevel = 0
+		#Range: -64 ~ 320
+		traderMinSpawnLevel = -64
 		#The maximum level the trader can spawn
-		#Range: 0 ~ 256
-		traderMaxSpawnLevel = 128
+		#Range: -64 ~ 320
+		traderMaxSpawnLevel = -34
 		#The amount of ticks before the trader will replenish it's trades. Set to -1 to disable restocking
 		#Range: > -1
 		restockDelay = 48000
@@ -48,5 +48,5 @@
 		canAttackBack = true
 		#Goblins will make a grunt noise while walking around. If you find it happening too often, you can increase the interval. Value is represented in ticks.
 		#Range: 1 ~ 1000
-		gruntNoiseInterval = 80
+		gruntNoiseInterval = 90
 
