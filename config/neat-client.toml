@@ -2,7 +2,7 @@
 [general]
 	"Max Distance" = 10
 	"Render with Interface Disabled (F1)" = false
-	"Height Above Mob" = 0.4
+	"Height Above Mob" = 0.5
 	"Draw Background" = true
 	"Background Padding" = 2
 	"Background Height" = 6
@@ -23,5 +23,5 @@
 	"Show entities with full health" = true
 	"Show Debug Info with F3" = true
 	#Blacklist uses entity IDs, not their display names. Use F3 to see them in the Neat bar.
-	Blacklist = ["minecraft:shulker", "minecraft:armor_stand", "minecraft:cod", "minecraft:salmon", "minecraft:pufferfish", "minecraft:tropical_fish", "supplementaries:firefly", "artifacts:mimic"]
+	Blacklist = ["minecraft:shulker", "minecraft:armor_stand", "minecraft:cod", "minecraft:salmon", "minecraft:pufferfish", "minecraft:tropical_fish", "supplementaries:firefly", "artifacts:mimic", "alexsmobs:fly", "alexsmobs:flying_fish", "alexsmobs:blobfish", "alexsmobs:devils_hole_pupfish", "alexsmobs:hummingbird", "alexsmobs:crow","blue_skies:firefly"]
 
