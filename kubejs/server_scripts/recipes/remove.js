@@ -1,13 +1,14 @@
 // priority: 100
 
+//   __   ___   _    _  _ ___ _    ___ ___   _       ___ 
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | __|
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |__ \
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\   |___/
+//
+
 onEvent('recipes', function (event) {
 
   var idRemove = [
-
-    // Quartz Elevator
-    'quartzelv:quartz_elevator',
-    'quartzelv:quartz_elevator_from_quartz_block',
-    'quartzelv:smooth_quartz_elevator_from_smooth_quartz',
   ]
 
   idRemove.forEach(function (remove) {
