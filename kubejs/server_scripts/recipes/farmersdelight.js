@@ -1,5 +1,4 @@
 // priority: 10
-
 //   __   ___   _    _  _ ___ _    ___ ___   _       ____ 
 //   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | ___|
 //    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |___ \
@@ -16,7 +15,7 @@
  */
 
 /**
- * Farmer's Delight Recipe Event Handler.
+ * Farmer's Delight Recipe Event Handler
  */
  onEvent('recipes', function (event) {
 
