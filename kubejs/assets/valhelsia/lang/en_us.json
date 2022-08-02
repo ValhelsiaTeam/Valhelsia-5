@@ -1,4 +1,8 @@
 {
-  "valhelsia.first_start_message": "Hello",
-  "valhelsia.getting_started_guide": "Urmet is noob"
+  "valhelsia.comment.chat": "-----Chat Messages-----",
+  "valhelsia.first_start_message": "Welcome to Valhelsia 5! Have fun!",
+  "valhelsia.getting_started_guide": "View the Getting Started Guide.",
+  
+  "valhelsia.config.current": "Current config entry: %s",
+  "valhelsia.config.updated": "Updated config entry: %s"
 }

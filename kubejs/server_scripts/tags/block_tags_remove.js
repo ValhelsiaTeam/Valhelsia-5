@@ -1,19 +1,19 @@
-// priority: 10
+// priority: 120
 
 //   __   ___   _    _  _ ___ _    ___ ___   _       ____ 
 //   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | ___|
 //    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |___ \
 //     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\   |____/
-//
+//                       
 
 /**
- * @file Shapeless recipe additions for Valhelsia 5.
- * @see shaped.js
+ * @file Block Tag Removal for Valhelsia 5.
  */
 
 /**
- * Shapeless Recipe Event Handler
+ * Block Tag Event Handler (to be used for tag removal only).
+ * @see block_tags.js
  */
-onEvent('recipes', event => {
-
+onEvent('tags.blocks', event => {
+   
 });

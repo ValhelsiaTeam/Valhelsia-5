@@ -1,5 +1,4 @@
 // priority: 10
-
 //   __   ___   _    _  _ ___ _    ___ ___   _       ____ 
 //   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | ___|
 //    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |___ \
@@ -7,13 +6,12 @@
 //
 
 /**
- * @file Shapeless recipe additions for Valhelsia 5.
- * @see shaped.js
+ * @file Chest loot table injection / replacement.
  */
 
 /**
- * Shapeless Recipe Event Handler
+ * Chest Loot Table Event Handler
  */
-onEvent('recipes', event => {
+onEvent('chest.loot_tables', event => {
 
 });

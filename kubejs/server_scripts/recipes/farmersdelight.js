@@ -1,81 +1,111 @@
 // priority: 10
 
-//   __   ___   _    _  _ ___ _    ___ ___   _       ___ 
-//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | __|
-//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |__ \
-//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\   |___/
+//   __   ___   _    _  _ ___ _    ___ ___   _       ____ 
+//   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | ___|
+//    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |___ \
+//     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\   |____/
 //
 
-onEvent('recipes', function (event) {
+/**
+ * @file Recipe additions for Farmer's Delight's crafting methods.
+ * 
+ * Includes templates for adding cutting board or cooking pot recipes,
+ * including presets for different categories of cutting board recipe
+ * (eg. stripping, chopping, cutting).
+ * 
+ */
 
-  // Cutting Board Axe Stripping
+/**
+ * Farmer's Delight Recipe Event Handler.
+ */
+ onEvent('recipes', function (event) {
+
+  /**
+   * Creates an Axe Stripping recipe for the Farmer's Delight Cutting Board.
+   * Automatically adds the tree bark as one output.
+   * @param {(string|Item)} output The resulting stripped log. 
+   * @param {(string|Ingredient)} input An unstripped log to be stripped.
+   */
   const strip = (output, input) => {
     event.custom({
-      type: "farmersdelight:cutting",
+      type: 'farmersdelight:cutting',
       ingredients: [
         Ingredient.of(input).toJson()
       ],
       tool: {
-        type: "farmersdelight:tool",
-        tag: "forge:tools/axes"
+        type: 'farmersdelight:tool',
+        tag: 'forge:tools/axes'
       },
       result: [
         Item.of(output).toResultJson(),
-        {item: "farmersdelight:tree_bark"}
+        {item: 'farmersdelight:tree_bark'}
       ],
-      sound: "minecraft:item.axe.strip"
-    })
-  }
+      sound: 'minecraft:item.axe.strip'
+    });
+  };
 
-  // Cutting Board Axe Chopping
+  /**
+   * Creates an Axe Chopping recipe for the Farmer's Delight Cutting Board.
+   * @param {(string|Item)} output The output item.
+   * @param {(string|Ingredient)} input The input ingredient.
+   */
   const chop = (output, input) => {
     event.custom({
-      type: "farmersdelight:cutting",
+      type: 'farmersdelight:cutting',
       ingredients: [
         Ingredient.of(input).toJson()
       ],
       tool: {
-        type: "farmersdelight:tool",
-        tag: "forge:tools/axes"
+        type: 'farmersdelight:tool',
+        tag: 'forge:tools/axes'
       },
       result: [
         Item.of(output).toResultJson()
       ]
-    })
-  }
+    });
+  };
 
-  // Cutting Board Knife Cutting
-  // Note: When using this, ensure that output is an array.
+  /**
+   * Creates a Knife Cutting recipe for the Farmer's Delight Cutting Board.
+   * @param {Item[]} output An array of items to output.
+   * @param {(string|Ingredient)} input The input ingredient(s).
+   */
   const cut = (output, input) => {
     event.custom({
-      type: "farmersdelight:cutting",
+      type: 'farmersdelight:cutting',
       ingredients: [
         Ingredient.of(input).toJson()
       ],
       tool: {
-        tag: "forge:tools/knives"
+        tag: 'forge:tools/knives'
       },
       result: output
-    })
-  }
+    });
+  };
 
-  // Cooking Pot Recipes
+  /**
+   * Creates a Cooking Pot recipe for Farmer's Delight.
+   * Automatically grants 0.2 XP and takes 200 ticks to cook.
+   * @param {(string|Item)} output An output item.
+   * @param {(string|Ingredient)} input An input ingredient.
+   * @param {(string|Item)} container An item to use as a container (eg. 'minecraft:bowl').
+   */
   const pot = (output, input, container) => {
     event.custom({
-      type: "farmersdelight:cooking",
+      type: 'farmersdelight:cooking',
       ingredients: input,
       result: Item.of(output).toResultJson(),
       container: Item.of(container).toJson(),
       experience: 0.2,
       cookingtime: 200
-    })
-  }
+    });
+  };
 
   // ----- Axe Recipes -----
 
   // ----- Knife Recipes -----
-  cut([Item.of('minecraft:string', 2)], '#minecraft:wool')
+  //cut([Item.of('minecraft:string', 2)], '#minecraft:wool');
 
   // ----- Cooking Pot Recipes -----
 
-})
+});

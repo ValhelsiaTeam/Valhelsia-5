@@ -7,12 +7,17 @@
 //                       
 
 /**
- * @file Item Tag Additions for Valhelsia 5.
+ * @file Block Tag Additions for Valhelsia: Volatile.
  * 
- * These are mostly for recipe input unification, but sometimes have other uses.
+ * These tags differ from item tags in that they impact the block form only,
+ * and therefore mainly have in-world effects. 
  * 
- * @see item_tags_remove.js
+ * @see block_tags_remove.js
  */
-onEvent('tags.items', event => {
+
+/**
+ * Block Tag Event Handler.
+ */
+onEvent('tags.blocks', event => {
 
 });
