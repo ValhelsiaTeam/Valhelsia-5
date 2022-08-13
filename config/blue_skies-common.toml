@@ -17,26 +17,30 @@
 
 [Gatekeeper]
 	#
-	# The percent chance of the Gatekeeper's house generating.
-	# Default: 75
-	#Range: 0 ~ 100
-	gatekeeper_house_chance = 65
-	#
 	# The emerald cost for the Zeal Lighter sold by the Gatekeeper.
 	# Default: 8
 	zeal_lighter_cost = 12
+
+	[Gatekeeper."Gatekeeper House"]
+
+		[Gatekeeper."Gatekeeper House".placement]
+			#
+			# Percent chance of generating in an allowed chunk.
+			# Default: 75
+			#Range: 0 ~ 100
+			probability = 65
 
 ["Mod Compatibility"]
 	#
 	# A list of mobs that are allowed to spawn in the Everbright and Everdawn.
 	# This does not make them spawn, it just allows them to pass the filter. 
 	# Default: []
-	# Example: ["minecraft", "blue_skies", "alexs_mobs"]
+	# Example: ["minecraft:bee", "moolands:awful_cow", "alexs_mobs:grizzly_bear"]
 	allowed_mobs_for_spawning = []
 	#
 	# A list of mods that are allowed to generate features in the Everbright and Everdawn.
 	# This does not make them generate, it just allows them to pass the filter. 
 	# Default: []
-	# Example: ["minecraft", "blue_skies", "botania"]
+	# Example: ["minecraft", "farlanders", "botania"]
 	allowed_mods_for_feature_gen = []
 
