@@ -25,7 +25,7 @@
 	[common.ironBackpack]
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
-		inventorySlotCount = 54
+		inventorySlotCount = 27
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 2
@@ -34,7 +34,7 @@
 	[common.goldBackpack]
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
-		inventorySlotCount = 81
+		inventorySlotCount = 27
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 3
@@ -43,7 +43,7 @@
 	[common.diamondBackpack]
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
-		inventorySlotCount = 108
+		inventorySlotCount = 27
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 5
@@ -52,7 +52,7 @@
 	[common.netheriteBackpack]
 		#Number of inventory slots in the backpack
 		#Range: 1 ~ 144
-		inventorySlotCount = 120
+		inventorySlotCount = 27
 		#Number of upgrade slots in the backpack
 		#Range: 0 ~ 10
 		upgradeSlotCount = 7
@@ -388,14 +388,14 @@
 		discBlockList = ["botania:record_gaia_1", "botania:record_gaia_2"]
 		#Turns on/off a chance that the entity that wears backpack gets jukebox upgrade and plays a music disc.
 		playJukebox = true
+		#Determines whether backpack drops to fake players if killed by them in addition to real ones that it always drops to
+		dropToFakePlayers = false
 		#Chance of mob dropping backpack when killed by player
 		#Range: 0.0 ~ 1.0
 		backpackDropChance = 0.085
 		#Chance increase per looting level of mob dropping backpack
 		#Range: 0.0 ~ 0.2
 		lootingChanceIncreasePerLevel = 0.01
-		#Determines whether backpack drops to fake players if killed by them in addition to real ones that it always drops to
-		dropToFakePlayers = false
 
 	[common.nerfs]
 		#Determines if too many backpacks in player's inventory cause slowness to the player
