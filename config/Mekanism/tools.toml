@@ -11,116 +11,116 @@
 		[tools.mobArmorSpawnRate.bronze]
 			#The chance that mobs can spawn with Bronze Swords.
 			#Range: 0.0 ~ 1.0
-			swordChance = 0.6
+			swordChance = 0.5
 			#The chance that mobs can spawn with Bronze Helmets.
 			#Range: 0.0 ~ 1.0
-			helmetChance = 0.6
+			helmetChance = 0.5
 			#The chance that mobs can spawn with Bronze Chestplates.
 			#Range: 0.0 ~ 1.0
-			chestplateChance = 0.6
+			chestplateChance = 0.5
 			#The chance that mobs can spawn with Bronze Leggings.
 			#Range: 0.0 ~ 1.0
-			leggingsChance = 0.6
+			leggingsChance = 0.5
 			#The chance that mobs can spawn with Bronze Boots.
 			#Range: 0.0 ~ 1.0
-			bootsChance = 0.6
+			bootsChance = 0.5
 
 		#Spawn chances for pieces of Lapis Lazuli gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
 		[tools.mobArmorSpawnRate.lapis_lazuli]
 			#The chance that mobs can spawn with Lapis Lazuli Swords.
 			#Range: 0.0 ~ 1.0
-			swordChance = 0.0
+			swordChance = 0.5
 			#The chance that mobs can spawn with Lapis Lazuli Helmets.
 			#Range: 0.0 ~ 1.0
-			helmetChance = 0.0
+			helmetChance = 0.5
 			#The chance that mobs can spawn with Lapis Lazuli Chestplates.
 			#Range: 0.0 ~ 1.0
-			chestplateChance = 0.0
+			chestplateChance = 0.5
 			#The chance that mobs can spawn with Lapis Lazuli Leggings.
 			#Range: 0.0 ~ 1.0
-			leggingsChance = 0.0
+			leggingsChance = 0.5
 			#The chance that mobs can spawn with Lapis Lazuli Boots.
 			#Range: 0.0 ~ 1.0
-			bootsChance = 0.0
+			bootsChance = 0.5
 
 		#Spawn chances for pieces of Osmium gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
 		[tools.mobArmorSpawnRate.osmium]
 			#The chance that mobs can spawn with Osmium Swords.
 			#Range: 0.0 ~ 1.0
-			swordChance = 0.4
+			swordChance = 0.5
 			#The chance that mobs can spawn with Osmium Helmets.
 			#Range: 0.0 ~ 1.0
-			helmetChance = 0.4
+			helmetChance = 0.5
 			#The chance that mobs can spawn with Osmium Chestplates.
 			#Range: 0.0 ~ 1.0
-			chestplateChance = 0.4
+			chestplateChance = 0.5
 			#The chance that mobs can spawn with Osmium Leggings.
 			#Range: 0.0 ~ 1.0
-			leggingsChance = 0.4
+			leggingsChance = 0.5
 			#The chance that mobs can spawn with Osmium Boots.
 			#Range: 0.0 ~ 1.0
-			bootsChance = 0.4
+			bootsChance = 0.5
 
 		#Spawn chances for pieces of Refined Glowstone gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
 		[tools.mobArmorSpawnRate.refined_glowstone]
 			#The chance that mobs can spawn with Refined Glowstone Swords.
 			#Range: 0.0 ~ 1.0
-			swordChance = 0.0
+			swordChance = 0.5
 			#The chance that mobs can spawn with Refined Glowstone Helmets.
 			#Range: 0.0 ~ 1.0
-			helmetChance = 0.0
+			helmetChance = 0.5
 			#The chance that mobs can spawn with Refined Glowstone Chestplates.
 			#Range: 0.0 ~ 1.0
-			chestplateChance = 0.0
+			chestplateChance = 0.5
 			#The chance that mobs can spawn with Refined Glowstone Leggings.
 			#Range: 0.0 ~ 1.0
-			leggingsChance = 0.0
+			leggingsChance = 0.5
 			#The chance that mobs can spawn with Refined Glowstone Boots.
 			#Range: 0.0 ~ 1.0
-			bootsChance = 0.0
+			bootsChance = 0.5
 
 		#Spawn chances for pieces of Refined Obsidian gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
 		[tools.mobArmorSpawnRate.refined_obsidian]
 			#The chance that mobs can spawn with Refined Obsidian Swords.
 			#Range: 0.0 ~ 1.0
-			swordChance = 0.0
+			swordChance = 0.5
 			#The chance that mobs can spawn with Refined Obsidian Helmets.
 			#Range: 0.0 ~ 1.0
-			helmetChance = 0.0
+			helmetChance = 0.5
 			#The chance that mobs can spawn with Refined Obsidian Chestplates.
 			#Range: 0.0 ~ 1.0
-			chestplateChance = 0.0
+			chestplateChance = 0.5
 			#The chance that mobs can spawn with Refined Obsidian Leggings.
 			#Range: 0.0 ~ 1.0
-			leggingsChance = 0.0
+			leggingsChance = 0.5
 			#The chance that mobs can spawn with Refined Obsidian Boots.
 			#Range: 0.0 ~ 1.0
-			bootsChance = 0.0
+			bootsChance = 0.5
 
 		#Spawn chances for pieces of Steel gear. Note: These values are after the general mobArmorSpawnRate has been checked, and after an even split between armor types has been done.
 		[tools.mobArmorSpawnRate.steel]
 			#The chance that mobs can spawn with Steel Swords.
 			#Range: 0.0 ~ 1.0
-			swordChance = 0.1
+			swordChance = 0.5
 			#The chance that mobs can spawn with Steel Helmets.
 			#Range: 0.0 ~ 1.0
-			helmetChance = 0.1
+			helmetChance = 0.5
 			#The chance that mobs can spawn with Steel Chestplates.
 			#Range: 0.0 ~ 1.0
-			chestplateChance = 0.1
+			chestplateChance = 0.5
 			#The chance that mobs can spawn with Steel Leggings.
 			#Range: 0.0 ~ 1.0
-			leggingsChance = 0.1
+			leggingsChance = 0.5
 			#The chance that mobs can spawn with Steel Boots.
 			#Range: 0.0 ~ 1.0
-			bootsChance = 0.1
+			bootsChance = 0.5
 
 	#Vanilla Material Paxel Settings for Wood
 	[tools.wood]
 		#Attack damage modifier of Wood paxels.
 		woodPaxelDamage = 7.0
 		#Attack speed of Wood paxels.
-		woodPaxelAtkSpeed = -2.4
+		woodPaxelAtkSpeed = -3.2
 		#Efficiency of Wood paxels.
 		woodPaxelEfficiency = 2.0
 		#Natural enchantability factor of Wood paxels.
@@ -135,7 +135,7 @@
 		#Attack damage modifier of Stone paxels.
 		stonePaxelDamage = 8.0
 		#Attack speed of Stone paxels.
-		stonePaxelAtkSpeed = -2.4
+		stonePaxelAtkSpeed = -3.2
 		#Efficiency of Stone paxels.
 		stonePaxelEfficiency = 4.0
 		#Natural enchantability factor of Stone paxels.
@@ -150,7 +150,7 @@
 		#Attack damage modifier of Iron paxels.
 		ironPaxelDamage = 7.0
 		#Attack speed of Iron paxels.
-		ironPaxelAtkSpeed = -2.4
+		ironPaxelAtkSpeed = -3.1
 		#Efficiency of Iron paxels.
 		ironPaxelEfficiency = 6.0
 		#Natural enchantability factor of Iron paxels.
@@ -165,7 +165,7 @@
 		#Attack damage modifier of Diamond paxels.
 		diamondPaxelDamage = 6.0
 		#Attack speed of Diamond paxels.
-		diamondPaxelAtkSpeed = -2.4
+		diamondPaxelAtkSpeed = -3.0
 		#Efficiency of Diamond paxels.
 		diamondPaxelEfficiency = 8.0
 		#Natural enchantability factor of Diamond paxels.
@@ -180,7 +180,7 @@
 		#Attack damage modifier of Gold paxels.
 		goldPaxelDamage = 7.0
 		#Attack speed of Gold paxels.
-		goldPaxelAtkSpeed = -2.4
+		goldPaxelAtkSpeed = -3.0
 		#Efficiency of Gold paxels.
 		goldPaxelEfficiency = 12.0
 		#Natural enchantability factor of Gold paxels.
@@ -195,7 +195,7 @@
 		#Attack damage modifier of Netherite paxels.
 		netheritePaxelDamage = 6.0
 		#Attack speed of Netherite paxels.
-		netheritePaxelAtkSpeed = -2.4
+		netheritePaxelAtkSpeed = -3.0
 		#Efficiency of Netherite paxels.
 		netheritePaxelEfficiency = 9.0
 		#Natural enchantability factor of Netherite paxels.
@@ -216,7 +216,7 @@
 		#Attack damage modifier of Bronze swords.
 		bronzeSwordDamage = 3.0
 		#Attack speed of Bronze swords.
-		bronzeSwordAtkSpeed = -2.4
+		bronzeSwordAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of Bronze shovels.
 		bronzeShovelDamage = 1.5
 		#Attack speed of Bronze shovels.
@@ -228,7 +228,7 @@
 		#Attack damage modifier of Bronze pickaxes.
 		bronzePickaxeDamage = 1.0
 		#Attack speed of Bronze pickaxes.
-		bronzePickaxeAtkSpeed = -2.8
+		bronzePickaxeAtkSpeed = -2.799999952316284
 		#Attack damage modifier of Bronze hoes.
 		bronzeHoeDamage = -2.0
 		#Attack speed of Bronze hoes.
@@ -604,78 +604,78 @@
 	[tools.steel]
 		#Base attack damage of Steel items.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		steelAttackDamage = 4.0
+		steelAttackDamage = 3.0
 		#Maximum durability of Steel shields.
 		#Range: > 0
-		steelShieldDurability = 1680
+		steelShieldDurability = 448
 		#Attack damage modifier of Steel swords.
-		steelSwordDamage = 2.0
+		steelSwordDamage = 3.0
 		#Attack speed of Steel swords.
-		steelSwordAtkSpeed = -2.4
+		steelSwordAtkSpeed = -2.4000000953674316
 		#Attack damage modifier of Steel shovels.
-		steelShovelDamage = 0.5
+		steelShovelDamage = 1.5
 		#Attack speed of Steel shovels.
 		steelShovelAtkSpeed = -3.0
 		#Attack damage modifier of Steel axes.
-		steelAxeDamage = 4.0
+		steelAxeDamage = 7.0
 		#Attack speed of Steel axes.
 		steelAxeAtkSpeed = -3.0
 		#Attack damage modifier of Steel pickaxes.
-		steelPickaxeDamage = 0.0
+		steelPickaxeDamage = 1.0
 		#Attack speed of Steel pickaxes.
-		steelPickaxeAtkSpeed = -2.8
+		steelPickaxeAtkSpeed = -2.799999952316284
 		#Attack damage modifier of Steel hoes.
 		steelHoeDamage = -3.0
 		#Attack speed of Steel hoes.
 		steelHoeAtkSpeed = 0.0
 		#Maximum durability of Steel tools.
 		#Range: > 1
-		steelToolMaxUses = 875
+		steelToolMaxUses = 500
 		#Efficiency of Steel tools.
-		steelEfficiency = 7.0
+		steelEfficiency = 8.0
 		#Attack damage modifier of Steel paxels.
-		steelPaxelDamage = 3.0
+		steelPaxelDamage = 8.0
 		#Attack speed of Steel paxels.
-		steelPaxelAtkSpeed = -2.4
+		steelPaxelAtkSpeed = -2.4000000953674316
 		#Efficiency of Steel paxels.
-		steelPaxelEfficiency = 7.0
+		steelPaxelEfficiency = 8.0
 		#Natural enchantability factor of Steel paxels.
 		#Range: > 0
-		steelPaxelEnchantability = 14
+		steelPaxelEnchantability = 16
 		#Maximum durability of Steel paxels.
 		#Range: > 1
-		steelPaxelMaxUses = 875
+		steelPaxelMaxUses = 1000
 		#Natural enchantability factor of Steel items.
 		#Range: > 0
-		steelEnchantability = 10
+		steelEnchantability = 16
 		#Base armor toughness value of Steel armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
-		steelToughness = 1.0
+		steelToughness = 2.0
 		#Base armor knockback resistance value of Steel armor.
 		#Range: 0.0 ~ 3.4028234663852886E38
 		steelKnockbackResistance = 0.0
 		#Maximum durability of Steel boots.
 		#Range: > 1
-		steelBootDurability = 273
+		steelBootDurability = 260
 		#Maximum durability of Steel leggings.
 		#Range: > 1
-		steelLeggingDurability = 315
+		steelLeggingDurability = 300
 		#Maximum durability of Steel chestplates.
 		#Range: > 1
-		steelChestplateDurability = 336
+		steelChestplateDurability = 320
 		#Maximum durability of Steel helmets.
 		#Range: > 1
-		steelHelmetDurability = 231
+		steelHelmetDurability = 220
 		#Protection value of Steel boots.
 		#Range: > 0
-		steelBootArmor = 2
+		steelBootArmor = 3
 		#Protection value of Steel leggings.
 		#Range: > 0
 		steelLeggingArmor = 6
 		#Protection value of Steel chestplates.
 		#Range: > 0
-		steelChestplateArmor = 7
+		steelChestplateArmor = 8
 		#Protection value of Steel helmets.
 		#Range: > 0
-		steelHelmetArmor = 2
+		steelHelmetArmor = 3
 
