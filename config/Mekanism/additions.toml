@@ -5,6 +5,7 @@
 	#Range: > 0
 	obsidianTNTDelay = 100
 	#Radius of the explosion of Obsidian TNT.
+	#Range: 0.1 ~ 1000.0
 	obsidianTNTBlastRadius = 12
 	#Enables the voice server for Walkie Talkies.
 	voiceServerEnabled = false
