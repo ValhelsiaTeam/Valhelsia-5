@@ -7,6 +7,7 @@
 
 /**
  * @file Item Tag Removal for Valhelsia 5.
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

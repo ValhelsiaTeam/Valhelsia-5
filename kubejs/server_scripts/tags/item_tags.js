@@ -11,6 +11,7 @@
  * These are mostly for recipe input unification, but sometimes have other uses.
  * 
  * @see item_tags_remove.js
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

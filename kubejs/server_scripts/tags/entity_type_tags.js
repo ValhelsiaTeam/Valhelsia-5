@@ -7,6 +7,7 @@
 
 /**
  * @file Entity Type Tag additions for Valhelsia 5.
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

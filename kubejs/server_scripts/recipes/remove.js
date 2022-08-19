@@ -19,6 +19,8 @@
  * @see crushing.js
  * @see sawing.js
  * 
+ * @copyright Valhelsia Inc 2022
+ * 
  */
 
 /**

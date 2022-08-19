@@ -10,6 +10,7 @@
  * 
  * @see crushing.js for crushing recipes.
  * 
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

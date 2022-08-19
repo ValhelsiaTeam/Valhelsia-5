@@ -6,6 +6,17 @@
 //     \_/_/ \_\____|_||_|___|____|___/___/_/ \_\   |___/
 //
 
+/**
+ * @file REI Blacklist for Valhelsia 5
+ * 
+ * For consistency, Item / Fluid IDs should be in the order of Minecraft entries first, then by mod in alphabetical order.
+ *  
+ * @copyright Valhelsia Inc 2022
+ */
+
+/**
+ * REI Item Hiding Event Handler
+ */
 onEvent('rei.hide.items', event => {
   event.hide([
 

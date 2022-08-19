@@ -18,12 +18,13 @@
  * It is possible to adjust the config in-game
  * (via the /vconfig command by default, requires op / cheats enabled).
  * 
- * @example Accessing Config Entries (via script):
- * let debug = global.config.debug;
+ * @copyright Valhelsia Inc 2022
  * 
- * @example Setting Config Entries (via script):
+ * @example <caption>Accessing Config Entries (via script)</caption>
+ * const debug = global.config.debug;
+ * 
+ * @example <caption>Setting Config Entries (via script)</caption>
  * setConfig('debug', true);
- * 
  */
 
 /**
@@ -35,14 +36,14 @@ const CONFIG_FILENAME = 'v5_config.json';
 
 /**
  * The chat command to modify the config.
- * @const {string}
+ * @const {!string}
  * @default 'vconfig'
  */
 const CONFIG_COMMAND = 'vconfig';
 
 /**
  * The permission level required to use the config command.
- * See https://minecraft.fandom.com/wiki/Permission_level#Java_Edition
+ * @see {@link https://minecraft.fandom.com/wiki/Permission_level#Java_Edition Permission Level}
  * for information about each permission level.
  * @const {!number}
  * @default 4
@@ -64,7 +65,7 @@ const DEFAULT_CONFIG = {
 /**
  * Converts a given value into a boolean or number, if appropriate.
  * @param {!*} value The input to parse. Often a string, but not required to be.
- * @returns {boolean|number|string} The converted value.
+ * @returns {!boolean|!number|!string} The converted value.
  */
 function parseConfigValue(value) {
   // Quick and dirty parser - converts strings to boolean or number if needed before storing them.
@@ -106,8 +107,8 @@ onEvent('command.registry', (event) => {
         .then(Commands.argument('value', Arguments.STRING.create(event))
           .executes((ctx) => {
             // Set updated config entry (key, value).
-            let key = Arguments.STRING.getResult(ctx, 'key').toLowerCase();
-            let value = Arguments.STRING.getResult(ctx, 'value');
+            const key = Arguments.STRING.getResult(ctx, 'key').toLowerCase();
+            const value = Arguments.STRING.getResult(ctx, 'value');
             setConfig(key, value);
             ctx.source.sendSuccess(Text.translate('valhelsia.config.updated', `${key}: '${global.config[key]}'.`), true);
             return 1;
@@ -115,7 +116,7 @@ onEvent('command.registry', (event) => {
         )
         .executes((ctx) => {
           // Get current config entry (key).
-          let key = Arguments.STRING.getResult(ctx, 'key');
+          const key = Arguments.STRING.getResult(ctx, 'key');
           ctx.source.sendSuccess(Text.translate('valhelsia.config.current', `${key}: '${global.config[key]}'.`), false);
           return 1;
         })
@@ -123,8 +124,9 @@ onEvent('command.registry', (event) => {
     );
 });
 
-// Read in current config + set any missing properties to defaults:
+/** @type {?Object} */
 let config = JsonIO.read(CONFIG_FILENAME);
+/** @type {!boolean} */
 let configDirty = false;
 
 if (!config) {

@@ -7,6 +7,7 @@
 
 /**
  * @file Functions that have general purpose use throughout other server scripts.
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

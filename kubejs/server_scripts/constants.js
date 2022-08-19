@@ -7,6 +7,7 @@
 
 /**
  * @file Global Constants for use in other scripts.
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

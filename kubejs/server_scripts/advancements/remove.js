@@ -7,13 +7,14 @@
 
 /**
  * @file Removes unused / undesired advancements from the pack.
+ * @copyright Valhelsia Inc 2022
  */
 
 /**
  * Which advancements to remove from the pack.
  * These should be the resource location of the advancement, including the .json file extension.
  * @example Example entry: 'outvoted:advancements/obtain_wildfire_helmet.json'
- * @const {string[]}
+ * @const {!string[]}
  */
 const ADVANCEMENTS_TO_REMOVE = [
   // TODO: Remove unused advancements here.
@@ -21,8 +22,7 @@ const ADVANCEMENTS_TO_REMOVE = [
 
 /**
  * Empty advancement JSON, for the purposes of effectively deleting an advancement (but without triggering errors).
- * @const {Object}
- * @default 
+ * @const {!Object}
  */
 const EMPTY_ADVANCEMENT = {criteria:{impossible:{trigger:'minecraft:impossible'}}};
 

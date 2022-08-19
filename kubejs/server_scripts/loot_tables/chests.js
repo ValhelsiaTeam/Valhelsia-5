@@ -7,6 +7,7 @@
 
 /**
  * @file Chest loot table injection / replacement.
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

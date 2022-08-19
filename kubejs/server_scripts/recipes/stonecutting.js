@@ -8,6 +8,8 @@
 /**
  * @file Stonecutter recipe additions for Valhelsia 5.
  * Includes functions for frequently used recipe templates.
+ * 
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

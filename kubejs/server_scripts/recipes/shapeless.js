@@ -7,6 +7,7 @@
 
 /**
  * @file Shapeless recipe additions for Valhelsia 5.
+ * @copyright Valhelsia Inc 2022
  * @see shaped.js
  */
 

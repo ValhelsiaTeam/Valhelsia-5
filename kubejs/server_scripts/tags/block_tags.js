@@ -12,6 +12,8 @@
  * and therefore mainly have in-world effects. 
  * 
  * @see block_tags_remove.js
+ * 
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

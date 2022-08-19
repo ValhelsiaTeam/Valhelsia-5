@@ -10,6 +10,8 @@
  * 
  * Includes a function to add sawing recipes to multiple mods at the same time.
  * Also replaces some existing sawing recipes in order to unify them between mods.
+ * 
+ * @copyright Valhelsia Inc 2022
  */
 
 /**

@@ -10,6 +10,7 @@
  * 
  * Contains several convenience functions for frequently used shapes.
  * 
+ * @copyright Valhelsia Inc 2022
  * @see shapeless.js
  * 
  */

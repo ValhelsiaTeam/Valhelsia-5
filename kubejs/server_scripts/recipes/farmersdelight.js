@@ -12,6 +12,7 @@
  * including presets for different categories of cutting board recipe
  * (eg. stripping, chopping, cutting).
  * 
+ * @copyright Valhelsia Inc 2022
  */
 
 /**
