@@ -106,17 +106,17 @@ onEvent('command.registry', (event) => {
         .then(Commands.argument('value', Arguments.STRING.create(event))
           .executes((ctx) => {
             // Set updated config entry (key, value).
-            let key = Arguments.STRING.getResult(ctx, 'key');
+            let key = Arguments.STRING.getResult(ctx, 'key').toLowerCase();
             let value = Arguments.STRING.getResult(ctx, 'value');
             setConfig(key, value);
-            ctx.source.sendSuccess(Text.translate('valhelsia.config.updated', `${key}: '${global.config[key]}'`), true);
+            ctx.source.sendSuccess(Text.translate('valhelsia.config.updated', `${key}: '${global.config[key]}'.`), true);
             return 1;
           })
         )
         .executes((ctx) => {
           // Get current config entry (key).
           let key = Arguments.STRING.getResult(ctx, 'key');
-          ctx.source.sendSuccess(Text.translate('valhelsia.config.current', `${key}: '${global.config[key]}'`), false);
+          ctx.source.sendSuccess(Text.translate('valhelsia.config.current', `${key}: '${global.config[key]}'.`), false);
           return 1;
         })
       )
