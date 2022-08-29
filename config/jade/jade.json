@@ -12,11 +12,12 @@
     "fluidMode": "NONE",
     "reachDistance": 0.0,
     "debug": false,
-    "itemModNameTooltip": true
+    "itemModNameTooltip": true,
+    "bossBarOverlapMode": "PUSH_DOWN"
   },
   "overlay": {
     "overlayPosX": 0.5,
-    "overlayPosY": 0.95,
+    "overlayPosY": 0.99,
     "overlayScale": 1.0,
     "overlayAnchorX": 0.5,
     "overlayAnchorY": 0.0,
@@ -66,8 +67,6 @@
     "iconMode": "TOP"
   },
   "formatting": {
-    "modName": "§6§o%s",
-    "titleName": "%s",
-    "registryName": "§7[%s]"
+    "modName": "§6§o%s"
   }
 }
