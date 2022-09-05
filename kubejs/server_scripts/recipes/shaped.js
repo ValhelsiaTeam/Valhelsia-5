@@ -92,6 +92,60 @@ ServerEvents.recipes(event => {
     C: 'farmersdelight:canvas'
   });
 
+  event.shaped('minecraft:bookshelf', [
+    'AAA',
+    'BBB',
+    'AAA'
+  ], {
+    A: '#minecraft:planks',
+    B: 'minecraft:book'
+  });
+  
+  event.shaped('minecraft:chest', [
+    'AAA',
+    'A A',
+    'AAA'
+  ], {
+    A: '#minecraft:planks'
+  });
+  
+  event.shaped('4x minecraft:ladder', [
+    'A A',
+    'ABA',
+    'A A'
+  ], {
+    A: '#forge:rods/wooden',
+    B: '#minecraft:planks'
+  });
+  
+  // Alternate recipe for Dark Prismarine: Uses any black dye instead of ink sacs.
+  event.shaped('minecraft:dark_prismarine', [
+    'SSS',
+    'SBS',
+    'SSS'
+  ], {
+    S: 'minecraft:prismarine_shard',
+    B: '#forge:dyes/black'
+  });
+
+  // Decorative Blocks
+  event.shaped('2x decorative_blocks:chain', [
+    'A',
+    'B',
+    'A'
+  ], {
+    A: 'minecraft:iron_ingot',
+    B: 'minecraft:iron_nugget'
+  });
+
+  event.shaped('4x decorative_blocks:rocky_dirt', [
+    'AB',
+    'BA'
+  ], {
+    A: 'minecraft:dirt',
+    B: 'minecraft:cobblestone'
+  });
+
   // Farmer's Delight
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
