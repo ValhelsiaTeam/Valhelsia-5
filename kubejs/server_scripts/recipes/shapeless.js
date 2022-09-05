@@ -14,6 +14,6 @@
 /**
  * Shapeless Recipe Event Handler
  */
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 
 });
