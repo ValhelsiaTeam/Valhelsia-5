@@ -14,11 +14,15 @@
  * @see block_tags_remove.js
  * 
  * @copyright Valhelsia Inc 2022
+ * 
  */
 
 /**
  * Block Tag Event Handler
  */
-onEvent('tags.blocks', event => {
-
+ServerEvents.tags('blocks', event => {
+  // Missing Quark Revertable Chests
+  event.add('quark:revertable_chests', [
+    'ars_nouveau:archwood_chest'
+  ]);
 });
