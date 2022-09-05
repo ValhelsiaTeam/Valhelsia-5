@@ -30,6 +30,9 @@ ServerEvents.recipes(event => {
 
   // Remove recipes by recipe ID.
   [
+    // Ars Nouveau
+    'ars_nouveau:archwood_to_chest', // Duplicate Recipe.
+
     // Blue Skies
     'blue_skies:cake_compat', // Replaced with a different recipe.
 
@@ -46,6 +49,10 @@ ServerEvents.recipes(event => {
 
     // Minecraft
     'minecraft:cake', // Duplicate Recipe.
+
+    // Quark
+    'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
+    'quark:building/crafting/oak_ladder', // Duplicate recipe.
 
     // Quark Oddities
     'quark:oddities/crafting/backpack', // Removed entirely.
