@@ -26,11 +26,15 @@
 /**
  * Recipe Removal Event Handler
  */
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 
   // Remove recipes by recipe ID.
   [
-    // TODO: Add recipe IDs here.
+    // Quark Oddities
+    'quark:oddities/crafting/backpack',
+
+    // Sophisticated Backpacks
+    'sophisticatedbackpacks:backpack'
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.
