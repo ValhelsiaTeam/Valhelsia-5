@@ -92,7 +92,7 @@
 	"Soul Sandstone" = true
 	Shingles = true
 	"Shear Vines" = true
-	Rope = true
+	Rope = false
 	"Nether Brick Fence Gate" = true
 	"More Stone Variants" = true
 	"More Potted Plants" = true
@@ -110,6 +110,7 @@
 	"Celebratory Lamps" = true
 	"Vertical Planks" = true
 	"Japanese Palette" = true
+	"Raw Metal Bricks" = true
 
 	[building.variant_ladders]
 		"Change Names" = true
@@ -268,7 +269,7 @@
 	"Endermosh Music Disc" = true
 	"Color Runes" = true
 	Camera = true
-	"Bundle Recipe" = true
+	"Bundle Recipe" = false
 	"Bottled Cloud" = true
 	"Beacon Redirection" = true
 	"Ancient Tomes" = true
@@ -456,6 +457,8 @@
 		"Torches Burn" = true
 		#Can bones be smelted down to bone meal?
 		"Bone Meal Utility" = true
+		#Can Charcoal be crafted into Black Dye?
+		"Charcoal To Black Dye" = true
 
 	[tweaks.simple_harvest]
 		#Can players harvest crops with empty hand clicks?
@@ -1180,6 +1183,7 @@
 	[mobs.stonelings]
 		"Max Y Level" = 0
 		"Enable Diamond Heart" = true
+		#When enabled, stonelings are much more aggressive in checking for players
 		"Cautious Stonelings" = true
 		"Tamable Stonelings" = true
 		#Disabled if if Pathfinder Maps are disabled.
@@ -1352,6 +1356,8 @@
 		#So to display a carrot on a stick on a mending book, for example, you use:
 		#minecraft:mending=minecraft:carrot_on_a_stick
 		"Enchanting Additional Stacks" = []
+		"Fuel Time Tooltips" = true
+		"Fuel Time Divisor" = 200
 
 	[client.greener_grass]
 		"Affect Leaves" = true
@@ -1387,6 +1393,7 @@
 	"Zombie Villagers On Normal" = false
 	"Spawner Replacer" = false
 	"Enchantments Begone" = false
+	Saw = false
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
@@ -1418,6 +1425,12 @@
 
 	[experimental.enchantments_begone]
 		"Enchantments To Begone" = []
+
+	[experimental.saw]
+
+		[experimental.saw.variants]
+			"Known Suffixes" = ["slab", "stairs", "wall", "fence", "vertical_slab"]
+			"Tested Mods" = ["quark"]
 
 [oddities]
 	"Totem Of Holding" = true
