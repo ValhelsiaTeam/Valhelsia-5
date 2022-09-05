@@ -30,22 +30,39 @@ ServerEvents.recipes(event => {
 
   // Remove recipes by recipe ID.
   [
+    // Blue Skies
+    'blue_skies:cake_compat', // Replaced with a different recipe.
+
+    // Decorative Blocks
+    'decorative_blocks:chain', // Replaced with a different recipe.
+    'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
+    'decorative_blocks:rocky_dirt', // Replaced with a different recipe.
+
+    // MineColonies
+    'minecolonies:chainmailhelmet', // Replaced with a different recipe.
+    'minecolonies:chainmailchestplate', // Replaced with a different recipe.
+    'minecolonies:chainmailleggings', // Replaced with a different recipe.
+    'minecolonies:chainmailboots', // Replaced with a different recipe.
+
+    // Minecraft
+    'minecraft:cake', // Duplicate Recipe.
+
     // Quark Oddities
-    'quark:oddities/crafting/backpack',
+    'quark:oddities/crafting/backpack', // Removed entirely.
 
     // Sophisticated Backpacks
-    'sophisticatedbackpacks:backpack'
+    'sophisticatedbackpacks:backpack' // Replaced with a different recipe.
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.
   [
     // TODO: Add item IDs here.
   ].forEach((ingredientID) => event.remove({input: ingredientID}));
-
   
   // Remove recipes by output.
   [
-    // TODO: Add item IDs here.
+    // Mekanism
+    'mekanism:block_charcoal', // Duplicate recipe.
   ].forEach((itemID) => event.remove({output: itemID}));
 
 })
