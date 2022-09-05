@@ -18,7 +18,8 @@
 /**
  * Shaped Recipe Event Handler
  */
-onEvent('recipes', event => {
+ServerEvents.recipes(event => {
+
   // Convenience Functions:
   const shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
   const shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};
@@ -82,16 +83,28 @@ onEvent('recipes', event => {
     A: 'minecraft:chain'
   });
 
-  //event.shaped('minecraft:bundle', [
-  //  'SCS',
-  //  'C C',
-  //  'CCC'
-  //], {
-  //  S: 'minecraft:string',
-  //  C: 'farmersdelight:canvas'
-  //});
+  event.shaped('minecraft:bundle', [
+    'SCS',
+    'C C',
+    'CCC'
+  ], {
+    S: 'minecraft:string',
+    C: 'farmersdelight:canvas'
+  });
 
   // Farmer's Delight
-  //shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
+  shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
+
+  // Sophisticated Backpacks
+  event.shaped('sophisticatedbackpacks:backpack', [
+    'ACA',
+    'BDB',
+    'BBB'
+  ], {
+    A: '#supplementaries:ropes',
+    B: '#forge:leather',
+    C: 'quark:ravager_hide',
+    D: '#forge:chests/woodeen'
+  });
 
 });
