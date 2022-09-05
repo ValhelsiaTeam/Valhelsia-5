@@ -15,7 +15,7 @@
 /**
  * Stonecutting Recipe Event Handler
  */
- onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 
   /**
    * Creates multiple stonecutting recipes to convert items between each other.
