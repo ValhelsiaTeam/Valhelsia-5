@@ -20,7 +20,6 @@
  * @see sawing.js
  * 
  * @copyright Valhelsia Inc 2022
- * 
  */
 
 /**
@@ -35,11 +34,42 @@ ServerEvents.recipes(event => {
 
     // Blue Skies
     'blue_skies:cake_compat', // Replaced with a different recipe.
+    
+    // Darker Depths
+    'darkerdepths:aridrock_gold_ore_from_blasting',
+    'darkerdepths:limestone_gold_ore_from_blasting',
+    'darkerdepths:aridrock_gold_ore',
+    'darkerdepths:limestone_gold_ore',
+    'darkerdepths:aridrock_iron_ore_from_blasting',
+    'darkerdepths:limestone_iron_ore_from_blasting',
+    'darkerdepths:aridrock_iron_ore',
+    'darkerdepths:limestone_iron_ore',
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
     'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
     'decorative_blocks:rocky_dirt', // Replaced with a different recipe.
+
+    // Immersive Engineering
+    'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
+    'immersiveengineering:crafting/gold_ingot_from_dust_from_blasting', // Duplicate recipe.
+    'immersiveengineering:crafting/gold_ingot_from_dust', // Duplicate recipe.
+    'immersiveengineering:crafting/iron_ingot_from_dust_from_blasting', // Duplicate recipe.
+    'immersiveengineering:crafting/iron_ingot_from_dust', // Duplicate recipe.
+    'immersiveengineering:crafting/ingot_silver_to_storage_silver', // Replaced with a different recipe.
+    'immersiveengineering:crusher/nether_gold', // Duplicate recipe.
+    'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
+
+    // Mekanism
+    'mekanismtools:steel/tools/sword',
+    'mekanismtools:steel/tools/pickaxe',
+    'mekanismtools:steel/tools/axe',
+    'mekanismtools:steel/tools/shovel',
+    'mekanismtools:steel/tools/hoe',
+    'mekanismtools:steel/armor/helmet',
+    'mekanismtools:steel/armor/chestplate',
+    'mekanismtools:steel/armor/leggings',
+    'mekanismtools:steel/armor/boots',
 
     // MineColonies
     'minecolonies:chainmailhelmet', // Replaced with a different recipe.
@@ -69,8 +99,30 @@ ServerEvents.recipes(event => {
   
   // Remove recipes by output.
   [
+    // Darker Depths
+    'darkerdepths:raw_silver',
+    'darkerdepths:raw_silver_block',
+    'darkerdepths:silver_ingot',
+    'darkerdepths:silver_block',
+
+    // Immersive Engineering
+    'immersiveengineering:raw_lead',
+    'immersiveengineering:raw_block_lead',
+    'immersiveengineering:ingot_lead',
+    'immersiveengineering:storage_lead',
+    'immersiveengineering:nugget_lead',
+    'immersiveengineering:raw_uranium',
+    'immersiveengineering:raw_block_uranium',
+    'immersiveengineering:ingot_uranium',
+    'immersiveengineering:storage_uranium',
+    'immersiveengineering:nugget_uranium',
+    'immersiveengineering:storage_steel',
+    'immersiveengineering:ingot_steel',
+    'immersiveengineering:nugget_steel',
+    'immersiveengineering:nugget_copper',
+
     // Mekanism
     'mekanism:block_charcoal', // Duplicate recipe.
   ].forEach((itemID) => event.remove({output: itemID}));
 
-})
+});
