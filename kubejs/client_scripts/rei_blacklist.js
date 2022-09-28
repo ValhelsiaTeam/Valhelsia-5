@@ -17,7 +17,7 @@
 /**
  * REI Item Hiding Event Handler
  */
-onEvent('rei.hide.items', event => {
+REIEvents.hideItems(event => {
   event.hide([
 
     // Minecraft
@@ -67,9 +67,39 @@ onEvent('rei.hide.items', event => {
     'biomesoplenty:potted_toadstool',
     'biomesoplenty:potted_glowshroom',
 
+    // Darker Depths
+    'darkerdepths:silver_ore',
+    'darkerdepths:raw_silver',
+    'darkerdepths:raw_silver_block',
+    'darkerdepths:silver_ingot',
+    'darkerdepths:silver_block',
+
+    // Immersive Engineering
+    'immersiveengineering:ore_lead',
+    'immersiveengineering:deepslate_ore_lead',
+    'immersiveengineering:raw_lead',
+    'immersiveengineering:raw_block_lead',
+    'immersiveengineering:ingot_lead',
+    'immersiveengineering:storage_lead',
+    'immersiveengineering:nugget_lead',
+    'immersiveengineering:ore_uranium',
+    'immersiveengineering:deepslate_ore_uranium',
+    'immersiveengineering:raw_uranium',
+    'immersiveengineering:raw_block_uranium',
+    'immersiveengineering:ingot_uranium',
+    'immersiveengineering:storage_uranium',
+    'immersiveengineering:nugget_uranium',
+    'immersiveengineering:storage_steel',
+    'immersiveengineering:ingot_steel',
+    'immersiveengineering:nugget_steel',
+    'immersiveengineering:nugget_copper',
+
+    // Mekanism
+    'mekanism:block_charcoal',
+
     // Mekanism Additions
     'mekanismadditions:baby_creeper_spawn_egg',
-    'mekanismadditions:baby_creeper_spawn_egg',
+    'mekanismadditions:baby_enderman_spawn_egg',
     'mekanismadditions:baby_wither_skeleton_spawn_egg',
 
     // Mekanism Tools
@@ -84,6 +114,18 @@ onEvent('rei.hide.items', event => {
     'mekanismtools:lapis_lazuli_hoe',
     'mekanismtools:lapis_lazuli_paxel',
     'mekanismtools:lapis_lazuli_shield',
+    'mekanismtools:steel_sword',
+    'mekanismtools:steel_pickaxe',
+    'mekanismtools:steel_axe',
+    'mekanismtools:steel_shovel',
+    'mekanismtools:steel_hoe',
+    'mekanismtools:steel_helmet',
+    'mekanismtools:steel_chestplate',
+    'mekanismtools:steel_leggings',
+    'mekanismtools:steel_boots',
+
+    // Quark Oddities
+    'quark:backpack',
 
     // Structure Gel API
     'structure_gel:red_gel',
