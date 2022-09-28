@@ -10,9 +10,9 @@
  * 
  * Contains several convenience functions for frequently used shapes.
  * 
- * @copyright Valhelsia Inc 2022
  * @see shapeless.js
  * 
+ * @copyright Valhelsia Inc 2022
  */
 
 /**
@@ -149,6 +149,15 @@ ServerEvents.recipes(event => {
   // Farmer's Delight
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
+  // Immersive Engineering
+  event.shaped('immersiveengineering:storage_silver', [
+    'AAA',
+    'AAA',
+    'AAA'
+  ], {
+    A: '#forge:ingots/silver'
+  });
+
   // Sophisticated Backpacks
   event.shaped('sophisticatedbackpacks:backpack', [
     'ACA',
@@ -158,7 +167,7 @@ ServerEvents.recipes(event => {
     A: '#supplementaries:ropes',
     B: '#forge:leather',
     C: 'quark:ravager_hide',
-    D: '#forge:chests/woodeen'
+    D: '#forge:chests'
   });
 
 });
