@@ -44,6 +44,7 @@ ServerEvents.recipes(event => {
     'darkerdepths:limestone_iron_ore_from_blasting',
     'darkerdepths:aridrock_iron_ore',
     'darkerdepths:limestone_iron_ore',
+    'darkerdepths:rope',
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
@@ -89,7 +90,10 @@ ServerEvents.recipes(event => {
     'quark:oddities/crafting/backpack', // Removed entirely.
 
     // Sophisticated Backpacks
-    'sophisticatedbackpacks:backpack' // Replaced with a different recipe.
+    'sophisticatedbackpacks:backpack', // Replaced with a different recipe.
+
+    // Twilight Forest
+    'twilightforest:uncrafting_table' // Removed entirely.
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.
