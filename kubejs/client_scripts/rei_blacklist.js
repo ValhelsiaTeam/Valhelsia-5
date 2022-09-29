@@ -73,6 +73,7 @@ REIEvents.hideItems(event => {
     'darkerdepths:raw_silver_block',
     'darkerdepths:silver_ingot',
     'darkerdepths:silver_block',
+    'darkerdepths:rope',
 
     // Immersive Engineering
     'immersiveengineering:ore_lead',
@@ -134,5 +135,8 @@ REIEvents.hideItems(event => {
     'structure_gel:cyan_gel',
     'structure_gel:orange_gel',
     'structure_gel:yellow_gel',
+
+    // Twilight Forest
+    'twilightforest:uncrafting_table'
   ])
 })
