@@ -117,16 +117,6 @@ ServerEvents.recipes(event => {
     A: '#forge:rods/wooden',
     B: '#minecraft:planks'
   });
-  
-  // Alternate recipe for Dark Prismarine: Uses any black dye instead of ink sacs.
-  event.shaped('minecraft:dark_prismarine', [
-    'SSS',
-    'SBS',
-    'SSS'
-  ], {
-    S: 'minecraft:prismarine_shard',
-    B: '#forge:dyes/black'
-  });
 
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
@@ -150,13 +140,7 @@ ServerEvents.recipes(event => {
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
   // Immersive Engineering
-  event.shaped('immersiveengineering:storage_silver', [
-    'AAA',
-    'AAA',
-    'AAA'
-  ], {
-    A: '#forge:ingots/silver'
-  });
+  shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
 
   // Sophisticated Backpacks
   event.shaped('sophisticatedbackpacks:backpack', [
@@ -167,7 +151,7 @@ ServerEvents.recipes(event => {
     A: '#supplementaries:ropes',
     B: '#forge:leather',
     C: 'quark:ravager_hide',
-    D: '#forge:chests'
+    D: '#forge:chests/wooden'
   });
 
 });
