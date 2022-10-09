@@ -13,7 +13,7 @@
 /**
  * Entity Loot Table Event Handler
  */
-onEvent('entity.loot_tables', event => {
+ServerEvents.entityLootTables(event => {
   // Add a chance for some mobs to drop additonal loot, as a bonus incentive to farm them.
 
   // Wraith
