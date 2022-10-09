@@ -14,6 +14,6 @@
  * Item Tag Event Handler (to be used for tag removal only).
  * @see item_tags.js
  */
-onEvent('tags.items', event => {
+ServerEvents.tags('items', event => {
 
 });
