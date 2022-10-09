@@ -17,7 +17,7 @@
 /**
  * Sawing Recipe Event Handler
  */
- onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 
   /**
    * Creates a sawing recipe for multiple mods.
