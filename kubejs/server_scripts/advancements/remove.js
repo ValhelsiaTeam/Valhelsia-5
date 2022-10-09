@@ -30,7 +30,7 @@ const EMPTY_ADVANCEMENT = {criteria:{impossible:{trigger:'minecraft:impossible'}
  * Event handler for KubeJS's virtual datapack. Removes unused / undesired advancements
  * from the pack.
  */
-onEvent('server.datapack.high_priority', (event) => {
+ServerEvents.highPriorityData(event => {
   // Remove specified advancements.
   ADVANCEMENTS_TO_REMOVE.forEach(file => {
     event.addJson(file, EMPTY_ADVANCEMENT);
