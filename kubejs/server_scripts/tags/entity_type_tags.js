@@ -25,16 +25,15 @@ ServerEvents.tags('entity_type', event => {
     'minecraft:spider',
     'minecraft:phantom',
     'minecraft:cave_spider',
-    //'quark:wraith',
-    //'quark:forgotten',
-    //'goblintraders:goblin_trader', // Arguably not spoopy enough, but I'm sure they horde candy.
-    //'goblintraders:vein_goblin_trader',
-    //'graveyard:acolyte',
-    //'graveyard:ghoul',
-    //'graveyard:nightmare',
-    //'graveyard:reaper',
-    //'graveyard:revenant',
-    //'graveyard:skeleton_creeper',
+    'minecraft:wither_skeleton',
+    'alexsmobs:underminer',
+    'alexsmobs:murmur',
+    'quark:wraith',
+    'quark:forgotten',
+    'goblintraders:goblin_trader',
+    'goblintraders:vein_goblin_trader',
+    'savage_and_ravage:skeleton_villager',
+    'twilightforest:skeleton_druid',
   ]);
 
 });
