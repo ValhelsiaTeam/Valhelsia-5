@@ -18,7 +18,7 @@
 /**
  * Farmer's Delight Recipe Event Handler
  */
- onEvent('recipes', function (event) {
+ServerEvents.recipes(event => {
 
   /**
    * Creates an Axe Stripping recipe for the Farmer's Delight Cutting Board.
