@@ -98,7 +98,7 @@ function setConfig(key, value) {
  * Get Config: /vconfig [key]
  * Set Config: /vconfig [key] [value]
  */
-onEvent('command.registry', (event) => {
+ServerEvents.commandRegistry(event => {
   const { commands: Commands, arguments: Arguments } = event;
   event.register(
     Commands.literal(CONFIG_COMMAND)
