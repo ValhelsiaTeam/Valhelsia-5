@@ -14,6 +14,6 @@
  * Block Tag Event Handler (to be used for tag removal only).
  * @see block_tags.js
  */
-onEvent('tags.blocks', event => {
+ServerEvents.tags('blocks', event => {
    
 });
