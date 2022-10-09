@@ -13,7 +13,7 @@
 /**
  * Entity Type Tag Event Handler
  */
-onEvent('tags.entity_type', event => {
+ServerEvents.tags('entity_type', event => {
 
   // Add Halloween Event Candy to Spoopy Mobs
   event.add('valhelsia_tweaks:drops_candy', [
