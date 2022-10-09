@@ -13,6 +13,6 @@
 /**
  * Chest Loot Table Event Handler
  */
-onEvent('chest.loot_tables', event => {
+ServerEvents.chestLootTables(event => {
 
 });
