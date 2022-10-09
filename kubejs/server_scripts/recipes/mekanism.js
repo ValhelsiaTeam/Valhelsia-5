@@ -16,7 +16,7 @@
 /**
  * Mekanism Recipe Event Handler
  */
- onEvent('recipes', event => {
+ServerEvents.recipes(event => {
   
   /**
    * Adds a recipe to fill a Metallurgic Infuser with a given type of infusion material.
