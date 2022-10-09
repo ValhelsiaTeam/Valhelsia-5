@@ -17,6 +17,6 @@
 /**
  * Item Tag Event Handler
  */
-onEvent('tags.items', event => {
+ServerEvents.tags('items', event => {
 
 });
