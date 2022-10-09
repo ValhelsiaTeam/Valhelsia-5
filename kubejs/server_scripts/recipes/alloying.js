@@ -17,7 +17,7 @@
 /**
  * Alloying Recipe Event Handler
  */
- onEvent('recipes', event => {
+ServerEvents.recipes(event => {
 
   /**
    * Creates an alloy recipe for multiple mods.
