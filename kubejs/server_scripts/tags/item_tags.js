@@ -17,6 +17,9 @@
 /**
  * Item Tag Event Handler
  */
-ServerEvents.tags('items', event => {
-
+ServerEvents.tags('item', event => {
+  event.add('valhelsia:ropes', [
+    'farmersdelight:rope',
+    'supplementaries:rope'
+  ]);
 });
