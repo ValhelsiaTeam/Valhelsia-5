@@ -118,6 +118,17 @@ ServerEvents.recipes(event => {
     B: '#minecraft:planks'
   });
 
+  // Create
+  event.shaped('create:rope_pulley', [
+    'A',
+    'B',
+    'C'
+  ], {
+    A: 'create:andesite_casing',
+    B: '#valhelsia:ropes',
+    C: '#forge:plates/iron'
+  });
+
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
     'A',
@@ -148,7 +159,7 @@ ServerEvents.recipes(event => {
     'BDB',
     'BBB'
   ], {
-    A: '#supplementaries:ropes',
+    A: '#valhelsia:ropes',
     B: '#forge:leather',
     C: 'quark:ravager_hide',
     D: '#forge:chests/wooden'
