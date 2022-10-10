@@ -34,6 +34,9 @@ ServerEvents.recipes(event => {
 
     // Blue Skies
     'blue_skies:cake_compat', // Replaced with a different recipe.
+
+    // Create
+    'create:crafting/kinetics/rope_pulley', // Replaced with a different recipe.
     
     // Darker Depths
     'darkerdepths:aridrock_gold_ore_from_blasting',
