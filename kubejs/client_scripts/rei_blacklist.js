@@ -17,7 +17,7 @@
 /**
  * REI Item Hiding Event Handler
  */
-REIEvents.hideItems(event => {
+REIEvents.hide('item', event => {
   event.hide([
 
     // Minecraft
@@ -28,6 +28,8 @@ REIEvents.hideItems(event => {
     'minecraft:structure_void',
 
     // Biomes O' Plenty
+    'biomesoplenty:blood',
+    'biomesoplenty:bop_icon',
     'biomesoplenty:glowshroom_block',
     'biomesoplenty:glowing_moss_block',
     'biomesoplenty:glowing_moss_carpet',
@@ -67,6 +69,18 @@ REIEvents.hideItems(event => {
     'biomesoplenty:potted_toadstool',
     'biomesoplenty:potted_glowshroom',
 
+    // Citadel
+    'citadel:debug',
+    'citadel:citadel_book',
+    'citadel:effect_item',
+    'citadel:fancy_item',
+
+    // Create
+    'create:copper_backtank_placeable',
+
+    // Decorative Blocks
+    'decorative_blocks:blockstate_copy_item',
+
     // Darker Depths
     'darkerdepths:silver_ore',
     'darkerdepths:raw_silver',
@@ -74,6 +88,35 @@ REIEvents.hideItems(event => {
     'darkerdepths:silver_ingot',
     'darkerdepths:silver_block',
     'darkerdepths:rope',
+
+    // Domum Ornamentum
+    'domum_ornamentum:plain',
+    'domum_ornamentum:double_crossed',
+    'domum_ornamentum:framed',
+    'domum_ornamentum:side_framed',
+    'domum_ornamentum:up_gated',
+    'domum_ornamentum:down_gated',
+    'domum_ornamentum:one_crossed_lr',
+    'domum_ornamentum:one_crossed_rl',
+    'domum_ornamentum:horizontal_plain',
+    'domum_ornamentum:side_framed_horizontal',
+    'domum_ornamentum:shingle',
+    'domum_ornamentum:shingle_slab',
+    'domum_ornamentum:blockpaperwall',
+    'domum_ornamentum:blockpillar',
+    'domum_ornamentum:vanilla_fence_compat',
+    'domum_ornamentum:vanilla_wall_compat',
+    'domum_ornamentum:vanilla_slab_compat',
+    'domum_ornamentum:vanilla_trapdoors_compat',
+    'domum_ornamentum:vanilla_stairs_compat',
+    'domum_ornamentum:vanilla_fence_gate_compat',
+    'domum_ornamentum:vanilla_doors_compat',
+    'domum_ornamentum:fancy_trapdoors',
+    'domum_ornamentum:fancy_door',
+    'domum_ornamentum:panel',
+
+    // Every Compat
+    'everycomp:all_woods',
 
     // Immersive Engineering
     'immersiveengineering:ore_lead',
