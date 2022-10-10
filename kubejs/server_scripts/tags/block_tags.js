@@ -19,7 +19,7 @@
 /**
  * Block Tag Event Handler
  */
-ServerEvents.tags('blocks', event => {
+ServerEvents.tags('block', event => {
   // Missing Quark Revertable Chests
   event.add('quark:revertable_chests', [
     'ars_nouveau:archwood_chest'
