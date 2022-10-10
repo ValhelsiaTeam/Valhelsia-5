@@ -18,11 +18,15 @@
 /**
  * Recipe Replacement Event Handler
  */
- ServerEvents.recipes(event => {
+//ServerEvents.recipes(event => {
 
   // Convenience Functions:
-  const replaceInputID = (recipeID, from, to) => { event.replaceInput({id: recipeID}, from, to, true)};
-  const replaceInput = (from, to) => { event.replaceInput({}, from, to, true)};
+  //const replaceInputID = (recipeID, from, to) => { event.replaceInput({id: recipeID}, from, to, true)};
+  //const replaceInput = (from, to) => { event.replaceInput({}, from, to, true)};
 
-  replaceInput('minecraft:black_dye', '#forge:dyes/black');
-});
+  // Minecraft
+  //replaceInput('minecraft:black_dye', '#forge:dyes/black');
+
+  // Create
+  //replaceInputID('create:rope_pulley', '#minecraft:wool', '#valhelsia:ropes');
+//});
