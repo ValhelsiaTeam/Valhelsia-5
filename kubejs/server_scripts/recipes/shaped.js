@@ -150,6 +150,16 @@ ServerEvents.recipes(event => {
   // Farmer's Delight
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 
+  // Forbidden & Arcanus
+  event.shaped('forbidden_arcanus:deorum_chain', [
+    'A',
+    'B',
+    'A'
+  ], {
+    A: 'forbidden_arcanus:deorum_nugget',
+    B: 'forbidden_arcanus:deorum_ingot'
+  });
+
   // Immersive Engineering
   shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
 
