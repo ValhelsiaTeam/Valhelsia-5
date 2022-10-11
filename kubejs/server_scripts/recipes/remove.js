@@ -84,6 +84,7 @@ ServerEvents.recipes(event => {
     // Minecraft
     'minecraft:cake', // Duplicate Recipe.
     'minecraft:dark_prismarine', // Replaced with a different recipe.
+    'minecraft:ladder',
 
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
@@ -96,7 +97,7 @@ ServerEvents.recipes(event => {
     'sophisticatedbackpacks:backpack', // Replaced with a different recipe.
 
     // Twilight Forest
-    'twilightforest:uncrafting_table' // Removed entirely.
+    'twilightforest:uncrafting_table', // Removed entirely.
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.
