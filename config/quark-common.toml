@@ -4,7 +4,7 @@
 	"'q' Button on the Right" = false
 	"Disable Q Menu Effects" = false
 	#Disable this to turn off the quark system that makes features turn off when specified mods with the same content are loaded
-	"Use Anti Overlap" = true
+	"Use Anti Overlap" = false
 	#Quark replaces the Piston logic to allow for its piston features to work. If you're having troubles, try turning this off.
 	"Use Piston Logic Replacement" = true
 	#Allowed values: (0,)
@@ -84,7 +84,7 @@
 	"Vertical Slabs" = true
 	"Variant Ladders" = true
 	"Variant Furnaces" = true
-	"Variant Chests" = true
+	"Variant Chests" = false
 	"Variant Bookshelves" = true
 	Thatch = true
 	"Sturdy Stone" = true
