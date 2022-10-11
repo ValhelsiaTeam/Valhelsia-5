@@ -74,6 +74,17 @@ ServerEvents.recipes(event => {
     'mekanismtools:steel/armor/chestplate',
     'mekanismtools:steel/armor/leggings',
     'mekanismtools:steel/armor/boots',
+    'mekanismtools:lapis_lazuli/tools/sword',
+    'mekanismtools:lapis_lazuli/tools/pickaxe',
+    'mekanismtools:lapis_lazuli/tools/axe',
+    'mekanismtools:lapis_lazuli/tools/shovel',
+    'mekanismtools:lapis_lazuli/tools/hoe',
+    'mekanismtools:lapis_lazuli/tools/paxel',
+    'mekanismtools:lapis_lazuli/shield',
+    'mekanismtools:lapis_lazuli/armor/helmet',
+    'mekanismtools:lapis_lazuli/armor/chestplate', 
+    'mekanismtools:lapis_lazuli/armor/leggings',
+    'mekanismtools:lapis_lazuli/armor/boots',
 
     // MineColonies
     'minecolonies:chainmailhelmet', // Replaced with a different recipe.
