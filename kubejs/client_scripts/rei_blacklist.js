@@ -180,6 +180,33 @@ REIEvents.hide('item', event => {
     'structure_gel:yellow_gel',
 
     // Twilight Forest
-    'twilightforest:uncrafting_table'
+    'twilightforest:uncrafting_table',
+
+    // Woodworks
+    'woodworks:spruce_bookshelf',
+    'woodworks:birch_bookshelf',
+    'woodworks:jungle_bookshelf',
+    'woodworks:acacia_bookshelf',
+    'woodworks:dark_oak_bookshelf',
+    'woodworks:mangrove_bookshelf',
+    'woodworks:crimson_bookshelf',
+    'woodworks:warped_bookshelf',
+    'woodworks:spruce_ladder',
+    'woodworks:birch_ladder',
+    'woodworks:jungle_ladder',
+    'woodworks:acacia_ladder',
+    'woodworks:dark_oak_ladder',
+    'woodworks:mangrove_ladder',
+    'woodworks:crimson_ladder',
+    'woodworks:warped_ladder',
+    'woodworks:oak_leaf_pile',
+    'woodworks:spruce_leaf_pile',
+    'woodworks:birch_leaf_pile',
+    'woodworks:jungle_leaf_pile',
+    'woodworks:acacia_leaf_pile',
+    'woodworks:dark_oak_leaf_pile',
+    'woodworks:mangrove_leaf_pile',
+    'woodworks:azalea_leaf_pile',
+    'woodworks:flowering_azalea_leaf_pile'
   ])
 })
