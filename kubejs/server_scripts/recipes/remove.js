@@ -54,6 +54,9 @@ ServerEvents.recipes(event => {
     'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
     'decorative_blocks:rocky_dirt', // Replaced with a different recipe.
 
+    // Forbidden & Arcanus
+    'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
+
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
     'immersiveengineering:crafting/gold_ingot_from_dust_from_blasting', // Duplicate recipe.
