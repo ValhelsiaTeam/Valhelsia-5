@@ -101,14 +101,6 @@ ServerEvents.recipes(event => {
     B: 'minecraft:book'
   });
   
-  event.shaped('minecraft:chest', [
-    'AAA',
-    'A A',
-    'AAA'
-  ], {
-    A: '#minecraft:planks'
-  });
-  
   event.shaped('4x minecraft:ladder', [
     'A A',
     'ABA',
