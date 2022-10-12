@@ -9,6 +9,11 @@ customization-meta {
 }
 
 customization {
+  name = valhelsia
+  action = setbackgroundpanorama
+}
+
+customization {
   keepaspectratio = false
   action = backgroundoptions
 }
@@ -257,7 +262,7 @@ customization {
 
 customization {
   orientation = top-left
-  hidden = false
+  hidden = true
   x = 411
   width = 228
   action = deep_customization_element:title_screen_forge_copyright
@@ -379,5 +384,29 @@ customization {
   backgroundnormal = kubejs\assets\custom-menu\textures\gui\twitter-button.png
   value = https://twitter.com/Valhelsia
   height = 32
+}
+
+customization {
+  orientation = bottom-right
+  restartbackgroundanimations = true
+  buttonaction = openlink
+  backgroundhovered = kubejs\assets\custom-menu\textures\gui\transparent-button.png
+  label = Menu Music by Rush Garcia (@Tit0Rush)
+  loopbackgroundanimations = true
+  hoverlabel = Menu Music by Rush Garcia (@Tit0Rush)
+  x = -198
+  width = 198
+  actionid = ad44474f-b48b-4165-ad55-4159608991a81665565901304
+  action = addbutton
+  y = -22
+  backgroundnormal = kubejs\assets\custom-menu\textures\gui\transparent-button.png
+  value = https://www.youtube.com/watch?v=DPbvoJlBRkw
+  height = 12
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
+  action = sethoverlabel
+  label = 
 }
 
