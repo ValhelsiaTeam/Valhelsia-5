@@ -56,10 +56,6 @@ const CONFIG_COMMAND_PERMISSION_LEVEL = 4;
  */
 const DEFAULT_CONFIG = {
   debug: false,
-  log_added_recipes: false,
-  log_removed_recipes: false,
-  log_skipped_recipes: false,
-  log_erroring_recipes: true,
 };
  
 /**
@@ -147,9 +143,3 @@ if (configDirty) {
 }
 
 global.config = config;
-
-// KubeJS Settings
-settings.logAddedRecipes = config.log_added_recipes ? true : false;
-settings.logRemovedRecipes = config.log_removed_recipess ? true : false;
-settings.logSkippedRecipes = config.log_skipped_recipess ? true : false;
-settings.logErroringRecipes = config.log_erroring_recipess ? true : false;
