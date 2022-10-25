@@ -27,6 +27,9 @@ REIEvents.hide('item', event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
 
+    // Ars Nouveau
+    'ars_nouveau:creative_spell_book',
+
     // Biomes O' Plenty
     'biomesoplenty:blood',
     'biomesoplenty:bop_icon',
