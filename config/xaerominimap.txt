@@ -5,6 +5,7 @@ allowWrongWorldTeleportation:false
 differentiateByServerAddress:true
 debugEntityIcons:false
 debugEntityVariantIds:false
+radarHideInvisibleEntities:true
 #INGAME SETTINGS (DO NOT EDIT!)
 updateNotification:false
 minimap:true
@@ -86,7 +87,7 @@ compassColor:9
 northCompassColor:-1
 showDimensionName:false
 displayMultipleWaypointInfo:1
-entityRadar:false
+entityRadar:true
 adjustHeightForCarpetLikeBlocks:true
 autoConvertWaypointDistanceToKmThreshold:10000
 waypointDistancePrecision:1
@@ -98,13 +99,19 @@ hideMinimapUnderF3:true
 manualCaveModeStartAuto:true
 manualCaveModeStart:-1
 chunkGridLineWidth:1
+temporaryWaypointsGlobal:true
+keepUnlockedWhenEnlarged:false
+enlargedMinimapAToggle:false
+displayStainedGlass:true
+waypointOnMapScale:0
 displayPacPlayers:true
 displayClaims:true
 displayCurrentClaim:true
-claimsOpacity:80
-interface:dummy:0:0:false:false:true:false
-interface:dummy:0:135:false:false:false:false
-interface:dummy:120:0:true:false:false:false
+claimsFillOpacity:46
+claimsBorderOpacity:80
 interface:dummy:0:50:true:false:false:false
+interface:dummy:0:10000:true:false:false:false
+interface:dummy:0:0:false:false:true:false
+interface:dummy:0:36:true:false:false:false
 interface:gui.xaero_minimap:0:0:false:false:true:false
 #WAYPOINTS HAVE BEEN MOVED TO /XaeroWaypoints
