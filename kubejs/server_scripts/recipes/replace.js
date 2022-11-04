@@ -1,4 +1,4 @@
-// priority: 100
+// priority: 110
 //   __   ___   _    _  _ ___ _    ___ ___   _       ____ 
 //   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | ___|
 //    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |___ \
@@ -8,7 +8,7 @@
 /**
  * @file Recipe input / output replacements for Valhelsia 5.
  * 
- * Contains several convenience functions for frequently used removal approaches.
+ * Contains several convenience functions for frequently used replacement approaches.
  * The majority of the recipe changes in this script are to convert recipe inputs to
  * use tags instead of specific items, or adjusting the output where we have a prefered mod to use.
  * 
@@ -20,11 +20,18 @@
  */
 ServerEvents.recipes(event => {
 
-  // Convenience Functions:
-  const replaceInputID = (recipeID, from, to) => {event.replaceInput({id: recipeID}, from, to, true)};
-  const replaceOutputID = (recipeID, from, to) => {event.replaceOutput({id: recipeID}, from, to, true)};
+  // ----- Convenience Functions -----
+  // Replace inputs and outputs across all recipes that use the given ingredient / item.
   const replaceInput = (from, to) => {event.replaceInput({}, from, to, true)};
   const replaceOutput = (from, to) => {event.replaceOutput({}, from, to, true)};
+
+  // Replace inputs / outputs by recipe ID.
+  const replaceInputID = (recipeID, from, to) => {event.replaceInput({id: recipeID}, from, to, true)};
+  const replaceOutputID = (recipeID, from, to) => {event.replaceOutput({id: recipeID}, from, to, true)};
+
+  // Replace inputs / outputs by recipe type.
+  const replaceInputType = (recipeType, from, to) => {event.replaceInput({type: recipeType}, from, to, true)};
+  const replaceOutputType = (recipeType, from, to) => {event.replaceOutput({type: recipeType}, from, to, true)};
 
   // ----- Compatibility -----
   // Use tags instead of items for all dye colours.

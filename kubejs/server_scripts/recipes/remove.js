@@ -12,12 +12,13 @@
  * it is preferable to use replace instead of remove, if practical.
  * @see replace.js
  * 
- * The Alloying, Crushing, and Sawing scripts also remove relevant recipes in the same script
- * only if immediately creating a new recipe that is intended to replace that recipe
+ * The Alloying, Crushing, Sawing, and Smelting scripts also remove relevant recipes in the same script
+ * if immediately creating a new recipe that is intended to replace that recipe
  * (typically to add multi-mod support for a recipe).
  * @see alloying.js
  * @see crushing.js
  * @see sawing.js
+ * @see smelting.js
  * 
  * @copyright Valhelsia Inc 2022
  */
@@ -26,7 +27,6 @@
  * Recipe Removal Event Handler
  */
 ServerEvents.recipes(event => {
-
   // Remove recipes by recipe ID.
   [
     // Ars Nouveau
@@ -39,16 +39,8 @@ ServerEvents.recipes(event => {
     'blue_skies:cake_compat', // Replaced with a different recipe.
 
     // Create
-    
+
     // Darker Depths
-    'darkerdepths:aridrock_gold_ore_from_blasting',
-    'darkerdepths:limestone_gold_ore_from_blasting',
-    'darkerdepths:aridrock_gold_ore',
-    'darkerdepths:limestone_gold_ore',
-    'darkerdepths:aridrock_iron_ore_from_blasting',
-    'darkerdepths:limestone_iron_ore_from_blasting',
-    'darkerdepths:aridrock_iron_ore',
-    'darkerdepths:limestone_iron_ore',
     'darkerdepths:rope',
 
     // Decorative Blocks
@@ -61,15 +53,10 @@ ServerEvents.recipes(event => {
 
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
-    'immersiveengineering:crafting/gold_ingot_from_dust_from_blasting', // Duplicate recipe.
-    'immersiveengineering:crafting/gold_ingot_from_dust', // Duplicate recipe.
-    'immersiveengineering:crafting/iron_ingot_from_dust_from_blasting', // Duplicate recipe.
-    'immersiveengineering:crafting/iron_ingot_from_dust', // Duplicate recipe.
-    'immersiveengineering:crafting/ingot_silver_to_storage_silver', // Replaced with a different recipe.
-    'immersiveengineering:crusher/nether_gold', // Duplicate recipe.
     'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
 
     // Mekanism
+    'mekanism:charcoal',
     'mekanismtools:steel/tools/sword',
     'mekanismtools:steel/tools/pickaxe',
     'mekanismtools:steel/tools/axe',
