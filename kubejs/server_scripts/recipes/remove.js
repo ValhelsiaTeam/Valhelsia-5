@@ -100,7 +100,6 @@ ServerEvents.recipes(event => {
 
     // Minecraft
     'minecraft:cake', // Duplicate Recipe.
-    'minecraft:dark_prismarine', // Replaced with a different recipe.
     'minecraft:ladder',
 
     // Quark
