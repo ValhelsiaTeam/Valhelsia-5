@@ -32,6 +32,35 @@ ServerEvents.recipes(event => {
 
   // ----- Output Unification -----
 
+  // Note: Priority for metals is Create > Mekanism > Immersive Engineering > Darker Depths
+
+  // Nuggets
+  replaceOutput('immersiveengineering:nugget_copper', 'create:copper_nugget');
+  replaceOutput('immersiveengineering:nugget_lead', 'mekanism:nugget_lead');
+  replaceOutput('immersiveengineering:nugget_steel', 'mekanism:nugget_steel');
+  replaceOutput('immersiveengineering:nugget_uranium', 'mekanism:nugget_uranium');
+
+  // Ingots
+  replaceOutput('darkerdepths:silver_ingot', 'immersiveengineering:ingot_silver');
+  replaceOutput('immersiveengineering:ingot_lead', 'mekanism:ingot_lead');
+  replaceOutput('immersiveengineering:ingot_steel', 'mekanism:ingot_steel');
+  replaceOutput('immersiveengineering:ingot_uranium', 'mekanism:ingot_uranium');
+
+  // Raw Ore
+  replaceOutput('darkerdepths:raw_silver', 'immersiveengineering:raw_silver');
+  replaceOutput('immersiveengineering:raw_lead', 'mekanism:raw_lead');
+  replaceOutput('immersiveengineering:raw_uranium', 'mekanism:raw_uranium');
+
+  // Storage Blocks
+  replaceOutput('darkerdepths:raw_silver_block', 'immersiveengineering:raw_block_silver');
+  replaceOutput('darkerdepths:silver_block', 'immersiveengineering:storage_silver');
+  replaceOutput('immersiveengineering:storage_lead', 'mekanism:block_lead');
+  replaceOutput('immersiveengineering:raw_block_lead', 'mekanism:block_raw_lead');
+  replaceOutput('immersiveengineering:raw_block_uranium', 'mekanism:block_raw_uranium');
+  replaceOutput('immersiveengineering:storage_steel', 'mekanism:block_steel');
+  replaceOutput('immersiveengineering:storage_uranium', 'mekanism:block_uranium');
+  replaceOutput('mekanism:block_charcoal', 'quark:charcoal_block');
+
   // ----- Gameplay Changes / Fixes -----
   replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
   replaceInputID('create:crafting/kinetics/rope_pulley', '#minecraft:wool', '#valhelsia:ropes'); // Use rope instead of wool.

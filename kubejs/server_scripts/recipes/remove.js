@@ -117,35 +117,14 @@ ServerEvents.recipes(event => {
 
   // Remove recipes by input.
   [
-    // TODO: Add item IDs here.
+    // Note: Should generally use recipe IDs instead of input ingredient.
+
   ].forEach((ingredientID) => event.remove({input: ingredientID}));
   
   // Remove recipes by output.
   [
-    // Darker Depths
-    'darkerdepths:raw_silver',
-    'darkerdepths:raw_silver_block',
-    'darkerdepths:silver_ingot',
-    'darkerdepths:silver_block',
-
-    // Immersive Engineering
-    'immersiveengineering:raw_lead',
-    'immersiveengineering:raw_block_lead',
-    'immersiveengineering:ingot_lead',
-    'immersiveengineering:storage_lead',
-    'immersiveengineering:nugget_lead',
-    'immersiveengineering:raw_uranium',
-    'immersiveengineering:raw_block_uranium',
-    'immersiveengineering:ingot_uranium',
-    'immersiveengineering:storage_uranium',
-    'immersiveengineering:nugget_uranium',
-    'immersiveengineering:storage_steel',
-    'immersiveengineering:ingot_steel',
-    'immersiveengineering:nugget_steel',
-    'immersiveengineering:nugget_copper',
-
-    // Mekanism
-    'mekanism:block_charcoal', // Duplicate recipe.
+    // Note: Should generally use recipe IDs instead of output item.
+    
   ].forEach((itemID) => event.remove({output: itemID}));
 
 });
