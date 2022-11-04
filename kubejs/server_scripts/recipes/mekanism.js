@@ -92,8 +92,8 @@ ServerEvents.recipes(event => {
 
   // Coal Coke -> Carbon / Enriched Carbon
   //event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
-  //infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
-  //infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
+  infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
+  infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
 
   // Fungification
   // TODO: Fungification
