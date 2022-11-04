@@ -15,5 +15,9 @@
  * Shapeless Recipe Event Handler
  */
 ServerEvents.recipes(event => {
-
+  // Biomes 'o' Plenty
+  event.shapeless('2x biomesoplenty:orange_sand', ['minecraft:sand', 'minecraft:red_sand']);
+  
+  // Darker Depths
+  event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire']);
 });

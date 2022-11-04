@@ -1,4 +1,4 @@
-// priority: 110
+// priority: 90
 //   __   ___   _    _  _ ___ _    ___ ___   _       ____ 
 //   \ \ / /_\ | |  | || | __| |  / __|_ _| /_\     | ___|
 //    \ V / _ \| |__| __ | _|| |__\__ \| | / _ \    |___ \
@@ -36,6 +36,20 @@ ServerEvents.recipes(event => {
   // ----- Compatibility -----
   // Use tags instead of items for all dye colours.
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye` `#forge:dyes/${color}`));
+
+  replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/arcane_gold');
+  replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
+  // Going to add this later, needs some changes elsewhere.
+  //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
+
+  event.replaceInputID('minecraft:writable_book', 'minecraft:feather', '#forge:feathers');
+  event.replaceInputID('xercamusic:music_sheet', 'minecraft:feather', '#forge:feathers');
+  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers', true);
+  // TODO: Check which other recipes need feathers changed to use tags.
+  
+  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden', true);
+  // TODO: Check which other recipes need sticks changed to use tags.
+  
 
   // ----- Output Unification -----
 

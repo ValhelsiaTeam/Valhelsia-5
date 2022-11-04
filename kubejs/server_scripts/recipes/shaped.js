@@ -38,7 +38,7 @@ ServerEvents.recipes(event => {
     'ABA',
     'ACA'
   ], {
-    A: 'minecraft:cobblestone',
+    A: '#forge:cobblestone',
     B: 'minecraft:crossbow',
     C: 'minecraft:redstone'
   });
@@ -48,8 +48,8 @@ ServerEvents.recipes(event => {
     'RDS',
     'RS '
   ], {
-    R: 'minecraft:stick',
-    S: 'minecraft:string',
+    R: '#forge:rods/wooden',
+    S: '#forge:string',
     D: 'minecraft:dropper'
   });
 
@@ -88,7 +88,7 @@ ServerEvents.recipes(event => {
     'C C',
     'CCC'
   ], {
-    S: 'minecraft:string',
+    S: '#forge:string',
     C: 'farmersdelight:canvas'
   });
 
@@ -165,7 +165,7 @@ ServerEvents.recipes(event => {
     'BA'
   ], {
     A: 'minecraft:dirt',
-    B: 'minecraft:cobblestone'
+    B: '#forge:cobblestone'
   });
 
   // Farmer's Delight
