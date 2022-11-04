@@ -18,15 +18,21 @@
 /**
  * Recipe Replacement Event Handler
  */
-//ServerEvents.recipes(event => {
+ServerEvents.recipes(event => {
 
   // Convenience Functions:
-  //const replaceInputID = (recipeID, from, to) => { event.replaceInput({id: recipeID}, from, to, true)};
-  //const replaceInput = (from, to) => { event.replaceInput({}, from, to, true)};
+  const replaceInputID = (recipeID, from, to) => {event.replaceInput({id: recipeID}, from, to, true)};
+  const replaceOutputID = (recipeID, from, to) => {event.replaceOutput({id: recipeID}, from, to, true)};
+  const replaceInput = (from, to) => {event.replaceInput({}, from, to, true)};
+  const replaceOutput = (from, to) => {event.replaceOutput({}, from, to, true)};
 
-  // Minecraft
-  //replaceInput('minecraft:black_dye', '#forge:dyes/black');
+  // ----- Compatibility -----
+  // Use tags instead of items for all dye colours.
+  COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye` `#forge:dyes/${color}`));
 
-  // Create
-  //replaceInputID('create:rope_pulley', '#minecraft:wool', '#valhelsia:ropes');
-//});
+  // ----- Output Unification -----
+
+  // ----- Gameplay Changes / Fixes -----
+  replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
+  replaceInputID('create:crafting/kinetics/rope_pulley', '#minecraft:wool', '#valhelsia:ropes'); // Use rope instead of wool.
+});

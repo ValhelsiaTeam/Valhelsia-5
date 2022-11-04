@@ -149,15 +149,6 @@ ServerEvents.recipes(event => {
   });
 
   // Create
-  event.shaped('create:rope_pulley', [
-    'A',
-    'B',
-    'C'
-  ], {
-    A: 'create:andesite_casing',
-    B: '#valhelsia:ropes',
-    C: '#forge:plates/iron'
-  });
 
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
