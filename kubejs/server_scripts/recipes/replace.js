@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
 
   // ----- Output Unification -----
 
-  // Note: Priority for metals is Create > Mekanism > Immersive Engineering > Darker Depths
+  // Note: Priority for metals is Minecraft > Create > Mekanism > Immersive Engineering > Darker Depths
 
   // Nuggets
   replaceOutput('immersiveengineering:nugget_copper', 'create:copper_nugget');
@@ -83,6 +83,6 @@ ServerEvents.recipes(event => {
   replaceOutput('mekanism:block_charcoal', 'quark:charcoal_block');
 
   // ----- Gameplay Changes / Fixes -----
-  replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
-  replaceInputID('create:crafting/kinetics/rope_pulley', '#minecraft:wool', '#valhelsia:ropes'); // Use rope instead of wool.
+  replaceInput({tag:'forge:chests'}, '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
+  replaceInputID('create:crafting/kinetics/rope_pulley', {tag:'minecraft:wool'}, '#valhelsia:ropes'); // Use rope instead of wool.
 });
