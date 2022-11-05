@@ -28,8 +28,8 @@ ServerEvents.recipes(event => {
    * @param {string|Ingredient} to New input.
    */
   const replaceSmeltingInput = (from, to) => {
-    event.replaceInput({type: 'minecraft:blasting'}, from, to, true);
-    event.replaceInput({type: 'minecraft:smelting'}, from, to, true);
+    event.replaceInput({type: 'minecraft:blasting'}, from, to);
+    event.replaceInput({type: 'minecraft:smelting'}, from, to);
   };
 
   /**
@@ -39,8 +39,8 @@ ServerEvents.recipes(event => {
    * @param {string|Item} to New output.
    */
   const replaceSmeltingOutput = (from, to) => { 
-    event.replaceOutput({type: 'minecraft:blasting'}, from, to, true);
-    event.replaceOutput({type: 'minecraft:smelting'}, from, to, true);
+    event.replaceOutput({type: 'minecraft:blasting'}, from, to);
+    event.replaceOutput({type: 'minecraft:smelting'}, from, to);
   };
 
   /**

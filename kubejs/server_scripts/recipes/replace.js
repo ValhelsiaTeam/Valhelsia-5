@@ -22,32 +22,32 @@ ServerEvents.recipes(event => {
 
   // ----- Convenience Functions -----
   // Replace inputs and outputs across all recipes that use the given ingredient / item.
-  const replaceInput = (from, to) => {event.replaceInput({}, from, to, true)};
-  const replaceOutput = (from, to) => {event.replaceOutput({}, from, to, true)};
+  const replaceInput = (from, to) => {event.replaceInput({}, from, to)};
+  const replaceOutput = (from, to) => {event.replaceOutput({}, from, to)};
 
   // Replace inputs / outputs by recipe ID.
-  const replaceInputID = (recipeID, from, to) => {event.replaceInput({id: recipeID}, from, to, true)};
-  const replaceOutputID = (recipeID, from, to) => {event.replaceOutput({id: recipeID}, from, to, true)};
+  const replaceInputID = (recipeID, from, to) => {event.replaceInput({id: recipeID}, from, to)};
+  const replaceOutputID = (recipeID, from, to) => {event.replaceOutput({id: recipeID}, from, to)};
 
   // Replace inputs / outputs by recipe type.
-  const replaceInputType = (recipeType, from, to) => {event.replaceInput({type: recipeType}, from, to, true)};
-  const replaceOutputType = (recipeType, from, to) => {event.replaceOutput({type: recipeType}, from, to, true)};
+  const replaceInputType = (recipeType, from, to) => {event.replaceInput({type: recipeType}, from, to)};
+  const replaceOutputType = (recipeType, from, to) => {event.replaceOutput({type: recipeType}, from, to)};
 
   // ----- Compatibility -----
   // Use tags instead of items for all dye colours.
-  COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye` `#forge:dyes/${color}`));
+  COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
 
   replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/arcane_gold');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
 
-  event.replaceInputID('minecraft:writable_book', 'minecraft:feather', '#forge:feathers');
-  event.replaceInputID('xercamusic:music_sheet', 'minecraft:feather', '#forge:feathers');
-  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers', true);
+  replaceInputID('minecraft:writable_book', 'minecraft:feather', '#forge:feathers');
+  replaceInputID('xercamusic:music_sheet', 'minecraft:feather', '#forge:feathers');
+  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers');
   // TODO: Check which other recipes need feathers changed to use tags.
-  
-  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden', true);
+
+  event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
   // TODO: Check which other recipes need sticks changed to use tags.
   
 
