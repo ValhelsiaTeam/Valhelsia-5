@@ -92,7 +92,7 @@ ServerEvents.recipes(event => {
     replaceSmeltingInput(`minecraft:raw_${metal}`, `#forge:raw_materials/${metal}`);
   });
 
-  // Replace IE Smelting / Blasting inputs to reduce clutter in JEI / REI.
+  // Replace IE Smelting / Blasting inputs with tags.
   ['aluminum', 'nickel', 'silver'].forEach((metal) => {
     replaceSmeltingInput(`immersiveengineering:dust_${metal}`, `#forge:dusts/${metal}`);
     replaceSmeltingInput(`immersiveengineering:ore_${metal}`, `#forge:ores/${metal}`);
