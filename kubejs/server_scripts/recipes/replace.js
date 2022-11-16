@@ -83,6 +83,7 @@ ServerEvents.recipes(event => {
   replaceOutput('mekanism:block_charcoal', 'quark:charcoal_block');
 
   // ----- Gameplay Changes / Fixes -----
-  replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
+  // No idea why this is replacing a bunch of things that *aren't* in the '#forge:chests' tag.
+  //replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
   replaceInputID('create:crafting/kinetics/rope_pulley', '#minecraft:wool', '#valhelsia:ropes'); // Use rope instead of wool.
 });
