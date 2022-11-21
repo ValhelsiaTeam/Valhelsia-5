@@ -28,6 +28,8 @@
 	"Enable Network Profiling" = false
 	#If set to true, the 'Allowed Screens' option will work as a Blacklist rather than a Whitelist. WARNING: Use at your own risk as some mods may not support this.
 	"Use Screen List Blacklist" = false
+	#Used for terrablender integration
+	"Terrablender Region Weight" = 1
 
 [categories]
 	Automation = true
@@ -431,6 +433,9 @@
 	"Pig Litters" = true
 	"More Note Block Sounds" = true
 	"Grab Chickens" = true
+	"Zombie Villagers On Normal" = true
+	"Safe Rabbits" = true
+	"Renewable Spore Blossoms" = true
 
 	[tweaks.utility_recipes]
 		#Can any wool color be dyed?
@@ -568,6 +573,13 @@
 		"Needs No Helmet" = true
 		#Set to 0 to disable
 		"Slowness Level" = 1
+
+	[tweaks.safe_rabbits]
+		#How many blocks should be subtracted from the rabbit fall height when calculating fall damage. 5 is the same value as vanilla frogs
+		"Height Reduction" = 5.0
+
+	[tweaks.renewable_spore_blossoms]
+		"Bone Meal Chance" = 0.2
 
 [world]
 	"Spiral Spires" = true
@@ -1390,7 +1402,6 @@
 	"Narrator Readout" = false
 	"Game Nerfs" = false
 	"Adjustable Chat" = false
-	"Zombie Villagers On Normal" = true
 	"Spawner Replacer" = false
 	"Enchantments Begone" = false
 	Saw = false
@@ -1460,6 +1471,7 @@
 		#When items eject or are absorbed by pipes, should they make sounds?
 		"Do Pipes Whoosh" = true
 		"Enable Encased Pipes" = true
+		"Render Pipe Items" = true
 
 	[oddities.matrix_enchanting]
 		#The maximum enchanting power the matrix enchanter can accept
