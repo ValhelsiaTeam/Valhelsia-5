@@ -1390,7 +1390,7 @@
 	"Narrator Readout" = false
 	"Game Nerfs" = false
 	"Adjustable Chat" = false
-	"Zombie Villagers On Normal" = false
+	"Zombie Villagers On Normal" = true
 	"Spawner Replacer" = false
 	"Enchantments Begone" = false
 	Saw = false
