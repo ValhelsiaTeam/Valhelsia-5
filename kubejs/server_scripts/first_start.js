@@ -24,7 +24,7 @@ PlayerEvents.loggedIn(event => {
     event.player.tell(Text.translate('valhelsia.chat.first_start_message'));
     event.player.tell(Text.translate('valhelsia.chat.discord').blue().underlined().click('https://discord.com/invite/rdfQuaM'));
 
-    //event.player.give(Item.of('akashictome:tome', AKASHIC_TOME_NBT));
+    event.player.give(Item.of('akashictome:tome', AKASHIC_TOME_NBT));
   }
 
   // Note: If added to in the future, creating multiple stages would allow players updating the pack to receive any new
