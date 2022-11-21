@@ -25,18 +25,12 @@
 	acaciaBlossomsDropFromLeaves = true
 	#Whether lava can be bottled with a right click of a glass bottle.
 	lavaBottleEnabled = true
-	#Maximum world y-level that blobfish can spawn at
-	#Range: -64 ~ 320
-	blobfishSpawnHeight = 38
 	#Whether guster spawns are limited to when it is raining/thundering.
 	limitGusterSpawnsToWeather = true
 	#Whether seagulls should steal food out of players' hotbar slots.
 	seagullStealing = true
 	#Whether all players should get an Animal Dictionary when joining the world for the first time.
-	giveBookOnStartup = true
-	#Maximum world y-level that cave centipedes can spawn at
-	#Range: -64 ~ 320
-	caveCentipedeSpawnHeight = 30
+	giveBookOnStartup = false
 	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
 	mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster"]
 	#0 = no mungus biome transformation. 1 = mungus changes blocks, but not chunk's biome. 2 = mungus transforms blocks and biome of chunk.
@@ -109,6 +103,30 @@
 	rainbowGlassFidelity = 16.0
 	#Whether Rabbits can transform into Bunfungus if fed Mungal spores.
 	bunfungusTransformation = true
+	#Whether dolphins should target flying fish mobs.
+	dolphinsAttackFlyingFish = true
+	#True if some Alex's Mobs items should spawn in loot chests.
+	addLootToChests = true
+	#List of items that cannot be put in a Transmuting Table.
+	transmutationBlacklist = ["minecraft:beacon"]
+	#True if transmutation tables should not have the ability to pick up new items to transmute, and only give options from the loot tables.
+	limitTransmutingToLootTables = false
+	#True if transmutation tables can explode when broken.
+	transmutingTableExplodes = true
+	#The experience, in levels, that each transmutation of a stack takes in the transmuting table.
+	#Range: 0 ~ 100000
+	transmutingExperienceCost = 3
+	#The step value multiplied by the log of the stack size when transmuting an item, used to determine its weight for appearing in future transmutation possibilities. Higher number = more likely to appear.
+	#Range: 1.0 ~ 10000.0
+	transmutingWeightAddStep = 3.0
+	#The step value that an item looses when selecting it as the transmutation result. Keep this number higher than the one above for balance reasons. Higher number = less likely to appear after transmuting multiple times.
+	#Range: 1.0 ~ 10000.0
+	transmutingWeightRemoveStep = 4.0
+	#True if skreechers can summon a new warden, when applicable.
+	skreechersSummonWarden = true
+	#The distance in blocks that will cause an underminer to dissapear when approached by a player.
+	#Range: 1.0 ~ 10000.0
+	underminerDisappearDistance = 8.0
 
 	[general.spawning]
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
@@ -486,8 +504,8 @@
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		geladaMonkeySpawnWeight = 3
-		#Minimum world y-level that gelada monkeys can spawn at
-		#Range: -64 ~ 320
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
 		geladaMonkeySpawnRolls = 0
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
@@ -531,6 +549,102 @@
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		giantSquidSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn (NOTE: this mob spawns are restricted exclusively to one chunk, see below)
+		#Range: 0 ~ 1000
+		devilsHolePupfishSpawnWeight = 23
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning (NOTE: this mob spawns are restricted exclusively to one chunk, see below)
+		#Range: > 0
+		devilsHolePupfishSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		catfishSpawnWeight = 4
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		catfishSpawnRolls = 2
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		flyingFishSpawnWeight = 8
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		flyingFishSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		skelewagSpawnWeight = 15
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		skelewagSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		rainFrogSpawnWeight = 10
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		rainFrogSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		potooSpawnWeight = 15
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		potooSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		mudskipperSpawnWeight = 28
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		mudskipperSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		rhinocerosSpawnWeight = 24
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		rhinocerosSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		sugarGliderSpawnWeight = 15
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		sugarGliderSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		farseerSpawnWeight = 30
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		farseerSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		skreecherSpawnWeight = 10
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		skreecherSpawnRolls = 1
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		underminerSpawnWeight = 50
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		underminerSpawnRolls = 1
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		murmurSpawnWeight = 5
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		murmurSpawnRolls = 1
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		skunkSpawnWeight = 7
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		skunkSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		bananaSlugSpawnWeight = 14
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		bananaSlugSpawnRolls = 0
+		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
+		#Range: 0 ~ 1000
+		blueJaySpawnWeight = 16
+		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
+		#Range: > 0
+		blueJaySpawnRolls = 0
 
 		[general.spawning.uniqueSpawning]
 			#Delay (in ticks) between attempts to spawn beached cachalot whales. Default is a single day. Works like wandering traders.
@@ -544,6 +658,32 @@
 			#Percent chance increase for each failed attempt to spawn a beached cachalot whale. Higher value = more spawns.
 			#Range: 0 ~ 100
 			beachedCachalotWhaleSpawnChance = 5
+			#Maximum world y-level that cave centipedes can spawn at
+			#Range: -64 ~ 320
+			caveCentipedeSpawnHeight = 0
+			#Maximum world y-level that blobfish can spawn at
+			#Range: -64 ~ 320
+			blobfishSpawnHeight = 25
+			#Minimum world y-level that gelada monkeys can spawn at
+			#Range: -64 ~ 320
+			geladaMonkeySpawnRolls = 0
+			#Whether to restrict all pupfish spawns to one chunk (similar to real life) or have them only obey their spawn config.
+			restrictPupfishSpawns = true
+			#The maximum distance a pupfish spawn chunk is from world spawn(0, 0) in blocks.
+			#Range: 2 ~ 1000000000
+			pupfishChunkSpawnDistance = 2000
+			#Whether to restrict all skelewag spawns to shipwreck structures.
+			restrictSkelewagSpawns = true
+			#Whether to restrict all farseer spawns to near the world border.
+			restrictFarseerSpawns = true
+			#Whether to restrict all underminer spawns to abandoned mineshafts.
+			restrictUnderminerSpawns = true
+			#The maximum distance a farseer can spawn from the world border.
+			#Range: 2 ~ 1000000000
+			farseerBorderSpawnDistance = 100
+			#Maximum world y-level that murmur can spawn at
+			#Range: -64 ~ 320
+			murmurSpawnHeight = -30
 
 			[general.spawning.uniqueSpawning.dangerZone]
 				#Its been so long...
