@@ -110,6 +110,14 @@ ServerEvents.recipes(event => {
     B: '#minecraft:planks'
   });
 
+  event.shaped('minecraft:chest', [
+    'AAA',
+    'A A',
+    'AAA'
+  ], {
+    A: '#minecraft:planks'
+  });
+
   // Ars Nouveau
   event.shaped('ars_nouveau:novice_spell_book', [
     'ABC',
