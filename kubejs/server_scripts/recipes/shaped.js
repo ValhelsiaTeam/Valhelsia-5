@@ -18,7 +18,7 @@
 /**
  * Shaped Recipe Event Handler
  */
-ServerEvents.recipes(event => {
+ ServerEvents.recipes(event => {
 
   // Convenience Functions:
   const shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
@@ -156,6 +156,14 @@ ServerEvents.recipes(event => {
     F: 'minecraft:totem_of_undying',
   });
 
+  // Biomes O' Plenty
+  event.shaped ('6x biomesoplenty:hellbark_slab', [
+    'AAA'
+  ], {
+    A: 'biomesoplenty:hellbark_planks'
+  });
+
+
   // Create
 
   // Decorative Blocks
@@ -174,6 +182,19 @@ ServerEvents.recipes(event => {
   ], {
     A: 'minecraft:dirt',
     B: '#forge:cobblestone'
+  });
+
+  // Ecologics
+  event.shaped ('6x ecologics:azalea_slab', [
+    'AAA'
+  ], {
+    A: 'ecologics:azalea_planks'
+  });
+
+  event.shaped ('6x ecologics:flowering_azalea_slab', [
+    'AAA'
+  ], {
+    A: 'ecologics:flowering_azalea_planks'
   });
 
   // Farmer's Delight
