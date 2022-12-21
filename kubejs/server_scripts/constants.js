@@ -38,7 +38,7 @@ const COLORS = [
 /**
  * NBT data for the filled Akashic Tome. Should be updated whenever new recipe books are added to the pack.
  */
-const AKASHIC_TOME_NBT = '{"akashictome:data":{alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},patchouli_0:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_0","patchouli:book":"engineersdecor:engineersdecor_manual"}},patchouli_1:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_1","patchouli:book":"littlelogistics:guide"}},ars_nouveau:{Count:1b,id:"ars_nouveau:worn_notebook"},patchouli_2:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_2","patchouli:book":"advancedperipherals:manual"}}}}';
+const AKASHIC_TOME_NBT = '{"akashictome:data":{alexsmobs:{Count:1b,id:"alexsmobs:animal_dictionary"},immersiveengineering:{Count:1b,id:"immersiveengineering:manual"},botania:{Count:1b,id:"botania:lexicon"},patchouli_0:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_0","patchouli:book":"engineersdecor:engineersdecor_manual"}},patchouli_1:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_1","patchouli:book":"littlelogistics:guide"}},ars_nouveau:{Count:1b,id:"ars_nouveau:worn_notebook"},patchouli_2:{Count:1b,id:"patchouli:guide_book",tag:{"akashictome:definedMod":"patchouli_2","patchouli:book":"advancedperipherals:manual"}}}}';
  
 /**
  * Item IDs for all leaf carpets (or BYG's foliage, which is essentially the same thing).
