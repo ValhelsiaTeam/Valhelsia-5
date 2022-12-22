@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
   // Use tags instead of items for all dye colours.
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
 
-  replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/arcane_gold');
+  replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/deorum');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
