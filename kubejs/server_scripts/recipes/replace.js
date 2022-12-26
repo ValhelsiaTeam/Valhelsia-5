@@ -39,6 +39,8 @@ ServerEvents.recipes(event => {
 
   replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/deorum');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
+  replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
+  
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
 
