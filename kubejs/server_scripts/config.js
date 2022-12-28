@@ -46,16 +46,17 @@ const CONFIG_COMMAND = 'vconfig';
  * @see {@link https://minecraft.fandom.com/wiki/Permission_level#Java_Edition Permission Level}
  * for information about each permission level.
  * @const {!number}
- * @default 4
+ * @default 3
  */
-const CONFIG_COMMAND_PERMISSION_LEVEL = 4;
+const CONFIG_COMMAND_PERMISSION_LEVEL = 3;
  
 /**
  * The default values for config options in the pack.
  * @const {!Object}
  */
 const DEFAULT_CONFIG = {
-  debug: false,
+  debug: false, // Debug mode - used to log additional information in scripts.
+  expert: false, // Expert mode - enables harder recipes.
 };
  
 /**
