@@ -119,42 +119,6 @@ ServerEvents.recipes(event => {
   });
 
   // Ars Nouveau
-  event.shaped('ars_nouveau:novice_spell_book', [
-    'ABC',
-    'DE ',
-    '   ',
-  ], {
-    A: 'minecraft:book',
-    B: 'forbidden_arcanus:deorum_shovel',
-    C: 'forbidden_arcanus:deorum_pickaxe',
-    D: 'forbidden_arcanus:deorum_axe',
-    E: 'forbidden_arcanus:deorum_sword',
-  });
-
-  event.shaped('ars_nouveau:apprentice_spell_book', [
-    'ABC',
-    'CCD',
-    'DEE',
-  ], {
-    A: 'ars_nouveau:novice_spell_book',
-    B: 'forbidden_arcanus:obsidian_skull',
-    C: 'sullysmod:polished_jade',
-    D: 'create:polished_rose_quartz',
-    E: 'minecraft:blaze_rod',
-  });
-
-  event.shaped('ars_nouveau:archmage_spell_book', [
-    'ABC',
-    'DDE',
-    'EEF',
-  ], {
-    A: 'ars_nouveau:apprentice_spell_book',
-    B: 'forbidden_arcanus:dark_nether_star',
-    C: 'ars_nouveau:wilden_tribute',
-    D: 'forbidden_arcanus:stellarite_piece',
-    E: 'alexsmobs:void_worm_eye',
-    F: 'minecraft:totem_of_undying',
-  });
 
   // Create
 
@@ -191,17 +155,5 @@ ServerEvents.recipes(event => {
 
   // Immersive Engineering
   shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
-
-  // Sophisticated Backpacks
-  event.shaped('sophisticatedbackpacks:backpack', [
-    'ACA',
-    'BDB',
-    'BBB'
-  ], {
-    A: '#valhelsia:ropes',
-    B: '#forge:leather',
-    C: 'quark:ravager_hide',
-    D: '#forge:chests/wooden'
-  });
 
 });

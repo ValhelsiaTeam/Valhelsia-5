@@ -29,12 +29,6 @@
 ServerEvents.recipes(event => {
   // Remove recipes by recipe ID.
   [
-    // Ars Nouveau
-    'ars_nouveau:archwood_to_chest', // Duplicate Recipe.
-    'ars_nouveau:novice_spell_book', // Replaced with a different recipe.
-    'ars_nouveau:apprentice_spell_book_upgrade', // Replaced with a different recipe.
-    'ars_nouveau:archmage_spell_book_upgrade', // Replaced with a different recipe.
-
     // Blue Skies
     'blue_skies:cake_compat', // Replaced with a different recipe.
 
@@ -94,9 +88,6 @@ ServerEvents.recipes(event => {
 
     // Quark Oddities
     'quark:oddities/crafting/backpack', // Removed entirely.
-
-    // Sophisticated Backpacks
-    'sophisticatedbackpacks:backpack', // Replaced with a different recipe.
 
     // Twilight Forest
     'twilightforest:uncrafting_table', // Removed entirely.
