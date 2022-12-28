@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
   const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
 
   // Valhelsia
-  // wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');
+  wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');
 
   // Minecraft
   shaped3x3('minecraft:cobweb', 'minecraft:string');
