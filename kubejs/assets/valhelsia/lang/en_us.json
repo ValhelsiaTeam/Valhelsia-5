@@ -1,6 +1,6 @@
 {
   "valhelsia.comment.chat": "-----Chat Messages-----",
-  "valhelsia.chat.first_start_message": "Welcome to Valhelsia 5! The modpack is currently in beta, is not yet complete and big bugs can be present.",
+  "valhelsia.chat.first_start_message": "Welcome to Valhelsia 5! The modpack is currently in beta, is not yet complete and bugs may be present.",
   "valhelsia.chat.discord": "Join us on our Discord server.",
   
   "valhelsia.config.current": "Current config entry: %s",
