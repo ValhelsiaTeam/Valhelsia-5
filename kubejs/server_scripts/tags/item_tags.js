@@ -22,4 +22,14 @@ ServerEvents.tags('item', event => {
     'farmersdelight:rope',
     'supplementaries:rope'
   ]);
+
+  event.add('forge:ores', [
+    'darkerdepths:aridrock_silver_ore',
+    'darkerdepths:limestone_silver_ore'
+  ]);
+
+  event.add('forge:ores/silver', [
+    'darkerdepths:aridrock_silver_ore',
+    'darkerdepths:limestone_silver_ore'
+  ]);
 });
