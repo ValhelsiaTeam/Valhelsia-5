@@ -4,5 +4,9 @@
   "valhelsia.chat.discord": "Join us on our Discord server.",
   
   "valhelsia.config.current": "Current config entry: %s",
-  "valhelsia.config.updated": "Updated config entry: %s"
+  "valhelsia.config.updated": "Updated config entry: %s",
+
+  "valhelsia.comment.tooltips": "-----Missing Tooltips-----",
+  "tooltip.waila.crop_growth": "Growth: ",
+  "tooltip.waila.crop_mature": "Mature"
 }
