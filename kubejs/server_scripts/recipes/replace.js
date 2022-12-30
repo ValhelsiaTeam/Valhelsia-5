@@ -51,8 +51,12 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
   // TODO: Check which other recipes need sticks changed to use tags.
-  
 
+  ALL_VANILLA_WOOD_TYPES.forEach((wood_type) => {
+    // Allow balanced crates to use any wooden chest, not just vanilla chests.
+    event.replaceInputID(`balanced_crates:${wood_type}_crate_recipe`, 'minecraft:chest', '#forge:chests/wooden')
+  });
+  
   // ----- Output Unification -----
 
   // Note: Priority for metals is Create > Mekanism > Immersive Engineering > Darker Depths
