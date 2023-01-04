@@ -431,7 +431,7 @@
 		gusterSpawnRolls = 0
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		cockroachSpawnRolls = 0
+		cockroachSpawnRolls = 1
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		rattlesnakeSpawnRolls = 0
