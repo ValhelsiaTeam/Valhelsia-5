@@ -171,6 +171,11 @@ JEIEvents.hideItems(event => {
     'mekanismtools:steel_leggings',
     'mekanismtools:steel_boots',
 
+    // Quark
+    'quark:carrot_crate',
+    'quark:potato_crate',
+    'quark:beetroot_crate',
+
     // Quark Oddities
     'quark:backpack',
 
