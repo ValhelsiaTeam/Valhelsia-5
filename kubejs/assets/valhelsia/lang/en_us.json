@@ -11,5 +11,13 @@
   "tooltip.waila.crop_mature": "Mature",
 
   "valhelsia.comment.entities": "-----Missing Entity Names-----",
-  "entity.minecraft.villager.advancedperipherals.computer_scientist": "Computer Scientist"
+  "entity.minecraft.villager.advancedperipherals.computer_scientist": "Computer Scientist",
+
+  "valhelsia.comment.items": "-----Missing Item Names-----",
+  "item.effortlessbuilding.randomizer_bag": "Randomizer Bag",
+  "item.effortlessbuilding.golden_randomizer_bag": "Golden Randomizer Bag",
+  "item.effortlessbuilding.diamond_randomizer_bag": "Diamond Randomizer Bag",
+  "item.effortlessbuilding.reach_upgrade1": "Reach Upgrade 1",
+  "item.effortlessbuilding.reach_upgrade2": "Reach Upgrade 2",
+  "item.effortlessbuilding.reach_upgrade3": "Reach Upgrade 3"
 }
