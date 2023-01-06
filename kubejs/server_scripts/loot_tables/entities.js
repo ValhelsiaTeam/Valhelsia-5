@@ -45,4 +45,25 @@ ServerEvents.entityLootTables(event => {
       pool.addCondition({"condition": "minecraft:random_chance_with_looting", "chance": 0.11, "looting_multiplier": 0.02});
     });
   });
+
+  // Frostbitten
+  event.modifyEntity('rottencreatures:frostbitten', table => {
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('create:zinc_ingot');
+      pool.killedByPlayer();
+      pool.addCondition({"condition": "minecraft:random_chance_with_looting", "chance": 0.11, "looting_multiplier": 0.02});
+    });
+  });
+
+  // Burned
+  event.modifyEntity('rottencreatures:burned', table => {
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('immersiveengineering:ingot_nickel');
+      pool.killedByPlayer();
+      pool.addCondition({"condition": "minecraft:random_chance_with_looting", "chance": 0.11, "looting_multiplier": 0.02});
+    });
+  });
+
 });
