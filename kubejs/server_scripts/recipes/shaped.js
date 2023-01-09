@@ -44,16 +44,6 @@ ServerEvents.recipes(event => {
     C: 'minecraft:redstone'
   });
 
-  event.shaped('minecraft:dispenser', [
-    'RS ',
-    'RDS',
-    'RS '
-  ], {
-    R: '#forge:rods/wooden',
-    S: '#forge:string',
-    D: 'minecraft:dropper'
-  });
-
   event.shaped('minecraft:chainmail_helmet', [
     'AAA',
     'A A'
