@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
     'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
+    'immersiveengineering:crafting/ingot_steel_to_storage_steel', // Redundant.
 
     // Mekanism
     'mekanism:charcoal',
