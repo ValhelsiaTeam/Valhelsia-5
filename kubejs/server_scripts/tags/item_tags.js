@@ -32,4 +32,21 @@ ServerEvents.tags('item', event => {
     'darkerdepths:aridrock_silver_ore',
     'darkerdepths:limestone_silver_ore'
   ]);
+
+  event.add('forge:ingots', [
+    'moreminecarts:silica_steel'
+  ]);
+
+  event.add('forge:ingots/silica_steel', [
+    'moreminecarts:silica_steel'
+  ]);
+
+  event.add('forge:storage_blocks', [
+    'moreminecarts:silica_steel_block'
+  ]);
+
+  event.add('forge:storage_blocks/silica_steel', [
+    'moreminecarts:silica_steel_block'
+  ]);
+
 });
