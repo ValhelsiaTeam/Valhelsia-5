@@ -20,4 +20,18 @@ ServerEvents.recipes(event => {
   
   // Darker Depths
   event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire']);
+
+  // Farmer's Delight
+  event.shapeless('farmersdelight:organic_compost', [
+    'minecraft:dirt', 
+    'farmersdelight:straw',
+    'farmersdelight:straw',
+    'minecraft:bone_meal',
+    'minecraft:bone_meal',
+    '#forge:dusts/wood',
+    '#forge:dusts/wood',
+    '#forge:dusts/wood',
+    '#forge:dusts/wood'
+  ]);
+
 });
