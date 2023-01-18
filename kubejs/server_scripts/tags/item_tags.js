@@ -23,6 +23,11 @@ ServerEvents.tags('item', event => {
     'supplementaries:rope'
   ]);
 
+  event.add('valhelsia:ash', [
+    'supplementaries:ash',
+    'darkerdepths:ash'
+  ]);
+
   event.add('valhelsia:rose_quartz', [
     'cave_enhancements:rose_quartz',
     'biomesoplenty:rose_quartz_shard'

@@ -152,6 +152,9 @@ ServerEvents.recipes(event => {
   // Cave Enhancements
   shaped2x2('biomesoplenty:rose_quartz_block', 'cave_enhancements:rose_quartz');
 
+  // Darker Depths
+  shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
+
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
     'A',
