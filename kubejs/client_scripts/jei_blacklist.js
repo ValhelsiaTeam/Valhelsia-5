@@ -146,6 +146,8 @@ JEIEvents.hideItems(event => {
 
     // Mekanism
     'mekanism:block_charcoal',
+    'mekanism:creative_fluid_tank',
+    'mekanism:creative_chemical_tank',
 
     // Mekanism Additions
     'mekanismadditions:baby_creeper_spawn_egg',
