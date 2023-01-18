@@ -17,7 +17,7 @@
 ServerEvents.blockLootTables(event => {
   event.addBlock('darkerdepths:ash_block', table => {
     table.addPool(pool => {
-      pool.rolls = {min: 3, max: 5}
+      pool.rolls = 4
       pool.addItem('supplementaries:ash')
     })
   })
