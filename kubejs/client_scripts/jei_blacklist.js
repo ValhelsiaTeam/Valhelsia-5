@@ -27,6 +27,9 @@ JEIEvents.hideItems(event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
 
+    // Applied Energistics 2
+    'ae2:facade',
+
     // Ars Nouveau
     'ars_nouveau:creative_spell_book',
 
