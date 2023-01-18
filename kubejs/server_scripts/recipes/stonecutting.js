@@ -40,6 +40,10 @@ ServerEvents.recipes(event => {
     }
   };
 
+  // Conversion between stone of the same type.
+  scConvert(['create:limestone', 'darkerdepths:limestone', 'quark:limestone']);
+  scConvert(['darkerdepths:shale', 'quark:shale']);
+
   // TODO: Add stonecutter recipes here.
   
 
