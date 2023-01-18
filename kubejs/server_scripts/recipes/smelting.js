@@ -134,6 +134,9 @@ ServerEvents.recipes(event => {
     event.remove({id: `immersiveengineering:smelting/ingot_${metal}_from_blasting3`});
   });
 
+  // Allow Ash Bricks to be made by smelting any ash.
+  replaceSmeltingInput('supplementaries:ash', '#valhelsia:ash');
+
   // New smelting recipes.
   smelt('biomesoplenty:dried_salt', 'mekanism:block_salt');
 });
