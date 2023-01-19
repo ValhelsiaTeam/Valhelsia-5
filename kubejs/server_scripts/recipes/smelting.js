@@ -12,7 +12,7 @@
  * This script merges several metal smelting recipes together to reduce clutter.
  * It also removes recipes where multiple mods add the same recipe.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**

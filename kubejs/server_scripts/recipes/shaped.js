@@ -12,7 +12,7 @@
  * 
  * @see shapeless.js
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**

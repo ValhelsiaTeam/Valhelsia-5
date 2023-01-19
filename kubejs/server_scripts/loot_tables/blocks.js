@@ -8,7 +8,7 @@
 /**
  * @file Block loot table injection / replacement.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2023
  */
 
 /**
