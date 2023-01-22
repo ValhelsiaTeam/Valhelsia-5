@@ -9,7 +9,7 @@
  * @file Stonecutter recipe additions for Valhelsia 5.
  * Includes functions for frequently used recipe templates.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**
@@ -39,6 +39,10 @@ ServerEvents.recipes(event => {
       }
     }
   };
+
+  // Conversion between stone of the same type.
+  scConvert(['create:limestone', 'darkerdepths:limestone', 'quark:limestone']);
+  scConvert(['darkerdepths:shale', 'quark:shale']);
 
   // TODO: Add stonecutter recipes here.
   

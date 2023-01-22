@@ -27,6 +27,9 @@ JEIEvents.hideItems(event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
 
+    // Applied Energistics 2
+    'ae2:facade',
+
     // Ars Nouveau
     'ars_nouveau:creative_spell_book',
 
@@ -143,6 +146,8 @@ JEIEvents.hideItems(event => {
 
     // Mekanism
     'mekanism:block_charcoal',
+    'mekanism:creative_fluid_tank',
+    'mekanism:creative_chemical_tank',
 
     // Mekanism Additions
     'mekanismadditions:baby_creeper_spawn_egg',
@@ -170,6 +175,11 @@ JEIEvents.hideItems(event => {
     'mekanismtools:steel_chestplate',
     'mekanismtools:steel_leggings',
     'mekanismtools:steel_boots',
+
+    // Quark
+    'quark:carrot_crate',
+    'quark:potato_crate',
+    'quark:beetroot_crate',
 
     // Quark Oddities
     'quark:backpack',

@@ -12,7 +12,7 @@
  * The majority of the recipe changes in this script are to convert recipe inputs to
  * use tags instead of specific items, or adjusting the output where we have a prefered mod to use.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**
@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
   replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/deorum');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
+  replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
   
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
@@ -51,8 +52,12 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
   // TODO: Check which other recipes need sticks changed to use tags.
-  
 
+  ALL_VANILLA_WOOD_TYPES.forEach((wood_type) => {
+    // Allow balanced crates to use any wooden chest, not just vanilla chests.
+    replaceInputID(`balanced_crates:${wood_type}_crate_recipe`, 'minecraft:chest', '#forge:chests/wooden');
+  });
+  
   // ----- Output Unification -----
 
   // Note: Priority for metals is Create > Mekanism > Immersive Engineering > Darker Depths

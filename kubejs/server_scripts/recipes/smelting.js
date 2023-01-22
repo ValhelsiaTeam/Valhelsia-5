@@ -12,7 +12,7 @@
  * This script merges several metal smelting recipes together to reduce clutter.
  * It also removes recipes where multiple mods add the same recipe.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**
@@ -133,6 +133,9 @@ ServerEvents.recipes(event => {
     event.remove({id: `immersiveengineering:smelting/ingot_${metal}_from_blasting2`});
     event.remove({id: `immersiveengineering:smelting/ingot_${metal}_from_blasting3`});
   });
+
+  // Allow Ash Bricks to be made by smelting any ash.
+  replaceSmeltingInput('supplementaries:ash', '#valhelsia:ash');
 
   // New smelting recipes.
   smelt('biomesoplenty:dried_salt', 'mekanism:block_salt');

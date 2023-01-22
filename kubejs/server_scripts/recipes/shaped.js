@@ -12,7 +12,7 @@
  * 
  * @see shapeless.js
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**
@@ -25,10 +25,11 @@ ServerEvents.recipes(event => {
   const shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};
   const donut = (output, input) => {event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input})};
   const wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
+  const plusWrapped = (output, core, wrap) => {event.shaped(output, [' A ', 'ABA', ' A '], {A: wrap, B: core})};
   const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
 
   // Valhelsia
-  wrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), '#forge:bookshelves', 'minecraft:book');
+  plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves');
 
   // Minecraft
   shaped3x3('minecraft:cobweb', 'minecraft:string');
@@ -41,16 +42,6 @@ ServerEvents.recipes(event => {
     A: '#forge:cobblestone',
     B: 'minecraft:crossbow',
     C: 'minecraft:redstone'
-  });
-
-  event.shaped('minecraft:dispenser', [
-    'RS ',
-    'RDS',
-    'RS '
-  ], {
-    R: '#forge:rods/wooden',
-    S: '#forge:string',
-    D: 'minecraft:dropper'
   });
 
   event.shaped('minecraft:chainmail_helmet', [
@@ -121,6 +112,12 @@ ServerEvents.recipes(event => {
   // Ars Nouveau
 
   // Create
+
+  // Cave Enhancements
+  shaped2x2('biomesoplenty:rose_quartz_block', 'cave_enhancements:rose_quartz');
+
+  // Darker Depths
+  shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
 
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [

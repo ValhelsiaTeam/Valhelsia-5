@@ -20,7 +20,7 @@
  * @see sawing.js
  * @see smelting.js
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**
@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
     'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
+    'immersiveengineering:crafting/ingot_steel_to_storage_steel', // Redundant.
 
     // Mekanism
     'mekanism:charcoal',
@@ -85,6 +86,9 @@ ServerEvents.recipes(event => {
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
     'quark:building/crafting/oak_ladder', // Duplicate recipe.
+    'quark:building/crafting/compressed/carrot_crate', // Duplicate recipe.
+    'quark:building/crafting/compressed/potato_crate', // Duplicate recipe.
+    'quark:building/crafting/compressed/beetroot_crate', // Duplicate recipe.
 
     // Quark Oddities
     'quark:oddities/crafting/backpack', // Removed entirely.

@@ -59,7 +59,20 @@ const ALL_NATURAL_LOGS = [
   'minecraft:birch_log',
   'minecraft:jungle_log',
   'minecraft:acacea_log',
+  'minecraft:mangrove_log',
   'minecraft:dark_oak_log',
   'minecraft:crimson_stem',
   'minecraft:warped_stem',
 ]; 
+
+const ALL_VANILLA_WOOD_TYPES = [
+  'acacia',
+  'birch',
+  'crimson',
+  'dark_oak',
+  'jungle',
+  'mangrove',
+  'oak',
+  'spruce',
+  'warped',
+];
