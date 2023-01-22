@@ -25,6 +25,7 @@ ServerEvents.recipes(event => {
     'ars_nouveau:novice_spell_book', // Replaced with a different recipe.
     'ars_nouveau:apprentice_spell_book_upgrade', // Replaced with a different recipe.
     'ars_nouveau:archmage_spell_book_upgrade', // Replaced with a different recipe.
+    'ars_nouveau:mob_jar', // Replaced with a different recipe.
     
     // Sophisticated Backpacks
     'sophisticatedbackpacks:backpack', // Replaced with a different recipe.

@@ -19,7 +19,6 @@
     return;
   }
 
-
   // Ars Nouveau
   event.shaped('ars_nouveau:novice_spell_book', [
     'ABC',
@@ -56,6 +55,15 @@
     D: 'forbidden_arcanus:stellarite_piece',
     E: 'alexsmobs:void_worm_eye',
     F: 'minecraft:totem_of_undying',
+  });
+  
+  event.shaped('ars_nouveau:mob_jar', [
+    'SSS',
+    'G G',
+    'GGG',
+  ], {
+    S: 'ars_nouveaut:archwood_slab',
+    G: 'forbidden_arcanus:runic_glass'
   });
 
   // Sophisticated Backpacks
