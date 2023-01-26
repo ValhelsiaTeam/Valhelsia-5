@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
   event.stonecutting('darkerdepths:polished_grimestone_vertical_slab x2', 'darkerdepths:grimestone');
   event.stonecutting('darkerdepths:polished_grimestone_vertical_slab x2', 'darkerdepths:polished_grimestone');
   
-  event.stonecutting('darkerdepths:limestone_vertical_slab x2', 'darkerdepths:limestonerimestone');
+  event.stonecutting('darkerdepths:limestone_vertical_slab x2', 'darkerdepths:limestone');
   event.stonecutting('darkerdepths:limestone_bricks_vertical_slab x2', 'darkerdepths:limestone');
   event.stonecutting('darkerdepths:limestone_bricks_vertical_slab x2', 'darkerdepths:polished_limestone');
   event.stonecutting('darkerdepths:limestone_bricks_vertical_slab x2', 'darkerdepths:limestone_bricks');
