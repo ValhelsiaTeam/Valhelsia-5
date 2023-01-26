@@ -27,6 +27,8 @@ ServerEvents.recipes(event => {
   const wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
   const plusWrapped = (output, core, wrap) => {event.shaped(output, [' A ', 'ABA', ' A '], {A: wrap, B: core})};
   const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
+  const slab = (output, input) => {event.shaped(Item.of(output, 6), ['AAA'], {A: input})};
+  const vslab = (output, input) => {event.shaped(Item.of(output, 6), ['A', 'A', 'A'], {A: input})};
 
   // Valhelsia
   plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves');
@@ -154,6 +156,24 @@ ServerEvents.recipes(event => {
 
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
+
+  vslab('darkerdepths:petrified_vertical_slab', 'darkerdepths:petrified_planks');
+
+  vslab('darkerdepths:aridrock_vertical_slab', 'darkerdepths:aridrock');
+  vslab('darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock_bricks');
+  vslab('darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:polished_aridrock');
+
+  vslab('darkerdepths:grimestone_vertical_slab', 'darkerdepths:grimestone');
+  vslab('darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone_bricks');
+  vslab('darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:polished_grimestone');
+
+  vslab('darkerdepths:limestone_vertical_slab', 'darkerdepths:limestone');
+  vslab('darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone_bricks');
+  vslab('darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:polished_limestone');
+
+  vslab('darkerdepths:shale_vertical_slab', 'darkerdepths:shale');
+  vslab('darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks');
+  vslab('darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale');
 
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
