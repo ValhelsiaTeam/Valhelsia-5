@@ -28,7 +28,7 @@ ServerEvents.recipes(event => {
   const plusWrapped = (output, core, wrap) => {event.shaped(output, [' A ', 'ABA', ' A '], {A: wrap, B: core})};
   const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
   const slab = (output, input) => {event.shaped(Item.of(output, 6), ['AAA'], {A: input})};
-  const vslab = (output, input) => {event.shaped(Item.of(output, 6), ['A', 'A', 'A'], {A: input})};
+  const vslab = (output, input) => {event.shaped(Item.of(output, 3), ['A', 'A', 'A'], {A: input})};
 
   // Valhelsia
   plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves');
@@ -157,23 +157,23 @@ ServerEvents.recipes(event => {
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
 
-  vslab('darkerdepths:petrified_vertical_slab', 'darkerdepths:petrified_planks');
+  vslab('darkerdepths:petrified_vertical_slab', 'darkerdepths:petrified_slab');
 
-  vslab('darkerdepths:aridrock_vertical_slab', 'darkerdepths:aridrock');
-  vslab('darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock_bricks');
-  vslab('darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:polished_aridrock');
+  vslab('darkerdepths:aridrock_vertical_slab', 'darkerdepths:aridrock_slab');
+  vslab('darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock_bricks_slab');
+  vslab('darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:polished_aridrock_slab');
 
-  vslab('darkerdepths:grimestone_vertical_slab', 'darkerdepths:grimestone');
-  vslab('darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone_bricks');
-  vslab('darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:polished_grimestone');
+  vslab('darkerdepths:grimestone_vertical_slab', 'darkerdepths:grimestone_slab');
+  vslab('darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone_bricks_slab');
+  vslab('darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:polished_grimestone_slab');
 
-  vslab('darkerdepths:limestone_vertical_slab', 'darkerdepths:limestone');
-  vslab('darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone_bricks');
-  vslab('darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:polished_limestone');
+  vslab('darkerdepths:limestone_vertical_slab', 'darkerdepths:limestone_slab');
+  vslab('darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone_bricks_slab');
+  vslab('darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:polished_limestone_slab');
 
-  vslab('darkerdepths:shale_vertical_slab', 'darkerdepths:shale');
-  vslab('darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks');
-  vslab('darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale');
+  vslab('darkerdepths:shale_vertical_slab', 'darkerdepths:shale_slab');
+  vslab('darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks_slab');
+  vslab('darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale_slab');
 
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
