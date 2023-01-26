@@ -20,5 +20,8 @@
   "item.effortlessbuilding.diamond_randomizer_bag": "Diamond Randomizer Bag",
   "item.effortlessbuilding.reach_upgrade1": "Reach Upgrade 1",
   "item.effortlessbuilding.reach_upgrade2": "Reach Upgrade 2",
-  "item.effortlessbuilding.reach_upgrade3": "Reach Upgrade 3"
+  "item.effortlessbuilding.reach_upgrade3": "Reach Upgrade 3",
+
+  "valhelsia.comment.blocks": "-----Missing Block Names-----",
+  "block.trolldom.water_shrine": "Water Shrine"
 }
