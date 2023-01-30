@@ -193,6 +193,9 @@ ServerEvents.recipes(event => {
     B: '#forge:cobblestone'
   });
 
+  // Ecologics
+  shaped2x2('minecraft:moss_block', 'ecologics:surface_moss');
+
   // Farmer's Delight
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
 

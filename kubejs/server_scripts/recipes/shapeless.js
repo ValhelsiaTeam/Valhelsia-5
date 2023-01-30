@@ -21,6 +21,9 @@ ServerEvents.recipes(event => {
   // Darker Depths
   event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire']);
 
+  // Ecologics
+  event.shapeless('4x ecologics:surface_moss', 'minecraft:moss_block');  
+
   // Farmer's Delight
   event.shapeless('farmersdelight:organic_compost', [
     'minecraft:dirt', 
