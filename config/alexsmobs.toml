@@ -269,7 +269,7 @@
 		gorillaSpawnWeight = 40
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
-		flySpawnRolls = 2
+		flySpawnRolls = 6
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		cosmawSpawnRolls = 0
@@ -401,7 +401,7 @@
 		komodoDragonSpawnWeight = 4
 		#Spawn Weight, added to a pool of other mobs for each biome. Higher number = higher chance of spawning. 0 = disable spawn
 		#Range: 0 ~ 1000
-		flySpawnWeight = 3
+		flySpawnWeight = 5
 		#Random roll chance to enable mob spawning. Higher number = lower chance of spawning
 		#Range: > 0
 		snowLeopardSpawnRolls = 0
