@@ -23,5 +23,9 @@
   "item.effortlessbuilding.reach_upgrade3": "Reach Upgrade 3",
 
   "valhelsia.comment.blocks": "-----Missing Block Names-----",
+  "block.trolldom.air_shrine": "Air Shrine",
+  "block.trolldom.earth_shrine": "Earth Shrine",
+  "block.trolldom.fire_shrine": "Fire Shrine",
   "block.trolldom.water_shrine": "Water Shrine"
+  
 }
