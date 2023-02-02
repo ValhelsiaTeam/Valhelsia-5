@@ -224,4 +224,14 @@ ServerEvents.recipes(event => {
     D: '#forge:chests/wooden'
   });
 
+  // Supplementaries
+  event.shaped('supplementaries:quiver', [
+    ' SL',
+    'SLL',
+    'LL '
+  ], {
+    S: '#forge:string',
+    L: '#forge:leather'
+  });
+
 });
