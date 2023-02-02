@@ -48,6 +48,10 @@ ServerEvents.recipes(event => {
     'decorative_blocks:dirt_from_rocky_dirt', // Removed entirely, no neat way to uncraft with the new recipe.
     'decorative_blocks:rocky_dirt', // Replaced with a different recipe.
 
+    // Ecologics
+    'ecologics:surface_moss',
+    'ecologics:moss_block',
+
     // Forbidden & Arcanus
     'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
 
