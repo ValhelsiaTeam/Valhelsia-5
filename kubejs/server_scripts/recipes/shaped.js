@@ -226,9 +226,9 @@ ServerEvents.recipes(event => {
 
   // Supplementaries
   event.shaped('supplementaries:quiver', [
-    ' SL',
-    'SLL',
-    'LL '
+    'L L',
+    'LSL',
+    ' L '
   ], {
     S: '#forge:string',
     L: '#forge:leather'
