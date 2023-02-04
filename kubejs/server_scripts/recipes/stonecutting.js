@@ -44,7 +44,9 @@ ServerEvents.recipes(event => {
   scConvert(['create:limestone', 'darkerdepths:limestone', 'quark:limestone']);
   scConvert(['darkerdepths:shale', 'quark:shale']);
 
-  
+  event.stonecutting('darkerdepths:stone_brick_pillar', 'minecraft:stone');
+  event.stonecutting('darkerdepths:stone_brick_pillar', 'minecraft:stone_bricks');
+
   event.stonecutting('darkerdepths:petrified_vertical_slab x2', 'darkerdepths:petrified_planks');
 
   event.stonecutting('darkerdepths:aridrock_vertical_slab x2', 'darkerdepths:aridrock');
