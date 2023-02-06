@@ -44,26 +44,26 @@ ServerEvents.recipes(event => {
   // event.recipes.botania.terra_plate("minecraft:acacia_boat", ["minecraft:acacia_button", "minecraft:acacia_door"], 5000000);
 
   // Orechid - Stone
-  //event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('immersiveengineering:ore_nickel', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('immersiveengineering:ore_silver', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('mekanism:fluorite_ore', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('mekanism:lead_ore', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('mekanism:osmium_ore', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('mekanism:tin_ore', 'minecraft:stone', 1);
-  //event.recipes.botania.orechid('mekanism:uranium_ore', 'minecraft:stone', 1);
+  event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 7000);
+  event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 2000);
+  event.recipes.botania.orechid('immersiveengineering:ore_nickel', 'minecraft:stone', 1500);
+  event.recipes.botania.orechid('immersiveengineering:ore_silver', 'minecraft:stone', 3000);
+  event.recipes.botania.orechid('mekanism:fluorite_ore', 'minecraft:stone', 5000);
+  event.recipes.botania.orechid('mekanism:lead_ore', 'minecraft:stone', 2000);
+  event.recipes.botania.orechid('mekanism:osmium_ore', 'minecraft:stone', 18000);
+  event.recipes.botania.orechid('mekanism:tin_ore', 'minecraft:stone', 4000);
+  event.recipes.botania.orechid('mekanism:uranium_ore', 'minecraft:stone', 1500);
 
   // Orechid - Deepslate
-  //event.recipes.botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('immersiveengineering:deepslate_ore_aluminum', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('immersiveengineering:deepslate_ore_nickel', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('immersiveengineering:deepslate_ore_silver', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('mekanism:deepslate_fluorite_ore', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('mekanism:deepslate_lead_ore', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('mekanism:deepslate_osmium_ore', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('mekanism:deepslate_tin_ore', 'minecraft:deepslate', 1);
-  //event.recipes.botania.orechid('mekanism:deepslate_uranium_ore', 'minecraft:deepslate', 1);
+  event.recipes.botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate', 150);
+  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_aluminum', 'minecraft:deepslate', 75);
+  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_nickel', 'minecraft:deepslate', 100);
+  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_silver', 'minecraft:deepslate', 125);
+  event.recipes.botania.orechid('mekanism:deepslate_fluorite_ore', 'minecraft:deepslate', 100);
+  event.recipes.botania.orechid('mekanism:deepslate_lead_ore', 'minecraft:deepslate', 100);
+  event.recipes.botania.orechid('mekanism:deepslate_osmium_ore', 'minecraft:deepslate', 180);
+  event.recipes.botania.orechid('mekanism:deepslate_tin_ore', 'minecraft:deepslate', 150);
+  event.recipes.botania.orechid('mekanism:deepslate_uranium_ore', 'minecraft:deepslate', 150);
   
 
   // Orechid - Netherrack
