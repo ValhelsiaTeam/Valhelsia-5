@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
 
   // Orechid - Stone
   event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 7000);
+  event.recipes.botania.orechid('forbidden_arcanus:arcane_crystal_ore', 'minecraft:stone', 1000);
   event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 4000);
   event.recipes.botania.orechid('immersiveengineering:ore_nickel', 'minecraft:stone', 1500);
   event.recipes.botania.orechid('immersiveengineering:ore_silver', 'minecraft:stone', 3000);
@@ -56,9 +57,11 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('mekanism:osmium_ore', 'minecraft:stone', 18000);
   event.recipes.botania.orechid('mekanism:tin_ore', 'minecraft:stone', 4000);
   event.recipes.botania.orechid('mekanism:uranium_ore', 'minecraft:stone', 1500);
+  event.recipes.botania.orechid('sullysmod:jade_ore', 'minecraft:stone', 1000);
 
   // Orechid - Deepslate
   event.recipes.botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate', 150);
+  event.recipes.botania.orechid('forbidden_arcanus:deepslate_arcane_crystal_ore', 'minecraft:deepslate', 75);
   event.recipes.botania.orechid('immersiveengineering:deepslate_ore_aluminum', 'minecraft:deepslate', 75);
   event.recipes.botania.orechid('immersiveengineering:deepslate_ore_nickel', 'minecraft:deepslate', 100);
   event.recipes.botania.orechid('immersiveengineering:deepslate_ore_silver', 'minecraft:deepslate', 125);
@@ -67,6 +70,7 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('mekanism:deepslate_osmium_ore', 'minecraft:deepslate', 180);
   event.recipes.botania.orechid('mekanism:deepslate_tin_ore', 'minecraft:deepslate', 150);
   event.recipes.botania.orechid('mekanism:deepslate_uranium_ore', 'minecraft:deepslate', 150);
+  event.recipes.botania.orechid('sullysmod:deepslate_jade_ore', 'minecraft:deepslate', 50);
   
 
   // Orechid - Netherrack
