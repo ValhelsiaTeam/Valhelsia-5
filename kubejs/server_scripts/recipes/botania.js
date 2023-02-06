@@ -17,19 +17,21 @@
 ServerEvents.recipes(event => {
 
   // Mana Infusion
-  // event.recipes.botania.mana_infusion("minecraft:acacia_boat", "minecraft:acacia_door", 200);
+  //event.recipes.botania.mana_infusion('output_here', 'input_here', 200);
 
   // Mana Infusion - Alchemy
-  // event.recipes.botania.mana_infusion("minecraft:acacia_boat", "minecraft:acacia_door", 400, 'botania:alchemy_catalyst');
+  event.recipes.botania.mana_infusion('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:alchemy_catalyst');
+  event.recipes.botania.mana_infusion('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:alchemy_catalyst');
 
   // Mana Infusion - Conjuration
-  // event.recipes.botania.mana_infusion("minecraft:acacia_boat", "minecraft:acacia_door", 2000, 'botania:conjuration_catalyst');
+  event.recipes.botania.mana_infusion('2x minecraft:nether_sprouts', 'minecraft:nether_sprouts', 'botania:conjuration_catalyst');
 
   // Elven Trade
   // event.recipes.botania.elven_trade(["minecraft:acacia_boat"], "minecraft:diamond");
 
   // Pure Daisy
-  // event.recipes.botania.pure_daisy("minecraft:acacia_button", "minecraft:stone");
+  event.recipes.botania.pure_daisy('forbidden_arcanus:soulless_sand', 'minecraft:soul_sand');
+  event.recipes.botania.pure_daisy('minecraft:sand', 'forbidden_arcanus:soulless_sand');
 
   // Brewing (Note: Needs a corresponding entry in a startup script too!)
   // event.recipes.botania.brew("kubejs:torrent", ["minecraft:acacia_boat"]);
