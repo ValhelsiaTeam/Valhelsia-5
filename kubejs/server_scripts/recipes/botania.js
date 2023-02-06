@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
 
   // Orechid - Stone
   event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 7000);
-  event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 2000);
+  event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 4000);
   event.recipes.botania.orechid('immersiveengineering:ore_nickel', 'minecraft:stone', 1500);
   event.recipes.botania.orechid('immersiveengineering:ore_silver', 'minecraft:stone', 3000);
   event.recipes.botania.orechid('mekanism:fluorite_ore', 'minecraft:stone', 5000);
