@@ -24,7 +24,7 @@ ServerEvents.recipes(event => {
   event.recipes.botania.mana_infusion('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:alchemy_catalyst');
 
   // Mana Infusion - Conjuration
-  event.recipes.botania.mana_infusion('2x minecraft:nether_sprouts', 'minecraft:nether_sprouts', 'botania:conjuration_catalyst');
+  event.recipes.botania.mana_infusion('2x minecraft:nether_sprouts', 'minecraft:nether_sprouts', 800, 'botania:conjuration_catalyst');
 
   // Elven Trade
   // event.recipes.botania.elven_trade(['output_here'], 'input_here');
