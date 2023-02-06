@@ -35,6 +35,9 @@ ServerEvents.recipes(event => {
     'ars_nouveau:apprentice_spell_book_upgrade', // Replaced with a different recipe.
     'ars_nouveau:archmage_spell_book_upgrade', // Replaced with a different recipe.
 
+    // Botania
+    'botania:pure_daisy/sand', // Now made from Soulless Sand, which is made from Soul Sand.
+
     // Blue Skies
     'blue_skies:cake_compat', // Replaced with a different recipe.
 
