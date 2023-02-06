@@ -27,23 +27,23 @@ ServerEvents.recipes(event => {
   event.recipes.botania.mana_infusion('2x minecraft:nether_sprouts', 'minecraft:nether_sprouts', 'botania:conjuration_catalyst');
 
   // Elven Trade
-  // event.recipes.botania.elven_trade(["minecraft:acacia_boat"], "minecraft:diamond");
+  // event.recipes.botania.elven_trade(['output_here'], 'input_here');
 
   // Pure Daisy
   event.recipes.botania.pure_daisy('forbidden_arcanus:soulless_sand', 'minecraft:soul_sand');
   event.recipes.botania.pure_daisy('minecraft:sand', 'forbidden_arcanus:soulless_sand');
 
   // Brewing (Note: Needs a corresponding entry in a startup script too!)
-  // event.recipes.botania.brew("kubejs:torrent", ["minecraft:acacia_boat"]);
+  // event.recipes.botania.brew('kubejs:torrent', ['input_here']);
 
   // Petal Apothecary
-  // event.recipes.botania.petal_apothecary("minecraft:acacia_boat", ["minecraft:acacia_button"]);
+  // event.recipes.botania.petal_apothecary('output_here', ['input_here']);
 
   // Runic Altar
-  // event.recipes.botania.runic_altar("minecraft:acacia_boat", ["minecraft:acacia_button", "minecraft:acacia_door"], 5000);
+  // event.recipes.botania.runic_altar('output_here', ['input_1', 'input_2'], 5000);
 
   // Terrestrial Agglomoration Plate
-  // event.recipes.botania.terra_plate("minecraft:acacia_boat", ["minecraft:acacia_button", "minecraft:acacia_door"], 5000000);
+  // event.recipes.botania.terra_plate('output_here', ['input_1', 'input_2'], 5000000);
 
   // Orechid - Stone
   event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 7000);
@@ -74,5 +74,5 @@ ServerEvents.recipes(event => {
   // Orechid - Modded Stone
 
   // Marimorphosis
-  // event.recipes.botania.marimorphosis("minecraft:acacia_door", "minecraft:acacia_fence_gate", 1, ["plains"], 10);
+  // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
 });
