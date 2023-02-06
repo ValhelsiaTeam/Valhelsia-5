@@ -47,33 +47,33 @@ ServerEvents.recipes(event => {
   event.stonecutting('darkerdepths:stone_brick_pillar', 'minecraft:stone');
   event.stonecutting('darkerdepths:stone_brick_pillar', 'minecraft:stone_bricks');
 
-  event.stonecutting('darkerdepths:petrified_vertical_slab x2', 'darkerdepths:petrified_planks');
+  event.stonecutting('2x darkerdepths:petrified_vertical_slab', 'darkerdepths:petrified_planks');
 
-  event.stonecutting('darkerdepths:aridrock_vertical_slab x2', 'darkerdepths:aridrock');
-  event.stonecutting('darkerdepths:aridrock_bricks_vertical_slab x2', 'darkerdepths:aridrock');
-  event.stonecutting('darkerdepths:aridrock_bricks_vertical_slab x2', 'darkerdepths:polished_aridrock');
-  event.stonecutting('darkerdepths:aridrock_bricks_vertical_slab x2', 'darkerdepths:aridrock_bricks');
-  event.stonecutting('darkerdepths:polished_aridrock_vertical_slab x2', 'darkerdepths:aridrock');
-  event.stonecutting('darkerdepths:polished_aridrock_vertical_slab x2', 'darkerdepths:polished_aridrock');
+  event.stonecutting('2x darkerdepths:aridrock_vertical_slab', 'darkerdepths:aridrock');
+  event.stonecutting('2x darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock');
+  event.stonecutting('2x darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:polished_aridrock');
+  event.stonecutting('2x darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock_bricks');
+  event.stonecutting('2x darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:aridrock');
+  event.stonecutting('2x darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:polished_aridrock');
 
-  event.stonecutting('darkerdepths:grimestone_vertical_slab x2', 'darkerdepths:grimestone');
-  event.stonecutting('darkerdepths:grimestone_bricks_vertical_slab x2', 'darkerdepths:grimestone');
-  event.stonecutting('darkerdepths:grimestone_bricks_vertical_slab x2', 'darkerdepths:polished_grimestone');
-  event.stonecutting('darkerdepths:grimestone_bricks_vertical_slab x2', 'darkerdepths:grimestone_bricks');
-  event.stonecutting('darkerdepths:polished_grimestone_vertical_slab x2', 'darkerdepths:grimestone');
-  event.stonecutting('darkerdepths:polished_grimestone_vertical_slab x2', 'darkerdepths:polished_grimestone');
+  event.stonecutting('2x darkerdepths:grimestone_vertical_slab', 'darkerdepths:grimestone');
+  event.stonecutting('2x darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone');
+  event.stonecutting('2x darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:polished_grimestone');
+  event.stonecutting('2x darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone_bricks');
+  event.stonecutting('2x darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:grimestone');
+  event.stonecutting('2x darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:polished_grimestone');
   
-  event.stonecutting('darkerdepths:limestone_vertical_slab x2', 'darkerdepths:limestone');
-  event.stonecutting('darkerdepths:limestone_bricks_vertical_slab x2', 'darkerdepths:limestone');
-  event.stonecutting('darkerdepths:limestone_bricks_vertical_slab x2', 'darkerdepths:polished_limestone');
-  event.stonecutting('darkerdepths:limestone_bricks_vertical_slab x2', 'darkerdepths:limestone_bricks');
-  event.stonecutting('darkerdepths:polished_limestone_vertical_slab x2', 'darkerdepths:limestone');
-  event.stonecutting('darkerdepths:polished_limestone_vertical_slab x2', 'darkerdepths:polished_limestone');
+  event.stonecutting('2x darkerdepths:limestone_vertical_slab', 'darkerdepths:limestone');
+  event.stonecutting('2x darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone');
+  event.stonecutting('2x darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:polished_limestone');
+  event.stonecutting('2x darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone_bricks');
+  event.stonecutting('2x darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:limestone');
+  event.stonecutting('2x darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:polished_limestone');
 
-  event.stonecutting('darkerdepths:shale_vertical_slab x2', 'darkerdepths:shale');
-  event.stonecutting('darkerdepths:shale_bricks_vertical_slab x2', 'darkerdepths:shale');
-  event.stonecutting('darkerdepths:shale_bricks_vertical_slab x2', 'darkerdepths:polished_shale');
-  event.stonecutting('darkerdepths:shale_bricks_vertical_slab x2', 'darkerdepths:shale_bricks');
-  event.stonecutting('darkerdepths:polished_shale_vertical_slab x2', 'darkerdepths:shale');
-  event.stonecutting('darkerdepths:polished_shale_vertical_slab x2', 'darkerdepths:polished_shale');
+  event.stonecutting('2x darkerdepths:shale_vertical_slab', 'darkerdepths:shale');
+  event.stonecutting('2x darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale');
+  event.stonecutting('2x darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:polished_shale');
+  event.stonecutting('2x darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks');
+  event.stonecutting('2x darkerdepths:polished_shale_vertical_slab', 'darkerdepths:shale');
+  event.stonecutting('2x darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale');
 });
