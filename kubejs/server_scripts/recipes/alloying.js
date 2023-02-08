@@ -58,23 +58,20 @@ ServerEvents.recipes(event => {
   alloy('minecraft:netherite_ingot', ['4x minecraft:netherite_scrap', '4x #forge:ingots/gold']);
 
   // Create
-  // Temp disabled until Create updates to 1.19.1
-  //alloy('2x create:brass_ingot', ['#forge:ingots/copper', '#forge:ingots/zinc']);
+  alloy('2x create:brass_ingot', ['#forge:ingots/copper', '#forge:ingots/zinc']);
   // TODO: Look through Create mixing recipes - there's plenty more that should be removed and moved here
   //       in order to add compatibility with other alloying methods.
   
   // Forbidden and Arcanus
-  // Temp disabled until F&A updates to 1.19.1
-  //alloy('forbidden_arcanus:obsidian_ingot', ['4x #forge:dusts/obsidian', '4x #forge:nuggets/iron']);
-  //alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
-  //alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
+  alloy('forbidden_arcanus:obsidian_ingot', ['4x #forge:dusts/obsidian', '4x #forge:nuggets/iron']);
+  alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
+  alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
   
   // Immersive Engineering
-  // Temp disabled until IE updates to 1.19.1
-  //alloy('2x immersiveengineering:ingot_constantan', ['#forge:ingots/copper', '#forge:ingots/nickel']);
-  //alloy('2x immersiveengineering:ingot_constantan', ['#forge:dusts/copper', '#forge:dusts/nickel']);
-  //alloy('2x immersiveengineering:ingot_electrum', ['#forge:ingots/gold', '#forge:ingots/silver']);
-  //alloy('2x immersiveengineering:ingot_electrum', ['#forge:dusts/gold', '#forge:dusts/silver']);
+  alloy('2x immersiveengineering:ingot_constantan', ['#forge:ingots/copper', '#forge:ingots/nickel']);
+  alloy('2x immersiveengineering:ingot_constantan', ['#forge:dusts/copper', '#forge:dusts/nickel']);
+  alloy('2x immersiveengineering:ingot_electrum', ['#forge:ingots/gold', '#forge:ingots/silver']);
+  alloy('2x immersiveengineering:ingot_electrum', ['#forge:dusts/gold', '#forge:dusts/silver']);
 
   // Mekanism
   alloy('4x mekanism:ingot_bronze', ['3x #forge:ingots/copper', '#forge:ingots/tin']);
@@ -83,5 +80,9 @@ ServerEvents.recipes(event => {
   alloy('mekanism:alloy_infused', ['#forge:ingots/iron', '#forge:dusts/redstone']);
   alloy('mekanism:alloy_reinforced', ['#forge:alloys/advanced', '2x #forge:dusts/diamond']);
   alloy('mekanism:alloy_atomic', ['#forge:alloys/elite', '4x #forge:dusts/refined_obsidian']);
+
+  // More Minecarts
+  alloy('moreminecarts:silica_steel', ['#forge:ingots/steel', '#forge:gems/quartz']);
+  alloy('moreminecarts:silica_steel', ['#forge:dusts/steel', '#forge:gems/quartz']);
 
 });
