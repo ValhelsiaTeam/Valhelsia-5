@@ -58,7 +58,7 @@ ServerEvents.recipes(event => {
 
   event.recipes.botania.mana_infusion('2x forbidden_arcanus:petrified_root', 'forbidden_arcanus:petrified_root', 1000, 'botania:conjuration_catalyst');
 
-  event.recipes.botania.mana_infusion('2x twilightforest:root_strands', 'twilightforest:root_strands', 800, 'botania:conjuration_catalyst');
+  event.recipes.botania.mana_infusion('2x twilightforest:root_strand', 'twilightforest:root_strand', 800, 'botania:conjuration_catalyst');
 
   // Elven Trade
   // event.recipes.botania.elven_trade(['output_here'], 'input_here');
