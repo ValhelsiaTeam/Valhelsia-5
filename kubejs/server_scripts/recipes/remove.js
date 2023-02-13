@@ -62,6 +62,16 @@ ServerEvents.recipes(event => {
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
     'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
     'immersiveengineering:crafting/ingot_steel_to_storage_steel', // Redundant.
+    'immersiveengineering:crafting/ingot_lead_to_storage_lead', // Redundant.
+    'immersiveengineering:crafting/ingot_uranium_to_storage_uranium', // Redundant.
+    'immersiveengineering:crafting/nugget_steel_to_steel_ingot', // Redundant.
+    'immersiveengineering:crafting/nugget_copper_to_copper_ingot', // Redundant.
+    'immersiveengineering:crafting/nugget_lead_to_lead_ingot', // Redundant.
+    'immersiveengineering:crafting/nugget_uranium_to_uranium_ingot', // Redundant.
+    'immersiveengineering:crafting/ingot_steel_to_nugget_steel', // Redundant.
+    'immersiveengineering:crafting/ingot_copper_to_nugget_copper', // Redundant.
+    'immersiveengineering:crafting/ingot_lead_to_nugget_lead', // Redundant.
+    'immersiveengineering:crafting/ingot_uranium_to_nugget_uranium', // Redundant.
 
     // Mekanism
     'mekanism:charcoal',
