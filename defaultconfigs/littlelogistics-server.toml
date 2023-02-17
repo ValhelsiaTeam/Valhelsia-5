@@ -1,0 +1,85 @@
+
+["chunk management - requires restart"]
+	#By default, little logistics allows players to register vehicles that will be loaded automatically. This is not regular chunkloading, no other ticking will happen in this chunks and no surrounding chunks will be loaded. A very minimal number of chunks will be loaded as "border chunks" where only LL entities are active by default.
+	#Chunkloading level, from low perf impact to high. 0: no ticking (except LL, recommended), 1: tile entity ticking, 2: entity ticking (regular).
+	#Range: 0 ~ 2
+	chunkLoadingLevel = 2
+	#Completely disable the chunk management system.
+	disableChunkManagement = false
+	#Maximum number of vehicles (barges/cars don't count, only Tugs/Locos) the player is able to register. Lowering this number will not de-register vehicles but will prevent the player from registering more.
+	#Range: 0 ~ 1000
+	maxVehiclesPerPlayer = 100
+	#Load vehicles even when the player is offline
+	offlineLoading = false
+
+[vessel]
+
+	[vessel.general]
+		#Damage sources that vessels are invulnerable to
+		vesselInvuln = ["create.mechanical_saw", "create.mechanical_drill"]
+
+	[vessel.barge]
+		#Modify the chance of using the treasure loot table with the auto fishing barge, other factors such as depth and overfishing still play a role. Default 0.02.
+		fishingTreasureChance = 0.04
+		#Loot table to use when fishing barge catches a fish. Change to 'minecraft:gameplay/fishing' if some modded fish aren't being caught. Defaults to 'minecraft:gameplay/fishing/fish'.
+		fishingLootTable = "minecraft:gameplay/fishing"
+		#Cooldown before each fishing attempt
+		#Range: 0 ~ 200000
+		fishingCooldown = 40
+
+	[vessel.tug]
+		#Base speed of the tugs. Default 2.4.
+		#Range: 0.1 ~ 10.0
+		tugBaseSpeed = 2.4
+		#Multiplier for tug pathfinding search space, high values may impact performance. Default 1.
+		#Range: 1 ~ 10
+		tugPathfindMult = 1
+		#Increases the burn duration of Steam tug fuel by N times when compared to furnace, must be an integer >= 1. Default 4.
+		#Range: > 1
+		steamTugFuelMultiplier = 4
+		#Base maximum capacity of the Energy tug in FE, must be an integer >= 1. Default 10000.
+		#Range: > 1
+		energyTugBaseCapacity = 10000
+		#Base energy usage of the Energy tug in FE/tick, must be an integer >= 1. Default 1.
+		#Range: > 1
+		energyTugBaseEnergyUsage = 1
+		#Base max charge rate of the Energy tug in FE/tick, must be an integer >= 1. Default 100.
+		#Range: > 1
+		energyTugBaseMaxChargeRate = 100
+
+[dock]
+
+	[dock.charger]
+		#Base max capacity of the Vessel Charger in FE, must be an integer >= 1. Default 10000.
+		#Range: > 1
+		vesselChargerBaseCapacity = 10000
+		#Base max transfer rate of the Vessel Charger in FE/tick, must be an integer >= 1. Default 100.
+		#Range: > 1
+		vesselChargerBaseMaxTransfer = 100
+
+[train]
+
+	[train.general]
+		#Max speed that trains can be accelerated to. High speed may cause chunk loading lag or issues, not advised for servers or packs. Default 0.25, max is 1
+		#Range: 0.01 ~ 1.0
+		trainMaxSpeed = 0.6
+		#Damage sources that trains are invulnerable to
+		trainInvuln = ["create.mechanical_saw", "create.mechanical_drill"]
+
+	[train.locomotive]
+		#Locomotive base speed. High speed may cause chunk loading lag or issues, not advised for servers or packs. Default 0.2, max is 0.9
+		#Range: 0.01 ~ 0.9
+		locoBaseSpeed = 0.5
+		#Increases the burn duration of Steam locomotive fuel by N times when compared to furnace, must be an integer >= 1. Default 4.
+		#Range: > 1
+		steamLocoFuelMultiplier = 4
+		#Base maximum capacity of the Energy locomotive in FE, must be an integer >= 1. Default 10000.
+		#Range: > 1
+		energyLocoBaseCapacity = 10000
+		#Base energy usage of the Energy locomotive in FE/tick, must be an integer >= 1. Default 1.
+		#Range: > 1
+		energyLocoBaseEnergyUsage = 1
+		#Base max charge rate of the Energy locomotive in FE/tick, must be an integer >= 1. Default 100.
+		#Range: > 1
+		energyLocoBaseMaxChargeRate = 100
+
