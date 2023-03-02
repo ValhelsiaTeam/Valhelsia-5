@@ -31,4 +31,8 @@ ItemEvents.tooltip(event => {
   };
 
   addTooltip('sullysmod:polished_jade', 'valhelsia.tooltip.how_get_jade');
+  addTooltip('sophisticatedbackpacks:backpack', 'valhelsia.tooltip.backpack');
+  addTooltip('sophisticatedbackpacks:gold_backpack', 'valhelsia.tooltip.gold_backpack');
+  addTooltip('sophisticatedbackpacks:diamond_backpack', 'valhelsia.tooltip.diamond_backpack');
+  addTooltip('sophisticatedbackpacks:netherite_backpack', 'valhelsia.tooltip.netherite_backpack');
 })
