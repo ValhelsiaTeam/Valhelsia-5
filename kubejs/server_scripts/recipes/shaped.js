@@ -211,6 +211,7 @@ ServerEvents.recipes(event => {
 
   // Immersive Engineering
   shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
+  shaped3x3('immersiveengineering:storage_steel', '#forge:ingots/steel');
 
   // Sophisticated Backpacks
   event.shaped('sophisticatedbackpacks:backpack', [
