@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
         tag: 'forge:tools/axes'
       },
       result: [
-        Item.of(output).toResultJson(),
+        Item.of(output).toJson(),
         {item: 'farmersdelight:tree_bark'}
       ],
       sound: 'minecraft:item.axe.strip'
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
         tag: 'forge:tools/axes'
       },
       result: [
-        Item.of(output).toResultJson()
+        Item.of(output).toJson()
       ]
     });
   };
@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'farmersdelight:cooking',
       ingredients: input,
-      result: Item.of(output).toResultJson(),
+      result: Item.of(output).toJson(),
       container: Item.of(container).toJson(),
       experience: 0.2,
       cookingtime: 200
