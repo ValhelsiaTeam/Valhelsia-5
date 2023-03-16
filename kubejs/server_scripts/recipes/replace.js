@@ -93,4 +93,5 @@ ServerEvents.recipes(event => {
   // No idea why this is replacing a bunch of things that *aren't* in the '#forge:chests' tag.
   //replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
   replaceInputID('create:crafting/kinetics/rope_pulley', '#minecraft:wool', '#valhelsia:ropes'); // Use rope instead of wool.
+  replaceInputID('tetra:modular_toolbelt', 'minecraft:string', '#valhelsia:ropes'); // Tetra Rope Toolbelt - now with rope!
 });
