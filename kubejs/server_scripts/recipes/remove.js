@@ -121,6 +121,10 @@ ServerEvents.recipes(event => {
 
     // Twilight Forest
     'twilightforest:uncrafting_table', // Removed entirely.
+
+    // Waystones
+    'waystones:warp_scroll', // Replaced with a different recipe.
+    'waystones:warp_stone', // Replaced with a different recipe.
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.

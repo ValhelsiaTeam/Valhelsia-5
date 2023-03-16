@@ -235,4 +235,26 @@ ServerEvents.recipes(event => {
     L: '#forge:leather'
   });
 
+  // Waystones
+  event.shaped('waystones:warp_scroll', [
+    'NWN',
+    'NEN',
+    'PPP'
+  ], {
+    N: '#forge:nuggets/gold',
+    W: '#forge:dusts/warp',
+    E: '#forge:ender_pearls',
+    P: '#forge:paper'
+  }).id('valhelsia:warp_scroll');
+
+  event.shaped('waystones:warp_stone', [
+    'WPW',
+    'PEP',
+    'WPW'
+  ], {
+    W: '#forge:dusts/warp',
+    P: '#forge:ender_pearls',
+    E: '#forge:gems/emerald'
+  }).id('valhelsia:warp_stone');
+
 });
