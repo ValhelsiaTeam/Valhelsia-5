@@ -118,7 +118,7 @@ ServerEvents.commandRegistry(event => {
           return 1;
         })
       )
-    );
+  );
 });
 
 /** @type {?Object} */
