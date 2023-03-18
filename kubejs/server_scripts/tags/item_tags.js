@@ -67,6 +67,11 @@ ServerEvents.tags('item', event => {
   ]);
 
   // -----Dusts -----
+  event.add('forge:dusts', [
+    'botania:pixie_dust',
+    'waystones:warp_dust',
+  ]);
+
   event.add('forge:dusts/pixie', [
     'botania:pixie_dust',
   ]);
@@ -74,10 +79,4 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts/warp', [
     'waystones:warp_dust',
   ]);
-
-  event.add('forge:dusts', [
-    'botania:pixie_dust',
-    'waystones:warp_dust',
-  ]);
-
 });

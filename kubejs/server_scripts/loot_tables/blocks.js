@@ -19,6 +19,6 @@ ServerEvents.blockLootTables(event => {
     table.addPool(pool => {
       pool.rolls = 4
       pool.addItem('supplementaries:ash')
-    })
-  })
-})
+    });
+  });
+});

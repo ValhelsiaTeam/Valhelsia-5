@@ -15,4 +15,5 @@
  * @see block_tags.js
  */
 ServerEvents.tags('block', event => {
+  
 });
