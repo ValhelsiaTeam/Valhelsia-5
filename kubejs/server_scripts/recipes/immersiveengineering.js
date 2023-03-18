@@ -17,15 +17,61 @@
 ServerEvents.recipes(event => {
 
   /**
-   * Creates a Hammer Crushing recipe for Immersive Engineering's Hammer.
-   * @param {string|Item} output Output item(s).
-   * @param {(string|Ingredient)} input Input ingredient(s).
+   * Creates a new Hammer Crushing recipe for use with the Engineer's Hammer.
+   * @param {(!string|!Item)} output Output item(s).
+   * @param {(!string|!Ingredient)} input Input ingredient(s).
    */
   const hammer_crush = (output, input) => {
     event.custom({
       type: 'immersiveengineering:hammer_crushing',
       input: Ingredient.of(input).toJson(),
       result: Item.of(output).toJson()
+    });
+  };
+
+  /**
+   * Creates a new Fermenter recipe.
+   * @param {!string} fluid The ID of the fluid to output.
+   * @param {(!string|!Ingredient)} input The input item to ferment.
+   * @param {!number} amount The quantity of the fluid to create, per operation, in millibuckets.
+   * @param {number} energy The energy (in FE) to use, per operation. Defaults to 6400 if omitted.
+   */
+  const fermenter = (fluid, input, amount, energy) => {
+    if (typeof energy == 'undefined') {
+      energy = 6400;
+    }
+
+    event.custom({
+        type: 'immersiveengineering:fermenter',
+        fluid: {
+          fluid: fluid,
+          amount: amount
+        },
+        input: Ingredient.of(input).toJson(),
+        energy: energy
+    });
+  };
+
+  /**
+   * Creates a new Squeezer recipe.
+   * @param {!string} fluid The ID of the fluid to output.
+   * @param {(!string|!Ingredient)} input The input item to squeeze.
+   * @param {!number} amount The quantity of the fluid to create, per operation, in millibuckets.
+   * @param {number} energy The energy (in FE) to use, per operation. Defaults to 6400 if omitted.
+   */
+  const squeezer = (fluid, input, amount, energy) => {
+    if (typeof energy == 'undefined') {
+      energy = 6400;
+    }
+    
+    event.custom({
+        type: 'immersiveengineering:squeezer',
+        fluid: {
+          fluid: fluid,
+          amount: amount
+        },
+        input: Ingredient.of(input).toJson(),
+        energy: energy
     });
   };
 
