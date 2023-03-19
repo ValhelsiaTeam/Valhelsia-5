@@ -40,7 +40,16 @@ ServerEvents.recipes(event => {
   replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/deorum');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
+
+  // Rose Quartz Unification
+  replaceInput('biomesoplenty:rose_quartz_shard', '#valhelsia:rose_quartz');
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
+  replaceInput('create:rose_quartz', '#valhelsia:rose_quartz');
+  
+  
+  // Rope Unification
+  replaceInput('farmersdelight:rope', '#valhelsia:ropes');
+  replaceInput('supplementaries:rope', '#valhelsia:ropes');
   
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
@@ -88,6 +97,9 @@ ServerEvents.recipes(event => {
   replaceOutput('immersiveengineering:storage_steel', 'mekanism:block_steel');
   replaceOutput('immersiveengineering:storage_uranium', 'mekanism:block_uranium');
   replaceOutput('mekanism:block_charcoal', 'quark:charcoal_block');
+
+  // Misc
+  replaceOutput('farmersdelight:rope', 'supplementaries:rope');
 
   // ----- Gameplay Changes / Fixes -----
   // No idea why this is replacing a bunch of things that *aren't* in the '#forge:chests' tag.

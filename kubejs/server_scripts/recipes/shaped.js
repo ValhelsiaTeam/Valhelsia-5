@@ -149,11 +149,6 @@ ServerEvents.recipes(event => {
     F: 'minecraft:totem_of_undying',
   });
 
-  // Create
-
-  // Cave Enhancements
-  shaped2x2('biomesoplenty:rose_quartz_block', 'cave_enhancements:rose_quartz');
-
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
 

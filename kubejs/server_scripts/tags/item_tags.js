@@ -32,9 +32,9 @@ ServerEvents.tags('item', event => {
   ]);
 
   event.add('valhelsia:rose_quartz', [
+    'biomesoplenty:rose_quartz_shard',
     'cave_enhancements:rose_quartz',
     'create:rose_quartz',
-    'biomesoplenty:rose_quartz_shard',
   ]);
 
   // ----- Ores -----

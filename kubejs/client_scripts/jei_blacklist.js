@@ -124,6 +124,9 @@ JEIEvents.hideItems(event => {
     // Every Compat
     'everycomp:all_woods',
 
+    // Farmer's Delight
+    'farmersdelight:rope',
+
     // Immersive Engineering
     'immersiveengineering:ore_lead',
     'immersiveengineering:deepslate_ore_lead',
