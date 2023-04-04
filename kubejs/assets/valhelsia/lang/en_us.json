@@ -30,6 +30,29 @@
   "block.trolldom.air_shrine": "Air Shrine",
   "block.trolldom.earth_shrine": "Earth Shrine",
   "block.trolldom.fire_shrine": "Fire Shrine",
-  "block.trolldom.water_shrine": "Water Shrine"
+  "block.trolldom.water_shrine": "Water Shrine",
+
+  "valhelsia.comment.tips": "-----Entries for the Tips mod-----",
+  "valhelsia.tip.abacus": "Need to measure the distance between two blocks? Craft an Abacus to help!",
+  "valhelsia.tip.jade": "Looking for Jade? Search underground in Jungle biomes.",
+  "valhelsia.tip.carryon": "You can pick up many mobs and blocks by sneaking and right-clicking with both hands empty.",
+  "valhelsia.tip.magical_farmland": "Farmland can be upgraded to Magical Farmland by using Arcane Bone Meal on it.",
+  "valhelsia.tip.trowel": "The Trowel will place a random block from your hotbar when used, making it great for building with block variations!",
+  "valhelsia.tip.snail": "You can find snails in autumnal biomes, and they love all things mushroom!",
+  "valhelsia.tip.cockroach": "Did you know that cockroaches enjoy percussion and fancy hats?",
+  "valhelsia.tip.natures_compass": "Searching for a specific biome? Craft a Nature's Compass to find it!",
+  "valhelsia.tip.cardboard_box": "Want to move things such as spawners over a long distance? Box it up in a cardboard box for easy transport.",
+  "valhelsia.tip.tetra": "Craft a hammer from the Tetra mod and use it on a spare Crafting Table to start modifying your tools.",
+  "valhelsia.tip.gavel": "A Blacksmith Gavel gains an additional 30% chance to get extra items from breaking down ore. Stacks with Fortune!",
+  "valhelsia.tip.heat_generator": "A Heat Generator surrounded by lava is a very cheap passive energy source. You can also lava-log the generator itself!",
+  "valhelsia.tip.minecolonies_start": "If you're interested in starting MineColonies, search around for a large flat biome such as Plains for an easier time building.",
+  "valhelsia.tip.bears": "You can tame bears if you have both honey and salmon. They make for a sturdy mount that can even fight for you!",
+  "valhelsia.tip.animal_dictionary": "Take a look at the Animal Dictionary to learn more about much of the wildlife in the game.",
+  "valhelsia.tip.eternal_stella": "You can make your gear indestructible by using Eternal Stella on it.",
+  "valhelsia.tip.flower_forest": "If you find yourself in a Flower Forest, consider picking up Yellow Orchids and Aurum Saplings, both unique to the biome.",
+  "valhelsia.tip.xp_bottling": "Want to store experience levels easily? Right-click on an Enchanting Table with a Glass Bottle!",
+  "valhelsia.tip.black_hole": "A Black Hole can convert experience orbs into item form - great for a mob farm.",
+  "valhelsia.tip.tea": "Fancy a cup of tea? Try searching for a Swamp biome for the seeds.",
+  "valhelsia.tip.coffee": "Looking for a caffeine hit? Coffee beans grow naturally in Basalt Deltas in the Nether, and only grow on Basalt."
   
 }
