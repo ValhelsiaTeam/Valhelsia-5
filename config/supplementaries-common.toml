@@ -339,7 +339,7 @@
 		enabled = true
 		#bottling health cost
 		#Range: 0 ~ 20
-		cost = 2
+		cost = 0
 
 	[tweaks.map_tweaks]
 		#Cartographers will sell 'adventurer maps' that will lead to a random vanilla structure (choosen from a thought out preset list).
