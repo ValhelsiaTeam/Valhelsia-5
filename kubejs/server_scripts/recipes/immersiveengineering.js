@@ -75,7 +75,26 @@ ServerEvents.recipes(event => {
     });
   };
 
-  // Hammer Crushing
+  // Hammer Crushing Recipes
   hammer_crush('ae2:ender_dust', 'minecraft:ender_pearl');
+  
+  // Fermenter Recipes
+  fermenter('immersiveengineering:ethanol', '#forge:seeds/rice', 80);
+
+  // Squeezer Recipes 
+  squeezer('immersiveengineering:plantoil', '#forge:seeds/hemp', 120);
+  squeezer('immersiveengineering:plantoil', '#forge:seeds/flax', 100);
+
+  // Additional Blast Furnace Fuel Sources
+  event.recipes.immersiveengineeringBlastFurnaceFuel('#mekanism:enriched/carbon').time(600);
+
+  // Additional Fertilizers
+  event.recipes.immersiveengineeringFertilizer('minecolonies:compost').growthModifier(1.5);
+
+  // Cloche Recipes
+  // TODO
+
+  // Metal Press Recipes
+  // TODO
 
 });
