@@ -112,6 +112,9 @@ ServerEvents.recipes(event => {
     'mekanism:crushing/biofuel/lilac',
     'mekanism:crushing/biofuel/rose_bush',
     'mekanism:crushing/biofuel/peony',
+
+    // LUL
+    'mekanism:crushing/biofuel/melon_slice', // #blameurmet
     
     // TODO: More as tags are created / expanded.
     // See default recipes here: https://github.com/mekanism/Mekanism/tree/1.18.x/src/datagen/generated/mekanism/data/mekanism/recipes/crushing/biofuel
@@ -120,6 +123,7 @@ ServerEvents.recipes(event => {
   bioCrush('#minecraft:flowers', 5);
   bioCrush('#minecraft:saplings', 2);
   bioCrush('#forge:seeds', 2);
+  bioCrush('minecraft:melon_slice', 2); // #blameurmet
 
   // Coal Coke -> Carbon / Enriched Carbon
   event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
@@ -130,6 +134,7 @@ ServerEvents.recipes(event => {
   // TODO: Fungification
 
   // Mossification
-  // TODO: Mossification
+  mossify('darkerdepths:lush_aridrock', 'darkerdepths:aridrock');
+  mossify('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone');
   
 });

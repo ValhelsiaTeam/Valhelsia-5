@@ -78,5 +78,6 @@
   mill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
   mill('mekanism:sawdust', 'biomesoplenty:dead_branch');
   mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
+  mill('9x minecraft:bone_meal', 'blue_skies:azulfo_horn');
   mill('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
 });
