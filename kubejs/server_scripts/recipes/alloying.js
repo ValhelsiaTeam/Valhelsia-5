@@ -48,7 +48,11 @@ ServerEvents.recipes(event => {
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
   // For removal of alloying recipes with no replacement, use remove.js instead.
   [
-    // TODO: Remove unused alloying recipes here.
+    'create:mixing/brass_ingot',
+    'immersiveengineering:alloysmelter/brass',
+    'immersiveengineering:alloysmelter/bronze',
+    'immersiveengineering:alloysmelter/constantan',
+    'immersiveengineering:alloysmelter/electrum',
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Minecraft
