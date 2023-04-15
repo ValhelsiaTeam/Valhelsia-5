@@ -11,7 +11,7 @@
  * Includes a function to add sawing recipes to multiple mods at the same time.
  * Also replaces some existing sawing recipes in order to unify them between mods.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2023
  */
 
 /**
@@ -25,8 +25,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Ingredient)} input A single ingredient to saw.
    */
   const saw = (output, input) => {
-    // TODO: Uncomment below line once IE is updated to Minecraft 1.19.1.
-    //event.recipes.immersiveengineeringSawmill(output, input);
+    event.recipes.immersiveengineeringSawmill(output, input);
 
     // TODO: Expand this to allow secondary outputs and stripping.
     // For future reference:
