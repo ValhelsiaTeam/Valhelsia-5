@@ -29,21 +29,18 @@ ServerEvents.recipes(event => {
    */
   const alloy = (output, inputs) => {
     // Create
-    // TODO: Uncomment below once KubeJS Create updates.
-    //event.recipes.createMixing(output, inputs).heated();
+    event.recipes.createMixing(output, inputs).heated();
     // TODO: Consider adding a flag to switch between unheated, heated, superheated mixing recipes.
     //       For now, heated is a sensible default for most alloying.
 
     // Immersive Engineering & Mekanism
     if (inputs.length == 2) {
-      // TODO: Uncomment below once KubeJS IE updates.
-      // event.recipes.immersiveengineeringAlloy(output, inputs[0], inputs[1]);
+      event.recipes.immersiveengineeringAlloy(output, inputs[0], inputs[1]);
 
       // Note: The combiner is the closest thing in Mekanism to an alloy kiln, as it
       // takes two inputs and merges them into one output, consuming power to do so.
       // This also makes up for the potential removal of the default recipes of the combiner in the future.
-      // TODO: Uncomment below once KubeJS Mekanism updates.
-      // event.recipes.mekanismCombining(output, inputs[0], inputs[1]);
+      event.recipes.mekanismCombining(output, inputs[0], inputs[1]);
     }
   };
 
@@ -64,8 +61,8 @@ ServerEvents.recipes(event => {
   
   // Forbidden and Arcanus
   alloy('forbidden_arcanus:obsidian_ingot', ['4x #forge:dusts/obsidian', '4x #forge:nuggets/iron']);
-  alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
-  alloy('forbidden_arcanus:arcane_gold_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
+  //alloy('forbidden_arcanus:deorum_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
+  //alloy('forbidden_arcanus:deorum_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
   
   // Immersive Engineering
   alloy('2x immersiveengineering:ingot_constantan', ['#forge:ingots/copper', '#forge:ingots/nickel']);
