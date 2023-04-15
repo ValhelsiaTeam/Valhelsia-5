@@ -43,8 +43,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Ingredient)} input The item or item ID of the base block.
    */
   const mossify = (output, input) => {
-    // TODO: Uncomment below once KubeJS Mekanism has updated.
-    // event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:bio', 10);
+    event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:bio', 10);
   };
 
   /**
@@ -53,8 +52,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Ingredient)} input The item or item ID of the base block.
    */
   const fungify = (output, input) => {
-    // TODO: Uncomment below once KubeJS Mekanism has updated.
-    // event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:fungi', 10);
+    event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:fungi', 10);
   };
 
   /**
@@ -64,8 +62,7 @@ ServerEvents.recipes(event => {
    * @param {number} quantity The number of Bio Fuel items to output.
    */
   const bioCrush = (input, quantity) => {
-    // TODO: Uncomment below once KubeJS Mekanism has updated.
-    // event.recipes.mekanismCrushing(`${quantity}x mekanism:bio_fuel`, input);
+    event.recipes.mekanismCrushing(`${quantity}x mekanism:bio_fuel`, input);
   };
 
   // Bio Fuel
@@ -91,7 +88,7 @@ ServerEvents.recipes(event => {
   bioCrush('#forge:seeds', 2);
 
   // Coal Coke -> Carbon / Enriched Carbon
-  //event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
+  event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
 
