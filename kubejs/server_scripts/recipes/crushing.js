@@ -69,7 +69,14 @@
   mill('minecraft:soul_sand', 'minecraft:soul_soil');
   mill('minecraft:sand', '#forge:sandstone/colorless');
   mill('minecraft:soul_sand', '#forge:sandstone/soul');
+  mill('atmospheric:arid_sand', 'darkerdepths:aridrock');
+  mill('biomesoplenty:black_sand', 'minecraft:basalt');
   mill('blue_skies:crystal_sand', '#forge:sandstone/crystal');
   mill('blue_skies:midnight_sand', '#forge:sandstone/midnight');
   mill('forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
+
+  mill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
+  mill('mekanism:sawdust', 'biomesoplenty:dead_branch');
+  mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
+  mill('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
 });
