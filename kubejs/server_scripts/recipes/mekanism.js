@@ -131,6 +131,9 @@ ServerEvents.recipes(event => {
   event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
+  
+  // Enrichment
+  event.recipes.mekanismEnriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal');
 
   // Fungification
   // TODO: Fungification
@@ -138,5 +141,5 @@ ServerEvents.recipes(event => {
   // Mossification
   mossify('darkerdepths:lush_aridrock', 'darkerdepths:aridrock');
   mossify('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone');
-  
+
 });
