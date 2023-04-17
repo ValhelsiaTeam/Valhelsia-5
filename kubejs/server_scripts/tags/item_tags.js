@@ -79,4 +79,83 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts/warp', [
     'waystones:warp_dust',
   ]);
+
+   
+  // ----- Sandstone -----
+  event.add('forge:sandstone/colorless', [
+    'darkerdepths:cobbled_sandstone',
+    'quark:sandstone_bricks',
+  ]);
+
+  event.add('forge:sandstone/red', [
+    'darkerdepths:cobbled_red_sandstone',
+    'quark:red_sandstone_bricks',
+  ]);
+
+  event.add('forge:sandstone/arid', [
+    'atmospheric:arid_sandstone',
+    'atmospheric:smooth_arid_sandstone',
+    'atmospheric:cut_arid_sandstone',
+    'atmospheric:chiseled_arid_sandstone',
+    'atmospheric:arid_sandstone_bricks',
+  ]);
+
+  event.add('forge:sandstone/red_arid', [
+    'atmospheric:red_arid_sandstone',
+    'atmospheric:smooth_red_arid_sandstone',
+    'atmospheric:cut_red_arid_sandstone',
+    'atmospheric:chiseled_red_arid_sandstone',
+    'atmospheric:red_arid_sandstone_bricks',
+  ]);
+
+  event.add('forge:sandstone/orange', [
+    'biomesoplenty:orange_sandstone',
+    'biomesoplenty:smooth_orange_sandstone',
+    'biomesoplenty:cut_orange_sandstone',
+    'biomesoplenty:chiseled_orange_sandstone',
+  ]);
+
+  event.add('forge:sandstone/white', [
+    'biomesoplenty:white_sandstone',
+    'biomesoplenty:smooth_white_sandstone',
+    'biomesoplenty:cut_white_sandstone',
+    'biomesoplenty:chiseled_white_sandstone',
+  ]);
+
+  event.add('forge:sandstone/black', [
+    'biomesoplenty:black_sandstone',
+    'biomesoplenty:smooth_black_sandstone',
+    'biomesoplenty:cut_black_sandstone',
+    'biomesoplenty:chiseled_black_sandstone',
+  ]);
+
+  event.add('forge:sandstone/soul', [
+    'quark:soul_sandstone',
+    'quark:soul_sandstone_bricks',
+    'quark:smooth_soul_sandstone',
+    'quark:cut_soul_sandstone',
+    'quark:chiseled_soul_sandstone',
+  ]);
+
+  event.add('forge:sandstone/soulless', [
+    'forbidden_arcanus:soulless_sandstone',
+    'forbidden_arcanus:cut_soulless_sandstone',
+    'forbidden_arcanus:polished_soulless_sandstone',
+  ]);
+
+  event.add('forge:sandstone/crystal', [
+    'blue_skies:crystal_sandstone',
+    'blue_skies:chiseled_crystal_sandstone',
+    'blue_skies:cut_crystal_sandstone',
+    'blue_skies:smooth_crystal_sandstone',
+    'blue_skies:crystal_sandstone_pillar',
+  ]);
+  
+  event.add('forge:sandstone/midnight', [
+    'blue_skies:midnight_sandstone',
+    'blue_skies:chiseled_midnight_sandstone',
+    'blue_skies:cut_midnight_sandstone',
+    'blue_skies:smooth_midnight_sandstone',
+    'blue_skies:midnight_sandstone_pillar',
+  ]);
 });

@@ -75,6 +75,16 @@ ServerEvents.recipes(event => {
     });
   };
 
+  /**
+   * Creates an Immersive Engineering Unpacking Recipe.
+   * @param {(string|Item)} output Output item(s).
+   * @param {(string|Ingredient)} input Input item(s).
+   */
+  const unpack = (output, input) => {
+    event.recipes.immersiveengineeringMetalPress(output, input, 'immersiveengineering:mold_unpacking');
+  }
+
+
   // Hammer Crushing Recipes
   hammer_crush('ae2:ender_dust', 'minecraft:ender_pearl');
   
@@ -92,9 +102,22 @@ ServerEvents.recipes(event => {
   event.recipes.immersiveengineeringFertilizer('minecolonies:compost').growthModifier(1.5);
 
   // Cloche Recipes
-  // TODO
+  event.recipes.immersiveengineeringCloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', {type: 'crop', block: 'atmospheric:aloe_vera'}).time(800);
+  event.recipes.immersiveengineeringCloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush'}).time(560);
+  event.recipes.immersiveengineeringCloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800);
 
-  // Metal Press Recipes
-  // TODO
+  // Metal Press Unpacking Recipes
+  unpack('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block');
+  unpack('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
+  unpack('9x atmospheric:aloe_leaves', 'atmospheric:aloe_bundle');
+  unpack('9x atmospheric:barrel_cactus', 'atmospheric:barrel_cactus_batch');
+  unpack('9x atmospheric:passion_vine', 'atmospheric:passion_vine_bundle');
+  // unpack('9x autumnity:snail_slime', 'autumnity:snail_slime_block'); // TODO: Check new item ID for this, pretty sure it was renamed.
+  unpack('3x neapolitan:banana', 'neapolitan:banana_bunch');
+  unpack('9x neapolitan:banana_bunch', 'neapolitan:banana_crate');
+
+  // Other Metal Press Recipes
+  event.recipes.immersiveengineeringMetalPress('minecraft:blaze_rod', '6x minecraft:blaze_powder', 'immersiveengineering:mold_rod'); // Fixes dupe exploit.
+  event.recipes.immersiveengineeringMetalPress('upgrade_aquatic:prismarine_rod', '2x minecraft:prismarine_shard', 'immersiveengineering:mold_rod');
 
 });

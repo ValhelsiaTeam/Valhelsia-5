@@ -55,28 +55,38 @@
     'create:milling/granite',
     'create:milling/sandstone',
     'create:milling/terracotta',
+    'immersiveengineering:crusher/nether_wart',
     'mekanism:crushing/soul_soil_to_soul_sand',
+    // TODO: check for default bone meal + nether wart milling.
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Crushing
   crush('minecraft:red_sand', 'minecraft:granite');
+  crush('atmospheric:arid_sand', 'darkerdepths:aridrock');
+  crush('biomesoplenty:black_sand', 'minecraft:basalt');
 
   // Milling + Crushing
   // Sandstone, Terracotta, and other soft materials can be milled.
   // Harder materials (stone, ore) should only be crushable, not millable.
-  mill('minecraft:red_sand', '#forge:sandstone/red');
-  mill('minecraft:red_sand', 'minecraft:terracotta');
-  mill('minecraft:soul_sand', 'minecraft:soul_soil');
-  mill('minecraft:sand', '#forge:sandstone/colorless');
-  mill('minecraft:soul_sand', '#forge:sandstone/soul');
-  mill('atmospheric:arid_sand', 'darkerdepths:aridrock');
-  mill('biomesoplenty:black_sand', 'minecraft:basalt');
-  mill('blue_skies:crystal_sand', '#forge:sandstone/crystal');
-  mill('blue_skies:midnight_sand', '#forge:sandstone/midnight');
-  mill('forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
+  
+  // Sands
+  mill('2x minecraft:red_sand', '#forge:sandstone/red');
+  mill('2x minecraft:red_sand', 'minecraft:terracotta');
+  mill('2x minecraft:sand', '#forge:sandstone/colorless');
+  mill('1x minecraft:soul_sand', 'minecraft:soul_soil');
+  mill('2x minecraft:soul_sand', '#forge:sandstone/soul');
+  mill('2x biomesoplenty:black_sand', '#forge:sandstone/black');
+  mill('2x biomesoplenty:orange_sand', '#forge:sandstone/orange');
+  mill('2x biomesoplenty:white_sand', '#forge:sandstone/white');
+  mill('2x blue_skies:crystal_sand', '#forge:sandstone/crystal');
+  mill('2x blue_skies:midnight_sand', '#forge:sandstone/midnight');
+  mill('2x forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
 
-  mill('minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
-  mill('mekanism:sawdust', 'biomesoplenty:dead_branch');
+  // Other Milling
+  mill('9x minecraft:bone_meal', 'minecraft:bone_block');
+  mill('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
+  mill('1x minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
+  mill('1x mekanism:sawdust', 'biomesoplenty:dead_branch');
   mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
   mill('9x minecraft:bone_meal', 'blue_skies:azulfo_horn');
   mill('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
