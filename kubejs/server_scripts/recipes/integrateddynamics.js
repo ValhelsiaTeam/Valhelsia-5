@@ -84,5 +84,9 @@ ServerEvents.recipes(event => {
   };
 
   // Drying Basin Recipes
+  // TODO
+
+  // Squeezer Recipes
+  // TODO
 
 });
