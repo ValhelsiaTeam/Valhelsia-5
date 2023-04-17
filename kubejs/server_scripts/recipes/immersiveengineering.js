@@ -104,6 +104,7 @@ ServerEvents.recipes(event => {
   // Cloche Recipes
   event.recipes.immersiveengineeringCloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', {type: 'crop', block: 'atmospheric:aloe_vera'}).time(800);
   event.recipes.immersiveengineeringCloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', {type: 'crop', block: 'autumnity:foul_berry_bush'}).time(560);
+  event.recipes.immersiveengineeringCloche(['forbidden_arcanus:deorum_nugget'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:magical_farmland', {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).time(1600);
   event.recipes.immersiveengineeringCloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', {type: 'crop', block: 'neapolitan:strawberry_bush'}).time(800);
 
   // Metal Press Unpacking Recipes
