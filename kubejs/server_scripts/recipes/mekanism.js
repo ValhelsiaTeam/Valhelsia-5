@@ -78,6 +78,7 @@ ServerEvents.recipes(event => {
     'mekanism:crushing/biofuel/jungle_sapling',
     'mekanism:crushing/biofuel/acacia_sapling',
     'mekanism:crushing/biofuel/dark_oak_sapling',
+    'mekanism:crushing/biofuel/mangrove_sapling',
 
     // Leaves
     //'mekanism:crushing/biofuel/oak_leaves',
@@ -87,6 +88,7 @@ ServerEvents.recipes(event => {
     //'mekanism:crushing/biofuel/acacia_leaves',
     //'mekanism:crushing/biofuel/dark_oak_leaves',
     //'mekanism:crushing/biofuel/azalea_leaves',
+    //'mekanism:crushing/biofuel/mangrove_leaves',
 
     // Seeds
     'mekanism:crushing/biofuel/beetroot_seeds',
