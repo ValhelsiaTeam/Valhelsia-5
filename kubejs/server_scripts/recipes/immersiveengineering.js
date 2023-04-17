@@ -94,6 +94,14 @@ ServerEvents.recipes(event => {
   // Squeezer Recipes 
   squeezer('immersiveengineering:plantoil', '#forge:seeds/hemp', 120);
   squeezer('immersiveengineering:plantoil', '#forge:seeds/flax', 100);
+  squeezer('integrateddynamics:liquid_chorus', 'minecraft:popped_chorus_fruit', 125);
+  squeezer('integrateddynamics:liquid_chorus', 'integrateddynamics:proto_chorus', 125);
+  squeezer('integrateddynamics:menril_resin', 'integrateddynamics:menril_log', 1000);
+  squeezer('integrateddynamics:menril_resin', 'integrateddynamics:menril_planks', 250);
+  squeezer('minecraft:lava', 'minecraft:blaze_powder', 250);
+  squeezer('minecraft:water', 'minecraft:ice', 1000);
+  squeezer('minecraft:water', 'minecraft:snow', 1000);
+  squeezer('minecraft:water', 'minecraft:snowball', 250);
 
   // Additional Blast Furnace Fuel Sources
   event.recipes.immersiveengineeringBlastFurnaceFuel('#mekanism:enriched/carbon').time(600);
