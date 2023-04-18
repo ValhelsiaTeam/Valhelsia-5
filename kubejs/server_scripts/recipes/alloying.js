@@ -40,7 +40,8 @@ ServerEvents.recipes(event => {
       // Note: The combiner is the closest thing in Mekanism to an alloy kiln, as it
       // takes two inputs and merges them into one output, consuming power to do so.
       // This also makes up for the potential removal of the default recipes of the combiner in the future.
-      event.recipes.mekanismCombining(output, inputs[0], inputs[1]);
+      // Temporarily disable Mekanism Combiner recipe additions too.
+      //event.recipes.mekanismCombining(output, inputs[0], inputs[1]);
     }
   };
 
