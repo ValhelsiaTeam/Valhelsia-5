@@ -115,7 +115,6 @@ ServerEvents.recipes(event => {
     'mekanism:crushing/biofuel/rose_bush',
     'mekanism:crushing/biofuel/peony',
 
-    // LUL
     'mekanism:crushing/biofuel/melon_slice', // #blameurmet
     
     // TODO: More as tags are created / expanded.
@@ -131,7 +130,7 @@ ServerEvents.recipes(event => {
   event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
-  
+
   // Enrichment
   event.recipes.mekanismEnriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal');
 
@@ -139,7 +138,6 @@ ServerEvents.recipes(event => {
   // TODO: Fungification
 
   // Mossification
-  mossify('darkerdepths:lush_aridrock', 'darkerdepths:aridrock');
   mossify('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone');
 
 });
