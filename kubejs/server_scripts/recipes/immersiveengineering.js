@@ -100,8 +100,9 @@ ServerEvents.recipes(event => {
   squeezer('integrateddynamics:menril_resin', 'integrateddynamics:menril_planks', 250);
   squeezer('minecraft:lava', 'minecraft:blaze_powder', 250);
   squeezer('minecraft:water', 'minecraft:ice', 1000);
-  squeezer('minecraft:water', 'minecraft:snow', 1000);
+  squeezer('minecraft:water', 'minecraft:snow_block', 1000);
   squeezer('minecraft:water', 'minecraft:snowball', 250);
+  squeezer('minecraft:water', 'minecraft:snow', 125);
 
   // Additional Blast Furnace Fuel Sources
   event.recipes.immersiveengineeringBlastFurnaceFuel('#mekanism:enriched/carbon').time(600);
