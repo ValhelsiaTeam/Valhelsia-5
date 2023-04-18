@@ -10,13 +10,16 @@
  * 
  * @see crushing.js for crushing recipes.
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2023
  */
 
 /**
  * Mekanism Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+
+  // Temporary fix: Disable Mekanism recipes until KubeJS Mekanism is fixed.
+  return;
   
   /**
    * Adds a recipe to fill a Metallurgic Infuser with a given type of infusion material.

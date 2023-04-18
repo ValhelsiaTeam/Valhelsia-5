@@ -29,7 +29,8 @@
     //       different approaches to how they handle this (and Mekanism doesn't appear to handle it at all).
     //       Recipes with secondary outputs might end up with a separate function instead of this one.
     event.recipes.immersiveengineeringCrusher(output, input);
-    event.recipes.mekanismCrushing(output, input);
+    // Temporary fix: KubeJS Mekanism is very broken right now.
+    //event.recipes.mekanismCrushing(output, input);
     event.recipes.createCrushing(output, input);
     // TODO: Add Ars Nouveau Crushing.
     // TODO: Add MineColonies Crushing.
