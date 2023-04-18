@@ -58,6 +58,7 @@
   "valhelsia.tip.shrines": "Search out elemental shrines in the world for useful boons that last until you die.",
   "valhelsia.tip.chisel": "A chisel can make interesting new variants of most vanilla Minecraft blocks.",
   "valhelsia.tip.effortless_building": "Build faster with Effortless Building! Hold Left-Alt (default keybind) to select a mode.",
-  "valhelsia.tip.locked_drawers": "Holding a Drawer Key in your offhand while placing Storage Drawers will automatically lock them."
+  "valhelsia.tip.locked_drawers": "Holding a Drawer Key in your offhand while placing Storage Drawers will automatically lock them.",
+  "valhelsia.tip.strawberry_altitude": "Strawberries may grow differently at high enough altitudes, right near the top of the world."
   
 }
