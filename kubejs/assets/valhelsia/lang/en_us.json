@@ -60,6 +60,13 @@
   "valhelsia.tip.effortless_building": "Build faster with Effortless Building! Hold Left-Alt (default keybind) to select a mode.",
   "valhelsia.tip.locked_drawers": "Holding a Drawer Key in your offhand while placing Storage Drawers will automatically lock them.",
   "valhelsia.tip.strawberry_altitude": "Strawberries may grow differently at high enough altitudes, right near the top of the world.",
-  "valhelsia.tip.chairs": "Sitting in a chair? A comparator can detect that! Too lazy to stand up? Send a redstone signal to the chair!"
+  "valhelsia.tip.chairs": "Sitting in a chair? A comparator can detect that! Too lazy to stand up? Send a redstone signal to the chair!",
+  "valhelsia.tip.crocodiles": "If a crocodile comes for you, blocking an attack with your shield will stun it for a few seconds!",
+  "valhelsia.tip.platypus": "Need some clay? Try handing some redstone to a platypus.",
+  "valhelsia.tip.terrapin": "Jumping on a Terrapin twice in a row will unleash your inner Italian plumber.",
+  "valhelsia.tip.banana_slug": "Banana Slug Slime is useful for building underwater.",
+  "valhelsia.tip.seal_bartering": "Did you know you can barter with seals? They can even give you sponges!",
+  "valhelsia.tip.raccoons": "While raccoons might steal food from your chests, they'll also steal items from villagers.",
+  "valhelsia.tip.blue_jay": "If you feed a Blue Jay some Glow Berries, then some to a Raccoon, the two will pair up together!"
   
 }
