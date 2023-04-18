@@ -83,12 +83,10 @@ ServerEvents.tags('item', event => {
    
   // ----- Sandstone -----
   event.add('forge:sandstone/colorless', [
-    'darkerdepths:cobbled_sandstone',
     'quark:sandstone_bricks',
   ]);
 
   event.add('forge:sandstone/red', [
-    'darkerdepths:cobbled_red_sandstone',
     'quark:red_sandstone_bricks',
   ]);
 
