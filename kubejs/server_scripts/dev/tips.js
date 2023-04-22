@@ -24,21 +24,21 @@ function generate_tips() {
   for (var key in languageJson) {
     if (key.startsWith(keyStart)) {
       let tipName = key.substring(keyStart.length);
-      let tipPath = `kubejs/assets/valhelsia/tips/${tipName}.json`
+      let tipPath = `kubejs/assets/valhelsia/tips/${tipName}.json`;
       let tipData = {
-        "title": {
-          "translate": "valhelsia.tip_heading",
-          "bold": true,
-          "color": "gold",
-          "underlined": true
+        title: {
+          translate: "valhelsia.tip_heading",
+          bold: true,
+          color: "gold",
+          underlined: true
         },
-        "tip": {
-          "translate": key
+        tip: {
+          translate: key
         }
       };
 
       if (global.config.debug) {
-        console.log(`name: ${tipName}, path: ${tipPath}, key: ${key}`);
+        console.log(`Writing tip "${tipName}" to "${tipPath}"`);
       }
       JsonIO.write(tipPath, tipData);
     }
