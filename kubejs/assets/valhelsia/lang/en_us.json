@@ -3,10 +3,12 @@
   "valhelsia.chat.first_start_message": "Welcome to Valhelsia 5! The modpack is currently in beta, is not yet complete and bugs may be present.",
   "valhelsia.chat.discord": "Join us on our Discord server.",
   
+  "valhelsia.comment.commands": "-----Commands-----",
   "valhelsia.config.current": "Current config entry: %s",
   "valhelsia.config.updated": "Updated config entry: %s",
 
-  "valhelsia.tip_heading": "Valhelsia Tips",
+  "valhelsia.commend.ui": "-----User Interface Changes-----",
+  "valhelsia.tip_heading": "Valhelsia Tip",
   "tipsmod.title.default": "Minecraft Tip",
 
   "valhelsia.comment.tooltips": "-----Missing Tooltips-----",
