@@ -25,7 +25,18 @@ function generate_tips() {
     if (key.startsWith(keyStart)) {
       let tipName = key.substring(keyStart.length);
       let tipPath = `kubejs/assets/valhelsia/tips/${tipName}.json`
-      let tipData = {"tip":{"translate": key}};
+      let tipData = {
+        "title": {
+          "translate": "valhelsia.tip_heading",
+          "bold": true,
+          "color": "gold",
+          "underlined": true
+        },
+        "tip": {
+          "translate": key
+        }
+      };
+
       if (global.config.debug) {
         console.log(`name: ${tipName}, path: ${tipPath}, key: ${key}`);
       }

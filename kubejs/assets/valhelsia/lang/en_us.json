@@ -6,6 +6,8 @@
   "valhelsia.config.current": "Current config entry: %s",
   "valhelsia.config.updated": "Updated config entry: %s",
 
+  "valhelsia.tip_heading": "Valhelsia Tips",
+
   "valhelsia.comment.tooltips": "-----Missing Tooltips-----",
   "tooltip.waila.crop_growth": "Growth: ",
   "tooltip.waila.crop_mature": "Mature",
