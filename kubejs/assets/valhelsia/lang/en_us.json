@@ -72,6 +72,10 @@
   "valhelsia.tip.banana_slug": "Banana Slug Slime is useful for building underwater.",
   "valhelsia.tip.seal_bartering": "Did you know you can barter with seals? They can even give you sponges!",
   "valhelsia.tip.raccoons": "While raccoons might steal food from your chests, they'll also steal items from villagers.",
-  "valhelsia.tip.blue_jay": "If you feed a Blue Jay some Glow Berries, then some to a Raccoon, the two will pair up together!"
+  "valhelsia.tip.blue_jay": "If you feed a Blue Jay some Glow Berries, then some to a Raccoon, the two will pair up together!",
+  "valhelsia.tip.flute": "A Flute will summon your pets directly to you.",
+  "valhelsia.tip.compass_sign_post": "Using a Compass on a Sign Post will cause the Sign Post to face the direction the Compass is pointing in.",
+  "valhelsia.tip.quantum_catcher": "A Quantum Catcher can capture most mobs inside, making them easy to transport.",
+  "valhelsia.tip.ender_pearl_dispenser": "Have you ever wondered what would happen if a Dispenser fires an Ender Pearl? Try it!"
   
 }
