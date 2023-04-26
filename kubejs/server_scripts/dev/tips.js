@@ -6,20 +6,21 @@
 //
 
 /**
- * @file Functions to assist with the tips mod.
+ * @file Functions to assist with the Tips mod.
  * @copyright Valhelsia Inc 2023
  */
 
 /**
  * Generates translatable tips based on language entries, so that the JSON files don't have to be manually created for each
  * tip that is added to the pack. Run the command every time new tips are added.
- * @returns 0 on failure, 1 on success.
+ * @returns The number of tips generated.
  */
-function generate_tips() {
+function generate_tips(ctx) {
   const languagePath = 'kubejs/assets/valhelsia/lang/en_us.json';
   const keyStart = 'valhelsia.tip.';
 
   let languageJson = JsonIO.read(languagePath);
+  let tipCount = 0;
 
   for (var key in languageJson) {
     if (key.startsWith(keyStart)) {
@@ -38,11 +39,18 @@ function generate_tips() {
       };
 
       if (global.config.debug) {
-        console.log(`Writing tip "${tipName}" to "${tipPath}"`);
+        console.log(`Writing tip "${tipName}" to "${tipPath}".`);
       }
+      
       JsonIO.write(tipPath, tipData);
+      tipCount++;
     }
   }
 
-  return 1;
+  if (tipCount > 0) {
+    // This is mostly to provide some visual feedback that the command actually ran.
+    ctx.source.sendSuccess(Text.translate('commands.valhelsia.developer.tips_generated', `${tipCount}'.`), true);
+  }
+
+  return tipCount;
 }

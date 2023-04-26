@@ -4,17 +4,18 @@
   "valhelsia.chat.discord": "Join us on our Discord server.",
   
   "valhelsia.comment.commands": "-----Commands-----",
-  "valhelsia.config.current": "Current config entry: %s",
-  "valhelsia.config.updated": "Updated config entry: %s",
+  "commands.valhelsia.config.current": "Current config entry: %s",
+  "commands.valhelsia.config.updated": "Updated config entry: %s",
+  "commands.valhelsia.developer.tips_generated": "Generated %d tips successfully.",
 
-  "valhelsia.commend.ui": "-----User Interface Changes-----",
+  "valhelsia.comment.ui": "-----User Interface Changes-----",
   "valhelsia.tip_heading": "Valhelsia Tip",
   "tipsmod.title.default": "Minecraft Tip",
 
   "valhelsia.comment.tooltips": "-----Missing Tooltips-----",
   "tooltip.waila.crop_growth": "Growth: ",
   "tooltip.waila.crop_mature": "Mature",
-  "valhelsia.tooltip.how_get_jade": "This gemstone can be found in the Jungle biomes.",
+  "valhelsia.tooltip.how_get_jade": "This gemstone can be found in Jungle biomes.",
   "valhelsia.tooltip.backpack": "Contains 27 inventory slots and 1 upgrade slot.",
   "valhelsia.tooltip.iron_backpack": "Contains 27 inventory slots and 2 upgrade slots.",
   "valhelsia.tooltip.gold_backpack": "Contains 27 inventory slots and 3 upgrade slots.",
@@ -76,6 +77,7 @@
   "valhelsia.tip.flute": "A Flute will summon your pets directly to you.",
   "valhelsia.tip.compass_sign_post": "Using a Compass on a Sign Post will cause the Sign Post to face the direction the Compass is pointing in.",
   "valhelsia.tip.quantum_catcher": "A Quantum Catcher can capture most mobs inside, making them easy to transport.",
-  "valhelsia.tip.ender_pearl_dispenser": "Have you ever wondered what would happen if a Dispenser fires an Ender Pearl? Try it!"
+  "valhelsia.tip.ender_pearl_dispenser": "Have you ever wondered what would happen if a Dispenser fires an Ender Pearl? Try it!",
+  "valhelsia.tip.bubble_blower": "A Bubble Blower enchanted with Stasis is both a load of fun and also useful for building in mid-air!"
   
 }
