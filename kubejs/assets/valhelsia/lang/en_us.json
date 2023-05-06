@@ -78,6 +78,8 @@
   "valhelsia.tip.compass_sign_post": "Using a Compass on a Sign Post will cause the Sign Post to face the direction the Compass is pointing in.",
   "valhelsia.tip.quantum_catcher": "A Quantum Catcher can capture most mobs inside, making them easy to transport.",
   "valhelsia.tip.ender_pearl_dispenser": "Have you ever wondered what would happen if a Dispenser fires an Ender Pearl? Try it!",
-  "valhelsia.tip.bubble_blower": "A Bubble Blower enchanted with Stasis is both a load of fun and also useful for building in mid-air!"
+  "valhelsia.tip.bubble_blower": "A Bubble Blower enchanted with Stasis is both a load of fun and also useful for building in mid-air!",
+  "valhelsia.tip.bundle": "Bundles are great to craft early on to keep your inventory clear.",
+  "valhelsia.tip.quiver": "You can use a Quiver to store multiple stacks of arrows in one slot, and switch between which ones to fire."
   
 }
