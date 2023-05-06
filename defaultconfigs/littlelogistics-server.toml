@@ -3,14 +3,14 @@
 	#By default, little logistics allows players to register vehicles that will be loaded automatically. This is not regular chunkloading, no other ticking will happen in this chunks and no surrounding chunks will be loaded. A very minimal number of chunks will be loaded as "border chunks" where only LL entities are active by default.
 	#Chunkloading level, from low perf impact to high. 0: no ticking (except LL, recommended), 1: tile entity ticking, 2: entity ticking (regular).
 	#Range: 0 ~ 2
-	chunkLoadingLevel = 2
+	chunkLoadingLevel = 0
 	#Completely disable the chunk management system.
 	disableChunkManagement = false
 	#Maximum number of vehicles (barges/cars don't count, only Tugs/Locos) the player is able to register. Lowering this number will not de-register vehicles but will prevent the player from registering more.
 	#Range: 0 ~ 1000
 	maxVehiclesPerPlayer = 100
 	#Load vehicles even when the player is offline
-	offlineLoading = false
+	offlineLoading = true
 
 [vessel]
 
