@@ -55,9 +55,6 @@ ServerEvents.recipes(event => {
     'ecologics:surface_moss',
     'ecologics:moss_block',
 
-    // Forbidden & Arcanus
-    'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
-
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
     'immersiveengineering:crafting/ingot_steel_to_storage_steel', // Redundant.
