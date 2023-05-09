@@ -12,7 +12,7 @@
 ["mob ai in general"]
 	#Guards will attack all hostiles with this option
 	"Guards attack all mobs?" = false
-	#Guards won't attack mobs in this list if AttackAllMobs is enabled, for example, putting minecraft:creeper in this list will make guards ignore creepers.
+	#Guards won't attack mobs in this list if AttackAllMobs is enabled, for example, putting "minecraft:creeper" in this list will make guards ignore creepers.
 	"Mob BlackList" = []
 
 ["villager stuff"]
@@ -46,4 +46,15 @@
 	"Allow players to set guard patrol points only if they have hero of the village" = false
 	#Range: > -2147483648
 	"Minimum reputation requirement for guards to give you access to their inventories" = 15
+	#Range: -999.9000244140625 ~ 999.0
+	"Chance to drop equipment" = 100.0
+	#Range: -500.0 ~ 900.0
+	"Guard health" = 20.0
+	#Range: -500.0 ~ 900.0
+	"Guard speed" = 0.5
+	#Range: 0.0 ~ 900.0
+	"Guard follow range" = 20.0
+	"Have guards only follow the player if they have hero of the village?" = true
+	#Range: -9999 ~ 9999
+	"How low of a reputation of a player should have to be instantly aggroed upon by guards and golems?" = -100
 

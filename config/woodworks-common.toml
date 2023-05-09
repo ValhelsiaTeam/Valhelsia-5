@@ -6,6 +6,7 @@
 	"Wooden beehives" = true
 	"Wooden chests" = true
 	"Leaf piles" = false
+	Sawmill = true
 
 [generation]
 	#If variant bookshelves replace bookshelves in certain structures

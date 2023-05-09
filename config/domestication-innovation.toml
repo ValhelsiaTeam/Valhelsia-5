@@ -47,6 +47,11 @@
 	#percent chance of ancient city loot table containing Muffled book:
 	#Range: 0.0 ~ 1.0
 	muffled_loot_chance = 0.15
+	#true if pet curse enchantments should only appear in loot, and not the enchanting table.
+	pet_curse_enchantments_loot_only = true
+	#percent chance of nether fortress loot table containing Blazing Protection book:
+	#Range: 0.0 ~ 1.0
+	blazing_protection_loot_chance = 0.2
 
 [enchantments]
 	#true if health boost enchant is enabled, false if disabled
@@ -113,4 +118,10 @@
 	blight_curse_enabled = true
 	#true if immaturity curse enchant is enabled, false if disabled
 	immaturity_curse_enabled = true
+	#true if blazing protection enchant is enabled, false if disabled
+	blazing_protection_enabled = true
+	#true if healing aura enchant is enabled, false if disabled
+	healing_aura_enabled = true
+	#true if rejuvenation enchant is enabled, false if disabled
+	rejuvenation_enabled = true
 
