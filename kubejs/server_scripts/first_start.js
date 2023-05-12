@@ -25,8 +25,6 @@ PlayerEvents.loggedIn(event => {
     event.player.tell(Text.translate('valhelsia.chat.discord').blue().underlined().click('https://discord.com/invite/rdfQuaM'));
     event.player.tell(Text.translate('valhelsia.chat.wiki_message'));
     event.player.tell(Text.translate('valhelsia.chat.wiki').blue().underlined().click('https://wiki.valhelsia.net/'));
-    event.player.tell(Text.translate('valhelsia.chat.bisecthosting_message'));
-    event.player.tell(Text.translate('valhelsia.chat.bisecthosting').blue().underlined().click('https://bisecthosting.com/Valhelsia'));
 
     event.player.give(Item.of('akashictome:tome', AKASHIC_TOME_NBT));
   }
