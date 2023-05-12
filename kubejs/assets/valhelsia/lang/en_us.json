@@ -1,11 +1,9 @@
 {
   "valhelsia.comment.chat": "-----Chat Messages-----",
-  "valhelsia.chat.first_start_message": "Welcome to Valhelsia 5! Thank you for downloading our modpack. Please feel free to join our Discord community for any assistance requests or simply to chat.",
-  "valhelsia.chat.discord": "Join us on our Discord server.\u00A7r\n",
-  "valhelsia.chat.wiki_message": "We also have a wiki where you can find our Knowledge Base and some others informations.",
-  "valhelsia.chat.wiki": "Our wiki.\u00A7r\n",
-  "valhelsia.chat.bisecthosting_message": "And, if you're interested in playing Valhelsia 5 on a server, be sure to check out our partner:",
-  "valhelsia.chat.bisecthosting": "BisectHosting\u00A7r\n \u00A7r\n",
+  "valhelsia.chat.first_start_message": "Welcome to Valhelsia 5! We have friendly Discord community to chat, offer help and support, and share pics and videos.",
+  "valhelsia.chat.discord_link": "You're more than welcome to join us.\u00A7r\n",
+  "valhelsia.chat.wiki": "Looking for an FAQ or other information about the modpack?",
+  "valhelsia.chat.wiki_link": "Check out our Wiki.\u00A7r\n",
   
   "valhelsia.comment.commands": "-----Commands-----",
   "commands.valhelsia.config.current": "Current config entry: %s",
