@@ -1,0 +1,11 @@
+{
+	"title": {
+		"translate": "valhelsia.tip_heading",
+		"bold": true,
+		"color": "gold",
+		"underlined": true
+	},
+	"tip": {
+		"translate": "valhelsia.tip.compass_sign_post"
+	}
+}
