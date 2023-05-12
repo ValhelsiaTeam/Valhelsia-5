@@ -139,7 +139,7 @@ ServerEvents.recipes(event => {
   event.shaped('ars_nouveau:archmage_spell_book', [
     'ABC',
     'DDE',
-    'EFG',
+    'FFG',
   ], {
     A: 'ars_nouveau:apprentice_spell_book',
     B: 'forbidden_arcanus:dark_nether_star',
