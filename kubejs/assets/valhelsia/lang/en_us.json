@@ -4,6 +4,7 @@
   "valhelsia.chat.discord_link": "You're more than welcome to join us.\u00A7r\n",
   "valhelsia.chat.wiki": "Looking for an FAQ or other information about the modpack?",
   "valhelsia.chat.wiki_link": "Check out our Wiki.\u00A7r\n",
+  "valhelsia.chat.last_start_message": "Thanks for playing! We hope you enjoy exploring the worlds of Valhelsia!\u00A7r\n",
   
   "valhelsia.comment.commands": "-----Commands-----",
   "commands.valhelsia.config.current": "Current config entry: %s",
