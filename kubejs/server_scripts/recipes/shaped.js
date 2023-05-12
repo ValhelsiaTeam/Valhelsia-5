@@ -139,14 +139,15 @@ ServerEvents.recipes(event => {
   event.shaped('ars_nouveau:archmage_spell_book', [
     'ABC',
     'DDE',
-    'EEF',
+    'EFG',
   ], {
     A: 'ars_nouveau:apprentice_spell_book',
     B: 'forbidden_arcanus:dark_nether_star',
     C: 'ars_nouveau:wilden_tribute',
     D: 'forbidden_arcanus:stellarite_piece',
     E: 'alexsmobs:void_worm_eye',
-    F: 'minecraft:totem_of_undying',
+    F: 'forbidden_arcanus:dragon_scale',
+    G: 'minecraft:totem_of_undying',
   });
 
   // Darker Depths
