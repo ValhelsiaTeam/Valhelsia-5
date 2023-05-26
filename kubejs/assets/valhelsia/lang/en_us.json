@@ -85,5 +85,7 @@
   "valhelsia.tip.bundle": "Bundles are great to craft early on to keep your inventory clear.",
   "valhelsia.tip.quiver": "You can use a Quiver to store multiple stacks of arrows in one slot, and switch between which ones to fire.",
   "valhelsia.tip.bison_fur": "A block of Bison Fur can be combined with any boots in a crafting grid to allow you to walk over Powder Snow safely.",
-  "valhelsia.tip.zombie_variants": "Zombie variants have a chance to drop modded ingots when killed by a player."
+  "valhelsia.tip.zombie_variants": "Zombie variants have a chance to drop modded ingots when killed by a player.",
+  "valhelsia.tip.wandering_traders": "Wandering Traders are well stocked with exotic items, including some unique ones.",
+  "valhelsia.tip.koi": "Hostile mobs won't spawn when Koi fish are around. You'll feel serenity when close enough."
 }
