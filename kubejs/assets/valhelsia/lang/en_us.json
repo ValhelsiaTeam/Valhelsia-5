@@ -87,5 +87,7 @@
   "valhelsia.tip.bison_fur": "A block of Bison Fur can be combined with any boots in a crafting grid to allow you to walk over Powder Snow safely.",
   "valhelsia.tip.zombie_variants": "Zombie variants have a chance to drop modded ingots when killed by a player.",
   "valhelsia.tip.wandering_traders": "Wandering Traders are well stocked with exotic items, including some unique ones.",
-  "valhelsia.tip.koi": "Hostile mobs won't spawn when Koi fish are around. You'll feel serenity when close enough."
+  "valhelsia.tip.koi": "Hostile mobs won't spawn when Koi fish are around. You'll feel serenity when close enough.",
+  "valhelsia.tip.banana_fronds": "Banana Fronds grow when planted on gravel or sand, but only when it rains.",
+  "valhelsia.tip.crow_taming": "Crows are particularly fond of pumpkin seeds, but wild ones won't take them directly by hand."
 }
