@@ -194,6 +194,7 @@ ServerEvents.recipes(event => {
 
   // Farmer's Delight
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
+  shaped2x2('farmersdelight:canvas', 'supplementaries:flax');
 
   // Immersive Engineering
   shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
