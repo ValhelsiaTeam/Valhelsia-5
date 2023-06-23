@@ -253,11 +253,11 @@ customization {
   orientation = top-left
   hidden = false
   x = 2
-  width = 108
+  width = 122
   action = deep_customization_element:title_screen_branding
   actionid = 9026146c-d90b-4c52-afe7-afaf91f953dc1659087396246
-  y = 295
-  height = 40
+  y = 285
+  height = 50
 }
 
 customization {
@@ -320,87 +320,82 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://www.bisecthosting.com/Valhelsia%btnaction_splitter_fm%
   backgroundhovered = kubejs\assets\custom-menu\textures\gui\bisecthosting-hover-button.png
   label =      Rent a Server
   loopbackgroundanimations = true
   hoverlabel =      Rent a Server
   x = 2
   width = 160
-  actionid = e1182d0c-9cca-4b58-8c64-917c5255cbf61639131781664
   action = addbutton
+  actionid = e1182d0c-9cca-4b58-8c64-917c5255cbf61639131781664
   y = -1
   backgroundnormal = kubejs\assets\custom-menu\textures\gui\bisecthosting-button.png
-  value = https://www.bisecthosting.com/Valhelsia
   height = 35
 }
 
 customization {
   orientation = bottom-centered
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://valhelsia.net/%btnaction_splitter_fm%
   backgroundhovered = kubejs\assets\custom-menu\textures\gui\valhelsia-hover-button.png
   label = 
   loopbackgroundanimations = true
   x = -68
   width = 32
-  actionid = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
   action = addbutton
+  actionid = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
   y = -45
   backgroundnormal = kubejs\assets\custom-menu\textures\gui\valhelsia-button.png
-  value = https://valhelsia.net/
   height = 32
 }
 
 customization {
   orientation = bottom-centered
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://discord.gg/rdfQuaM%btnaction_splitter_fm%
   backgroundhovered = kubejs\assets\custom-menu\textures\gui\discord-hover-button.png
   label = 
   loopbackgroundanimations = true
   x = -16
   width = 32
-  actionid = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
   action = addbutton
+  actionid = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
   y = -45
   backgroundnormal = kubejs\assets\custom-menu\textures\gui\discord-button.png
-  value = https://discord.gg/rdfQuaM
   height = 32
 }
 
 customization {
   orientation = bottom-centered
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://twitter.com/Valhelsia%btnaction_splitter_fm%
   backgroundhovered = kubejs\assets\custom-menu\textures\gui\twitter-hover-button.png
   label = 
   loopbackgroundanimations = true
   x = 36
   width = 32
-  actionid = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
   action = addbutton
+  actionid = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
   y = -45
   backgroundnormal = kubejs\assets\custom-menu\textures\gui\twitter-button.png
-  value = https://twitter.com/Valhelsia
   height = 32
 }
 
 customization {
   orientation = bottom-right
   restartbackgroundanimations = true
-  buttonaction = openlink
+  buttonaction = openlink;https://www.youtube.com/watch?v=DPbvoJlBRkw%btnaction_splitter_fm%
   backgroundhovered = kubejs\assets\custom-menu\textures\gui\transparent-button.png
   label = Menu Music by Rush Garcia (@Tit0Rush)
   loopbackgroundanimations = true
   hoverlabel = Menu Music by Rush Garcia (@Tit0Rush)
   x = -198
   width = 198
-  actionid = ad44474f-b48b-4165-ad55-4159608991a81665565901304
   action = addbutton
+  actionid = ad44474f-b48b-4165-ad55-4159608991a81665565901304
   y = -22
   backgroundnormal = kubejs\assets\custom-menu\textures\gui\transparent-button.png
-  value = https://www.youtube.com/watch?v=DPbvoJlBRkw
   height = 12
 }
 
@@ -408,5 +403,10 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
   action = sethoverlabel
   label = 
+}
+
+customization {
+  identifier = %id=3763461%
+  action = hidebutton
 }
 
