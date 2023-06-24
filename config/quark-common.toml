@@ -38,6 +38,10 @@
 	"Enable Onboarding" = true
 	#Set to false to disable the behavior where quark will automatically hide any disabled items
 	"Hide Disabled Content" = true
+	#Set to false to disable Quark's item info when viewing recipe/uses for an item in JEI
+	"Enable Jei Item Info" = true
+	#For JEI info purposes, add any items here to specifically disable their JEI info from Quark. Note that Quark already only shows info that's relevant to which features are enabled
+	"Suppressed Info" = []
 
 [categories]
 	Automation = true
@@ -90,6 +94,12 @@
 
 	[automation.dispensers_place_blocks]
 		Blacklist = ["minecraft:water", "minecraft:lava", "minecraft:fire"]
+		#Set to false to refrain from registering any behaviors for blocks that have optional dispense behaviors already set.
+		#An optional behavior is one that will defer to the generic dispense item behavior if its condition fails.
+		#e.g. the Shulker Box behavior is optional, because it'll throw out the item if it fails, whereas TNT is not optional.
+		#If true, it'll attempt to use the previous behavior before trying to place the block in the world.
+		#Requires a game restart to re-apply.
+		"Wrap Existing Behaviors" = true
 
 	[automation.iron_rod]
 		"Use Pre End Recipe" = false
@@ -310,6 +320,8 @@
 		#Allow pulling items from one hotbar slot to another
 		"Check Hotbar" = false
 		"Unstackables Only" = false
+		#Any items you place in this list will be ignored by the restock feature
+		"Ignored Items" = ["botania:exchange_rod", "botania:dirt_rod", "botania:skydirt_rod", "botania:cobble_rod"]
 
 [tools]
 	Trowel = true
@@ -359,6 +371,12 @@
 			"Attack Damage" = 2
 			#How many ticks do you have to wait between using the pickarang again
 			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = false
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
 
 		[tools.pickarang.flamerang]
 			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
@@ -373,6 +391,12 @@
 			"Attack Damage" = 3
 			#How many ticks do you have to wait between using the pickarang again
 			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = false
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
 
 		[tools.pickarang.echorang]
 			#How long it takes before the Pickarang starts returning to the player if it doesn't hit anything.
@@ -387,6 +411,12 @@
 			"Attack Damage" = 2
 			#How many ticks do you have to wait between using the pickarang again
 			Cooldown = 10
+			#Whether this pickarang type can act as a hoe.
+			"Can Act As Hoe" = true
+			#Whether this pickarang type can act as a shovel.
+			"Can Act As Shovel" = true
+			#Whether this pickarang type can act as an axe.
+			"Can Act As Axe" = true
 
 	[tools.pathfinder_maps]
 		#In this section you can add custom Pathfinder Maps. This works for both vanilla and modded biomes.
@@ -416,6 +446,8 @@
 		"Add To Wandering Trader Rare" = false
 		"Draw Hud" = true
 		"Hud On Top" = false
+		#Experimental. Determines if quills should be multithreaded instead. Will ignore quill speed. This could drastically improve performance as it execute the logic off the main thread ideally causing no lag at all
+		"Multi Threaded" = true
 
 	[tools.endermosh_music_disc]
 		"Play Endermosh During Enderdragon Fight" = false
@@ -430,6 +462,10 @@
 		"Desert Temple Weight" = 8
 		"Item Quality" = 0
 		"Apply Cost" = 5
+		#Whether you can blend runes of each of the 'primary' colors plus white to create rainbow runes.
+		"Rainbow Rune Craftable" = true
+		#Whether you can blend runes of the 'primary' colors to create other colors of rune.
+		"Color Blending Runes" = true
 
 	[tools.bottled_cloud]
 		"Cloud Level Bottom" = 191
@@ -452,6 +488,8 @@
 		"Curse Gear" = false
 		#Allows combining tomes with normal books
 		"Combine With Books" = true
+		#Whether a sanity check is performed on the valid enchantments. If this is turned off, enchantments such as Silk Touch will be allowed to generate Ancient Tomes, if explicitly added to the Valid Enchantments.
+		"Sanity Check" = true
 
 	[tools.ambient_discs]
 		"Drop On Spider Kill" = true
@@ -521,6 +559,8 @@
 	"Coral On Cactus" = true
 	"Slimes To Magma Cubes" = true
 	"Horses Swim" = true
+	"Diamond Repair" = true
+	"Sponges Better" = true
 
 	[tweaks.utility_recipes]
 		#Can any wool color be dyed?
@@ -683,6 +723,8 @@
 		"Fortune Level" = 2
 		#Allowed values: [0,4]
 		"Harvest Level" = 2
+		"Display Fortune In Tooltip" = true
+		"Italic Tooltip" = true
 
 	[tweaks.double_door_opening]
 		#This feature disables itself if any of the following mods are loaded: 
@@ -692,6 +734,22 @@
 		"Ignore Anti Overlap" = false
 		"Enable Doors" = true
 		"Enable Fence Gates" = true
+
+	[tweaks.diamond_repair]
+		#List of changes to apply to repair items, format is "<item>=<repair_item>" as seen in the defualt.
+		#Multiple repair items can be applied for the same base item, and as long as at least one is provided, any vanilla option will be removed.
+		#To use multiple items, comma separate them (e.g. "minecraft:diamond_sword=minecraft:diamond,minecraft:emerald")If you want the vanilla option back, you must add it again manually.
+		"Repair Item Changes" = ["minecraft:netherite_sword=minecraft:diamond", "minecraft:netherite_pickaxe=minecraft:diamond", "minecraft:netherite_axe=minecraft:diamond", "minecraft:netherite_shovel=minecraft:diamond", "minecraft:netherite_hoe=minecraft:diamond", "minecraft:netherite_helmet=minecraft:diamond", "minecraft:netherite_chestplate=minecraft:diamond", "minecraft:netherite_leggings=minecraft:diamond", "minecraft:netherite_boots=minecraft:diamond"]
+		"Unrepairable Items" = []
+		"Enable Jei Hints" = true
+
+	[tweaks.sponges_better]
+		#The maximum number of water tiles that a sponge can soak up. Vanilla default is 64.
+		#Allowed values: [64,)
+		"Maximum Water Drain" = 256
+		#The maximum number of water tiles that a sponge can 'crawl along' for draining. Vanilla default is 6.
+		#Allowed values: [6,)
+		"Maximum Crawl Distance" = 10
 
 [world]
 	"Spiral Spires" = true
@@ -1488,7 +1546,7 @@
 		"Enable Armor" = true
 
 	[client.improved_tooltips]
-		"Attribute Tooltips" = true
+		"Attribute Tooltips" = false
 		"Food Tooltips" = false
 		"Shulker Tooltips" = true
 		"Map Tooltips" = true
@@ -1498,7 +1556,8 @@
 		"Map Require Shift" = false
 		"Show Saturation" = false
 		"Food Compression Threshold" = 4
-		#The value of each shank of food. Tweak this when using mods like Hardcore Hunger which change that value.
+		#The value of each shank of food.
+		#Tweak this when using mods like Hardcore Hunger which change that value.
 		"Food Divisor" = 2
 		"Enchanting Stacks" = ["minecraft:diamond_sword", "minecraft:diamond_pickaxe", "minecraft:diamond_shovel", "minecraft:diamond_axe", "minecraft:diamond_hoe", "minecraft:diamond_helmet", "minecraft:diamond_chestplate", "minecraft:diamond_leggings", "minecraft:diamond_boots", "minecraft:shears", "minecraft:bow", "minecraft:fishing_rod", "minecraft:crossbow", "minecraft:trident", "minecraft:elytra", "quark:pickarang"]
 		#A list of additional stacks to display on each enchantment
@@ -1509,6 +1568,11 @@
 		"Enchanting Additional Stacks" = []
 		"Fuel Time Tooltips" = true
 		"Fuel Time Divisor" = 200
+		#Should item attributes be colored relative to your current equipped item?
+		#e.g. if wearing an Iron Helmet, the armor value in a Diamond Helmet will show as green, and vice versa would be red.
+		#If set to false, item attributes will show in white or red if they're negative values.
+		"Show Upgrade Status" = true
+		"Animate Up Down Arrows" = true
 
 	[client.greener_grass]
 		"Affect Leaves" = true
@@ -1549,6 +1613,13 @@
 	"Adjustable Chat" = false
 	"Spawner Replacer" = false
 	"Enchantments Begone" = false
+	#This feature generates Resource Pack Item Model predicates on the items defined in 'Items to Change'
+	#for the Enchantments defined in 'Enchantments to Register'.
+	#
+	#Example: if 'minecraft:silk_touch' is added to 'Enchantments to Register', and 'minecraft:netherite_pickaxe'
+	#is added to 'Items to Change', then a predicate named 'quark_has_enchant_minecraft_silk_touch' will be available
+	#to the netherite_pickaxe.json item model, whose value will be the enchantment level.
+	"Enchantment Predicates" = false
 
 	[experimental.overlay_shader]
 		#Sets the name of the shader to load on a regular basis. This can load any shader the Camera module can (and requires the Camera module enabled to apply said logic).
@@ -1571,6 +1642,13 @@
 		#Disables mob griefing for only specific entities
 		"Enable Selective Mob Griefing" = true
 		"Non Griefing Entities" = ["minecraft:creeper", "minecraft:enderman"]
+		#Force Elytra to only work in specific dimensions
+		"Enable Dimension Locked Elytra" = true
+		"Elytra Allowed Dimensions" = ["minecraft:the_end"]
+		#Makes falling blocks not able to be duped via dimension crossing
+		"Disable Falling Block Dupe" = true
+		#Fixes several piston physics exploits, most notably including TNT duping
+		"Disable Piston Physics Exploits" = true
 
 	[experimental.adjustable_chat]
 		"Horizontal Shift" = 0
@@ -1583,6 +1661,10 @@
 
 	[experimental.enchantments_begone]
 		"Enchantments To Begone" = []
+
+	[experimental.enchantment_predicates]
+		"Items To Change" = []
+		"Enchantments To Register" = []
 
 [oddities]
 	"Totem Of Holding" = true
@@ -1668,6 +1750,8 @@
 		"States To Influences" = []
 		#Matrix Enchanting can be done with short (<= 3px blocks) instead of air around the enchanting table. Set this to false to disable this behaviour.
 		"Allow Short Block Enchanting" = true
+		#Any treasure enchantment IDs here will be able to appear in books in matrix enchanting
+		"Treasure Whitelist" = []
 
 	[oddities.magnets]
 		#Any items you place in this list will be derived so that any block made of it will become magnetizable
