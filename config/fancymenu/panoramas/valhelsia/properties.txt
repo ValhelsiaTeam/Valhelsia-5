@@ -4,5 +4,5 @@ panorama-meta {
   name = valhelsia
   speed = 1.0
   fov = 85.0
-  angle = 25.0
+  angle = 5.0
 }
