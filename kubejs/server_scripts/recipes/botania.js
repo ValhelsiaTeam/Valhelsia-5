@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
   event.recipes.botania.mana_infusion('2x minecraft:hanging_roots', 'minecraft:hanging_roots', 800, 'botania:conjuration_catalyst');
   event.recipes.botania.mana_infusion('2x minecraft:nether_sprouts', 'minecraft:nether_sprouts', 800, 'botania:conjuration_catalyst');
   event.recipes.botania.mana_infusion('2x minecraft:warped_roots', 'minecraft:warped_roots', 800, 'botania:conjuration_catalyst');
+  event.recipes.botania.mana_infusion('2x minecraft:small_dripleaf', 'minecraft:small_dripleaf', 1000, 'botania:conjuration_catalyst');
 
   event.recipes.botania.mana_infusion('2x biomesoplenty:barley', 'biomesoplenty:barley', 800, 'botania:conjuration_catalyst');
   event.recipes.botania.mana_infusion('2x biomesoplenty:bush', 'biomesoplenty:bush', 800, 'botania:conjuration_catalyst');
