@@ -94,6 +94,7 @@ ServerEvents.recipes(event => {
   // Squeezer Recipes 
   squeezer('immersiveengineering:plantoil', '#forge:seeds/hemp', 120);
   squeezer('immersiveengineering:plantoil', '#forge:seeds/flax', 100);
+  squeezer('immersiveengineering:plantoil', 'ecologics:walnut', 100);
   squeezer('integrateddynamics:liquid_chorus', 'minecraft:popped_chorus_fruit', 125);
   squeezer('integrateddynamics:liquid_chorus', 'integrateddynamics:proto_chorus', 125);
   squeezer('integrateddynamics:menril_resin', 'integrateddynamics:menril_log', 1000);
