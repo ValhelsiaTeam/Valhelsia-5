@@ -46,7 +46,6 @@ ServerEvents.recipes(event => {
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
   replaceInput('create:rose_quartz', '#valhelsia:rose_quartz');
   
-  
   // Rope Unification
   replaceInput('farmersdelight:rope', '#valhelsia:ropes');
   replaceInput('supplementaries:rope', '#valhelsia:ropes');
@@ -61,6 +60,8 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
   // TODO: Check which other recipes need sticks changed to use tags.
+
+  replaceInputID('galosphere:silver_panel', 'galosphere:silver_block', '#forge:storage_blocks/silver');
 
   ALL_VANILLA_WOOD_TYPES.forEach((wood_type) => {
     // Allow balanced crates to use any wooden chest, not just vanilla chests.
