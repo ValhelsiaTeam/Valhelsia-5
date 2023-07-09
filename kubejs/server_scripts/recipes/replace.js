@@ -40,6 +40,8 @@ ServerEvents.recipes(event => {
   replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/deorum');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
+  replaceInputID('galosphere:silver_ingot', '#forge:ingots/silver');
+  replaceInputID('galosphere:silver_nugget', '#forge:nuggets/silver');
 
   // Rose Quartz Unification
   replaceInput('biomesoplenty:rose_quartz_shard', '#valhelsia:rose_quartz');
