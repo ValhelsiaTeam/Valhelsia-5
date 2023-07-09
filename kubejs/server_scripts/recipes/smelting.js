@@ -134,9 +134,15 @@ ServerEvents.recipes(event => {
     event.remove({id: `immersiveengineering:smelting/ingot_${metal}_from_blasting3`});
   });
 
-  // Remove other redundant IE smelting / blassting.\
+  // Remove other redundant IE smelting / blassting.
   event.remove({id: 'immersiveengineering:smelting/ingot_silver2'});
   event.remove({id: 'immersiveengineering:smelting/ingot_silver_from_blasting_2'});
+
+  // Remove redundant Create smelting / blasting recipes.
+  event.remove({id: 'create:blasting/ingot_lead_compat_immersiveengineering'});
+  event.remove({id: 'create:blasting/ingot_uranium_compat_immersiveengineering'});
+  event.remove({id: 'create:smelting/ingot_lead_compat_immersiveengineering'});
+  event.remove({id: 'create:smelting/ingot_uranium_compat_immersiveengineering'});
 
   // Remove Darker Depths smelting / blasting.
   event.remove({id: 'darkerdepths:silver_ingot_from_smelting_aridrock_silver_ore'});
