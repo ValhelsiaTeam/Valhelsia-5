@@ -134,6 +134,22 @@ ServerEvents.recipes(event => {
     event.remove({id: `immersiveengineering:smelting/ingot_${metal}_from_blasting3`});
   });
 
+  // Remove other redundant IE smelting / blassting.\
+  event.remove({id: 'immersiveengineering:smelting/ingot_silver2'});
+  event.remove({id: 'immersiveengineering:smelting/ingot_silver_from_blasting_2'});
+
+  // Remove Darker Depths smelting / blasting.
+  event.remove({id: 'darkerdepths:silver_ingot_from_smelting_aridrock_silver_ore'});
+  event.remove({id: 'darkerdepths:silver_ingot_from_smelting_limestone_silver_ore'});
+  event.remove({id: 'darkerdepths:silver_ingot_from_blasting_aridrock_silver_ore'});
+  event.remove({id: 'darkerdepths:silver_ingot_from_blasting_limestone_silver_ore'});
+
+  // Remove Galosphere smelting / blasting.
+  event.remove({id: 'galosphere:silver_ingot_from_blasting_silver_ore'});
+  event.remove({id: 'galosphere:silver_ingot_from_smelting_silver_ore'});
+  event.remove({id: 'galosphere:silver_ingot_from_blasting_raw_silver'});
+  event.remove({id: 'galosphere:silver_ingot_from_smelting_raw_silver'});
+
   // Allow Ash Bricks to be made by smelting any ash.
   replaceSmeltingInput('supplementaries:ash', '#valhelsia:ash');
 
