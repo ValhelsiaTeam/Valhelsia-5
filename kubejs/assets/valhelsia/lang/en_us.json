@@ -35,6 +35,10 @@
   "item.effortlessbuilding.reach_upgrade1": "Reach Upgrade 1",
   "item.effortlessbuilding.reach_upgrade2": "Reach Upgrade 2",
   "item.effortlessbuilding.reach_upgrade3": "Reach Upgrade 3",
+  "item.minecraft.tipped_arrow.effect.absorption": "Arrow of Absorption",
+  "item.minecraft.tipped_arrow.effect.dolphins_grace": "Arrow of Dolphin's Grace",
+  "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
+
 
   "valhelsia.comment.blocks": "-----Missing Block Names-----",
   "block.supplementaries.edelwood_stick": "Edelwood Stick",
