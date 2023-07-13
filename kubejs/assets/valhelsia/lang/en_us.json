@@ -27,6 +27,7 @@
 
   "valhelsia.comment.entities": "-----Missing Entity Names-----",
   "entity.minecraft.villager.advancedperipherals.computer_scientist": "Computer Scientist",
+  "entity.minecraft.villager.nightwatcher": "Nightwatcher",
 
   "valhelsia.comment.items": "-----Missing Item Names-----",
   "item.effortlessbuilding.randomizer_bag": "Randomizer Bag",
@@ -39,13 +40,12 @@
   "item.minecraft.tipped_arrow.effect.dolphins_grace": "Arrow of Dolphin's Grace",
   "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
 
-
   "valhelsia.comment.blocks": "-----Missing Block Names-----",
   "block.supplementaries.edelwood_stick": "Edelwood Stick",
   "block.moreminecarts.hologram_rail": "Hologram Rail",
   "block.moreminecarts.maglev_hologram_rail": "Maglev Hologram Rail",
   "block.moreminecarts.wooden_hologram_rail": "Wooden Hologram Rail",
-  "block.tetra.holosphers": "Holosphere",
+  "block.tetra.holosphere": "Holosphere",
   "block.trolldom.air_shrine": "Air Shrine",
   "block.trolldom.earth_shrine": "Earth Shrine",
   "block.trolldom.fire_shrine": "Fire Shrine",

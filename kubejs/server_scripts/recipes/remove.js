@@ -55,6 +55,9 @@ ServerEvents.recipes(event => {
     'ecologics:surface_moss',
     'ecologics:moss_block',
 
+    // Forbidden & Arcanus
+    'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
+
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
     'immersiveengineering:crafting/ingot_steel_to_storage_steel', // Redundant.
@@ -65,10 +68,9 @@ ServerEvents.recipes(event => {
     'immersiveengineering:crafting/nugget_lead_to_lead_ingot', // Redundant.
     'immersiveengineering:crafting/nugget_uranium_to_uranium_ingot', // Redundant.
     'immersiveengineering:crafting/ingot_steel_to_nugget_steel', // Redundant.
-    'immersiveengineering:crafting/ingot_copper_to_nugget_copper', // Redundant.
+    'immersiveengineering:crafting/copper_ingot_to_nugget_copper', // Redundant.
     'immersiveengineering:crafting/ingot_lead_to_nugget_lead', // Redundant.
     'immersiveengineering:crafting/ingot_uranium_to_nugget_uranium', // Redundant.
-    'immersiveengineering:crusher/nether_wart', // Default recipe leads to dupe exploit.
     'immersiveengineering:metalpress/blaze_rod', // Replaced to avoid blaze powder duping - changed from 4 dust to 6.
 
     // Mekanism
