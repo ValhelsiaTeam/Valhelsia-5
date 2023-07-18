@@ -66,7 +66,7 @@ ServerEvents.recipes(event => {
   //       in order to add compatibility with other alloying methods.
   
   // Forbidden and Arcanus
-  alloy('forbidden_arcanus:obsidian_ingot', ['4x #forge:dusts/obsidian', '4x #forge:nuggets/iron']);
+  alloy('forbidden_arcanus:obsidian_ingot', ['#forge:dusts/obsidian', '4x #forge:nuggets/iron']);
   //alloy('forbidden_arcanus:deorum_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
   //alloy('forbidden_arcanus:deorum_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
   
