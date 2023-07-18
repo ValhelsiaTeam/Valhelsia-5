@@ -29,7 +29,8 @@ ServerEvents.recipes(event => {
    */
   const alloy = (output, inputs) => {
     // Create
-    event.recipes.createMixing(output, inputs).heated();
+    // FIXME: Temporarily disabled since it doesn't handle itemstacks with multiple items as inputs. :()
+    //event.recipes.createMixing(output, inputs).heated();
     // TODO: Consider adding a flag to switch between unheated, heated, superheated mixing recipes.
     //       For now, heated is a sensible default for most alloying.
 
@@ -49,7 +50,7 @@ ServerEvents.recipes(event => {
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
   // For removal of alloying recipes with no replacement, use remove.js instead.
   [
-    'create:mixing/brass_ingot',
+    //'create:mixing/brass_ingot',
     'immersiveengineering:alloysmelter/brass',
     'immersiveengineering:alloysmelter/bronze',
     'immersiveengineering:alloysmelter/constantan',
