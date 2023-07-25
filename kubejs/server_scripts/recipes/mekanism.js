@@ -17,9 +17,6 @@
  * Mekanism Recipe Event Handler
  */
 ServerEvents.recipes(event => {
-
-  // Temporary fix: Disable Mekanism recipes until KubeJS Mekanism is fixed.
-  return;
   
   /**
    * Adds a recipe to fill a Metallurgic Infuser with a given type of infusion material.
@@ -31,7 +28,7 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'mekanism:infusion_conversion',
       input: {
-        ingredient: Ingredient.of(input).toJson()
+        ingredient: InputItem.of(input).toJson()
       },
       output: {
         infuse_type: type,
@@ -52,7 +49,7 @@ ServerEvents.recipes(event => {
   /**
    * Creates a recipe to turn a block into a fungal version of it.
    * @param {(string|Item)} output The item or item ID of the mossy block.
-   * @param {(string|Ingredient)} input The item or item ID of the base block.
+   * @param {(string|InputItem)} input The item or item ID of the base block.
    */
   const fungify = (output, input) => {
     event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:fungi', 10);
@@ -61,7 +58,7 @@ ServerEvents.recipes(event => {
   /**
    * Creates a recipe to crush an ingredient into Bio Fuel.
    * Note: This is in mekanism.js rather than in crushing.js due to being Mekanism-specific.
-   * @param {(string|Ingredient)} input The item or item ID of the base block.
+   * @param {(string|InputItem)} input The item or item ID of the base block.
    * @param {number} quantity The number of Bio Fuel items to output.
    */
   const bioCrush = (input, quantity) => {

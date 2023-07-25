@@ -12,7 +12,7 @@
  * including presets for different categories of cutting board recipe
  * (eg. stripping, chopping, cutting).
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2023
  */
 
 /**
@@ -24,13 +24,13 @@ ServerEvents.recipes(event => {
    * Creates an Axe Stripping recipe for the Farmer's Delight Cutting Board.
    * Automatically adds the tree bark as one output.
    * @param {(string|Item)} output The resulting stripped log. 
-   * @param {(string|Ingredient)} input An unstripped log to be stripped.
+   * @param {(string|InputItem)} input An unstripped log to be stripped.
    */
   const strip = (output, input) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        Ingredient.of(input).toJson()
+        InputItem.of(input).toJson()
       ],
       tool: {
         type: 'farmersdelight:tool',
@@ -47,13 +47,13 @@ ServerEvents.recipes(event => {
   /**
    * Creates an Axe Chopping recipe for the Farmer's Delight Cutting Board.
    * @param {(string|Item)} output The output item.
-   * @param {(string|Ingredient)} input The input ingredient.
+   * @param {(string|InputItem)} input The input ingredient.
    */
   const chop = (output, input) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        Ingredient.of(input).toJson()
+        InputItem.of(input).toJson()
       ],
       tool: {
         type: 'farmersdelight:tool',
@@ -68,13 +68,13 @@ ServerEvents.recipes(event => {
   /**
    * Creates a Knife Cutting recipe for the Farmer's Delight Cutting Board.
    * @param {Item[]} output An array of items to output.
-   * @param {(string|Ingredient)} input The input ingredient(s).
+   * @param {(string|InputItem)} input The input ingredient(s).
    */
   const cut = (output, input) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        Ingredient.of(input).toJson()
+        InputItem.of(input).toJson()
       ],
       tool: {
         tag: 'forge:tools/knives'
@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
    * Creates a Cooking Pot recipe for Farmer's Delight.
    * Automatically grants 0.2 XP and takes 200 ticks to cook.
    * @param {(string|Item)} output An output item.
-   * @param {(string|Ingredient)} input An input ingredient.
+   * @param {(string|InputItem)} input An input ingredient.
    * @param {(string|Item)} container An item to use as a container (eg. 'minecraft:bowl').
    */
   const pot = (output, input, container) => {

@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
    * and if it has more than two then it will only be added to Create (which supports a greater number of ingredients).
    * 
    * @param {(string|Item)} output The resulting output alloy item(s).
-   * @param {(string[]|Ingredient[])} inputs An array of ingredients to use as inputs. Must have at least two ingredients.
+   * @param {(string[]|InputItem[])} inputs An array of ingredients to use as inputs. Must have at least two ingredients.
    */
   const alloy = (output, inputs) => {
     // Create

@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
   /**
    * Creates a new Drying Basin recipe. Automatically creates a corresponding Mechanical Drying Basin recipe too, 10x faster.
    * @param {!string|!Item} output The resulting item.
-   * @param {(!string|!Ingredient)} input The input item to dry.
+   * @param {(!string|!InputItem)} input The input item to dry.
    * @param {number} duration The duration of the operation (in ticks). Optional (default 100).
    * @param {string} fluid The ID of the fluid to output. Optional.
    * @param {number} amount The quantity of the fluid to create, per operation (in millibuckets). Optional (default 100).
@@ -37,7 +37,7 @@ ServerEvents.recipes(event => {
       // Without fluid output.
       event.custom({
         type: 'integrateddynamics:drying_basin',
-        item: Ingredient.of(input).toJson(),
+        item: InputItem.of(input).toJson(),
         duration: duration,
         result: {
           item: Item.of(output).toJson()
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
 
       event.custom({
         type: 'integrateddynamics:mechanical_drying_basin',
-        item: Ingredient.of(input).toJson(),
+        item: InputItem.of(input).toJson(),
         duration: duration * 0.1,
         result: {
           item: Item.of(output).toJson()
@@ -57,7 +57,7 @@ ServerEvents.recipes(event => {
       // With fluid output.
       event.custom({
         type: 'integrateddynamics:drying_basin',
-        item: Ingredient.of(input).toJson(),
+        item: InputItem.of(input).toJson(),
         fluid: {
           fluid: fluid,
           amount: amount
@@ -70,7 +70,7 @@ ServerEvents.recipes(event => {
       
       event.custom({
         type: 'integrateddynamics:mechanical_drying_basin',
-        item: Ingredient.of(input).toJson(),
+        item: InputItem.of(input).toJson(),
         fluid: {
           fluid: fluid,
           amount: amount

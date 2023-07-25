@@ -24,8 +24,8 @@ ServerEvents.recipes(event => {
  
   /**
    * Replaces the input of a smelting / blasting recipe.
-   * @param {string|Ingredient} from Original input.
-   * @param {string|Ingredient} to New input.
+   * @param {string|InputItem} from Original input.
+   * @param {string|InputItem} to New input.
    */
   const replaceSmeltingInput = (from, to) => {
     event.replaceInput({type: 'minecraft:blasting'}, from, to);
@@ -46,7 +46,7 @@ ServerEvents.recipes(event => {
   /**
    * Adds a smelting recipe for the furnace.
    * @param {(string|Item)} output Resulting smelted item.
-   * @param {(string|Ingredient)} input Ingredient to be smelted.
+   * @param {(string|InputItem)} input Ingredient to be smelted.
    * @param {number} [xp] Experience given by smelting the item.
    */
    const smelt = (output, input, xp) => {
@@ -60,7 +60,7 @@ ServerEvents.recipes(event => {
   /**
    * Adds a blasting recipe to the vanilla blast furnace.
    * @param {(string|Item)} output Resulting blasted item.
-   * @param {(string|Ingredient)} input Ingredient to be blasted.
+   * @param {(string|InputItem)} input Ingredient to be blasted.
    * @param {number} [xp] Experience given by blasting the item.
    */
   const blast = (output, input, xp) => {
@@ -74,7 +74,7 @@ ServerEvents.recipes(event => {
   /**
    * Adds a smelting recipe to both the furnace and blast furnace.
    * @param {(string|Item)} output Resulting smelted item.
-   * @param {(string|Ingredient)} input Ingredient to be smelted.
+   * @param {(string|InputItem)} input Ingredient to be smelted.
    * @param {number} [xp] Experience given by smelting the item.
    */
   const smeltAndBlast = (output, input, xp) => {
