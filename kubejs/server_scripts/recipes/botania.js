@@ -16,6 +16,20 @@
  */
 ServerEvents.recipes(event => {
 
+  /**
+   * Creates a conjuration recipe to duplicate an item with a mana pool. 
+   * 
+   * @param {!string} item The Item ID of the item to duplicate (MUST be a string).
+   * @param {number} [mana] The mana cost of the duplication (default: 800).
+   */
+  const conj2x = (item, mana) => {
+    if (typeof mana == 'undefined') {
+      mana = 800;
+    }
+
+    event.recipes.botania.mana_infusion(`2x ${item}`, item, mana, 'botania:conjuration_catalyst');
+  };
+
   // Mana Infusion
   //event.recipes.botania.mana_infusion('output_here', 'input_here', 200);
 
@@ -25,41 +39,51 @@ ServerEvents.recipes(event => {
   event.recipes.botania.mana_infusion('darkerdepths:lush_sprouts', 'biomesoplenty:sprout', 500, 'botania:alchemy_catalyst');
 
   // Mana Infusion - Conjuration
-  event.recipes.botania.mana_infusion('2x minecraft:crimson_roots', 'minecraft:crimson_roots', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x minecraft:hanging_roots', 'minecraft:hanging_roots', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x minecraft:nether_sprouts', 'minecraft:nether_sprouts', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x minecraft:warped_roots', 'minecraft:warped_roots', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x minecraft:small_dripleaf', 'minecraft:small_dripleaf', 1000, 'botania:conjuration_catalyst');
+  conj2x('minecraft:crimson_roots');
+  conj2x('minecraft:hanging_roots');
+  conj2x('minecraft:nether_sprouts');
+  conj2x('minecraft:warped_roots');
+  conj2x('minecraft:small_dripleaf', 1000);
 
-  event.recipes.botania.mana_infusion('2x biomesoplenty:barley', 'biomesoplenty:barley', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:bush', 'biomesoplenty:bush', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:cattail', 'biomesoplenty:cattail', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:clover', 'biomesoplenty:clover', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:dead_grass', 'biomesoplenty:dead_grass', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:desert_grass', 'biomesoplenty:desert_grass', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:dune_grass', 'biomesoplenty:dune_grass', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:huge_clover_petal', 'biomesoplenty:huge_clover_petal', 1000, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:reed', 'biomesoplenty:reed', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:sea_oats', 'biomesoplenty:sea_oats', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:sprout', 'biomesoplenty:sprout', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x biomesoplenty:watergrass', 'biomesoplenty:watergrass', 800, 'botania:conjuration_catalyst');
+  conj2x('biomesoplenty:barley');
+  conj2x('biomesoplenty:bush');
+  conj2x('biomesoplenty:barley');
+  conj2x('biomesoplenty:cattail');
+  conj2x('biomesoplenty:clover');
+  conj2x('biomesoplenty:dead_grass');
+  conj2x('biomesoplenty:desert_grass');
+  conj2x('biomesoplenty:dune_grass');
+  conj2x('biomesoplenty:huge_clover_petal', 1000);
+  conj2x('biomesoplenty:reed');
+  conj2x('biomesoplenty:sea_oats');
+  conj2x('biomesoplenty:sprout');
+  conj2x('biomesoplenty:watergrass');
 
-  event.recipes.botania.mana_infusion('2x blue_skies:cryo_root', 'blue_skies:cryo_root', 1000, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x blue_skies:lucentroot', 'blue_skies:lucentroot', 1000, 'botania:conjuration_catalyst');
+  conj2x('blue_skies:cryo_root', 1000);
+  conj2x('blue_skies:lucentroot', 1000);
 
-  event.recipes.botania.mana_infusion('2x darkerdepths:dry_sprouts', 'darkerdepths:dry_sprouts', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:glowshroom', 'darkerdepths:glowshroom', 1000, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:glowshroom_block', 'darkerdepths:glowshroom_block', 2000, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:glowshroom_stem', 'darkerdepths:glowshroom_stem', 2000, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:long_roots', 'darkerdepths:long_roots', 1000, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:lush_sprouts', 'darkerdepths:lush_sprouts', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:mossy_sprouts', 'darkerdepths:mossy_sprouts', 800, 'botania:conjuration_catalyst');
-  event.recipes.botania.mana_infusion('2x darkerdepths:roots', 'darkerdepths:roots', 800, 'botania:conjuration_catalyst');
-  
+  conj2x('darkerdepths:dry_sprouts');
+  conj2x('darkerdepths:glowshroom', 1000);
+  conj2x('darkerdepths:glowshroom_block', 2000);
+  conj2x('darkerdepths:glowshroom_stem', 2000);
+  conj2x('darkerdepths:long_roots', 1000);
+  conj2x('darkerdepths:lush_sprouts');
+  conj2x('darkerdepths:mossy_sprouts');
+  conj2x('darkerdepths:roots');
 
-  event.recipes.botania.mana_infusion('2x forbidden_arcanus:petrified_root', 'forbidden_arcanus:petrified_root', 1000, 'botania:conjuration_catalyst');
+  conj2x('farmersdelight:wild_cabbages', 1000);
+  conj2x('farmersdelight:wild_onions', 1000);
+  conj2x('farmersdelight:wild_carrots', 1000);
+  conj2x('farmersdelight:wild_potatoes', 1000);
+  conj2x('farmersdelight:wild_rice', 1000);
+  conj2x('farmersdelight:sandy_shrub', 800);
 
-  event.recipes.botania.mana_infusion('2x twilightforest:root_strand', 'twilightforest:root_strand', 800, 'botania:conjuration_catalyst');
+  conj2x('farmersrespite:wild_tea_bush', 1000);
+  conj2x('farmersrespite:wild_coffee_bush', 1000);
+
+  conj2x('2x forbidden_arcanus:petrified_root', 1000);
+
+  conj2x('supplementaries:wild_flax', 1000);
 
   // Elven Trade
   // event.recipes.botania.elven_trade(['output_here'], 'input_here');
