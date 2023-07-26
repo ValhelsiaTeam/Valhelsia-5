@@ -40,6 +40,7 @@ ServerEvents.recipes(event => {
 
     // Blue Skies
     'blue_skies:cake_compat', // Replaced with a different recipe.
+    'blue_skies:furnace_compat', // Quark provides an alternative.
 
     // Create
 
@@ -105,6 +106,7 @@ ServerEvents.recipes(event => {
     // Minecraft
     'minecraft:cake', // Duplicate Recipe.
     'minecraft:ladder',
+    'minecraft:furnace', // Quark provides an alternative.
 
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.
