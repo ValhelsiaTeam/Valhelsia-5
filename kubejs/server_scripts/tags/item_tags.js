@@ -156,4 +156,9 @@ ServerEvents.tags('item', event => {
     'blue_skies:smooth_midnight_sandstone',
     'blue_skies:midnight_sandstone_pillar',
   ]);
+
+  // Create Slice & Dice
+  event.add('sliceanddice:allowed_tools', [
+    'galosphere_delight:silver_kitchen_hammer',
+  ]);
 });
