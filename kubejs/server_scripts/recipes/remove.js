@@ -45,7 +45,9 @@ ServerEvents.recipes(event => {
     // Create
 
     // Darker Depths
-    'darkerdepths:rope',
+    'darkerdepths:rope', // Replaced with Supplementaries Rope
+    'darkerdepths:silver_block', // Redundant
+    'darkerdepths:silver_ingot', // Redundant
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
@@ -61,18 +63,29 @@ ServerEvents.recipes(event => {
 
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
-    'immersiveengineering:crafting/ingot_steel_to_storage_steel', // Redundant.
-    'immersiveengineering:crafting/ingot_lead_to_storage_lead', // Redundant.
-    'immersiveengineering:crafting/ingot_uranium_to_storage_uranium', // Redundant.
-    'immersiveengineering:crafting/nugget_steel_to_steel_ingot', // Redundant.
-    'immersiveengineering:crafting/nugget_copper_to_copper_ingot', // Redundant.
-    'immersiveengineering:crafting/nugget_lead_to_lead_ingot', // Redundant.
-    'immersiveengineering:crafting/nugget_uranium_to_uranium_ingot', // Redundant.
-    'immersiveengineering:crafting/ingot_steel_to_nugget_steel', // Redundant.
-    'immersiveengineering:crafting/copper_ingot_to_nugget_copper', // Redundant.
-    'immersiveengineering:crafting/ingot_lead_to_nugget_lead', // Redundant.
-    'immersiveengineering:crafting/ingot_uranium_to_nugget_uranium', // Redundant.
     'immersiveengineering:metalpress/blaze_rod', // Replaced to avoid blaze powder duping - changed from 4 dust to 6.
+    
+    // Redundant IE Metal Recipes (either duplicate or replaced)
+    'immersiveengineering:crafting/ingot_lead_to_storage_lead',
+    'immersiveengineering:crafting/ingot_uranium_to_storage_uranium',
+    'immersiveengineering:crafting/ingot_silver_to_storage_silver',
+    'immersiveengineering:crafting/ingot_steel_to_storage_steel',
+
+    'immersiveengineering:crafting/storage_lead_to_ingot_lead',
+    'immersiveengineering:crafting/storage_uranium_to_ingot_uranium',
+    'immersiveengineering:crafting/storage_steel_to_ingot_steel',
+
+    'immersiveengineering:crafting/nugget_copper_to_copper_ingot',
+    'immersiveengineering:crafting/nugget_lead_to_ingot_lead',
+    'immersiveengineering:crafting/nugget_uranium_to_ingot_uranium',
+    'immersiveengineering:crafting/nugget_silver_to_ingot_silver',
+    'immersiveengineering:crafting/nugget_steel_to_ingot_steel',
+
+    'immersiveengineering:crafting/copper_ingot_to_nugget_copper',
+    'immersiveengineering:crafting/ingot_lead_to_nugget_lead',
+    'immersiveengineering:crafting/ingot_uranium_to_nugget_uranium',
+    'immersiveengineering:crafting/ingot_steel_to_nugget_steel',
+
 
     // Mekanism
     'mekanism:charcoal',
