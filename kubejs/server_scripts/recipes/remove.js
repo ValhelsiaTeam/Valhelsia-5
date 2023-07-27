@@ -48,6 +48,7 @@ ServerEvents.recipes(event => {
     'darkerdepths:rope', // Replaced with Supplementaries Rope
     'darkerdepths:silver_block', // Redundant
     'darkerdepths:silver_ingot', // Redundant
+    'darkerdepths:raw_silver',
 
     // Decorative Blocks
     'decorative_blocks:chain', // Replaced with a different recipe.
@@ -60,6 +61,12 @@ ServerEvents.recipes(event => {
 
     // Forbidden & Arcanus
     'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
+
+    // Galosphere
+    'galosphere:raw_silver_block',
+    'galosphere:silver_ingot_from_nuggets',
+    'galosphere:silver_ingot',
+    'galosphere:silver_nugget',
 
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
@@ -86,6 +93,11 @@ ServerEvents.recipes(event => {
     'immersiveengineering:crafting/ingot_uranium_to_nugget_uranium',
     'immersiveengineering:crafting/ingot_steel_to_nugget_steel',
 
+    'immersiveengineering:crafting/raw_block_lead_to_raw_lead',
+    'immersiveengineering:crafting/raw_block_uranium_to_raw_uranium',
+
+    'immersiveengineering:crafting/raw_lead_to_raw_block_lead',
+    'immersiveengineering:crafting/raw_uranium_to_raw_block_uranium',
 
     // Mekanism
     'mekanism:charcoal',
