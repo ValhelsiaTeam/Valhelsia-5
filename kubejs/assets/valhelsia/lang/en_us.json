@@ -41,10 +41,11 @@
   "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
 
   "valhelsia.comment.blocks": "-----Missing Block Names-----",
-  "block.supplementaries.edelwood_stick": "Edelwood Stick",
+  "block.immersiveengineering.toolbox_block": "Toolbox",
   "block.moreminecarts.hologram_rail": "Hologram Rail",
   "block.moreminecarts.maglev_hologram_rail": "Maglev Hologram Rail",
   "block.moreminecarts.wooden_hologram_rail": "Wooden Hologram Rail",
+  "block.supplementaries.edelwood_stick": "Edelwood Stick",
   "block.tetra.holosphere": "Holosphere",
   "block.tetra.scroll_open": "Scroll",
   "block.tetra.scroll_wall": "Scroll",
