@@ -63,6 +63,7 @@ ServerEvents.recipes(event => {
     'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
 
     // Galosphere
+    'galosphere:raw_silver',
     'galosphere:raw_silver_block',
     'galosphere:silver_ingot_from_nuggets',
     'galosphere:silver_ingot',
