@@ -18,6 +18,8 @@
  * Crushing Recipe Event Handler
  */
  ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:crushing/';
+
   /**
    * Creates a Crushing recipe for multiple mods.
    * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
@@ -25,13 +27,16 @@
    * @param {(string|InputItem)} input A single ingredient to crush.
    */
   const crush = (output, input) => {
+    let itemID = OutputItem.of(output).item.id.replace(':', '/');
+
     // TODO: Rework this to allow secondary outputs to work - not entirely simple since IE and Create have very
     //       different approaches to how they handle this (and Mekanism doesn't appear to handle it at all).
     //       Recipes with secondary outputs might end up with a separate function instead of this one.
-    event.recipes.immersiveengineering.crusher(output, input, [], 3200);
-    event.recipes.mekanismCrushing(output, input);
-    event.recipes.createCrushing(output, input);
-    // TODO: Add Ars Nouveau Crushing.
+
+    event.recipes.immersiveengineering.crusher(output, input, [], 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
+    event.recipes.mekanism.crushing(output, input).id(`${ID_PREFIX}mekanism/${itemID}`);
+    event.recipes.create.crushing(output, input).id(`${ID_PREFIX}create/${itemID}`);
+    // TODO: Add Ars Nouveau Crushing (note: maybe separate, as it works very differently to the above).
     // TODO: Add MineColonies Crushing.
   };
 
@@ -44,7 +49,8 @@
    * @param {(string|Ingredient)} input A single ingredient to mill.
    */
   const mill = (output, input) => {
-    event.recipes.createMilling(output, input);
+    let itemID = OutputItem.of(output).item.id.replace(':', '/');
+    event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${itemID}`);
     crush(output, input);
   };
 

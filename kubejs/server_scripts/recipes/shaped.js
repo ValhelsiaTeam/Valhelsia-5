@@ -19,6 +19,7 @@
  * Shaped Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:crafting/';
 
   // Convenience Functions:
   const shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
@@ -44,14 +45,14 @@ ServerEvents.recipes(event => {
     A: '#forge:cobblestone',
     B: 'minecraft:crossbow',
     C: 'minecraft:redstone'
-  });
+  }).id(`${ID_PREFIX}dispenser_with_crossbow`);
 
   event.shaped('minecraft:chainmail_helmet', [
     'AAA',
     'A A'
   ], {
     A: 'minecraft:chain'
-  });
+  }).id(`${ID_PREFIX}chainmail_helmet`);
 
   event.shaped('minecraft:chainmail_chestplate', [
     'A A',
@@ -59,7 +60,7 @@ ServerEvents.recipes(event => {
     'AAA'
   ], {
     A: 'minecraft:chain'
-  });
+  }).id(`${ID_PREFIX}chainmail_chestplate`);
 
   event.shaped('minecraft:chainmail_leggings', [
     'AAA',
@@ -67,14 +68,14 @@ ServerEvents.recipes(event => {
     'A A'
   ], {
     A: 'minecraft:chain'
-  });
+  }).id(`${ID_PREFIX}chainmail_leggings`);
 
   event.shaped('minecraft:chainmail_boots', [
     'A A',
     'A A'
   ], {
     A: 'minecraft:chain'
-  });
+  }).id(`${ID_PREFIX}chainmail_boots`);
 
   event.shaped('minecraft:bundle', [
     'SCS',
@@ -83,7 +84,7 @@ ServerEvents.recipes(event => {
   ], {
     S: '#forge:string',
     C: 'farmersdelight:canvas'
-  });
+  }).id(`${ID_PREFIX}bundle`);
 
   event.shaped('minecraft:bookshelf', [
     'AAA',
@@ -92,7 +93,7 @@ ServerEvents.recipes(event => {
   ], {
     A: '#minecraft:planks',
     B: 'minecraft:book'
-  });
+  }).id(`${ID_PREFIX}bookshelf`);
   
   event.shaped('4x minecraft:ladder', [
     'A A',
@@ -101,7 +102,7 @@ ServerEvents.recipes(event => {
   ], {
     A: '#forge:rods/wooden',
     B: '#minecraft:planks'
-  });
+  }).id(`${ID_PREFIX}ladder`);
 
   // Ars Nouveau
   event.shaped('ars_nouveau:novice_spell_book', [
@@ -114,7 +115,7 @@ ServerEvents.recipes(event => {
     C: 'forbidden_arcanus:deorum_pickaxe',
     D: 'forbidden_arcanus:deorum_axe',
     E: 'forbidden_arcanus:deorum_sword',
-  });
+  }).id(`${ID_PREFIX}novice_spell_book`);
 
   event.shaped('ars_nouveau:apprentice_spell_book', [
     'ABC',
@@ -126,7 +127,7 @@ ServerEvents.recipes(event => {
     C: 'sullysmod:polished_jade',
     D: 'create:polished_rose_quartz',
     E: 'minecraft:blaze_rod',
-  });
+  }).id(`${ID_PREFIX}apprentice_spell_book`);
 
   event.shaped('ars_nouveau:archmage_spell_book', [
     'ABC',
@@ -140,7 +141,7 @@ ServerEvents.recipes(event => {
     E: 'alexsmobs:void_worm_eye',
     F: 'forbidden_arcanus:dragon_scale',
     G: 'minecraft:totem_of_undying',
-  });
+  }).id(`${ID_PREFIX}archmage_spell_book`);
 
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
@@ -171,7 +172,7 @@ ServerEvents.recipes(event => {
   ], {
     A: 'minecraft:iron_ingot',
     B: 'minecraft:iron_nugget'
-  });
+  }).id(`${ID_PREFIX}big_chain`);
 
   event.shaped('4x decorative_blocks:rocky_dirt', [
     'AB',
@@ -179,7 +180,7 @@ ServerEvents.recipes(event => {
   ], {
     A: 'minecraft:dirt',
     B: '#forge:cobblestone'
-  });
+  }).id(`${ID_PREFIX}rocky_dirt`);
 
   // Ecologics
   shaped2x2('minecraft:moss_block', 'ecologics:surface_moss');
@@ -203,7 +204,7 @@ ServerEvents.recipes(event => {
     B: '#forge:leather',
     C: 'quark:ravager_hide',
     D: '#forge:chests/wooden'
-  });
+  }).id(`${ID_PREFIX}backpack`);
 
   // Supplementaries
   event.shaped('supplementaries:quiver', [
@@ -213,7 +214,7 @@ ServerEvents.recipes(event => {
   ], {
     S: '#forge:string',
     L: '#forge:leather'
-  });
+  }).id(`${ID_PREFIX}quiver`);
 
   // Waystones
   event.shaped('waystones:warp_scroll', [
@@ -225,7 +226,7 @@ ServerEvents.recipes(event => {
     W: '#forge:dusts/warp',
     E: '#forge:ender_pearls',
     P: '#forge:paper'
-  }).id('valhelsia:warp_scroll');
+  }).id(`${ID_PREFIX}warp_scroll`);
 
   event.shaped('waystones:warp_stone', [
     'WPW',
@@ -235,6 +236,6 @@ ServerEvents.recipes(event => {
     W: '#forge:dusts/warp',
     P: '#forge:ender_pearls',
     E: '#forge:gems/emerald'
-  }).id('valhelsia:warp_stone');
+  }).id(`${ID_PREFIX}warp_stone`);
 
 });

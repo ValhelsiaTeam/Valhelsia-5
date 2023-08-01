@@ -25,7 +25,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input A single ingredient to saw.
    */
   const saw = (output, input) => {
-    event.recipes.immersiveengineeringSawmill(output, input);
+    event.recipes.immersiveengineering.sawmill(output, input);
 
     // TODO: Expand this to allow secondary outputs and stripping.
     // For future reference:

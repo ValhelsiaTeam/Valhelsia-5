@@ -17,6 +17,7 @@
  * Mekanism Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:mekanism/';
   
   /**
    * Adds a recipe to fill a Metallurgic Infuser with a given type of infusion material.
@@ -41,7 +42,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Ingredient)} input The item or item ID of the base block.
    */
   const mossify = (output, input) => {
-    event.recipes.mekanismMetallurgicInfusing(output, input, {infuse_type: 'mekanism:bio', amount: 10});
+    event.recipes.mekanism.metallurgic_infusing(output, input, {infuse_type: 'mekanism:bio', amount: 10});
   };
 
   /**
@@ -50,7 +51,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input The item or item ID of the base block.
    */
   const fungify = (output, input) => {
-    event.recipes.mekanismMetallurgicInfusing(output, input, {infuse_type: 'mekanism:fungi', amount: 10});
+    event.recipes.mekanism.metallurgic_infusing(output, input, {infuse_type: 'mekanism:fungi', amount: 10});
   };
 
   /**
@@ -60,7 +61,7 @@ ServerEvents.recipes(event => {
    * @param {number} quantity The number of Bio Fuel items to output.
    */
   const bioCrush = (input, quantity) => {
-    event.recipes.mekanismCrushing(`${quantity}x mekanism:bio_fuel`, input);
+    event.recipes.mekanism.crushing(`${quantity}x mekanism:bio_fuel`, input);
   };
 
   // Bio Fuel
@@ -125,12 +126,12 @@ ServerEvents.recipes(event => {
   bioCrush('minecraft:melon_slice', 2); // #blameurmet
 
   // Coal Coke -> Carbon / Enriched Carbon
-  event.recipes.mekanismEnriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
+  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
 
   // Enrichment
-  event.recipes.mekanismEnriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal');
+  event.recipes.mekanism.enriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal');
 
   // Fungification
   // TODO: Fungification

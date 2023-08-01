@@ -15,14 +15,16 @@
  * Shapeless Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:crafting/';
+
   // Biomes 'o' Plenty
-  event.shapeless('2x biomesoplenty:orange_sand', ['minecraft:sand', 'minecraft:red_sand']);
+  event.shapeless('2x biomesoplenty:orange_sand', ['minecraft:sand', 'minecraft:red_sand']).id(`${ID_PREFIX}orange_sand`);
   
   // Darker Depths
-  event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire']);
+  event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire']).id(`${ID_PREFIX}mossy_grimestone`);
 
   // Ecologics
-  event.shapeless('4x ecologics:surface_moss', 'minecraft:moss_block');  
+  event.shapeless('4x ecologics:surface_moss', 'minecraft:moss_block').id(`${ID_PREFIX}surface_moss`);  
 
   // Farmer's Delight
   event.shapeless('farmersdelight:organic_compost', [
@@ -35,6 +37,6 @@ ServerEvents.recipes(event => {
     '#forge:dusts/wood',
     '#forge:dusts/wood',
     '#forge:dusts/wood'
-  ]);
+  ]).id(`${ID_PREFIX}compost_from_sawdust`);
 
 });
