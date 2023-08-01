@@ -81,7 +81,7 @@ ServerEvents.recipes(event => {
   conj2x('farmersrespite:wild_tea_bush', 1000);
   conj2x('farmersrespite:wild_coffee_bush', 1000);
 
-  conj2x('2x forbidden_arcanus:petrified_root', 1000);
+  conj2x('forbidden_arcanus:petrified_root', 1000);
 
   conj2x('supplementaries:wild_flax', 1000);
 
