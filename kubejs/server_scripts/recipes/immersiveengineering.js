@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
       type: 'immersiveengineering:hammer_crushing',
       input: InputItem.of(input).ingredient.toJson(),
       result: OutputItem.of(output).item.toJson()
-    }).id(`${ID_PREFIX}hammer_crushing/${OutputItem.of(output).item.replace(':','/')}`);
+    }).id(`${ID_PREFIX}hammer_crushing/${OutputItem.of(output).item.id.replace(':','/')}`);
   };
 
   /**
@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input Input item(s).
    */
   const unpack = (output, input) => {
-    event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking').id(`${ID_PREFIX}unpacking/${OutputItem.of(output).item.replace(':','/')}`);
+    event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking').id(`${ID_PREFIX}unpacking/${OutputItem.of(output).item.id.replace(':','/')}`);
   }
 
   // Hammer Crushing Recipes
