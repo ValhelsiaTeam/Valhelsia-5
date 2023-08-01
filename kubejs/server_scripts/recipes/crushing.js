@@ -27,7 +27,7 @@
    * @param {(string|InputItem)} input A single ingredient to crush.
    */
   const crush = (output, input) => {
-    let itemID = OutputItem.of(output).item.id.replace(':', '/');
+    let itemID = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(output).item.id.replace(':', '/')}`;
 
     // TODO: Rework this to allow secondary outputs to work - not entirely simple since IE and Create have very
     //       different approaches to how they handle this (and Mekanism doesn't appear to handle it at all).
