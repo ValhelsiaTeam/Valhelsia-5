@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
       mana = 800;
     }
 
-    event.recipes.botania.mana_infusion(`2x ${item}`, item, mana, 'botania:conjuration_catalyst');
+    event.recipes.botania.mana_infusion(`2x ${item}`, item, mana, 'botania:conjuration_catalyst').id(`valhelsia:conjuration_${item.replace(':','_')}`);
   };
 
   // Mana Infusion
@@ -47,7 +47,6 @@ ServerEvents.recipes(event => {
 
   conj2x('biomesoplenty:barley');
   conj2x('biomesoplenty:bush');
-  conj2x('biomesoplenty:barley');
   conj2x('biomesoplenty:cattail');
   conj2x('biomesoplenty:clover');
   conj2x('biomesoplenty:dead_grass');
