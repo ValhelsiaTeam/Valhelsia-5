@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
    * @param {(string[]|InputItem[])} inputs An array of ingredients to use as inputs. Must have at least two ingredients.
    */
   const alloy = (output, inputs) => {
-    let itemID = OutputItem.of(output).item.id;
+    let itemID = OutputItem.of(output).item.id.replace(':', '/');
 
     // Create
     event.recipes.create.mixing(output, inputs).heated().id(`${ID_PREFIX}/create/${itemID}`);
