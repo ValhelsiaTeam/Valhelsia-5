@@ -59,9 +59,6 @@ ServerEvents.recipes(event => {
     'ecologics:surface_moss',
     'ecologics:moss_block',
 
-    // Forbidden & Arcanus
-    'forbidden_arcanus:deorum_chain', // Removed temporarily to fix a bug.
-
     // Galosphere
     'galosphere:raw_silver',
     'galosphere:raw_silver_block',
