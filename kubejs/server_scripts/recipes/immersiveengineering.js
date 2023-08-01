@@ -24,8 +24,8 @@ ServerEvents.recipes(event => {
   const hammer_crush = (output, input) => {
     event.custom({
       type: 'immersiveengineering:hammer_crushing',
-      input: InputItem.of(input).toJson(),
-      result: Item.of(output).toJson()
+      input: InputItem.of(input).ingredient.toJson(),
+      result: OutputItem.of(output).toJson()
     });
   };
 

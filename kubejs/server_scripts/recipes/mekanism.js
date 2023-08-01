@@ -27,9 +27,7 @@ ServerEvents.recipes(event => {
   const infusionConversion = (type, input, amount) => {
     event.custom({
       type: 'mekanism:infusion_conversion',
-      input: {
-        ingredient: InputItem.of(input).toJson()
-      },
+      input: InputItem.of(input).toJson(),
       output: {
         infuse_type: type,
         amount: amount
