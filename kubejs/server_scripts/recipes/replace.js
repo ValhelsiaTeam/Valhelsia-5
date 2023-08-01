@@ -43,6 +43,9 @@ ServerEvents.recipes(event => {
   replaceInput('galosphere:silver_ingot', '#forge:ingots/silver');
   replaceInput('galosphere:silver_nugget', '#forge:nuggets/silver');
   replaceInput('galosphere:silver_block', '#forge:storage_blocks/silver');
+  replaceInput('immersiveengineering:nugget_silver', '#forge:nuggets/silver');
+  replaceInput('immersiveengineering:ingot_silver', '#forge:ingots/silver');
+  replaceInput('immersiveengineering:storage_silver', '#forge:storage_blocks/silver');
   replaceInput('immersiveengineering:raw_silver', '#forge:raw_materials/silver');
   replaceInput('immersiveengineering:raw_block_silver', '#forge:storage_blocks/raw_silver');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
