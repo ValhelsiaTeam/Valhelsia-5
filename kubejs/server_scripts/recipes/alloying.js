@@ -18,6 +18,7 @@
  * Alloying Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:alloying/';
 
   /**
    * Creates an alloy recipe for multiple mods.
@@ -28,20 +29,21 @@ ServerEvents.recipes(event => {
    * @param {(string[]|InputItem[])} inputs An array of ingredients to use as inputs. Must have at least two ingredients.
    */
   const alloy = (output, inputs) => {
+    let itemID = OutputItem.of(output).item.id;
+
     // Create
-    event.recipes.create.mixing(output, inputs).heated();
+    event.recipes.create.mixing(output, inputs).heated().id(`${ID_PREFIX}/create/${itemID}`);
     // TODO: Consider adding a flag to switch between unheated, heated, superheated mixing recipes.
     //       For now, heated is a sensible default for most alloying.
 
     // Immersive Engineering & Mekanism
     if (inputs.length == 2) {
-      event.recipes.immersiveengineering.alloy(output, inputs[0], inputs[1]);
+      event.recipes.immersiveengineering.alloy(output, inputs[0], inputs[1]).id(`${ID_PREFIX}/immersiveengineering/${itemID}`);
 
       // Note: The combiner is the closest thing in Mekanism to an alloy kiln, as it
       // takes two inputs and merges them into one output, consuming power to do so.
       // This also makes up for the potential removal of the default recipes of the combiner in the future.
-      // Temporarily disable Mekanism Combiner recipe additions too.
-      //event.recipes.mekanismCombining(output, inputs[0], inputs[1]);
+      event.recipes.mekanism.combining(output, inputs[0], inputs[1]).id(`${ID_PREFIX}/mekanism/${itemID}`);
     }
   };
 
