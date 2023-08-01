@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
       type: 'immersiveengineering:hammer_crushing',
       input: InputItem.of(input).ingredient.toJson(),
       result: OutputItem.of(output).item.toJson()
-    }).id(`${ID_PREFIX}hammer_crushing/${OutputItem.of(output).item.id.replace(':','/')}`);
+    }).id(`${ID_PREFIX}hammer_crushing/${OutputItem.of(output).item.id.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**
@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
         },
         input: InputItem.of(input).toJson(),
         energy: energy
-    }).id(`${ID_PREFIX}fermenter/${fluid.replace(':','/')}`);
+    }).id(`${ID_PREFIX}fermenter/${fluid.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**
@@ -73,7 +73,7 @@ ServerEvents.recipes(event => {
         },
         input: InputItem.of(input).toJson(),
         energy: energy
-    }).id(`${ID_PREFIX}squeezer/${fluid.replace(':','/')}`);
+    }).id(`${ID_PREFIX}squeezer/${fluid.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**

@@ -28,14 +28,15 @@ ServerEvents.recipes(event => {
    * @param {(string|Item)} output The resulting output alloy item(s).
    * @param {(string[]|InputItem[])} inputs An array of ingredients to use as inputs. Must have at least two ingredients.
    */
-  const alloy = (output, inputs) => {
-    let itemID = OutputItem.of(output).item.id.replace(':', '/');
+  const alloy = (output, inputs, isDust) => {
+    if (typeof isDust == 'undefined') {
+      isDust = false;
+    }
 
-    inputs.forEach((input) => {
-      if (InputItem.of(input).item.id.includes('dusts')) {
-        itemID += '_from_dust';
-      }
-    });
+    let itemID = OutputItem.of(output).item.id.replace(':', '/');
+    if (isDust) {
+      itemID += '_from_dust';
+    }
 
     // Create
     event.recipes.create.mixing(output, inputs).heated().id(`${ID_PREFIX}create/${itemID}`);
@@ -73,26 +74,26 @@ ServerEvents.recipes(event => {
   //       in order to add compatibility with other alloying methods.
   
   // Forbidden and Arcanus
-  alloy('forbidden_arcanus:obsidian_ingot', ['#forge:dusts/obsidian', '4x #forge:nuggets/iron']);
+  alloy('forbidden_arcanus:obsidian_ingot', ['#forge:dusts/obsidian', '4x #forge:nuggets/iron'], true);
   //alloy('forbidden_arcanus:deorum_ingot', ['#forge:ingots/gold', '4x #forge:dusts/mundabitur']);
   //alloy('forbidden_arcanus:deorum_ingot', ['#forge:dusts/gold', '4x #forge:dusts/mundabitur']);
   
   // Immersive Engineering
   alloy('2x immersiveengineering:ingot_constantan', ['#forge:ingots/copper', '#forge:ingots/nickel']);
-  alloy('2x immersiveengineering:ingot_constantan', ['#forge:dusts/copper', '#forge:dusts/nickel']);
+  alloy('2x immersiveengineering:ingot_constantan', ['#forge:dusts/copper', '#forge:dusts/nickel'], true);
   alloy('2x immersiveengineering:ingot_electrum', ['#forge:ingots/gold', '#forge:ingots/silver']);
-  alloy('2x immersiveengineering:ingot_electrum', ['#forge:dusts/gold', '#forge:dusts/silver']);
+  alloy('2x immersiveengineering:ingot_electrum', ['#forge:dusts/gold', '#forge:dusts/silver'], true);
 
   // Mekanism
   alloy('4x mekanism:ingot_bronze', ['3x #forge:ingots/copper', '#forge:ingots/tin']);
-  alloy('4x mekanism:ingot_bronze', ['3x #forge:dusts/copper', '#forge:dusts/tin']);
-  alloy('mekanism:dust_refined_obsidian', ['#forge:dusts/obsidian', '#forge:dusts/diamond']);
+  alloy('4x mekanism:ingot_bronze', ['3x #forge:dusts/copper', '#forge:dusts/tin'], true);
+  alloy('mekanism:dust_refined_obsidian', ['#forge:dusts/obsidian', '#forge:dusts/diamond'], true);
   alloy('mekanism:alloy_infused', ['#forge:ingots/iron', '#forge:dusts/redstone']);
-  alloy('mekanism:alloy_reinforced', ['#forge:alloys/advanced', '2x #forge:dusts/diamond']);
-  alloy('mekanism:alloy_atomic', ['#forge:alloys/elite', '4x #forge:dusts/refined_obsidian']);
+  alloy('mekanism:alloy_reinforced', ['#forge:alloys/advanced', '2x #forge:dusts/diamond'], true);
+  alloy('mekanism:alloy_atomic', ['#forge:alloys/elite', '4x #forge:dusts/refined_obsidian'], true);
 
   // More Minecarts
   alloy('moreminecarts:silica_steel', ['#forge:ingots/steel', '#forge:gems/quartz']);
-  alloy('moreminecarts:silica_steel', ['#forge:dusts/steel', '#forge:gems/quartz']);
+  alloy('moreminecarts:silica_steel', ['#forge:dusts/steel', '#forge:gems/quartz'], true);
 
 });
