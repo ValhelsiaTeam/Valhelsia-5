@@ -31,6 +31,12 @@ ServerEvents.recipes(event => {
   const alloy = (output, inputs) => {
     let itemID = OutputItem.of(output).item.id.replace(':', '/');
 
+    inputs.forEach((input) => {
+      if (InputItem.of(input).item.id.includes('dusts')) {
+        itemID += '_from_dust';
+      }
+    });
+
     // Create
     event.recipes.create.mixing(output, inputs).heated().id(`${ID_PREFIX}create/${itemID}`);
     // TODO: Consider adding a flag to switch between unheated, heated, superheated mixing recipes.
