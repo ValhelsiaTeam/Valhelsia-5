@@ -29,14 +29,13 @@ ServerEvents.recipes(event => {
    */
   const alloy = (output, inputs) => {
     // Create
-    // FIXME: Temporarily disabled since it doesn't handle itemstacks with multiple items as inputs. :()
-    //event.recipes.createMixing(output, inputs).heated();
+    event.recipes.create.mixing(output, inputs).heated();
     // TODO: Consider adding a flag to switch between unheated, heated, superheated mixing recipes.
     //       For now, heated is a sensible default for most alloying.
 
     // Immersive Engineering & Mekanism
     if (inputs.length == 2) {
-      event.recipes.immersiveengineeringAlloy(output, inputs[0], inputs[1]);
+      event.recipes.immersiveengineering.alloy(output, inputs[0], inputs[1]);
 
       // Note: The combiner is the closest thing in Mekanism to an alloy kiln, as it
       // takes two inputs and merges them into one output, consuming power to do so.
@@ -50,7 +49,7 @@ ServerEvents.recipes(event => {
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
   // For removal of alloying recipes with no replacement, use remove.js instead.
   [
-    //'create:mixing/brass_ingot',
+    'create:mixing/brass_ingot',
     'immersiveengineering:alloysmelter/brass',
     'immersiveengineering:alloysmelter/bronze',
     'immersiveengineering:alloysmelter/constantan',
