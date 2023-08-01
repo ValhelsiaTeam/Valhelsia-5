@@ -28,7 +28,7 @@
     // TODO: Rework this to allow secondary outputs to work - not entirely simple since IE and Create have very
     //       different approaches to how they handle this (and Mekanism doesn't appear to handle it at all).
     //       Recipes with secondary outputs might end up with a separate function instead of this one.
-    event.recipes.immersiveengineeringCrusher(output, input);
+    event.recipes.immersiveengineering.crusher(output, input, [], 3200);
     event.recipes.mekanismCrushing(output, input);
     event.recipes.createCrushing(output, input);
     // TODO: Add Ars Nouveau Crushing.
