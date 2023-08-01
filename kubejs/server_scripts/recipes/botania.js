@@ -15,7 +15,7 @@
  * Botania Recipe Event Handler
  */
 ServerEvents.recipes(event => {
-
+  const ID_PREFIX = 'valhelsia:botania/';
   /**
    * Creates a conjuration recipe to duplicate an item with a mana pool. 
    * 
@@ -27,16 +27,16 @@ ServerEvents.recipes(event => {
       mana = 800;
     }
 
-    event.recipes.botania.mana_infusion(`2x ${item}`, item, mana, 'botania:conjuration_catalyst').id(`valhelsia:conjuration_${item.replace(':','_')}`);
+    event.recipes.botania.mana_infusion(`2x ${item}`, item, mana, 'botania:conjuration_catalyst').id(`${ID_PREFIX}conjuration/${item.replace(':','/')}`);
   };
 
   // Mana Infusion
   //event.recipes.botania.mana_infusion('output_here', 'input_here', 200);
 
   // Mana Infusion - Alchemy
-  event.recipes.botania.mana_infusion('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:alchemy_catalyst');
-  event.recipes.botania.mana_infusion('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:alchemy_catalyst');
-  event.recipes.botania.mana_infusion('darkerdepths:lush_sprouts', 'biomesoplenty:sprout', 500, 'botania:alchemy_catalyst');
+  event.recipes.botania.mana_infusion('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/kelp_to_seagrass`);
+  event.recipes.botania.mana_infusion('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/seagrass_to_kelp`);
+  event.recipes.botania.mana_infusion('darkerdepths:lush_sprouts', 'biomesoplenty:sprout', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/sprout_to_lush_sprouts`);
 
   // Mana Infusion - Conjuration
   conj2x('minecraft:crimson_roots');
@@ -88,8 +88,8 @@ ServerEvents.recipes(event => {
   // event.recipes.botania.elven_trade(['output_here'], 'input_here');
 
   // Pure Daisy
-  event.recipes.botania.pure_daisy('forbidden_arcanus:soulless_sand', 'minecraft:soul_sand');
-  event.recipes.botania.pure_daisy('minecraft:sand', 'forbidden_arcanus:soulless_sand');
+  event.recipes.botania.pure_daisy('forbidden_arcanus:soulless_sand', 'minecraft:soul_sand').id(`${ID_PREFIX}pure_daisy/soul_sand_to_soulless_sand`);
+  event.recipes.botania.pure_daisy('minecraft:sand', 'forbidden_arcanus:soulless_sand').id(`${ID_PREFIX}pure_daisy/soulless_sand_to_sand`);
 
   // Brewing (Note: Needs a corresponding entry in a startup script too!)
   // event.recipes.botania.brew('kubejs:torrent', ['input_here']);
