@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Ingredient)} input The item or item ID of the base block.
    */
   const mossify = (output, input) => {
-    event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:bio', 10);
+    event.recipes.mekanismMetallurgicInfusing(output, input, {infuse_type: 'mekanism:bio', amount: 10});
   };
 
   /**
@@ -52,7 +52,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input The item or item ID of the base block.
    */
   const fungify = (output, input) => {
-    event.recipes.mekanismMetallurgicInfusing(output, input, 'mekanism:fungi', 10);
+    event.recipes.mekanismMetallurgicInfusing(output, input, {infuse_type: 'mekanism:fungi', amount: 10});
   };
 
   /**
