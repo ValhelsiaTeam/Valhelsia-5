@@ -96,4 +96,5 @@
   mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
   mill('9x minecraft:bone_meal', 'blue_skies:azulfo_horn');
   mill('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
+  mill('4x minecraft:bone_meal', 'alexsmobs:fish_bones');
 });
