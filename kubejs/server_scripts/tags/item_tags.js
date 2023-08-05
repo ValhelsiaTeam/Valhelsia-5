@@ -66,7 +66,7 @@ ServerEvents.tags('item', event => {
     'moreminecarts:silica_steel_block',
   ]);
 
-  // -----Dusts -----
+  // ----- Dusts -----
   event.add('forge:dusts', [
     'botania:pixie_dust',
     'waystones:warp_dust',
@@ -78,6 +78,17 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:dusts/warp', [
     'waystones:warp_dust',
+  ]);
+
+  // ----- Logs / Wood -----
+  event.add('forge:stripped_logs', [
+    'forbidden_arcanus:stripped_cherry_log',
+    'forbidden_arcanus:stripped_aurum_log',
+  ]);
+
+  event.add('forge:stripped_wood', [
+    'forbidden_arcanus:stripped_cherry_wood',
+    'forbidden_arcanus:stripped_aurum_wood',
   ]);
 
    
