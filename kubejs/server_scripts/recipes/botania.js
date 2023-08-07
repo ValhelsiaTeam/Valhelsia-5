@@ -45,6 +45,9 @@ ServerEvents.recipes(event => {
   conj2x('minecraft:warped_roots');
   conj2x('minecraft:small_dripleaf', 1000);
 
+  conj2x('atmospheric:arid_sprouts');
+  conj2x('atmospheric:yucca_branch', 1000);
+
   conj2x('biomesoplenty:barley');
   conj2x('biomesoplenty:bush');
   conj2x('biomesoplenty:cattail');
@@ -69,6 +72,8 @@ ServerEvents.recipes(event => {
   conj2x('darkerdepths:lush_sprouts');
   conj2x('darkerdepths:mossy_sprouts');
   conj2x('darkerdepths:roots');
+  
+  conj2x('environmental:mycelium_sprouts');
 
   conj2x('farmersdelight:wild_cabbages', 1000);
   conj2x('farmersdelight:wild_onions', 1000);
