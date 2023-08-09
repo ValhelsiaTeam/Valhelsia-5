@@ -44,6 +44,7 @@ ServerEvents.recipes(event => {
   scConvert(['create:limestone', 'darkerdepths:limestone', 'quark:limestone']);
   scConvert(['darkerdepths:shale', 'quark:shale']);
 
+  // Darker Depths
   event.stonecutting('darkerdepths:stone_brick_pillar', 'minecraft:stone');
   event.stonecutting('darkerdepths:stone_brick_pillar', 'minecraft:stone_bricks');
 
@@ -76,4 +77,9 @@ ServerEvents.recipes(event => {
   event.stonecutting('2x darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks');
   event.stonecutting('2x darkerdepths:polished_shale_vertical_slab', 'darkerdepths:shale');
   event.stonecutting('2x darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale');
+
+  // Twilight Forest
+  event.stonecutting('twilightforest:nagastone_pillar', 'twilightforest:nagastone');
+  event.stonecutting('twilightforest:etched_nagastone', 'twilightforest:nagastone');
+  event.stonecutting('twilightforest:nagastone_head', 'twilightforest:nagastone');
 });
