@@ -22,20 +22,127 @@ ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:crafting/';
 
   // Convenience Functions:
-  const shaped2x2 = (output, input) => {event.shaped(output, ['AA', 'AA'], {A: input})};
-  const shaped3x3 = (output, input) => {event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input})};
-  const donut = (output, input) => {event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input})};
-  const wrapped = (output, core, wrap) => {event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core})};
-  const plusWrapped = (output, core, wrap) => {event.shaped(output, [' A ', 'ABA', ' A '], {A: wrap, B: core})};
-  const barrel = (output, plank, slab) => {event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab})};
-  const slab = (output, input) => {event.shaped(Item.of(output, 6), ['AAA'], {A: input})};
-  const vslab = (output, input) => {event.shaped(Item.of(output, 3), ['A', 'A', 'A'], {A: input})};
+
+  /**
+   * Adds a new 2x2 shaped recipe.
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} input Recipe ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const shaped2x2 = (output, input, recipeID) => {
+    let recipe = event.shaped(output, ['AA', 'AA'], {A: input});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new 3x3 shaped recipe.
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} input Recipe ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const shaped3x3 = (output, input, recipeID) => {
+    let recipe = event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new donut shaped recipe.
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} input Recipe ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const donut = (output, input, recipeID) => {
+    let recipe = event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new wrapped shaped recipe.
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} core Middle ingredient.
+   * @param {*} wrap Outer ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const wrapped = (output, core, wrap, recipeID) => {
+    let recipe = event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new plus wrapped shaped recipe.
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} core Middle ingredient.
+   * @param {*} wrap Outer ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const plusWrapped = (output, core, wrap, recipeID) => {
+    let recipe = event.shaped(output, [' A ', 'ABA', ' A '], {A: wrap, B: core});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new 'barrel' shaped recipe.
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} plank Plank ingredient.
+   * @param {*} slab Slab ingredient.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const barrel = (output, plank, slab, recipeID) => {
+    let recipe = event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new 'slab' shaped recipe.
+   * 
+   * @param {*} output Item to craft (quantity is automatically set).
+   * @param {*} input Recipe ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const slab = (output, input, recipeID) => {
+    let recipe = event.shaped(Item.of(output, 6), ['AAA'], {A: input});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
+
+  /**
+   * Adds a new 'vertical slab' shaped recipe.
+   * 
+   * @param {*} output Item to craft (quantity is automatically set).
+   * @param {*} input Recipe ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const vslab = (output, input, recipeID) => {
+    let recipe = event.shaped(Item.of(output, 3), ['A', 'A', 'A'], {A: input});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}recipeID`);
+    }
+  };
 
   // Valhelsia
-  plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves');
+  plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves', 'filled_akashic_tome');
 
   // Minecraft
-  shaped3x3('minecraft:cobweb', 'minecraft:string');
+  shaped3x3('minecraft:cobweb', 'minecraft:string', 'cobweb');
 
   event.shaped('minecraft:dispenser', [
     'AAA',
@@ -144,25 +251,25 @@ ServerEvents.recipes(event => {
   }).id(`${ID_PREFIX}archmage_spell_book`);
 
   // Darker Depths
-  shaped2x2('darkerdepths:ash_block', '#valhelsia:ash');
+  shaped2x2('darkerdepths:ash_block', '#valhelsia:ash', 'ash_block');
 
-  vslab('darkerdepths:petrified_vertical_slab', 'darkerdepths:petrified_slab');
+  vslab('darkerdepths:petrified_vertical_slab', 'darkerdepths:petrified_slab', 'darkerdepths/petrified_vertical_slab');
 
-  vslab('darkerdepths:aridrock_vertical_slab', 'darkerdepths:aridrock_slab');
-  vslab('darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock_bricks_slab');
-  vslab('darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:polished_aridrock_slab');
+  vslab('darkerdepths:aridrock_vertical_slab', 'darkerdepths:aridrock_slab', 'darkerdepths/aridrock_vertical_slab');
+  vslab('darkerdepths:aridrock_bricks_vertical_slab', 'darkerdepths:aridrock_bricks_slab', 'darkerdepths/aridrock_bricks_vertical_slab');
+  vslab('darkerdepths:polished_aridrock_vertical_slab', 'darkerdepths:polished_aridrock_slab', 'darkerdepths/polished_aridrock_vertical_slab');
 
-  vslab('darkerdepths:grimestone_vertical_slab', 'darkerdepths:grimestone_slab');
-  vslab('darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone_bricks_slab');
-  vslab('darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:polished_grimestone_slab');
+  vslab('darkerdepths:grimestone_vertical_slab', 'darkerdepths:grimestone_slab', 'darkerdepths/grimestone_vertical_slab');
+  vslab('darkerdepths:grimestone_bricks_vertical_slab', 'darkerdepths:grimestone_bricks_slab', 'darkerdepths/grimestone_bricks_vertical_slab');
+  vslab('darkerdepths:polished_grimestone_vertical_slab', 'darkerdepths:polished_grimestone_slab', 'darkerdepths/polished_grimestone_vertical_slab');
 
-  vslab('darkerdepths:limestone_vertical_slab', 'darkerdepths:limestone_slab');
-  vslab('darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone_bricks_slab');
-  vslab('darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:polished_limestone_slab');
+  vslab('darkerdepths:limestone_vertical_slab', 'darkerdepths:limestone_slab', 'darkerdepths/limestone_vertical_slab');
+  vslab('darkerdepths:limestone_bricks_vertical_slab', 'darkerdepths:limestone_bricks_slab', 'darkerdepths/limestone_bricks_vertical_slab');
+  vslab('darkerdepths:polished_limestone_vertical_slab', 'darkerdepths:polished_limestone_slab', 'darkerdepths/polished_limestone_vertical_slab');
 
-  vslab('darkerdepths:shale_vertical_slab', 'darkerdepths:shale_slab');
-  vslab('darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks_slab');
-  vslab('darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale_slab');
+  vslab('darkerdepths:shale_vertical_slab', 'darkerdepths:shale_slab', 'darkerdepths/shale_vertical_slab');
+  vslab('darkerdepths:shale_bricks_vertical_slab', 'darkerdepths:shale_bricks_slab', 'darkerdepths/shale_bricks_vertical_slab');
+  vslab('darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale_slab', 'darkerdepths/polished_shale_vertical_slab');
 
   // Decorative Blocks
   event.shaped('2x decorative_blocks:chain', [
@@ -183,16 +290,16 @@ ServerEvents.recipes(event => {
   }).id(`${ID_PREFIX}rocky_dirt`);
 
   // Ecologics
-  shaped2x2('minecraft:moss_block', 'ecologics:surface_moss');
+  shaped2x2('minecraft:moss_block', 'ecologics:surface_moss', 'moss_block');
 
   // Farmer's Delight
-  shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost');
-  shaped2x2('farmersdelight:canvas', 'supplementaries:flax');
+  shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost', 'organic_compost_from_minecolonies_compost');
+  shaped2x2('farmersdelight:canvas', 'supplementaries:flax', 'canvas_from_flax');
 
   // Immersive Engineering
-  shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver');
-  shaped3x3('immersiveengineering:storage_steel', '#forge:ingots/steel');
-  shaped3x3('immersiveengineering:ingot_silver', '#forge:nuggets/silver');
+  shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver', 'silver_block_from_silver_ingots');
+  shaped3x3('immersiveengineering:storage_steel', '#forge:ingots/steel', 'steel_block_from_steel_ingots');
+  shaped3x3('immersiveengineering:ingot_silver', '#forge:nuggets/silver', 'silver_ingot_from_silver_nuggets');
 
   // Sophisticated Backpacks
   event.shaped('sophisticatedbackpacks:backpack', [
@@ -238,4 +345,6 @@ ServerEvents.recipes(event => {
     E: '#forge:gems/emerald'
   }).id(`${ID_PREFIX}warp_stone`);
 
+  // Twilight Forest
+  wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');
 });
