@@ -322,6 +322,9 @@ ServerEvents.recipes(event => {
     S: '#forge:string',
     L: '#forge:leather'
   }).id(`${ID_PREFIX}quiver`);
+  
+  // Twilight Forest
+  wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');
 
   // Waystones
   event.shaped('waystones:warp_scroll', [
@@ -345,6 +348,4 @@ ServerEvents.recipes(event => {
     E: '#forge:gems/emerald'
   }).id(`${ID_PREFIX}warp_stone`);
 
-  // Twilight Forest
-  wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');
 });
