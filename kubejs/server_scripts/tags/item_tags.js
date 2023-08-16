@@ -84,11 +84,13 @@ ServerEvents.tags('item', event => {
   event.add('forge:stripped_logs', [
     'forbidden_arcanus:stripped_cherry_log',
     'forbidden_arcanus:stripped_aurum_log',
+    'upgrade_aquatic:stripped_driftwood_log',
   ]);
 
   event.add('forge:stripped_wood', [
     'forbidden_arcanus:stripped_cherry_wood',
     'forbidden_arcanus:stripped_aurum_wood',
+    'upgrade_aquatic:stripped_driftwood',
   ]);
 
   event.add('minecraft:logs_that_burn', [
