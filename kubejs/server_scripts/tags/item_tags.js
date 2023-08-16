@@ -91,6 +91,14 @@ ServerEvents.tags('item', event => {
     'forbidden_arcanus:stripped_aurum_wood',
   ]);
 
+  event.add('minecraft:logs_that_burn', [
+    'forbidden_arcanus:aurum_log',
+    'forbidden_arcanus:stripped_aurum_log',
+    'forbidden_arcanus:cherry_log',
+    'forbidden_arcanus:thin_cherry_log',
+    'forbidden_arcanus:stripped_cherry_log',
+  ]);
+
    
   // ----- Sandstone -----
   event.add('forge:sandstone/colorless', [
