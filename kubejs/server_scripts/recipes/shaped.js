@@ -251,7 +251,7 @@ ServerEvents.recipes(event => {
   }).id(`${ID_PREFIX}archmage_spell_book`);
 
   // Blue Skies
-  event.shaped('blue_skies:spider_webbing', [
+  event.shaped('3x blue_skies:spider_webbing', [
     'WW', 
     'W '
   ], {
