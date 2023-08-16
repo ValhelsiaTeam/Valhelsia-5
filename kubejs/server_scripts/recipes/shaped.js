@@ -250,6 +250,14 @@ ServerEvents.recipes(event => {
     G: 'minecraft:totem_of_undying',
   }).id(`${ID_PREFIX}archmage_spell_book`);
 
+  // Blue Skies
+  event.shaped('blue_skies:spider_webbing', [
+    'WW', 
+    'W '
+  ], {
+    W: 'minecraft:cobweb'
+  }).id(`${ID_PREFIX}spider_webbing`);
+
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash', 'ash_block');
 
