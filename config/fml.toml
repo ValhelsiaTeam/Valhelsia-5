@@ -5,5 +5,5 @@ splashscreen = true
 defaultConfigPath = "defaultconfigs"
 disableOptimizedDFU = true
 # max threads for parallel loading : -1 uses Runtime#availableProcessors
-maxThreads = -1
+maxThreads = 1
 
