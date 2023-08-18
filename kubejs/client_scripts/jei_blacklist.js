@@ -27,6 +27,9 @@ JEIEvents.hideItems(event => {
     'minecraft:structure_block',
     'minecraft:structure_void',
 
+    // Advanced Peripherals
+    'advancedperipherals:rs_bridge',
+
     // Applied Energistics 2
     'ae2:facade',
 
