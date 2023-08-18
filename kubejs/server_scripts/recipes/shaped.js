@@ -33,7 +33,7 @@ ServerEvents.recipes(event => {
   const shaped2x2 = (output, input, recipeID) => {
     let recipe = event.shaped(output, ['AA', 'AA'], {A: input});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
   const shaped3x3 = (output, input, recipeID) => {
     let recipe = event.shaped(output, ['AAA', 'AAA', 'AAA'], {A: input});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -61,7 +61,7 @@ ServerEvents.recipes(event => {
   const donut = (output, input, recipeID) => {
     let recipe = event.shaped(output, ['AAA', 'A A', 'AAA'], {A: input});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -76,7 +76,7 @@ ServerEvents.recipes(event => {
   const wrapped = (output, core, wrap, recipeID) => {
     let recipe = event.shaped(output, ['AAA', 'ABA', 'AAA'], {A: wrap, B: core});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
   const plusWrapped = (output, core, wrap, recipeID) => {
     let recipe = event.shaped(output, [' A ', 'ABA', ' A '], {A: wrap, B: core});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -106,7 +106,7 @@ ServerEvents.recipes(event => {
   const barrel = (output, plank, slab, recipeID) => {
     let recipe = event.shaped(output, ['ABA', 'A A', 'ABA'], {A: plank, B: slab});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -120,7 +120,7 @@ ServerEvents.recipes(event => {
   const slab = (output, input, recipeID) => {
     let recipe = event.shaped(Item.of(output, 6), ['AAA'], {A: input});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
@@ -134,7 +134,7 @@ ServerEvents.recipes(event => {
   const vslab = (output, input, recipeID) => {
     let recipe = event.shaped(Item.of(output, 3), ['A', 'A', 'A'], {A: input});
     if (typeof recipeID == 'string') {
-      recipe.id(`${ID_PREFIX}recipeID`);
+      recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
 
