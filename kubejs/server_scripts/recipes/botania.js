@@ -136,7 +136,7 @@ ServerEvents.recipes(event => {
   
 
   // Orechid - Netherrack
-  // event.recipes.botania.orechid_ignem('output_here', 'minecraft:netherrack', 1);
+  event.recipes.botania.orechid_ignem('malum:blazing_quartz_ore', 'minecraft:netherrack', 9800);
 
   // Orechid - Modded Stone
 
