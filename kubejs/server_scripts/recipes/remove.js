@@ -59,6 +59,9 @@ ServerEvents.recipes(event => {
     'ecologics:surface_moss',
     'ecologics:moss_block',
 
+    // Farmer's Delight
+    'farmersdelight:cake_from_milk_bottle', // Redundant: Same as Neapolitan's recipe.
+
     // Galosphere
     'galosphere:raw_silver',
     'galosphere:raw_silver_block',
