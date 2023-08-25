@@ -102,6 +102,7 @@ ServerEvents.recipes(event => {
 
     // Mekanism
     'mekanism:charcoal',
+    'mekanism:storage_blocks/charcoal',
     'mekanismtools:steel/tools/sword',
     'mekanismtools:steel/tools/pickaxe',
     'mekanismtools:steel/tools/axe',
