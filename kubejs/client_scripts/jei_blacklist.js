@@ -11,7 +11,7 @@
  * 
  * For consistency, Item / Fluid IDs should be in the order of Minecraft entries first, then by mod in alphabetical order.
  *  
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2023
  */
 
 /**
@@ -234,5 +234,5 @@ JEIEvents.hideItems(event => {
     'woodworks:mangrove_leaf_pile',
     'woodworks:azalea_leaf_pile',
     'woodworks:flowering_azalea_leaf_pile'
-  ])
-})
+  ]);
+});
