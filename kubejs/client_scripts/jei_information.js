@@ -28,15 +28,7 @@ JEIEvents.information(event => {
    * @param {string} textID The language entry for the information.
    */
   const addInfo = (items, textID) => {
-    if (Array.isArray(items)) {
-      items.forEach((itemID) => event.add(itemID, Text.translate(textID)));
-    } else {
-      if (typeof items != 'string') {
-        console.error('[jei_information.js]: addInfo requires either an array or string as input.');
-        return;
-      }
-      event.add(items, Text.translate(textID));
-    }
+    event.add(items, Text.translate(textID));
   };
 
   // Minecraft
