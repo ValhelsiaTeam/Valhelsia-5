@@ -137,6 +137,27 @@ ServerEvents.recipes(event => {
   // TODO: Fungification
 
   // Mossification
+  mossify('botania:mossy_dreamwood_planks', 'botania:dreamwood_planks');
+  mossify('botania:mossy_livingrock_bricks', 'botania:livingrock_bricks');
+  mossify('botania:mossy_livingwood_planks', 'botania:livingwood_planks');
+
+  // TODO: Blue Skies
+
+  mossify('createdeco:mossy_worn_bricks', 'createdeco:worn_bricks');
+  mossify('createdeco:mossy_red_long_bricks', 'minecraft:bricks');
+  // TODO: More Create Deco
+
   mossify('darkerdepths:mossy_grimestone', 'darkerdepths:grimestone');
+
+  mossify('quark:mossy_cobblestone_bricks', 'quark:cobblestone_bricks');
+
+  mossify('twilightforest:mossy_castle_brick', 'twilightforest:castle_brick');
+  mossify('twilightforest:mossy_etched_nagastone', 'twilightforest:etched_nagastone');
+  mossify('twilightforest:mossy_mazestone', 'twilightforest:mazestone');
+  mossify('twilightforest:mossy_nagastone_pillar', 'twilightforest:nagastone_pillar');
+  mossify('twilightforest:mossy_towerwood', 'twilightforest:towerwood');
+  mossify('twilightforest:mossy_underbrick', 'twilightforest:underbrick');
+
+  mossify('waystones:mossy_waystone', 'waystones:waystone');
 
 });
