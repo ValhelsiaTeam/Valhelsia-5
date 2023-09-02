@@ -17,6 +17,9 @@
 ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:crafting/';
 
+  // Minecraft
+  event.shapeless('minecraft:yellow_dye', 'forbidden_arcanus:yellow_orchid').id(`${ID_PREFIX}yellow_dye_from_yellow_orchid`);
+
   // Biomes 'o' Plenty
   event.shapeless('2x biomesoplenty:orange_sand', ['minecraft:sand', 'minecraft:red_sand']).id(`${ID_PREFIX}orange_sand`);
 
@@ -41,6 +44,7 @@ ServerEvents.recipes(event => {
     '#forge:dusts/wood',
     '#forge:dusts/wood'
   ]).id(`${ID_PREFIX}compost_from_sawdust`);
+
 
   // Quark
   event.shapeless('2x quark:myalite', ['minecraft:cobblestone', 'minecraft:amethyst_block', 'quark:myalite_crystal']).id(`${ID_PREFIX}myalite`);
