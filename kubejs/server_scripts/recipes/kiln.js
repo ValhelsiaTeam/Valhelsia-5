@@ -35,6 +35,9 @@ ServerEvents.recipes(event => {
     });
   };
 
+  // Biomes o' Plenty
+  bake('biomesoplenty:dried_salt', 'mekanism:block_salt');
+
   // Blue Skies
   bake('blue_skies:cracked_lunar_stonebrick', 'blue_skies:lunar_stonebrick');
   bake('blue_skies:cracked_turquoise_stonebrick', 'blue_skies:turquoise_stonebrick');
@@ -73,6 +76,7 @@ ServerEvents.recipes(event => {
   bake('createdeco:cracked_scarlet_long_bricks', 'createdeco:scarlet_long_bricks');
   bake('createdeco:cracked_scarlet_short_bricks', 'createdeco:scarlet_short_bricks');
 
+  bake('createdeco:worn_brick', 'minecraft:brick');
   bake('createdeco:cracked_worn_bricks', 'createdeco:worn_bricks');
   bake('createdeco:cracked_worn_brick_tiles', 'createdeco:worn_brick_tiles');
   bake('createdeco:cracked_worn_long_bricks', 'createdeco:worn_long_bricks');
