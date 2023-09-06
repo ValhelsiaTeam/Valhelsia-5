@@ -21,7 +21,13 @@
 
   "valhelsia.comment.entities": "-----Missing Entity Names-----",
   "entity.minecraft.villager.advancedperipherals.computer_scientist": "Computer Scientist",
+  "entity.minecraft.villager.ae2:fluix_researcher": "Fluix Researcher",
+  "entity.minecraft.villager.alchemist": "Alchemist",
   "entity.minecraft.villager.nightwatcher": "Nightwatcher",
+  "entity.minecraft.villager.shoveler": "Shoveler",
+  "entity.minecraft.villager.stargazer": "Stargazer",
+  "entity.minecraft.villager.summoner": "Summoner",
+  "entity.minecraft.villager.wrangler": "Wrangler",
 
   "valhelsia.comment.items": "-----Missing Item Names-----",
   "item.effortlessbuilding.randomizer_bag": "Randomizer Bag",
