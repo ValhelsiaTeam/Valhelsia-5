@@ -35,6 +35,9 @@ ServerEvents.recipes(event => {
     });
   };
 
+  // Applied Energistics 2
+  bake('ae2:smooth_sky_stone_block', 'ae2:sky_stone_block', 0.35);
+
   // Biomes o' Plenty
   bake('biomesoplenty:dried_salt', 'mekanism:block_salt');
 
