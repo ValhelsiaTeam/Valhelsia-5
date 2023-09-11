@@ -65,6 +65,28 @@ ServerEvents.recipes(event => {
     });
   };
 
+  
+  /**
+   * Creates a Pickaxe Crushing recipe for the Farmer's Delight Cutting Board.
+   * @param {(string|Item)} output The output item.
+   * @param {(string|InputItem)} input The input ingredient.
+   */
+  const crush = (output, input) => {
+    event.custom({
+      type: 'farmersdelight:cutting',
+      ingredients: [
+        InputItem.of(input).toJson()
+      ],
+      tool: {
+        type: 'farmersdelight:tool',
+        tag: 'forge:tools/pickaxes'
+      },
+      result: [
+        Item.of(output).toJson()
+      ]
+    });
+  };
+
   /**
    * Creates a Knife Cutting recipe for the Farmer's Delight Cutting Board.
    * @param {Item[]} output An array of items to output.
@@ -102,6 +124,10 @@ ServerEvents.recipes(event => {
   };
 
   // ----- Axe Recipes -----
+
+  // ----- Pickaxe Recipes -----
+  crush('4x galosphere:allurite_shard', 'galosphere:allurite_block');
+  crush('4x galosphere:lumiere_shard', 'galosphere:lumiere_block');
 
   // ----- Knife Recipes -----
   //cut([Item.of('minecraft:string', 2)], '#minecraft:wool');
