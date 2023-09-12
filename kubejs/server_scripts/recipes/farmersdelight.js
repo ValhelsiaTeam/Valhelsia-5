@@ -30,11 +30,11 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        InputItem.of(input).toJson()
+        Item.of(input).toJson()
       ],
       tool: {
-        type: 'farmersdelight:tool',
-        tag: 'forge:tools/axes'
+        type: 'farmersdelight:tool_action',
+        action: 'axe_dig'
       },
       result: [
         Item.of(output).toJson(),
@@ -53,11 +53,11 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        InputItem.of(input).toJson()
+        Item.of(input).toJson()
       ],
       tool: {
-        type: 'farmersdelight:tool',
-        tag: 'forge:tools/axes'
+        type: 'farmersdelight:tool_action',
+        action: 'axe_dig'
       },
       result: [
         Item.of(output).toJson()
@@ -75,11 +75,11 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        InputItem.of(input).toJson()
+        Item.of(input).toJson()
       ],
       tool: {
-        type: 'farmersdelight:tool',
-        tag: 'forge:tools/pickaxes'
+        type: 'farmersdelight:tool_action',
+        action: 'pickaxe_dig'
       },
       result: [
         Item.of(output).toJson()
@@ -96,7 +96,7 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
-        InputItem.of(input).toJson()
+        Item.of(input).toJson()
       ],
       tool: {
         tag: 'forge:tools/knives'
