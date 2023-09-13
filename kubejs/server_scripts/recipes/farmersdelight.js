@@ -19,6 +19,7 @@
  * Farmer's Delight Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:farmersdelight/';
 
   /**
    * Creates an Axe Stripping recipe for the Farmer's Delight Cutting Board.
@@ -26,7 +27,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Item)} output The resulting stripped log. 
    * @param {(string|InputItem)} input An unstripped log to be stripped.
    */
-  const strip = (output, input) => {
+  const strip = (output, input, id) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
@@ -41,7 +42,7 @@ ServerEvents.recipes(event => {
         {item: 'farmersdelight:tree_bark'}
       ],
       sound: 'minecraft:item.axe.strip'
-    });
+    }).id(id);
   };
 
   /**
@@ -49,7 +50,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Item)} output The output item.
    * @param {(string|InputItem)} input The input ingredient.
    */
-  const chop = (output, input) => {
+  const chop = (output, input, id) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
@@ -62,7 +63,7 @@ ServerEvents.recipes(event => {
       result: [
         Item.of(output).toJson()
       ]
-    });
+    }).id(id);
   };
 
   
@@ -71,7 +72,7 @@ ServerEvents.recipes(event => {
    * @param {(string|Item)} output The output item.
    * @param {(string|InputItem)} input The input ingredient.
    */
-  const crush = (output, input) => {
+  const crush = (output, input, id) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
@@ -84,7 +85,7 @@ ServerEvents.recipes(event => {
       result: [
         Item.of(output).toJson()
       ]
-    });
+    }).id(id);
   };
 
   /**
@@ -92,7 +93,7 @@ ServerEvents.recipes(event => {
    * @param {Item[]} output An array of items to output.
    * @param {(string|InputItem)} input The input ingredient(s).
    */
-  const cut = (output, input) => {
+  const cut = (output, input, id) => {
     event.custom({
       type: 'farmersdelight:cutting',
       ingredients: [
@@ -102,7 +103,7 @@ ServerEvents.recipes(event => {
         tag: 'forge:tools/knives'
       },
       result: output
-    });
+    }).id(id);
   };
 
   /**
@@ -112,7 +113,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input An input ingredient.
    * @param {(string|Item)} container An item to use as a container (eg. 'minecraft:bowl').
    */
-  const pot = (output, input, container) => {
+  const pot = (output, input, container, id) => {
     event.custom({
       type: 'farmersdelight:cooking',
       ingredients: input,
@@ -120,15 +121,15 @@ ServerEvents.recipes(event => {
       container: Item.of(container).toJson(),
       experience: 0.2,
       cookingtime: 200
-    });
+    }).id(id);
   };
 
   // ----- Axe Recipes -----
 
   // ----- Pickaxe Recipes -----
-  crush('4x galosphere:allurite_shard', 'galosphere:allurite_block');
-  crush('4x galosphere:lumiere_shard', 'galosphere:lumiere_block');
-
+  crush('4x galosphere:allurite_shard', 'galosphere:allurite_block', `${ID_PREFIX}cutting/allurite_shard_from_allurite_block`);
+  crush('4x galosphere:lumiere_shard', 'galosphere:lumiere_block', `${ID_PREFIX}cutting/lumiere_shard_from_lumiere_block`);
+  
   // ----- Knife Recipes -----
   //cut([Item.of('minecraft:string', 2)], '#minecraft:wool');
 
