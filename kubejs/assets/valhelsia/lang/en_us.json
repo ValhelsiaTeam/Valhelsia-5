@@ -114,6 +114,9 @@
   "subtitles.entity.golden_moth.ambient": "Golden Moth flutters",
   "tetra.subtitle.hone_gain": "Hone gained",
 
+  "valhelsia.comment.fluids": "-----Missing Fluid Entries-----",
+  "fluid_type.decorative_blocks.thatch": "Thatch",
+
   "valhelsia.comment.new_tooltips": "-----New Tooltips-----",
   "valhelsia.tooltip.how_get_jade": "This gemstone can be found in Jungle biomes.",
   "valhelsia.tooltip.backpack": "Contains 27 inventory slots and 1 upgrade slot.",
