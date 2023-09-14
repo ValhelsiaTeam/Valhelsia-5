@@ -142,8 +142,20 @@ ServerEvents.recipes(event => {
   unpack('3x neapolitan:banana', 'neapolitan:banana_bunch');
   unpack('9x neapolitan:banana_bunch', 'neapolitan:banana_crate');
 
-  // Other Metal Press Recipes
-  event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', '6x minecraft:blaze_powder', 'immersiveengineering:mold_rod'); // Fixes dupe exploit.
-  event.recipes.immersiveengineering.metal_press('upgrade_aquatic:prismarine_rod', '2x minecraft:prismarine_shard', 'immersiveengineering:mold_rod');
+  // Metal Press Gear Recipes
+  event.recipes.immersiveengineering.metal_press('immersiveengineering:sawblade', '6x #forge:ingots/steel', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/sawblade`);
+
+  // Metal Press Plate Recipes
+  event.recipes.immersiveengineering.metal_press('createdeco:cast_iron_sheet', '#forge:ingots/cast_iron', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/cast_iron_sheet`);
+  event.recipes.immersiveengineering.metal_press('createdeco:netherite_sheet', '#forge:ingots/netherite', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/netherite_sheet`);
+  event.recipes.immersiveengineering.metal_press('mekanism:hdpe_sheet', '3x mekanism:hdpe_pellet', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/hdpe_sheet`);
+
+  // Metal Press Rod Recipes
+  event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', '6x minecraft:blaze_powder', 'immersiveengineering:mold_rod').id(`${ID_PREFIX}metal_press/blaze_rod`); // Fixes dupe exploit.
+  event.recipes.immersiveengineering.metal_press('mekanism:hdpe_rod', '3x mekanism:hdpe_pellet', 'immersiveengineering:mold_rod').id(`${ID_PREFIX}metal_press/hdpe_rod`);
+  event.recipes.immersiveengineering.metal_press('mekanism:hdpe_stick', '2x mekanism:hdpe_rod', 'immersiveengineering:mold_rod').id(`${ID_PREFIX}metal_press/hdpe_stick`);
+  event.recipes.immersiveengineering.metal_press('upgrade_aquatic:prismarine_rod', '2x minecraft:prismarine_shard', 'immersiveengineering:mold_rod').id(`${ID_PREFIX}metal_press/prismarine_rod`);
+
+  // TODO: Metal Press Packing (2x2 and 3x3).
 
 });

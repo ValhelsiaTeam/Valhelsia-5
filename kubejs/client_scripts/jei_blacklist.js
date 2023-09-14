@@ -160,6 +160,11 @@ JEIEvents.hideItems(event => {
     'immersiveengineering:nugget_steel',
     'immersiveengineering:nugget_copper',
 
+    // Immersive Posts
+    'immersiveposts:stick_copper', // Using Create Crafts & Additions one.
+    'immersiveposts:stick_electrum', // Using Create Crafts & Additions one.
+    'immersiveposts:stick_gold', // Using Create Crafts & Additions one.
+
     // Mekanism
     'mekanism:block_charcoal',
     'mekanism:creative_fluid_tank',
