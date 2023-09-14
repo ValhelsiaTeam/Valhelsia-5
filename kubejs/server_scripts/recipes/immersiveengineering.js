@@ -92,6 +92,8 @@ ServerEvents.recipes(event => {
   hammer_crush('ae2:sky_dust', 'ae2:sky_stone_block');
   hammer_crush('create:brass_sheet', '#forge:ingots/brass');
   hammer_crush('createaddition:zinc_sheet', '#forge:ingots/zinc');
+  hammer_crush('createdeco:cast_iron_sheet', '#forge:ingots/cast_iron');
+  hammer_crush('createdeco:netherite_sheet', '#forge:ingots/netherite');
   hammer_crush('forbidden_arcanus:arcane_crystal_dust', '#forge:gems/arcane_crystal');
   hammer_crush('galosphere_delight:allurite_shiny_powder', 'galosphere:allurite_shard');
   hammer_crush('galosphere_delight:lumiere_shiny_powder', 'galosphere:lumiere_shard');
