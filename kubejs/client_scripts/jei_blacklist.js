@@ -87,6 +87,9 @@ JEIEvents.hideItems(event => {
     // Create
     'create:copper_backtank_placeable',
 
+    // Create Deco
+    'createdeco:zinc_sheet', // Use Create Crafts & Additions version.
+
     // Decorative Blocks
     'decorative_blocks:blockstate_copy_item',
 

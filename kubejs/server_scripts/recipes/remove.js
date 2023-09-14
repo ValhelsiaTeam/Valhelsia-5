@@ -44,6 +44,9 @@ ServerEvents.recipes(event => {
 
     // Create
 
+    // Create Deco
+    'minecraft:pressing/zinc_sheet', // Why is this in the Minecraft namespace?! Anyway, redundant item.
+
     // Darker Depths
     'darkerdepths:rope', // Replaced with Supplementaries Rope
     'darkerdepths:silver_block', // Redundant
