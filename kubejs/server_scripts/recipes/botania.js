@@ -16,6 +16,7 @@
  */
 ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:botania/';
+  
   /**
    * Creates a conjuration recipe to duplicate an item with a mana pool. 
    * 

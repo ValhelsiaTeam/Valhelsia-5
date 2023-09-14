@@ -91,6 +91,17 @@ ServerEvents.recipes(event => {
   cut('2x darkerdepths:polished_shale_vertical_slab', 'darkerdepths:shale');
   cut('2x darkerdepths:polished_shale_vertical_slab', 'darkerdepths:polished_shale');
 
+  // Engineer's Decor
+  cut('2x engineersdecor:rebar_concrete_slab', 'engineersdecor:rebar_concrete');
+  cut('8x engineersdecor:rebar_concrete_slice', 'engineersdecor:rebar_concrete');
+  cut('engineersdecor:rebar_concrete_stairs', 'engineersdecor:rebar_concrete');
+  cut('engineersdecor:rebar_concrete_tile', 'engineersdecor:rebar_concrete');
+  cut('2x engineersdecor:rebar_concrete_tile_slab', 'engineersdecor:rebar_concrete');
+  cut('engineersdecor:rebar_concrete_tile_stairs', 'engineersdecor:rebar_concrete');
+  cut('engineersdecor:rebar_concrete_wall', 'engineersdecor:rebar_concrete');
+  cut('2x engineersdecor:rebar_concrete_tile_slab', 'engineersdecor:rebar_concrete_tile');
+  cut('engineersdecor:rebar_concrete_tile_stairs', 'engineersdecor:rebar_concrete_tile');
+
   // Twilight Forest
   cut('twilightforest:nagastone_pillar', 'twilightforest:nagastone');
   cut('twilightforest:etched_nagastone', 'twilightforest:nagastone');
