@@ -154,7 +154,11 @@ ServerEvents.recipes(event => {
   event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', 'malum_arcane_charcoal').id(`${ID_PREFIX}enriching/enriched/carbon_from_arcane_charcoal`);
 
   // Enrichment
+  event.recipes.mekanism.enriching('minecraft:ender_pearl', '#forge:dusts/ender_pearl').id(`${ID_PREFIX}enriching/ender_pearl_from_dust`);
+  event.recipes.mekanism.enriching('ae2:fluix_crystal', '#forge:dusts/fluix').id(`${ID_PREFIX}enriching/fluix_crystal_from_dust`);
   event.recipes.mekanism.enriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal').id(`${ID_PREFIX}enriching/arcane_crystal_from_dust`);
+  event.recipes.mekanism.enriching('galosphere:allurite_shard', '#forge:dusts/allurite').id(`${ID_PREFIX}enriching/allurite_shard_from_dust`);
+  event.recipes.mekanism.enriching('galosphere:lumiere_shard', '#forge:dusts/lumiere').id(`${ID_PREFIX}enriching/lumiere_shard_from_dust`);
 
   // Fungification
   // TODO: Fungification

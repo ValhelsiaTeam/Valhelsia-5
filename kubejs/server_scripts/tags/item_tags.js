@@ -69,7 +69,16 @@ ServerEvents.tags('item', event => {
   // ----- Dusts -----
   event.add('forge:dusts', [
     'botania:pixie_dust',
+    'galosphere_delight:allurite_shiny_powder',
+    'galosphere_delight:lumiere_shiny_powder',
     'waystones:warp_dust',
+  ]);
+
+  event.add('forge:dusts/allurite', [
+    'galosphere_delight:allurite_shiny_powder',
+  ]);
+  event.add('forge:dusts/lumiere', [
+    'galosphere_delight:lumiere_shiny_powder',
   ]);
 
   event.add('forge:dusts/pixie', [
