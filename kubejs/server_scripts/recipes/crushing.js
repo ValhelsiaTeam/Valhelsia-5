@@ -70,6 +70,7 @@
   crush('minecraft:red_sand', 'minecraft:granite');
   crush('atmospheric:arid_sand', 'darkerdepths:aridrock');
   crush('biomesoplenty:black_sand', 'minecraft:basalt');
+  crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
 
   // Milling + Crushing
   // Sandstone, Terracotta, and other soft materials can be milled.
@@ -88,13 +89,21 @@
   mill('2x blue_skies:midnight_sand', '#forge:sandstone/midnight');
   mill('2x forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
 
-  // Other Milling
+  // Bone Meal
   mill('9x minecraft:bone_meal', 'minecraft:bone_block');
+  mill('16x minecraft:bone_meal', 'aquamirae:anglers_fang');
+  mill('6x minecraft:bone_meal', 'aquamirae:remnants_sabre');
+  mill('2x minecraft:bone_meal', 'aquamirae:sharp_bones');
+  mill('5x minecraft:bone_meal', 'ars_nouveau:wilden_horn');
+  mill('16x minecraft:bone_meal', 'cnb:yeti_antler');
+  mill('6x minecraft:bone_meal', 'blue_skies:azulfo_horn');
+  mill('9x minecraft:bone_meal', 'malum:grim_talc');
+  mill('9x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
+  mill('4x minecraft:bone_meal', 'alexsmobs:fish_bones');
+
+  // Other Milling
   mill('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
   mill('1x minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
   mill('1x mekanism:sawdust', 'biomesoplenty:dead_branch');
   mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
-  mill('9x minecraft:bone_meal', 'blue_skies:azulfo_horn');
-  mill('10x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
-  mill('4x minecraft:bone_meal', 'alexsmobs:fish_bones');
 });

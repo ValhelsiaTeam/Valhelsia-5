@@ -127,6 +127,7 @@ ServerEvents.recipes(event => {
   // ----- Axe Recipes -----
 
   // ----- Pickaxe Recipes -----
+  crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block', `${ID_PREFIX}cutting/rose_quartz_shard_from_rose_quartz_block`);
   crush('4x galosphere:allurite_shard', 'galosphere:allurite_block', `${ID_PREFIX}cutting/allurite_shard_from_allurite_block`);
   crush('4x galosphere:lumiere_shard', 'galosphere:lumiere_block', `${ID_PREFIX}cutting/lumiere_shard_from_lumiere_block`);
   
