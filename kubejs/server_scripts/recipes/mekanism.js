@@ -146,6 +146,13 @@ ServerEvents.recipes(event => {
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
 
+  // Malum Coals -> Carbon / Enriched Carbon
+  infusionConversion('mekanism:carbon', 'malum:coal_fragment', 1);
+  infusionConversion('mekanism:carbon', 'malum:charcoal_fragment', 2);
+  infusionConversion('mekanism:carbon', 'malum:arcane_charcoal_fragment', 4);
+  infusionConversion('mekanism:carbon', 'malum:arcane_charcoal', 40);
+  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', 'malum_arcane_charcoal').id(`${ID_PREFIX}enriching/enriched/carbon_from_arcane_charcoal`);
+
   // Enrichment
   event.recipes.mekanism.enriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal').id(`${ID_PREFIX}enriching/arcane_crystal_from_dust`);
 
