@@ -33,25 +33,33 @@ ServerEvents.recipes(event => {
         infuse_type: type,
         amount: amount
       }
-    });
+    }).id(`${ID_PREFIX}infusion_conversion/${type.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**
    * Creates a recipe to turn a block into a mossy version of it.
-   * @param {(string|Item)} output The item or item ID of the mossy block.
+   * @param {(string|OutputItem)} output The item or item ID of the mossy block.
    * @param {(string|Ingredient)} input The item or item ID of the base block.
    */
   const mossify = (output, input) => {
-    event.recipes.mekanism.metallurgic_infusing(output, input, {infuse_type: 'mekanism:bio', amount: 10});
+    event.recipes.mekanism.metallurgic_infusing(
+      output, 
+      input, 
+      {infuse_type: 'mekanism:bio', amount: 10}
+    ).id(`${ID_PREFIX}infusing/bio/${OutputItem.of(output).item.id.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**
    * Creates a recipe to turn a block into a fungal version of it.
-   * @param {(string|Item)} output The item or item ID of the mossy block.
+   * @param {(string|OutputItem)} output The item or item ID of the mossy block.
    * @param {(string|InputItem)} input The item or item ID of the base block.
    */
   const fungify = (output, input) => {
-    event.recipes.mekanism.metallurgic_infusing(output, input, {infuse_type: 'mekanism:fungi', amount: 10});
+    event.recipes.mekanism.metallurgic_infusing(
+      output, 
+      input, 
+      {infuse_type: 'mekanism:fungi', amount: 10}
+    ).id(`${ID_PREFIX}infusing/fungi/${OutputItem.of(output).item.id.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**
@@ -61,7 +69,10 @@ ServerEvents.recipes(event => {
    * @param {number} quantity The number of Bio Fuel items to output.
    */
   const bioCrush = (input, quantity) => {
-    event.recipes.mekanism.crushing(`${quantity}x mekanism:bio_fuel`, input);
+    event.recipes.mekanism.crushing(
+      `${quantity}x mekanism:bio_fuel`, 
+      input
+    ).id(`${ID_PREFIX}crushing/biofuel/${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   // Bio Fuel
@@ -115,6 +126,8 @@ ServerEvents.recipes(event => {
     'mekanism:crushing/biofuel/peony',
 
     'mekanism:crushing/biofuel/melon_slice', // #blameurmet
+
+    'mekanism:crushing/biofuel/nether_wart_block', // Now turns into Nether Wart instead of Bio Fuel.
     
     // TODO: More as tags are created / expanded.
     // See default recipes here: https://github.com/mekanism/Mekanism/tree/1.18.x/src/datagen/generated/mekanism/data/mekanism/recipes/crushing/biofuel
@@ -126,12 +139,15 @@ ServerEvents.recipes(event => {
   bioCrush('minecraft:melon_slice', 2); // #blameurmet
 
   // Coal Coke -> Carbon / Enriched Carbon
-  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', '#forge:coal_coke');
+  event.remove({id: 'mekanism:enriching/enriched/carbon'});
+  event.recipes.mekanism.enriching('mekanism:enriched_carbon', 'minecraft:coal').id(`${ID_PREFIX}enriching/enriched/carbon_from_coal`);
+  event.recipes.mekanism.enriching('mekanism:enriched_carbon', 'minecraft:charcoal').id(`${ID_PREFIX}enriching/enriched/carbon_from_charcoal`);
+  event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', '#forge:coal_coke').id(`${ID_PREFIX}enriching/enriched/carbon_from_coal_coke`);
   infusionConversion('mekanism:carbon', '#forge:coal_coke', 40);
   infusionConversion('mekanism:carbon', '#forge:dusts/coal_coke', 40);
 
   // Enrichment
-  event.recipes.mekanism.enriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal');
+  event.recipes.mekanism.enriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal').id(`${ID_PREFIX}enriching/arcane_crystal_from_dust`);
 
   // Fungification
   // TODO: Fungification
