@@ -6,7 +6,7 @@
 //
 
 /**
- * @file Recipe add / remove potion brewing for Valhelsia 5.
+ * @file Recipes to add / remove potion brewing for Valhelsia 5.
  * 
  * @copyright Valhelsia Inc 2023
  */
@@ -16,5 +16,6 @@
  */
 MoreJSEvents.registerPotionBrewing((event) => {
 
-  event.addPotionBrewing("biomesoplenty:rose_quartz_shard", "minecraft:awkward", "cave_enhancements:reversal");
+  event.addPotionBrewing('biomesoplenty:rose_quartz_shard', 'minecraft:awkward', 'cave_enhancements:reversal');
+  event.addPotionBrewing('create:rose_quartz', 'minecraft:awkward', 'cave_enhancements:reversal');
 });
