@@ -62,6 +62,7 @@
     'create:milling/sandstone',
     'create:milling/terracotta',
     'immersiveengineering:crusher/nether_wart',
+    'immersiveengineering:crusher/slag',
     'mekanism:crushing/soul_soil_to_soul_sand',
     // TODO: check for default bone meal + nether wart milling.
   ].forEach((recipeID) => event.remove({id: recipeID}));
@@ -71,6 +72,7 @@
   crush('atmospheric:arid_sand', 'darkerdepths:aridrock');
   crush('biomesoplenty:black_sand', 'minecraft:basalt');
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
+  crush('immersiveengineering:slag_gravel', 'immersiveengineering:slag');
 
   // Milling + Crushing
   // Sandstone, Terracotta, and other soft materials can be milled.
