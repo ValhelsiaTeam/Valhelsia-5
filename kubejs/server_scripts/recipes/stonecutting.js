@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input The input ingredient.
    */
   const cut = (output, input) => {
-    event.stonecutting(output, input).id(`${ID_PREFIX}${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`)
+    event.stonecutting(output, input).id(`${ID_PREFIX}${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   }
 
   // Conversion between stone of the same type.

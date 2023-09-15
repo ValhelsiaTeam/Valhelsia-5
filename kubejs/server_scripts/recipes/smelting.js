@@ -19,6 +19,7 @@
  * Smelting / Blasting Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:smelting/';
   
   // ----- Convenience Functions -----
  
@@ -54,7 +55,7 @@ ServerEvents.recipes(event => {
       xp = 0.1;
     }
 
-    event.smelting(output, input).xp(xp);
+    event.smelting(output, input).xp(xp).id(`${ID_PREFIX}${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   /**
@@ -68,7 +69,7 @@ ServerEvents.recipes(event => {
       xp = 0.1;
     }
 
-    event.blasting(output, input).xp(xp);
+    event.blasting(output, input).xp(xp).id(`${ID_PREFIX}${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}_from_blasting`);
   };
 
   /**

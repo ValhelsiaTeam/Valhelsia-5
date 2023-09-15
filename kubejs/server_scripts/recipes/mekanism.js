@@ -153,6 +153,9 @@ ServerEvents.recipes(event => {
   infusionConversion('mekanism:carbon', 'malum:arcane_charcoal', 40);
   event.recipes.mekanism.enriching('2x mekanism:enriched_carbon', 'malum_arcane_charcoal').id(`${ID_PREFIX}enriching/enriched/carbon_from_arcane_charcoal`);
 
+  // Combiner
+  event.recipes.mekanism.combining('biomesoplenty:rooted_sand', '3x minecraft:hanging_roots', 'minecraft:sand');
+
   // Enrichment
   event.recipes.mekanism.enriching('minecraft:ender_pearl', '#forge:dusts/ender_pearl').id(`${ID_PREFIX}enriching/ender_pearl_from_dust`);
   event.recipes.mekanism.enriching('ae2:fluix_crystal', '#forge:dusts/fluix').id(`${ID_PREFIX}enriching/fluix_crystal_from_dust`);
