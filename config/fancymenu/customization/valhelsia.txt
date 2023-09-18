@@ -229,6 +229,11 @@ customization {
 }
 
 customization {
+  identifier = %id=3763461%
+  action = hidebutton
+}
+
+customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_realms_button%
   action = hidebutton
 }
@@ -320,7 +325,7 @@ customization {
 customization {
   orientation = mid-centered
   restartbackgroundanimations = true
-  buttonaction = openlink;https://www.bisecthosting.com/Valhelsia%btnaction_splitter_fm%
+  buttonaction = openlink;https://www.bisecthosting.com/Valhelsia?r=valhelsia+6+modpack%btnaction_splitter_fm%
   backgroundhovered = kubejs\assets\custom-menu\textures\gui\bisecthosting-hover-button.png
   label =      Rent a Server
   loopbackgroundanimations = true
@@ -403,10 +408,5 @@ customization {
   identifier = %id=button_compatibility_id:mc_titlescreen_copyright_button%
   action = sethoverlabel
   label = 
-}
-
-customization {
-  identifier = %id=3763461%
-  action = hidebutton
 }
 
