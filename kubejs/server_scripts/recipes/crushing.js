@@ -94,7 +94,7 @@
   // Bone Meal
   mill('9x minecraft:bone_meal', 'minecraft:bone_block');
   mill('16x minecraft:bone_meal', 'aquamirae:anglers_fang');
-  mill('6x minecraft:bone_meal', 'aquamirae:remnants_sabre');
+  //mill('6x minecraft:bone_meal', 'aquamirae:remnants_sabre'); // Acts weirdly for some reason.
   mill('2x minecraft:bone_meal', 'aquamirae:sharp_bones');
   mill('5x minecraft:bone_meal', 'ars_nouveau:wilden_horn');
   mill('16x minecraft:bone_meal', 'cnb:yeti_antler');
