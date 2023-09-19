@@ -94,6 +94,22 @@ ServerEvents.recipes(event => {
       recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
+  
+  /**
+   * Adds a new multi-wrapped shaped recipe (an item wrapped with two different items).
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} core Middle ingredient.
+   * @param {*} cardinal Cardinal outer ingredients.
+   * @param {*} diagonal Diagonal outer ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+  const multiWrapped = (output, core, cardinal, diagonal, recipeID) => {
+    let recipe = event.shaped(output, ['ABA', 'BCB', 'ABA'], {A: diagonal, B: cardinal, C: core});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}${recipeID}`);
+    }
+  };
 
   /**
    * Adds a new 'barrel' shaped recipe.
@@ -333,6 +349,7 @@ ServerEvents.recipes(event => {
   
   // Twilight Forest
   wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');
+  multiWrapped('4x twilightforest:aurora_block', 'quark:myalite', 'minecraft:blue_ice', 'minecraft:prismarine_shard');
 
   // Waystones
   event.shaped('waystones:warp_scroll', [
