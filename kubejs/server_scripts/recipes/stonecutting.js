@@ -93,7 +93,7 @@ ServerEvents.recipes(event => {
 
   // Engineer's Decor
   cut('2x engineersdecor:rebar_concrete_slab', 'engineersdecor:rebar_concrete');
-  cut('8x engineersdecor:rebar_concrete_slice', 'engineersdecor:rebar_concrete');
+  cut('8x engineersdecor:halfslab_rebar_concrete', 'engineersdecor:rebar_concrete');
   cut('engineersdecor:rebar_concrete_stairs', 'engineersdecor:rebar_concrete');
   cut('engineersdecor:rebar_concrete_tile', 'engineersdecor:rebar_concrete');
   cut('2x engineersdecor:rebar_concrete_tile_slab', 'engineersdecor:rebar_concrete');
