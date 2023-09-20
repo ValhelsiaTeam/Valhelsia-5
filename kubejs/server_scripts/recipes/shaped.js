@@ -349,7 +349,7 @@ ServerEvents.recipes(event => {
   
   // Twilight Forest
   wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');
-  multiWrapped('4x twilightforest:aurora_block', 'quark:myalite', 'minecraft:blue_ice', 'minecraft:prismarine_shard');
+  multiWrapped('4x twilightforest:aurora_block', 'quark:myalite', 'minecraft:blue_ice', 'minecraft:prismarine_shard', 'aurora_block');
 
   // Waystones
   event.shaped('waystones:warp_scroll', [

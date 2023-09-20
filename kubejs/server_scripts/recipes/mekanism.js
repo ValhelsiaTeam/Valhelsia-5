@@ -164,7 +164,9 @@ ServerEvents.recipes(event => {
   event.recipes.mekanism.enriching('galosphere:lumiere_shard', '#forge:dusts/lumiere').id(`${ID_PREFIX}enriching/lumiere_shard_from_dust`);
 
   // Fungification
-  // TODO: Fungification
+  fungify('minecraft:shroomlight', 'minecraft:glowstone');
+  fungify('botania:metamorphic_fungal_stone', 'minecraft:stone');
+  fungify('environmental:mycelium_sprouts', 'minecraft:grass');
 
   // Mossification
   mossify('botania:mossy_dreamwood_planks', 'botania:dreamwood_planks');
