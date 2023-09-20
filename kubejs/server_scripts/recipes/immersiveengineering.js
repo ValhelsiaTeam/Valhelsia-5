@@ -139,6 +139,7 @@ ServerEvents.recipes(event => {
 
   // Metal Press Gear Recipes
   event.recipes.immersiveengineering.metal_press('immersiveengineering:sawblade', '6x #forge:ingots/steel', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/sawblade`);
+  event.recipes.immersiveengineering.metal_press('pneumaticcraft:compressed_iron_gear', '4x #forge:ingots/compressed_iron', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/compressed_iron_gear`);
 
   // Metal Press Plate Recipes
   event.recipes.immersiveengineering.metal_press('createdeco:cast_iron_sheet', '#forge:ingots/cast_iron', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/cast_iron_sheet`);
