@@ -37,6 +37,11 @@ ServerEvents.tags('item', event => {
     'create:rose_quartz',
   ]);
 
+  event.add('valhelsia:electron_tubes', [
+    'create:electron_tube',
+    'immersiveengineering:electron_tube',
+  ]);
+
   // ----- Ores -----
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',

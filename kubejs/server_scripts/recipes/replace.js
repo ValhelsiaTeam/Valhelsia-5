@@ -50,6 +50,10 @@ ServerEvents.recipes(event => {
   replaceInput('immersiveengineering:raw_block_silver', '#forge:storage_blocks/raw_silver');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
 
+  // Electron Tube Unification
+  replaceInput('create:electron_tube', '#valhelsia:electron_tubes');
+  replaceInput('immersiveengineering:electron_tube', '#valhelsia:electron_tubes');
+
   // Rose Quartz Unification
   replaceInput('biomesoplenty:rose_quartz_shard', '#valhelsia:rose_quartz');
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
@@ -58,6 +62,8 @@ ServerEvents.recipes(event => {
   // Rope Unification
   replaceInput('farmersdelight:rope', '#valhelsia:ropes');
   replaceInput('supplementaries:rope', '#valhelsia:ropes');
+
+  
   
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
