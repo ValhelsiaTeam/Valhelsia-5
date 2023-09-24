@@ -164,7 +164,7 @@ ServerEvents.recipes(event => {
   event.recipes.mekanism.enriching('galosphere:lumiere_shard', '#forge:dusts/lumiere').id(`${ID_PREFIX}enriching/lumiere_shard_from_dust`);
 
   // Infusion
-  event.recipes.mekanism.metallurgic_infusing('forbidden_arcanus:gilded_darkstone', 'forbidden_arcanus:darkstone', {infuse_type: 'mekanism:gold', amount: 10}).id(`${ID_PREFIX}/infusing/gold/gilded_darkstone`);
+  event.recipes.mekanism.metallurgic_infusing('forbidden_arcanus:gilded_darkstone', 'forbidden_arcanus:darkstone', {infuse_type: 'mekanism:gold', amount: 100}).id(`${ID_PREFIX}/infusing/gold/gilded_darkstone`);
 
   // Fungification
   fungify('minecraft:shroomlight', 'minecraft:glowstone');
