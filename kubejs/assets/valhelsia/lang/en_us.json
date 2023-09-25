@@ -24,7 +24,8 @@
   "effect.ars_elemental.repel": "Repel",
 
   "valhelsia.comment.entities": "-----Missing Entity Names-----",
-  "entity.minecraft.villager.advancedperipherals.computer_scientist": "Computer Scientist",
+  "entity.minecraft.villager.advancedperipherals:computer_scientist": "Computer Scientist",
+  "entity.minecraft.villager.animal_tamer": "Animal Tamer",
   "entity.minecraft.villager.ae2:fluix_researcher": "Fluix Researcher",
   "entity.minecraft.villager.alchemist": "Alchemist",
   "entity.minecraft.villager.nightwatcher": "Nightwatcher",
@@ -32,7 +33,12 @@
   "entity.minecraft.villager.stargazer": "Stargazer",
   "entity.minecraft.villager.summoner": "Summoner",
   "entity.minecraft.villager.wrangler": "Wrangler",
-  "entity.minecraft.villager.pneumaticraft:mechanic": "Mechanic",
+  "entity.minecraft.villager.immersiveengineering:electrician": "Electrician",
+  "entity.minecraft.villager.immersiveengineering:engineer": "Engineer",
+  "entity.minecraft.villager.immersiveengineering:gunsmith": "Gunsmith",
+  "entity.minecraft.villager.immersiveengineering:machinist": "Machinist",
+  "entity.minecraft.villager.immersiveengineering:outfitter": "Outfitter",
+  "entity.minecraft.villager.pneumaticcraft:mechanic": "Mechanic",
   "entity.minecolonies.citizen": "Citizen",
 
   "valhelsia.comment.items": "-----Missing Item Names-----",
