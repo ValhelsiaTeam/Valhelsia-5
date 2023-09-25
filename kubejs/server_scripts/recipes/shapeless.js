@@ -23,17 +23,9 @@ ServerEvents.recipes(event => {
   // Biomes 'o' Plenty
   event.shapeless('2x biomesoplenty:orange_sand', ['minecraft:sand', 'minecraft:red_sand']).id(`${ID_PREFIX}orange_sand`);
 
-  // Create
-  event.shapeless('create:brass_sheet', ['#forge:ingots/brass', 'immersiveengineering:hammer']).id(`${ID_PREFIX}brass_sheet_hammering`);
-
   // Create Crafts & Additions
   event.shapeless('createaddition:iron_wire', ['#forge:plates/iron', 'immersiveengineering:wirecutter']).id(`${ID_PREFIX}iron_wire_from_cutting`);
-  event.shapeless('createaddition:zinc_sheet', ['#forge:ingots/zinc', 'immersiveengineering:hammer']).id(`${ID_PREFIX}zinc_sheet_hammering`);
 
-  // Create Deco
-  event.shapeless('createdeco:cast_iron_sheet', ['#forge:ingots/cast_iron', 'immersiveengineering:hammer']).id(`${ID_PREFIX}cast_iron_sheet_hammering`);
-  event.shapeless('createdeco:netherite_sheet', ['#forge:ingots/netherite', 'immersiveengineering:hammer']).id(`${ID_PREFIX}netherite_sheet_hammering`);
-  
   // Darker Depths
   event.shapeless('darkerdepths:mossy_grimestone', ['darkerdepths:grimestone', 'darkerdepths:glowspire']).id(`${ID_PREFIX}mossy_grimestone`);
 

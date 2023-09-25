@@ -141,11 +141,6 @@ ServerEvents.recipes(event => {
   event.recipes.immersiveengineering.metal_press('immersiveengineering:sawblade', '6x #forge:ingots/steel', 'immersiveengineering:mold_gear').id(`${ID_PREFIX}metal_press/sawblade`);
   event.recipes.immersiveengineering.metal_press('pneumaticcraft:compressed_iron_gear', '4x #forge:ingots/compressed_iron', 'immersiveengineering:mold_gear').id(`${ID_PREFIX}metal_press/compressed_iron_gear`);
 
-  // Metal Press Plate Recipes
-  event.recipes.immersiveengineering.metal_press('createdeco:cast_iron_sheet', '#forge:ingots/cast_iron', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/cast_iron_sheet`);
-  event.recipes.immersiveengineering.metal_press('createdeco:netherite_sheet', '#forge:ingots/netherite', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/netherite_sheet`);
-  event.recipes.immersiveengineering.metal_press('mekanism:hdpe_sheet', '3x mekanism:hdpe_pellet', 'immersiveengineering:mold_plate').id(`${ID_PREFIX}metal_press/hdpe_sheet`);
-
   // Metal Press Rod Recipes
   event.recipes.immersiveengineering.metal_press('minecraft:blaze_rod', '6x minecraft:blaze_powder', 'immersiveengineering:mold_rod').id(`${ID_PREFIX}metal_press/blaze_rod`); // Fixes dupe exploit.
   event.recipes.immersiveengineering.metal_press('mekanism:hdpe_rod', '3x mekanism:hdpe_pellet', 'immersiveengineering:mold_rod').id(`${ID_PREFIX}metal_press/hdpe_rod`);

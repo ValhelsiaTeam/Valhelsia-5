@@ -94,9 +94,16 @@ JEIEvents.hideItems(event => {
 
     // Create
     'create:copper_backtank_placeable',
+    'create:copper_sheet', // Using Immersive Engineering version.
+    'create:golden_sheet', // Using Immersive Engineering version.
+    'create:iron_sheet', // Using Immersive Engineering version.
+
+    // Create Crafts & Additions
+    'createaddition:electrum_ingot', // Using Immersive Engineering version.
+    'createaddition:electrum_nugget', // Using Immersive Engineering version.
 
     // Create Deco
-    'createdeco:zinc_sheet', // Use Create Crafts & Additions version.
+    'createdeco:zinc_sheet', // Using Create Crafts & Additions version.
 
     // Decorative Blocks
     'decorative_blocks:blockstate_copy_item',

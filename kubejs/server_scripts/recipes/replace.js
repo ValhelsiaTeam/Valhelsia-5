@@ -66,8 +66,6 @@ ServerEvents.recipes(event => {
   replaceInput('farmersdelight:rope', '#valhelsia:ropes');
   replaceInput('supplementaries:rope', '#valhelsia:ropes');
 
-  
-  
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
 
