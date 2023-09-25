@@ -19,6 +19,10 @@
   "tooltip.waila.crop_growth": "Growth: ",
   "tooltip.waila.crop_mature": "Mature",
 
+  "valhelsia.comment.effects": "-----Missing Effect Names-----",
+  "effect.ars_elemental.frozen": "Frozen",
+  "effect.ars_elemental.repel": "Repel",
+
   "valhelsia.comment.entities": "-----Missing Entity Names-----",
   "entity.minecraft.villager.advancedperipherals.computer_scientist": "Computer Scientist",
   "entity.minecraft.villager.ae2:fluix_researcher": "Fluix Researcher",
