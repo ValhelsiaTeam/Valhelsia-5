@@ -102,6 +102,14 @@ ServerEvents.recipes(event => {
   cut('2x engineersdecor:rebar_concrete_tile_slab', 'engineersdecor:rebar_concrete_tile');
   cut('engineersdecor:rebar_concrete_tile_stairs', 'engineersdecor:rebar_concrete_tile');
 
+  // PneumaticCraft
+  cut('pneumaticcraft:compressed_brick_tile', 'pneumaticcraft:compressed_stone');
+  cut('pneumaticcraft:compressed_brick_pillar', 'pneumaticcraft:compressed_stone');
+  cut('2x pneumaticcraft:compressed_brick_slab', 'pneumaticcraft:compressed_stone');
+  cut('pneumaticcraft:compressed_brick_stairs', 'pneumaticcraft:compressed_stone');
+  cut('2x pneumaticcraft:compressed_brick_vertical_slab', 'pneumaticcraft:compressed_stone');
+  cut('pneumaticcraft:compressed_brick_wall', 'pneumaticcraft:compressed_stone');
+
   // Twilight Forest
   cut('twilightforest:nagastone_pillar', 'twilightforest:nagastone');
   cut('twilightforest:etched_nagastone', 'twilightforest:nagastone');
