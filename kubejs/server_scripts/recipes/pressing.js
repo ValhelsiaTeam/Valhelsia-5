@@ -33,7 +33,10 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'ad_astra:compressing',
       input: Item.of(input).toJson(),
-      output: Item.of(output).toJson(),
+      output: {
+        id: OutputItem.of(output).item.id,
+        count: OutputItem.of(output).item.count
+      },
       cookTime: 200
     }).id(`${ID_PREFIX}ad_astra_compressing/${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
