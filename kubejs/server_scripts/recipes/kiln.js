@@ -15,10 +15,12 @@
  * Baking Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:baking/';
+
   /**
    * Adds a baking recipe for the kiln.
    * @param {(string|Item)} output Resulting baked item.
-   * @param {(string|InputItem)} input Ingredient to be baked.
+   * @param {(string|Item)} input Ingredient to be baked.
    * @param {number} [xp] Experience given by baking the item.
    */
   const bake = (output, input, xp) => {
@@ -28,11 +30,11 @@ ServerEvents.recipes(event => {
 
     event.custom({
       type: 'clayworks:baking',
-      ingredient: InputItem.of(input).toJson(),
+      ingredient: Item.of(input).toJson(),
       result: Item.of(output).toJson(),
       experience: xp,
       cookingtime: 100
-    });
+    }).id(`${ID_PREFIX}${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
   // Applied Energistics 2
