@@ -33,6 +33,9 @@ ServerEvents.recipes(event => {
   const replaceInputType = (recipeType, from, to) => {event.replaceInput({type: recipeType}, from, to)};
   const replaceOutputType = (recipeType, from, to) => {event.replaceOutput({type: recipeType}, from, to)};
 
+  // ----- Fixes -----
+  replaceOutputID('enlightened_end:gleam_iridescent_bismuth_sheets', 'enlightened_end:dazzling_bismuth_sheets', 'enlightened_end:iridescent_bismuth_sheets');
+
   // ----- Compatibility -----
   // Use tags instead of items for all dye colours.
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
@@ -130,4 +133,5 @@ ServerEvents.recipes(event => {
   replaceInputID('waystones:warp_dust', 'minecraft:ender_pearl', '#forge:dusts/ender_pearl');
   replaceInputID('forbidden_arcanus:silver_dragon_scale', 'minecraft:iron_ingot', '#forge:ingots/silver'); // Silver Dragon Scales are now actually silver.
   replaceInputID('ars_nouveau:warp_scroll', 'minecraft:lapis_lazuli', '#forge:dusts/warp'); // Now even warpier!
+
 });
