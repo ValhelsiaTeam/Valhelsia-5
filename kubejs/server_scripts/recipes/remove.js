@@ -30,10 +30,15 @@ ServerEvents.recipes(event => {
   // Remove recipes by recipe ID.
   [
     // Ad Astra
+    'ad_astra:compressing/iron_plate_from_compressing_iron_ingot',
+    'ad_astra:compressing/steel_plate_from_compressing_steel_ingot',
+    'ad_astra:hammering/iron_plate',
+    'ad_astra:hammering/steel_plate',
+    'ad_astra:recipes/iron_rod',
     'ad_astra:recipes/steel_block',
     'ad_astra:recipes/steel_nugget',
-    'ad_astra:steel_ingot_from_blasting_iron_ingot',
-    'ad_astra:steel_ingot_from_nuggets',
+    'ad_astra:recipes/steel_ingot_from_blasting_iron_ingot',
+    'ad_astra:recipes/steel_ingot_from_nuggets',
 
     // Ars Nouveau
     'ars_nouveau:archwood_to_chest', // Duplicate Recipe.

@@ -28,9 +28,12 @@ JEIEvents.hideItems(event => {
     'minecraft:structure_void',
 
     // Ad Astra
+    'ad_astra:iron_rod',
+    'ad_astra:iron_plate',
+    'ad_astra:steel_block',
     'ad_astra:steel_ingot',
     'ad_astra:steel_nugget',
-    'ad_astra:steel_block',
+    'ad_astra:steel_plate',
 
     // Advanced Peripherals
     'advancedperipherals:rs_bridge',
