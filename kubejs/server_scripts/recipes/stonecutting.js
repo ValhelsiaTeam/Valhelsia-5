@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
   cut('pneumaticcraft:compressed_brick_pillar', 'pneumaticcraft:compressed_stone');
   cut('2x pneumaticcraft:compressed_brick_slab', 'pneumaticcraft:compressed_stone');
   cut('pneumaticcraft:compressed_brick_stairs', 'pneumaticcraft:compressed_stone');
-  cut('2x pneumaticcraft:compressed_brick_vertical_slab', 'pneumaticcraft:compressed_stone');
+  cut('2x v_slab_compat:pneumaticcraft/compressed_brick_vertical_slab', 'pneumaticcraft:compressed_stone');
   cut('pneumaticcraft:compressed_brick_wall', 'pneumaticcraft:compressed_stone');
 
   // Twilight Forest
