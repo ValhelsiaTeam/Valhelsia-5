@@ -157,16 +157,16 @@ ServerEvents.recipes(event => {
   event.remove({id: 'ad_astra:recipes/gold_ingot_from_blasting_venus_gold_ore'});
   event.remove({id: 'ad_astra:recipes/gold_ingot_from_smelting_venus_gold_ore'});
 
-  event.remove({id: `minecraft:lapis_lazuli_from_blasting_deepslate_lapis_ore`});
-  event.remove({id: `minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore`});
+  event.remove({id: 'minecraft:lapis_lazuli_from_blasting_deepslate_lapis_ore'});
+  event.remove({id: 'minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore'});
   event.remove({id: 'ad_astra:recipes/lapis_lazuli_from_blasting_glacio_lapis_ore'});
   event.remove({id: 'ad_astra:recipes/lapis_lazuli_from_smelting_glacio_lapis_ore'});
-  event.remove({id: `darkerdepths:lapis_lazuli_from_blasting_aridrock_lapis_ore`});
-  event.remove({id: `darkerdepths:lapis_lazuli_from_blasting_limestone_lapis_ore`});
-  event.remove({id: `darkerdepths:lapis_lazuli_from_smelting_aridrock_lapis_ore`});
-  event.remove({id: `darkerdepths:lapis_lazuli_from_smelting_limestone_lapis_ore`});
-  event.remove({id: `minecraft:lapis_lazuli_from_blasting_sculk_stone_lapis_ore`}); // Deeper and Darker uses the wrong namespace.
-  event.remove({id: `minecraft:lapis_lazuli_from_smelting_sculk_stone_lapis_ore`}); // Deeper and Darker uses the wrong namespace.
+  event.remove({id: 'darkerdepths:lapis_lazuli_from_blasting_aridrock_lapis_ore'});
+  event.remove({id: 'darkerdepths:lapis_lazuli_from_blasting_limestone_lapis_ore'});
+  event.remove({id: 'darkerdepths:lapis_lazuli_from_smelting_aridrock_lapis_ore'});
+  event.remove({id: 'darkerdepths:lapis_lazuli_from_smelting_limestone_lapis_ore'});
+  event.remove({id: 'minecraft:lapis_lazuli_from_blasting_sculk_stone_lapis_ore'}); // Deeper and Darker uses the wrong namespace.
+  event.remove({id: 'minecraft:lapis_lazuli_from_smelting_sculk_stone_lapis_ore'}); // Deeper and Darker uses the wrong namespace.
   
   // Remove IE smelting / blasting of dusts (duplicates - Mekanism has recipes that use tags).
   ['copper_ingot', 'gold_ingot', 'iron_ingot', 'ingot_lead', 'ingot_steel', 'ingot_uranium'].forEach((metal) => {
