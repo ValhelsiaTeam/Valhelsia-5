@@ -130,7 +130,7 @@ ServerEvents.recipes(event => {
 
     'immersiveengineering:metalpress/plate_aluminum',
     'immersiveengineering:metalpress/plate_brass',
-    'immersiveengineering:metalpress/plate_calcorite',
+    'immersiveengineering:metalpress/plate_calorite',
     'immersiveengineering:metalpress/plate_constantan',
     'immersiveengineering:metalpress/plate_copper',
     'immersiveengineering:metalpress/plate_desh',
