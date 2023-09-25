@@ -101,6 +101,7 @@ JEIEvents.hideItems(event => {
     // Create Crafts & Additions
     'createaddition:electrum_ingot', // Using Immersive Engineering version.
     'createaddition:electrum_nugget', // Using Immersive Engineering version.
+    'createaddition:electrum_sheet', // Using Immersive Engineering version.
 
     // Create Deco
     'createdeco:zinc_sheet', // Using Create Crafts & Additions version.

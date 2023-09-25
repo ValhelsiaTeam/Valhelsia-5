@@ -94,7 +94,7 @@ ServerEvents.recipes(event => {
 
   // Remove unused pressing.
   [
-    'ad_astra:hammering/calcorite_plate',
+    'ad_astra:hammering/calorite_plate',
     'ad_astra:hammering/desh_plate',
     'ad_astra:hammering/iron_plate',
     'ad_astra:hammering/ostrum_plate',
@@ -104,6 +104,7 @@ ServerEvents.recipes(event => {
     'create:pressing/copper_ingot',
     'create:pressing/gold_ingot',
     'create:pressing/iron_ingot',
+    'create:pressing/steel_ingot',
 
     'createaddition:pressing/electrum_ingot',
     'createaddition:pressing/steel_ingot',
@@ -113,7 +114,7 @@ ServerEvents.recipes(event => {
     'minecraft:pressing/netherite_sheet', // Create Deco has the wrong recipe namespace here.
 
     'immersiveengineering:crafting/plate_aluminum_hammering',
-    'immersiveengineering:crafting/plate_calcorite_hammering',
+    'immersiveengineering:crafting/plate_calorite_hammering',
     'immersiveengineering:crafting/plate_constantan_hammering',
     'immersiveengineering:crafting/plate_copper_hammering',
     'immersiveengineering:crafting/plate_desh_hammering',
@@ -146,7 +147,7 @@ ServerEvents.recipes(event => {
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Ad Astra
-  press('ad_astra:calcorite_plate', '#forge:ingots/calcorite');
+  press('ad_astra:calorite_plate', '#forge:ingots/calorite');
   press('ad_astra:desh_plate', '#forge:ingots/desh');
   press('ad_astra:ostrum_plate', '#forge:ingots/ostrum');
 
@@ -160,6 +161,9 @@ ServerEvents.recipes(event => {
   press('createdeco:cast_iron_sheet', '#forge:ingots/cast_iron');
   press('createdeco:netherite_sheet', '#forge:ingots/netherite');
 
+  // Dark Utilities
+  press('darkutils:blank_plate', '#darkutils:dark_stones');
+
   // Immersive Engineering
   press('immersiveengineering:plate_aluminum', '#forge:ingots/aluminum');
   press('immersiveengineering:plate_constantan', '#forge:ingots/constantan');
@@ -172,6 +176,10 @@ ServerEvents.recipes(event => {
   press('immersiveengineering:plate_silver', '#forge:ingots/silver');
   press('immersiveengineering:plate_steel', '#forge:ingots/steel');
   press('immersiveengineering:plate_uranium', '#forge:ingots/uranium');
+
+  // PneumaticCraft
+  press('pneumaticcraft:plastic', '#pneumaticcraft:plastic_bricks');
+  press('pneumaticcraft:plastic', '#pneumaticcraft:smooth_plastic_bricks');
 
   // Tetra
   press('tetra:vent_plate', 'tetra:metal_scrap');
