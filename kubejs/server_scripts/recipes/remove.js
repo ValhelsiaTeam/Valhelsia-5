@@ -29,6 +29,12 @@
 ServerEvents.recipes(event => {
   // Remove recipes by recipe ID.
   [
+    // Ad Astra
+    'ad_astra:recipes/steel_block',
+    'ad_astra:recipes/steel_nugget',
+    'ad_astra:steel_ingot_from_blasting_iron_ingot',
+    'ad_astra:steel_ingot_from_nuggets',
+
     // Ars Nouveau
     'ars_nouveau:archwood_to_chest', // Duplicate Recipe.
     'ars_nouveau:novice_spell_book', // Replaced with a different recipe.
