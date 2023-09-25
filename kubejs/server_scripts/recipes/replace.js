@@ -88,6 +88,7 @@ ServerEvents.recipes(event => {
   // Note: Priority for metals is Create > Mekanism > Immersive Engineering > Darker Depths
 
   // Nuggets
+  replaceOutput('createaddition:electrum_nugget', 'immersiveengineering:nugget_electrum');
   replaceOutput('galosphere:silver_nugget', 'immersiveengineering:nugget_silver');
   replaceOutput('immersiveengineering:nugget_copper', 'create:copper_nugget');
   replaceOutput('immersiveengineering:nugget_lead', 'mekanism:nugget_lead');

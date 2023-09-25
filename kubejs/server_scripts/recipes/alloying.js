@@ -59,6 +59,7 @@ ServerEvents.recipes(event => {
   // For removal of alloying recipes with no replacement, use remove.js instead.
   [
     'create:mixing/brass_ingot',
+    'createaddition:mixing/electrum',
     'immersiveengineering:alloysmelter/brass',
     'immersiveengineering:alloysmelter/bronze',
     'immersiveengineering:alloysmelter/constantan',

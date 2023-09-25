@@ -55,6 +55,10 @@ ServerEvents.recipes(event => {
 
     // Create
 
+    // Create Crafts & Additions
+    'createaddition:crafting/electrum_ingot', // Using Immersive Engineering version.
+    'createaddition:crafting/electrum_nugget', // Using Immersive Engineering version.
+
     // Create Deco
     'minecraft:pressing/zinc_sheet', // Why is this in the Minecraft namespace?! Anyway, redundant item.
 
