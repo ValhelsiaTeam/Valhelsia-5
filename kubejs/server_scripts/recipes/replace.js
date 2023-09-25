@@ -34,7 +34,7 @@ ServerEvents.recipes(event => {
   const replaceOutputType = (recipeType, from, to) => {event.replaceOutput({type: recipeType}, from, to)};
 
   // ----- Fixes -----
-  replaceOutputID('enlightened_end:gleam_iridescent_bismuth_sheets', 'enlightened_end:dazzling_bismuth_sheets', 'enlightened_end:iridescent_bismuth_sheets');
+  replaceOutputID('enlightened_end:regleam_iridescent_bismuth_sheets', 'enlightened_end:dazzling_bismuth_sheets', 'enlightened_end:iridescent_bismuth_sheets');
 
   // ----- Compatibility -----
   // Use tags instead of items for all dye colours.
