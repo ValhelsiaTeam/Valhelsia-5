@@ -27,7 +27,7 @@ ServerEvents.recipes(event => {
   event.shapeless('create:brass_sheet', ['#forge:ingots/brass', 'immersiveengineering:hammer']).id(`${ID_PREFIX}brass_sheet_hammering`);
 
   // Create Crafts & Additions
-  event.shapeless('createaddition:iron_wire', ['#forge:plates/iron', 'immersiveengineering:cutter']).id(`${ID_PREFIX}iron_wire_from_cutting`);
+  event.shapeless('createaddition:iron_wire', ['#forge:plates/iron', 'immersiveengineering:wirecutter']).id(`${ID_PREFIX}iron_wire_from_cutting`);
   event.shapeless('createaddition:zinc_sheet', ['#forge:ingots/zinc', 'immersiveengineering:hammer']).id(`${ID_PREFIX}zinc_sheet_hammering`);
 
   // Create Deco
