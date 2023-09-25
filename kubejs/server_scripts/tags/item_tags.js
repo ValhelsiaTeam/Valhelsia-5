@@ -55,6 +55,7 @@ ServerEvents.tags('item', event => {
 
   // ----- Ingots -----
   event.add('forge:ingots', [
+    'createdeco:cast_iron_ingot',
     'moreminecarts:silica_steel',
   ]);
 
@@ -92,6 +93,11 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:dusts/warp', [
     'waystones:warp_dust',
+  ]);
+
+  // Plates
+  event.add('forge:plates', [
+    'createdeco:cast_iron_sheet',
   ]);
 
   // ----- Logs / Wood -----
