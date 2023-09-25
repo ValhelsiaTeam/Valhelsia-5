@@ -106,19 +106,68 @@ ServerEvents.recipes(event => {
   });
 
   // Remove merged smelting / blasting recipes now that they're redundant due to the above change.
-  ['coal', 'diamond', 'gold', 'iron', 'lapis', 'redstone'].forEach((metal) => {
+  ['gold', 'iron'].forEach((metal) => {
     event.remove({id: `minecraft:${metal}_ingot_from_blasting_deepslate_${metal}_ore`});
     event.remove({id: `minecraft:${metal}_ingot_from_smelting_deepslate_${metal}_ore`});
     event.remove({id: `darkerdepths:${metal}_ingot_from_blasting_aridrock_${metal}_ore`});
     event.remove({id: `darkerdepths:${metal}_ingot_from_blasting_limestone_${metal}_ore`});
     event.remove({id: `darkerdepths:${metal}_ingot_from_smelting_aridrock_${metal}_ore`});
     event.remove({id: `darkerdepths:${metal}_ingot_from_smelting_limestone_${metal}_ore`});
+    event.remove({id: `minecraft:${metal}_ingot_from_blasting_sculk_stone_${metal}_ore`}); // Deeper and Darker uses the wrong namespace.
+    event.remove({id: `minecraft:${metal}_ingot_from_smelting_sculk_stone_${metal}_ore`}); // Deeper and Darker uses the wrong namespace.
   });
+  
+  ['coal', 'diamond', 'redstone'].forEach((mineral) => {
+    event.remove({id: `minecraft:${mineral}_from_blasting_deepslate_${mineral}_ore`});
+    event.remove({id: `minecraft:${mineral}_from_smelting_deepslate_${mineral}_ore`});
+    event.remove({id: `darkerdepths:${mineral}_from_blasting_aridrock_${mineral}_ore`});
+    event.remove({id: `darkerdepths:${mineral}_from_blasting_limestone_${mineral}_ore`});
+    event.remove({id: `darkerdepths:${mineral}_from_smelting_aridrock_${mineral}_ore`});
+    event.remove({id: `darkerdepths:${mineral}_from_smelting_limestone_${mineral}_ore`});
+    event.remove({id: `minecraft:${mineral}_from_blasting_sculk_stone_${mineral}_ore`}); // Deeper and Darker uses the wrong namespace.
+    event.remove({id: `minecraft:${mineral}_from_smelting_sculk_stone_${mineral}_ore`}); // Deeper and Darker uses the wrong namespace.
+  });
+  
+  event.remove({id: 'ad_astra:recipes/coal_from_blasting_glacio_coal_ore'});
+  event.remove({id: 'ad_astra:recipes/coal_from_smelting_glacio_coal_ore'});
+  event.remove({id: 'ad_astra:recipes/coal_from_blasting_venus_coal_ore'});
+  event.remove({id: 'ad_astra:recipes/coal_from_smelting_vnus_coal_ore'});
+
   event.remove({id: 'minecraft:copper_ingot_from_blasting_deepslate_copper_ore'});
   event.remove({id: 'minecraft:copper_ingot_from_smelting_deepslate_copper_ore'});
+  event.remove({id: 'minecraft:copper_ingot_from_blasting_sculk_stone_copper_ore'}); // Deeper and Darker uses the wrong namespace.
+  event.remove({id: 'minecraft:copper_ingot_from_smelting_sculk_stone_copper_ore'}); // Deeper and Darker uses the wrong namespace.
+  event.remove({id: 'ad_astra:recipes/copper_ingot_from_blasting_glacio_copper_ore'});
+  event.remove({id: 'ad_astra:recipes/copper_ingot_from_smelting_glacio_copper_ore'});
+  
+  event.remove({id: 'ad_astra:recipes/diamond_from_blasting_venus_diamond_ore'});
+  event.remove({id: 'ad_astra:recipes/diamond_from_smelting_venus_diamond_ore'});
+  
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_blasting_moon_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_smelting_moon_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_blasting_mars_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_smelting_mars_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_blasting_mercury_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_smelting_mercury_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_blasting_glacio_iron_ore'});
+  event.remove({id: 'ad_astra:recipes/iron_ingot_from_smelting_glacio_iron_ore'});
+
   event.remove({id: 'minecraft:gold_ingot_from_blasting_nether_gold_ore'});
   event.remove({id: 'minecraft:gold_ingot_from_smelting_nether_gold_ore'});
+  event.remove({id: 'ad_astra:recipes/gold_ingot_from_blasting_venus_gold_ore'});
+  event.remove({id: 'ad_astra:recipes/gold_ingot_from_smelting_venus_gold_ore'});
 
+  event.remove({id: `minecraft:lapis_lazuli_from_blasting_deepslate_lapis_ore`});
+  event.remove({id: `minecraft:lapis_lazuli_from_smelting_deepslate_lapis_ore`});
+  event.remove({id: 'ad_astra:recipes/lapis_lazuli_from_blasting_glacio_lapis_ore'});
+  event.remove({id: 'ad_astra:recipes/lapis_lazuli_from_smelting_glacio_lapis_ore'});
+  event.remove({id: `darkerdepths:lapis_lazuli_from_blasting_aridrock_lapis_ore`});
+  event.remove({id: `darkerdepths:lapis_lazuli_from_blasting_limestone_lapis_ore`});
+  event.remove({id: `darkerdepths:lapis_lazuli_from_smelting_aridrock_lapis_ore`});
+  event.remove({id: `darkerdepths:lapis_lazuli_from_smelting_limestone_lapis_ore`});
+  event.remove({id: `minecraft:lapis_lazuli_from_blasting_sculk_stone_lapis_ore`}); // Deeper and Darker uses the wrong namespace.
+  event.remove({id: `minecraft:lapis_lazuli_from_smelting_sculk_stone_lapis_ore`}); // Deeper and Darker uses the wrong namespace.
+  
   // Remove IE smelting / blasting of dusts (duplicates - Mekanism has recipes that use tags).
   ['copper_ingot', 'gold_ingot', 'iron_ingot', 'ingot_lead', 'ingot_steel', 'ingot_uranium'].forEach((metal) => {
     event.remove({id: `immersiveengineering:smelting/${metal}_from_dust_from_blasting`});
