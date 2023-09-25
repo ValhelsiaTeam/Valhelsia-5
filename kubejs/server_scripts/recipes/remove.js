@@ -36,6 +36,7 @@ ServerEvents.recipes(event => {
     'ad_astra:hammering/steel_plate',
     'ad_astra:recipes/iron_rod',
     'ad_astra:recipes/steel_block',
+    'ad_astra:recipes/steel_ingot',
     'ad_astra:recipes/steel_nugget',
     'ad_astra:recipes/steel_ingot_from_blasting_iron_ingot',
     'ad_astra:recipes/steel_ingot_from_nuggets',
