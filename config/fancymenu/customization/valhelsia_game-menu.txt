@@ -14,29 +14,11 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
-  orientation = mid-centered
-  x = -102
-  action = movebutton
-  y = -76
-}
-
-customization {
-  identifier = %id=398354%
-  action = hidebutton
-}
-
-customization {
   identifier = %id=398306%
   orientation = mid-centered
   x = -102
   action = movebutton
   y = -28
-}
-
-customization {
-  identifier = %id=504306%
-  action = hidebutton
 }
 
 customization {
@@ -48,14 +30,6 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
-  orientation = mid-centered
-  x = -102
-  action = movebutton
-  y = -4
-}
-
-customization {
   identifier = %id=button_compatibility_id:mc_pausescreen_disconnect_button%
   orientation = mid-centered
   x = -102
@@ -64,19 +38,78 @@ customization {
 }
 
 customization {
-  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  identifier = %id=504330%
   orientation = mid-centered
   x = 4
+  action = movebutton
+  y = -4
+}
+
+customization {
+  identifier = %id=374282%
+  orientation = mid-centered
+  x = -126
   action = movebutton
   y = -52
 }
 
 customization {
-  identifier = %id=374330%
+  identifier = %id=button_compatibility_id:mc_pausescreen_return_to_game_button%
   orientation = mid-centered
-  x = -126
+  x = -102
+  action = movebutton
+  y = -76
+}
+
+customization {
+  identifier = %id=398354%
+  orientation = mid-centered
+  x = -127
   action = movebutton
   y = -4
+}
+
+customization {
+  identifier = %id=398354%
+  width = 21
+  action = resizebutton
+  height = 20
+}
+
+customization {
+  identifier = %id=398354%
+  action = setbuttonlabel
+  value = 
+}
+
+customization {
+  identifier = %id=398354%
+  loopbackgroundanimations = true
+  restartbackgroundanimations = true
+  action = setbuttontexture
+  backgroundhovered = kubejs/assets/custom-menu/textures/gui/catalogue_hover_button.png
+  backgroundnormal = kubejs/assets/custom-menu/textures/gui/catalogue_button.png
+}
+
+customization {
+  identifier = %id=504306%
+  action = hidebutton
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_options_button%
+  orientation = mid-centered
+  x = -102
+  action = movebutton
+  y = -4
+}
+
+customization {
+  identifier = %id=button_compatibility_id:mc_pausescreen_stats_button%
+  orientation = mid-centered
+  x = 4
+  action = movebutton
+  y = -52
 }
 
 customization {
@@ -91,13 +124,5 @@ customization {
   y = -28
   label = Discord
   height = 20
-}
-
-customization {
-  identifier = %id=504330%
-  orientation = mid-centered
-  x = 4
-  action = movebutton
-  y = -4
 }
 
