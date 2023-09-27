@@ -68,6 +68,10 @@ ServerEvents.recipes(event => {
   replaceInput('farmersdelight:rope', '#valhelsia:ropes');
   replaceInput('supplementaries:rope', '#valhelsia:ropes');
 
+  // Cheese Unification
+  replaceInput('ad_astra:cheese', '#valhelsia:cheese');
+  replaceInput('brewinandchewin:flaxen_cheese_wedge', '#valhelsia:cheese');
+
   // Going to add this later, needs some changes elsewhere.
   //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
 

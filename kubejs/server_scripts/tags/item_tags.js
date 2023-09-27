@@ -42,6 +42,11 @@ ServerEvents.tags('item', event => {
     'immersiveengineering:electron_tube',
   ]);
 
+  event.add('valhelsia:cheese', [
+    'ad_astra:cheese',
+    'brewinandchewin:flaxen_cheese_wedge',
+  ]);
+
   // ----- Ores -----
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',
