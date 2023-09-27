@@ -94,6 +94,10 @@ ServerEvents.recipes(event => {
 
   // Remove unused pressing.
   [
+    'ad_astra:compressing/calorite_plate_from_compressing_calorite_ingot',
+    'ad_astra:compressing/desh_plate_from_compressing_desh_ingot',
+    'ad_astra:compressing/ostrum_plate_from_compressing_ostrum_ingot',
+
     'ad_astra:hammering/calorite_plate',
     'ad_astra:hammering/desh_plate',
     'ad_astra:hammering/iron_plate',
