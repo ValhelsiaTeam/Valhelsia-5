@@ -20,6 +20,11 @@
         "type": "DIMENSION",
         "negate": true,
         "value": "ad_astra:moon"
+      },
+      {
+        "type": "DIMENSION",
+        "negate": true,
+        "value": "aether:the_aether"
       }
     ]
   ]
