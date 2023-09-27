@@ -56,6 +56,7 @@ ServerEvents.recipes(event => {
   // Conversion between stone of the same type.
   scConvert(['create:limestone', 'darkerdepths:limestone', 'quark:limestone']);
   scConvert(['darkerdepths:shale', 'quark:shale']);
+  scConvert(['ad_astra:sky_stone', 'ae2:sky_stone_block']);
 
   // Darker Depths
   cut('darkerdepths:stone_brick_pillar', 'minecraft:stone');
