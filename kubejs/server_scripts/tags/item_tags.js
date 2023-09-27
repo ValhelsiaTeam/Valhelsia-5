@@ -121,6 +121,10 @@ ServerEvents.tags('item', event => {
     'forbidden_arcanus:stripped_cherry_log',
   ]);
 
+  event.add('minecraft:planks', [
+    'aether:skyroot_planks',
+  ]);
+
    
   // ----- Sandstone -----
   event.add('forge:sandstone/colorless', [

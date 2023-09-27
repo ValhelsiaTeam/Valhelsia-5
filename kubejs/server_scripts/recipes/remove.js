@@ -41,6 +41,22 @@ ServerEvents.recipes(event => {
     'ad_astra:recipes/steel_ingot_from_blasting_iron_ingot',
     'ad_astra:recipes/steel_ingot_from_nuggets',
 
+    // The Aether
+    'aether:skyroot_beehive', // EveryCompat includes a proper one.
+    'aether:skyroot_barrel',
+    'aether:skyroot_cartography_table',
+    'aether:skyroot_chest',
+    'aether:skyroot_crafting_table',
+    'aether:skyroot_fletching_table',
+    'aether:skyroot_jukebox',
+    'aether:skyroot_grindstone',
+    'aether:skyroot_iron_vanilla_shield',
+    'aether:skyroot_loom',
+    'aether:skyroot_noteblock',
+    'aether:skyroot_piston',
+    'aether:skyroot_smithing_table',
+    'aether:skyroot_tripwire_hook',
+
     // Ars Nouveau
     'ars_nouveau:archwood_to_chest', // Duplicate Recipe.
     'ars_nouveau:novice_spell_book', // Replaced with a different recipe.
