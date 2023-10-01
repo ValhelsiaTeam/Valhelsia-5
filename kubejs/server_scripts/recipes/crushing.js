@@ -86,15 +86,18 @@
     'mekanism:crushing/red_sandstone_to_sand',
     'mekanism:crushing/sandstone_to_sand',
     'mekanism:crushing/soul_soil_to_soul_sand',
+    'mekanism:crushing/stone/to_cobblestone',
     // TODO: check for default bone meal + nether wart milling.
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Crushing
   crush('minecraft:red_sand', 'minecraft:granite');
+  crush('minecraft:cobblestone', 'minecraft:stone');
   crush('atmospheric:arid_sand', 'darkerdepths:aridrock');
   crush('biomesoplenty:black_sand', 'minecraft:basalt');
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
   crush('immersiveengineering:slag_gravel', 'immersiveengineering:slag');
+  
 
   // Milling + Crushing
   // Sandstone, Terracotta, and other soft materials can be milled.
