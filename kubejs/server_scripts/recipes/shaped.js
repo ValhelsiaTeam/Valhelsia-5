@@ -320,6 +320,9 @@ ServerEvents.recipes(event => {
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost', 'organic_compost_from_minecolonies_compost');
   shaped2x2('farmersdelight:canvas', 'supplementaries:flax', 'canvas_from_flax');
 
+  // Galosphere
+  plusWrapped('4x galosphere:silver_bomb', 'supplementaries:bomb', '#forge:ingots/silver', 'silver_bomb_from_bomb')
+
   // Immersive Engineering
   shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver', 'silver_block_from_silver_ingots');
   shaped3x3('immersiveengineering:storage_steel', '#forge:ingots/steel', 'steel_block_from_steel_ingots');

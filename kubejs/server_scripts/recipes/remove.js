@@ -56,6 +56,8 @@ ServerEvents.recipes(event => {
     'aether:skyroot_piston',
     'aether:skyroot_smithing_table',
     'aether:skyroot_tripwire_hook',
+    'aether:swet_lead',
+    'aether:swet_sticky_piston', // Redundant - vanilla Sticky Piston recipe has changed.
 
     // Ars Nouveau
     'ars_nouveau:archwood_to_chest', // Duplicate Recipe.
@@ -134,6 +136,10 @@ ServerEvents.recipes(event => {
 
     'immersiveengineering:crafting/raw_lead_to_raw_block_lead',
     'immersiveengineering:crafting/raw_uranium_to_raw_block_uranium',
+
+    // Malum
+    'malum:lead_from_sapballs', // Redundant - vanilla Lead recipe has changed.
+    'malum:sticky_piston_from_sapballs', // Redundant - vanilla Sticky Piston recipe has changed.
 
     // Mekanism
     'mekanism:charcoal',

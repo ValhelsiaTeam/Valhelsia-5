@@ -207,6 +207,13 @@ ServerEvents.tags('item', event => {
     'blue_skies:midnight_sandstone_pillar',
   ]);
 
+  // Slimeballs
+  event.add('forge:slimeballs', [
+    'aether:swet_ball',
+    'alexsmobs:banana_slug_slime',
+    'autumnity:snail_goo',
+  ]);
+
   // Create Slice & Dice
   event.add('sliceanddice:allowed_tools', [
     'galosphere_delight:silver_kitchen_hammer',

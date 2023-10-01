@@ -21,17 +21,61 @@
 ServerEvents.recipes(event => {
 
   // ----- Convenience Functions -----
-  // Replace inputs and outputs across all recipes that use the given ingredient / item.
-  const replaceInput = (from, to) => {event.replaceInput({}, from, to)};
-  const replaceOutput = (from, to) => {event.replaceOutput({}, from, to)};
 
-  // Replace inputs / outputs by recipe ID.
-  const replaceInputID = (recipeID, from, to) => {event.replaceInput({id: recipeID}, from, to)};
-  const replaceOutputID = (recipeID, from, to) => {event.replaceOutput({id: recipeID}, from, to)};
+  /**
+   * Replaces a given input ingredient in all KubeJS-compatible recipes.
+   * @param {*} from Original ingredient.
+   * @param {*} to New ingredient.
+   */
+  const replaceInput = (from, to) => {
+    event.replaceInput({}, from, to);
+  };
+
+  /**
+   * Replaces a given output item in all KubeJS-compatible recipes.
+   * @param {*} from Original output item.
+   * @param {*} to New output item.
+   */
+  const replaceOutput = (from, to) => {
+    event.replaceOutput({}, from, to);
+  };
+
+  /**
+   * Replaces input ingredients in one or more recipes, by recipe ID.
+   * @param {string|Array} recipes One or more recipe IDs to replace ingredients in.
+   * @param {*} from Original ingredient.
+   * @param {*} to New ingredient.
+   */
+  const replaceInputID = (recipes, from, to) => {
+    if (Array.isArray(recipes)) {
+      recipes.forEach((recipeID) => event.replaceInput({id: recipeID}, from, to));
+    } else {
+      event.replaceInput({id: recipes}, from, to);
+    }
+  };
+
+  /**
+   * Replaces output items in one or more recipes, by recipe ID.
+   * @param {string|Array} recipes One or more recipe IDs to replace items in.
+   * @param {*} from Original item.
+   * @param {*} to New item.
+   */
+  const replaceOutputID = (recipes, from, to) => {
+    if (Array.isArray(recipes)) {
+      recipes.forEach((recipeID) => event.replaceOutput({id: recipeID}, from, to));
+    } else {
+      event.replaceOutput({id: recipes}, from, to);
+    }
+  };
 
   // Replace inputs / outputs by recipe type.
-  const replaceInputType = (recipeType, from, to) => {event.replaceInput({type: recipeType}, from, to)};
-  const replaceOutputType = (recipeType, from, to) => {event.replaceOutput({type: recipeType}, from, to)};
+  const replaceInputType = (recipeType, from, to) => {
+    event.replaceInput({type: recipeType}, from, to);
+  };
+
+  const replaceOutputType = (recipeType, from, to) => {
+    event.replaceOutput({type: recipeType}, from, to);
+  };
 
   // ----- Fixes -----
   replaceOutputID('enlightened_end:regleam_iridescent_bismuth_sheets', 'enlightened_end:dazzling_bismuth_sheets', 'enlightened_end:iridescent_bismuth_sheets');
@@ -72,17 +116,33 @@ ServerEvents.recipes(event => {
   replaceInput('ad_astra:cheese', '#valhelsia:cheese');
   replaceInput('brewinandchewin:flaxen_cheese_wedge', '#valhelsia:cheese');
 
-  // Going to add this later, needs some changes elsewhere.
-  //replaceInput('minecraft:slime_ball', '#forge:slimeballs');
+  // Slime Unification
+  replaceInputID([
+    'minecraft:lead',
+    'minecraft:sticky_piston',
+    'botania:runic_altar/summer',
+    'forbidden_arcanus:wax',
+    'moreminecarts:coupler',
+    'supplementaries:item_lore_display',
+    'supplementaries:slingshot',
+  ], 'minecraft:slime_ball', '#forge:slimeballs');
 
-  replaceInputID('minecraft:writable_book', 'minecraft:feather', '#forge:feathers');
-  replaceInputID('xercamusic:music_sheet', 'minecraft:feather', '#forge:feathers');
+  // Feather Unification
+  replaceInputID([
+    'minecraft:writable_book',
+    'xercamusic:music_sheet',
+    // TODO: Check which other recipes need feathers changed to use tags.
+  ], 'minecraft:feather', '#forge:feathers');
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers');
-  // TODO: Check which other recipes need feathers changed to use tags.
-
+  
+  // Stick / Rod Unification
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
-  // TODO: Check which other recipes need sticks changed to use tags.
+  replaceInputID([
+    'galosphere_delight:silver_kitchen_hammer',
+    // TODO: Check which other recipes need sticks changed to use tags.
+  ], 'minecraft:stick', '#forge:rods/wooden');
 
+  // Silver Unification
   replaceInputID('galosphere:silver_panel', 'galosphere:silver_block', '#forge:storage_blocks/silver');
 
   ALL_VANILLA_WOOD_TYPES.forEach((wood_type) => {
@@ -134,8 +194,8 @@ ServerEvents.recipes(event => {
   //replaceInput('#forge:chests', '#forge:chests/wooden'); // Prevent using Personal Chests and similar in chest recipes.
   replaceInputID('create:crafting/kinetics/rope_pulley', '#minecraft:wool', '#valhelsia:ropes'); // Use rope instead of wool.
   replaceInputID('tetra:modular_toolbelt', 'minecraft:string', '#valhelsia:ropes'); // Tetra Rope Toolbelt - now with rope!
-  replaceInputID('waystones:warp_dust', 'minecraft:ender_pearl', '#forge:dusts/ender_pearl');
+  replaceInputID('waystones:warp_dust', 'minecraft:ender_pearl', '#forge:dusts/ender_pearl'); // Makes more sense to use the dust form.
   replaceInputID('forbidden_arcanus:silver_dragon_scale', 'minecraft:iron_ingot', '#forge:ingots/silver'); // Silver Dragon Scales are now actually silver.
   replaceInputID('ars_nouveau:warp_scroll', 'minecraft:lapis_lazuli', '#forge:dusts/warp'); // Now even warpier!
-
+  replaceInputID('forbidden_arcanus:wax', 'minecraft:honey_bottle', 'minecraft:honeycomb'); // Follows vanilla precedent.
 });
