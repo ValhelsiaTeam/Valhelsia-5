@@ -22,20 +22,28 @@
 
   /**
    * Creates a Crushing recipe for multiple mods.
-   * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
+   * Note: Mekanism doesn't handle secondary outputs for crushing recipes. This function just ignores them.
+   * 
    * @param {(string|Item)} output The resulting crushed item(s).
    * @param {(string|InputItem)} input A single ingredient to crush.
+   * @param {(string|Item|Array)} secondary An optional secondary output.
    */
-  const crush = (output, input) => {
+  const crush = (output, input, secondary) => {
     let itemID = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
 
-    // TODO: Rework this to allow secondary outputs to work - not entirely simple since IE and Create have very
-    //       different approaches to how they handle this (and Mekanism doesn't appear to handle it at all).
-    //       Recipes with secondary outputs might end up with a separate function instead of this one.
-
-    event.recipes.immersiveengineering.crusher(output, input, [], 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
+    if (typeof secondary != 'undefined') {
+      if (Array.isArray(secondary)) {
+        event.recipes.immersiveengineering.crusher(output, input, secondary, 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
+        event.recipes.create.crushing(output.concat(secondary), input).id(`${ID_PREFIX}create/${itemID}`);
+      } else {
+        event.recipes.immersiveengineering.crusher(output, input, [secondary], 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
+        event.recipes.create.crushing([output, secondary], input).id(`${ID_PREFIX}create/${itemID}`);
+      }
+    } else {
+      event.recipes.immersiveengineering.crusher(output, input, [], 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
+      event.recipes.create.crushing(output, input).id(`${ID_PREFIX}create/${itemID}`);
+    }
     event.recipes.mekanism.crushing(output, input).id(`${ID_PREFIX}mekanism/${itemID}`);
-    event.recipes.create.crushing(output, input).id(`${ID_PREFIX}create/${itemID}`);
     // TODO: Add Ars Nouveau Crushing (note: maybe separate, as it works very differently to the above).
     // TODO: Add MineColonies Crushing.
   };
@@ -44,13 +52,22 @@
    * Creates a Milling recipe for multiple mods.
    * Milling recipes are also added as crushing recipes (but not the reverse). This is in line with the way
    * the Create mod handles Milling vs Crushing.
-   * Note: This currently only works for simple recipes that have one input ingredient and one output item type.
    * @param {(string|Item)} output The resulting milled item(s).
    * @param {(string|Ingredient)} input A single ingredient to mill.
+   * @param {(string|Item)} secondary An optional secondary output.
    */
-  const mill = (output, input) => {
+  const mill = (output, input, secondary) => {
     let itemID = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
     event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${itemID}`);
+    if (typeof secondary != 'undefined') {
+      if (Array.isArray(secondary)) {
+        event.recipes.create.milling(output.concat(secondary), input).id(`${ID_PREFIX}create/milling/${itemID}`);
+      } else {
+        event.recipes.create.milling([output, secondary], input).id(`${ID_PREFIX}create/milling/${itemID}`);
+      }
+    } else {
+      event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${itemID}`);
+    }
     crush(output, input);
   };
 
@@ -62,7 +79,12 @@
     'create:milling/sandstone',
     'create:milling/terracotta',
     'immersiveengineering:crusher/nether_wart',
+    'immersiveengineering:crusher/red_sandstone',
+    'immersiveengineering:crusher/sandstone',
     'immersiveengineering:crusher/slag',
+    'immersiveengineering:crusher/venus_sandstone',
+    'mekanism:crushing/red_sandstone_to_sand',
+    'mekanism:crushing/sandstone_to_sand',
     'mekanism:crushing/soul_soil_to_soul_sand',
     // TODO: check for default bone meal + nether wart milling.
   ].forEach((recipeID) => event.remove({id: recipeID}));
@@ -79,17 +101,19 @@
   // Harder materials (stone, ore) should only be crushable, not millable.
   
   // Sands
-  mill('2x minecraft:red_sand', '#forge:sandstone/red');
+  let saltpeter = Item.of('immersiveengineering:dust_saltpeter').withChance(0.5);
+  mill('2x minecraft:red_sand', '#forge:sandstone/red', saltpeter);
   mill('2x minecraft:red_sand', 'minecraft:terracotta');
-  mill('2x minecraft:sand', '#forge:sandstone/colorless');
+  mill('2x minecraft:sand', '#forge:sandstone/colorless', saltpeter);
   mill('1x minecraft:soul_sand', 'minecraft:soul_soil');
-  mill('2x minecraft:soul_sand', '#forge:sandstone/soul');
-  mill('2x biomesoplenty:black_sand', '#forge:sandstone/black');
-  mill('2x biomesoplenty:orange_sand', '#forge:sandstone/orange');
-  mill('2x biomesoplenty:white_sand', '#forge:sandstone/white');
-  mill('2x blue_skies:crystal_sand', '#forge:sandstone/crystal');
-  mill('2x blue_skies:midnight_sand', '#forge:sandstone/midnight');
-  mill('2x forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless');
+  mill('2x minecraft:soul_sand', '#forge:sandstone/soul', saltpeter);
+  mill('2x ad_astra:venus_sand', '#forge:sandstone/venus_sandstone', saltpeter);
+  mill('2x biomesoplenty:black_sand', '#forge:sandstone/black', saltpeter);
+  mill('2x biomesoplenty:orange_sand', '#forge:sandstone/orange', saltpeter);
+  mill('2x biomesoplenty:white_sand', '#forge:sandstone/white', saltpeter);
+  mill('2x blue_skies:crystal_sand', '#forge:sandstone/crystal', saltpeter);
+  mill('2x blue_skies:midnight_sand', '#forge:sandstone/midnight', saltpeter);
+  mill('2x forbidden_arcanus:soulless_sand', '#forge:sandstone/soulless', saltpeter);
 
   // Bone Meal
   mill('9x minecraft:bone_meal', 'minecraft:bone_block');
