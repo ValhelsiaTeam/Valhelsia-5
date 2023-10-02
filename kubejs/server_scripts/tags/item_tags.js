@@ -51,6 +51,11 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',
     'darkerdepths:limestone_silver_ore',
+    'enlightened_end:bismuth_ore',
+  ]);
+
+  event.add('forge:ores/bismuth', [
+    'enlightened_end:bismuth_ore',
   ]);
 
   event.add('forge:ores/silver', [
@@ -58,10 +63,24 @@ ServerEvents.tags('item', event => {
     'darkerdepths:limestone_silver_ore',
   ]);
 
+  // ----- Raw Ores -----
+  event.add('forge:raw_materials', [
+    'enlightened_end:raw_bismuth',
+  ]);
+
+  event.add('forge:raw_materials/bismuth', [
+    'enlightened_end:raw_bismuth',
+  ]);
+
   // ----- Ingots -----
   event.add('forge:ingots', [
     'createdeco:cast_iron_ingot',
+    'enlightened_end:bismuth_ingot',
     'moreminecarts:silica_steel',
+  ]);
+
+  event.add('forge:ingots/bismuth', [
+    'enlightened_end:bismuth_ingot',
   ]);
 
   event.add('forge:ingots/silica_steel', [
@@ -70,11 +89,30 @@ ServerEvents.tags('item', event => {
 
   // ----- Storage Blocks -----
   event.add('forge:storage_blocks', [
+    'enlightened_end:bismuth_block',
+    'enlightened_end:raw_bismuth_block',
     'moreminecarts:silica_steel_block',
+  ]);
+
+  event.add('forge:storage_blocks/bismuth', [
+    'enlightened_end:bismuth_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_bismuth', [
+    'enlightened_end:raw_bismuth_block',
   ]);
 
   event.add('forge:storage_blocks/silica_steel', [
     'moreminecarts:silica_steel_block',
+  ]);
+
+  // ----- Nuggets -----
+  event.add('forge:nuggets', [
+    'enlightened_end:bismuth_nugget',
+  ]);
+
+  event.add('forge:nuggets/bismuth', [
+    'enlightened_end:bismuth_nugget',
   ]);
 
   // ----- Dusts -----
