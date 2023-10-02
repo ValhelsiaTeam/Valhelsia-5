@@ -28,7 +28,7 @@ JEIEvents.information(event => {
    * @param {string} textID The language entry for the information.
    */
   const addInfo = (items, textID) => {
-    event.add(items, Text.translate(textID));
+    event.addItem(items, Text.translate(textID));
   };
 
   // Minecraft
