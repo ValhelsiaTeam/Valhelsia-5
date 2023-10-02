@@ -99,6 +99,7 @@ JEIEvents.hideItems(event => {
     'create:iron_sheet', // Using Immersive Engineering version.
 
     // Create Crafts & Additions
+    'createaddition:diamond_grit', // Using Mekanism version.
     'createaddition:electrum_ingot', // Using Immersive Engineering version.
     'createaddition:electrum_nugget', // Using Immersive Engineering version.
     'createaddition:electrum_sheet', // Using Immersive Engineering version.

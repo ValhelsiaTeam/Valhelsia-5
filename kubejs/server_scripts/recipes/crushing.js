@@ -78,16 +78,38 @@
     'create:milling/granite',
     'create:milling/sandstone',
     'create:milling/terracotta',
+    'createaddition:compat/immersiveengineering/crushing/steel_ingot',
+    'createaddition:crushing/diamond',
+
+    'immersiveengineering:crusher/ingot_aluminum',
+    'immersiveengineering:crusher/ingot_constantan',
+    'immersiveengineering:crusher/ingot_copper',
+    'immersiveengineering:crusher/ingot_electrum',
+    'immersiveengineering:crusher/ingot_iron',
+    'immersiveengineering:crusher/ingot_gold',
+    'immersiveengineering:crusher/ingot_lead',
+    'immersiveengineering:crusher/ingot_nickel',
+    'immersiveengineering:crusher/ingot_silver',
+    'immersiveengineering:crusher/ingot_steel',
+    'immersiveengineering:crusher/ingot_uranium',
+
     'immersiveengineering:crusher/nether_wart',
     'immersiveengineering:crusher/red_sandstone',
     'immersiveengineering:crusher/sandstone',
     'immersiveengineering:crusher/slag',
     'immersiveengineering:crusher/venus_sandstone',
+
     'mekanism:crushing/red_sandstone_to_sand',
     'mekanism:crushing/sandstone_to_sand',
     'mekanism:crushing/soul_soil_to_soul_sand',
     'mekanism:crushing/stone/to_cobblestone',
-    // TODO: check for default bone meal + nether wart milling.
+
+    'mekanism:processing/diamond/to_dust',
+    'mekanism:processing/copper/dust/from_ingot',
+    'mekanism:processing/iron/dust/from_ingot',
+    'mekanism:processing/gold/dust/from_ingot',
+    'mekanism:processing/lead/dust/from_ingot',
+    'mekanism:processing/uranium/dust/from_ingot',
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Crushing
@@ -97,6 +119,21 @@
   crush('biomesoplenty:black_sand', 'minecraft:basalt');
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
   crush('immersiveengineering:slag_gravel', 'immersiveengineering:slag');
+
+  // Dusts
+  crush('immersiveengineering:dust_aluminum', '#forge:ingots/aluminum');
+  crush('immersiveengineering:dust_constantan', '#forge:ingots/constantan');
+  crush('immersiveengineering:dust_electrum', '#forge:ingots/electrum');
+  crush('immersiveengineering:dust_nickel', '#forge:ingots/nickel');
+  crush('immersiveengineering:dust_silver', '#forge:ingots/silver');
+
+  crush('mekanism:dust_copper', '#forge:ingots/copper');
+  crush('mekanism:dust_diamond', '#forge:gems/diamond');
+  crush('mekanism:dust_iron', '#forge:ingots/iron');
+  crush('mekanism:dust_gold', '#forge:ingots/gold');
+  crush('mekanism:dust_lead', '#forge:ingots/lead');
+  crush('mekanism:dust_uranium', '#forge:ingots/uranium');
+  crush('mekanism:dust_steel', '#forge:ingots/steel');
   
 
   // Milling + Crushing
