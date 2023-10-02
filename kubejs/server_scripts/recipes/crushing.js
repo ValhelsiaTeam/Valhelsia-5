@@ -120,15 +120,16 @@
 
   // Bone Meal
   mill('9x minecraft:bone_meal', 'minecraft:bone_block');
+  mill('4x minecraft:bone_meal', 'alexsmobs:fish_bones');
   mill('16x minecraft:bone_meal', 'aquamirae:anglers_fang');
   mill('6x minecraft:bone_meal', 'aquamirae:remnants_saber');
   mill('2x minecraft:bone_meal', 'aquamirae:sharp_bones');
   mill('5x minecraft:bone_meal', 'ars_nouveau:wilden_horn');
   mill('16x minecraft:bone_meal', 'cnb:yeti_antler');
   mill('6x minecraft:bone_meal', 'blue_skies:azulfo_horn');
+  mill('4x minecraft:bone_meal', 'enlightened_end:stalker_tooth');
   mill('9x minecraft:bone_meal', 'malum:grim_talc');
   mill('9x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
-  mill('4x minecraft:bone_meal', 'alexsmobs:fish_bones');
 
   // Other Milling
   mill('4x minecraft:nether_wart', 'minecraft:nether_wart_block');

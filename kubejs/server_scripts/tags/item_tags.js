@@ -52,10 +52,20 @@ ServerEvents.tags('item', event => {
     'darkerdepths:aridrock_silver_ore',
     'darkerdepths:limestone_silver_ore',
     'enlightened_end:bismuth_ore',
+    'enlightened_end:irradium_ore',
+    'enlightened_end:malachite_ore',
   ]);
 
   event.add('forge:ores/bismuth', [
     'enlightened_end:bismuth_ore',
+  ]);
+
+  event.add('forge:ores/irradium', [
+    'enlightened_end:irradium_ore',
+  ]);
+
+  event.add('forge:ores/malachite', [
+    'enlightened_end:malachite_ore',
   ]);
 
   event.add('forge:ores/silver', [
@@ -66,21 +76,31 @@ ServerEvents.tags('item', event => {
   // ----- Raw Ores -----
   event.add('forge:raw_materials', [
     'enlightened_end:raw_bismuth',
+    'enlightened_end:raw_irradium',
   ]);
 
   event.add('forge:raw_materials/bismuth', [
     'enlightened_end:raw_bismuth',
   ]);
 
+  event.add('forge:raw_materials/irradium', [
+    'enlightened_end:raw_irradium',
+  ]);
+
   // ----- Ingots -----
   event.add('forge:ingots', [
     'createdeco:cast_iron_ingot',
     'enlightened_end:bismuth_ingot',
+    'enlightened_end:starsteel_ingot',
     'moreminecarts:silica_steel',
   ]);
 
   event.add('forge:ingots/bismuth', [
     'enlightened_end:bismuth_ingot',
+  ]);
+
+  event.add('forge:ingots/starsteel', [
+    'enlightened_end:starsteel_ingot',
   ]);
 
   event.add('forge:ingots/silica_steel', [
@@ -89,17 +109,52 @@ ServerEvents.tags('item', event => {
 
   // ----- Storage Blocks -----
   event.add('forge:storage_blocks', [
+    'enlightened_end:adamantite_block',
     'enlightened_end:bismuth_block',
+    'enlightened_end:depleted_irradium_block',
+    'enlightened_end:glacium_block',
+    'enlightened_end:irradium_block',
     'enlightened_end:raw_bismuth_block',
+    'enlightened_end:raw_irradium_block',
+    'enlightened_end:stardust_block',
+    'enlightened_end:starsteel_block',
     'moreminecarts:silica_steel_block',
+  ]);
+
+  event.add('forge:storage_blocks/adamantite', [
+    'enlightened_end:adamantite_block',
   ]);
 
   event.add('forge:storage_blocks/bismuth', [
     'enlightened_end:bismuth_block',
   ]);
 
+  event.add('forge:storage_blocks/depleted_irradium', [
+    'enlightened_end:depleted_irradium_block',
+  ]);
+
+  event.add('forge:storage_blocks/glacium', [
+    'enlightened_end:glacium_block',
+  ]);
+
+  event.add('forge:storage_blocks/irradium', [
+    'enlightened_end:irradium_block',
+  ]);
+
   event.add('forge:storage_blocks/raw_bismuth', [
     'enlightened_end:raw_bismuth_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_irradium', [
+    'enlightened_end:raw_irradium_block',
+  ]);
+
+  event.add('forge:storage_blocks/stardust', [
+    'enlightened_end:stardust_block',
+  ]);
+
+  event.add('forge:storage_blocks/starsteel', [
+    'enlightened_end:starsteel_block',
   ]);
 
   event.add('forge:storage_blocks/silica_steel', [
@@ -109,15 +164,21 @@ ServerEvents.tags('item', event => {
   // ----- Nuggets -----
   event.add('forge:nuggets', [
     'enlightened_end:bismuth_nugget',
+    'enlightened_end:starsteel_nugget',
   ]);
 
   event.add('forge:nuggets/bismuth', [
     'enlightened_end:bismuth_nugget',
   ]);
 
+  event.add('forge:nuggets/starsteel', [
+    'enlightened_end:starsteel_nugget',
+  ]);
+
   // ----- Dusts -----
   event.add('forge:dusts', [
     'botania:pixie_dust',
+    'enlightened_end:stardust',
     'galosphere_delight:allurite_shiny_powder',
     'galosphere_delight:lumiere_shiny_powder',
     'waystones:warp_dust',
@@ -126,6 +187,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts/allurite', [
     'galosphere_delight:allurite_shiny_powder',
   ]);
+
   event.add('forge:dusts/lumiere', [
     'galosphere_delight:lumiere_shiny_powder',
   ]);
@@ -134,13 +196,31 @@ ServerEvents.tags('item', event => {
     'botania:pixie_dust',
   ]);
 
+  event.add('forge:dusts/stardust', [
+    'enlightened_end:stardust',
+  ]);
+
   event.add('forge:dusts/warp', [
     'waystones:warp_dust',
   ]);
 
-  // Plates
+  // ----- Plates -----
   event.add('forge:plates', [
     'createdeco:cast_iron_sheet',
+  ]);
+
+  // ----- Gems -----
+  event.add('forge:gems', [
+    'enlightened_end:glacium',
+    'enlightened_end:malachite',
+  ]);
+  
+  event.add('forge:gems/glacium', [
+    'enlightened_end:glacium',
+  ]);
+
+  event.add('forge:gems/malachite', [
+    'enlightened_end:malachite',
   ]);
 
   // ----- Logs / Wood -----
@@ -168,7 +248,6 @@ ServerEvents.tags('item', event => {
     'aether:skyroot_planks',
   ]);
 
-   
   // ----- Sandstone -----
   event.add('forge:sandstone/colorless', [
     'quark:sandstone_bricks',
@@ -245,15 +324,27 @@ ServerEvents.tags('item', event => {
     'blue_skies:midnight_sandstone_pillar',
   ]);
 
-  // Slimeballs
+  // ----- Seeds -----
+  event.add('forge:seeds', [
+    'enlightened_end:elevibloom_seeds',
+  ]);
+
+  event.add('forge:seeds/elevibloom', [
+    'enlightened_end:elevibloom_seeds',
+  ]);
+
+  // ----- Slimeballs -----
   event.add('forge:slimeballs', [
     'aether:swet_ball',
     'alexsmobs:banana_slug_slime',
     'autumnity:snail_goo',
   ]);
 
+  // ----- Mod-specific Tags -----
+
   // Create Slice & Dice
   event.add('sliceanddice:allowed_tools', [
     'galosphere_delight:silver_kitchen_hammer',
   ]);
+
 });
