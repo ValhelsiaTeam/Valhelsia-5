@@ -105,12 +105,21 @@ ServerEvents.recipes(event => {
     'ad_astra:hammering/steel_plate',
 
     'create:pressing/brass_ingot',
+    'create:pressing/calorite_ingot',
     'create:pressing/copper_ingot',
+    'create:pressing/desh_ingot',
     'create:pressing/gold_ingot',
     'create:pressing/iron_ingot',
+    'create:pressing/ostrum_ingot',
     'create:pressing/steel_ingot',
 
+    'createaddition:pressing/aluminum_ingot',
+    'createaddition:pressing/constantan_ingot',
     'createaddition:pressing/electrum_ingot',
+    'createaddition:pressing/lead_ingot',
+    'createaddition:pressing/nickel_ingot',
+    'createaddition:pressing/uranium_ingot',
+    'createaddition:pressing/silver_ingot',
     'createaddition:pressing/steel_ingot',
     'createaddition:pressing/zinc_ingot',
 
