@@ -130,8 +130,20 @@ ServerEvents.recipes(event => {
   // Feather Unification
   replaceInputID([
     'minecraft:writable_book',
+    'ars_elemental:flight_alt',
+    'ars_nouveau:orange_sbed',
+    'ars_nouveau:ritual_cloudshaping',
+    'botania:flighttiara_0',
+    'botania:tornado_rod',
+    'botania:runic_altar/air',
+    'darkutils:crafting/levitation_plate',
+    'darkutils:crafting/slowfall_plate',
+    'enlightened_end:helium_dart',
+    'enlightened_end:xenon_dart',
+    'forbidden_arcanus:corrupted_pixie',
+    'minecolonies:blockhutschool',
+    'pneumaticcraft:jet_boots_upgrade_2',
     'xercamusic:music_sheet',
-    // TODO: Check which other recipes need feathers changed to use tags.
   ], 'minecraft:feather', '#forge:feathers');
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers');
   
