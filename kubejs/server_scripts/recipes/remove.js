@@ -29,6 +29,12 @@
 ServerEvents.recipes(event => {
   // Remove recipes by recipe ID.
   [
+    // Minecraft
+    'minecraft:cake', // Duplicate Recipe.
+    'minecraft:daylight_detector', // AE2 provides an alternative.
+    'minecraft:ladder',
+    'minecraft:furnace', // Quark provides an alternative.
+
     // Ad Astra
     'ad_astra:compressing/iron_plate_from_compressing_iron_ingot',
     'ad_astra:compressing/steel_plate_from_compressing_steel_ingot',
@@ -170,11 +176,6 @@ ServerEvents.recipes(event => {
     'minecolonies:chainmailchestplate', // Replaced with a different recipe.
     'minecolonies:chainmailleggings', // Replaced with a different recipe.
     'minecolonies:chainmailboots', // Replaced with a different recipe.
-
-    // Minecraft
-    'minecraft:cake', // Duplicate Recipe.
-    'minecraft:ladder',
-    'minecraft:furnace', // Quark provides an alternative.
 
     // Quark
     'quark:building/crafting/oak_bookshelf', // Duplicate recipe.

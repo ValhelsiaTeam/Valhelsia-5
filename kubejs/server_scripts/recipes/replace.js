@@ -79,44 +79,59 @@ ServerEvents.recipes(event => {
 
   // ----- Fixes -----
   replaceOutputID('enlightened_end:regleam_iridescent_bismuth_sheets', 'enlightened_end:dazzling_bismuth_sheets', 'enlightened_end:iridescent_bismuth_sheets');
+  replaceInputID('minecraft:beacon', 'enlightened_end:xenon_gas', '#forge:obsidian');
+  replaceInputID('minecraft:ender_chest', 'enlightened_end:malachite', '#forge:obsidian');
 
   // ----- Compatibility -----
   // Use tags instead of items for all dye colours.
   COLORS.forEach((color) => replaceInput(`minecraft:${color}_dye`, `#forge:dyes/${color}`));
 
+  // Ingot Compatibility
+  replaceInput('ad_astra:calorite_ingot', '#forge:ingots/calorite');
+  replaceInput('ad_astra:desh_ingot', '#forge:ingots/desh');
   replaceInput('ad_astra:steel_ingot', '#forge:ingots/steel');
-  replaceInput('ad_astra:steel_plate', '#forge:plates/steel');
   replaceInput('forbidden_arcanus:deorum_ingot', '#forge:ingots/deorum');
   replaceInput('forbidden_arcanus:obsidian_ingot', '#forge:ingots/obsidian');
-  replaceInput('galosphere:raw_silver', '#forge:raw_materials/silver');
   replaceInput('galosphere:silver_ingot', '#forge:ingots/silver');
-  replaceInput('galosphere:silver_nugget', '#forge:nuggets/silver');
-  replaceInput('galosphere:silver_block', '#forge:storage_blocks/silver');
-  replaceInput('immersiveengineering:nugget_silver', '#forge:nuggets/silver');
   replaceInput('immersiveengineering:ingot_silver', '#forge:ingots/silver');
-  replaceInput('immersiveengineering:storage_silver', '#forge:storage_blocks/silver');
+
+  // Plate Compatibility
+  replaceInput('ad_astra:calorite_plate', '#forge:plates/calorite');
+  replaceInput('ad_astra:desh_plate', '#forge:plates/desh');
+  replaceInput('ad_astra:steel_plate', '#forge:plates/steel');
+
+  // Nugget Compatibility
+  replaceInput('galosphere:silver_nugget', '#forge:nuggets/silver');
+  replaceInput('immersiveengineering:nugget_silver', '#forge:nuggets/silver');
+
+  // Raw Material Compatibility
+  replaceInput('galosphere:raw_silver', '#forge:raw_materials/silver');
   replaceInput('immersiveengineering:raw_silver', '#forge:raw_materials/silver');
+
+  // Storage Block Compatibility
+  replaceInput('galosphere:silver_block', '#forge:storage_blocks/silver');
+  replaceInput('immersiveengineering:storage_silver', '#forge:storage_blocks/silver');
   replaceInput('immersiveengineering:raw_block_silver', '#forge:storage_blocks/raw_silver');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
 
-  // Electron Tube Unification
+  // Cheese Compatibility
+  replaceInput('ad_astra:cheese', '#valhelsia:cheese');
+  replaceInput('brewinandchewin:flaxen_cheese_wedge', '#valhelsia:cheese');
+
+  // Electron Tube Compatibility
   replaceInput('create:electron_tube', '#valhelsia:electron_tubes');
   replaceInput('immersiveengineering:electron_tube', '#valhelsia:electron_tubes');
 
-  // Rose Quartz Unification
+  // Rope Compatibility
+  replaceInput('farmersdelight:rope', '#valhelsia:ropes');
+  replaceInput('supplementaries:rope', '#valhelsia:ropes');
+
+  // Rose Quartz Compatibility
   replaceInput('biomesoplenty:rose_quartz_shard', '#valhelsia:rose_quartz');
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
   replaceInput('create:rose_quartz', '#valhelsia:rose_quartz');
   
-  // Rope Unification
-  replaceInput('farmersdelight:rope', '#valhelsia:ropes');
-  replaceInput('supplementaries:rope', '#valhelsia:ropes');
-
-  // Cheese Unification
-  replaceInput('ad_astra:cheese', '#valhelsia:cheese');
-  replaceInput('brewinandchewin:flaxen_cheese_wedge', '#valhelsia:cheese');
-
-  // Slime Unification
+  // Slime Compatibility
   replaceInputID([
     'minecraft:lead',
     'minecraft:sticky_piston',
@@ -127,7 +142,7 @@ ServerEvents.recipes(event => {
     'supplementaries:slingshot',
   ], 'minecraft:slime_ball', '#forge:slimeballs');
 
-  // Feather Unification
+  // Feather Compatibility
   replaceInputID([
     'minecraft:writable_book',
     'ars_elemental:flight_alt',
@@ -146,16 +161,70 @@ ServerEvents.recipes(event => {
     'xercamusic:music_sheet',
   ], 'minecraft:feather', '#forge:feathers');
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers');
+
+  // Glass Compatibility
+  replaceInputID([
+    'minecraft:beacon',
+    'minecraft:end_crystal',
+    'ad_astra:recipes/desh_fluid_pipe',
+    'ad_astra:recipes/fluid_pipe_duct',
+    'ad_astra:recipes/jet_suit_helmet',
+    'ad_astra:recipes/ostrum_fluid_pipe',
+    'botania:glass_pickaxe',
+    'botania:lens_normal',
+    'botania:prism',
+    'darkutils:crafting/shielded_redstone',
+    'engineersdecor:independent/panzerglass_block_recipe',
+    'enlightened_end:gas_jar',
+    'enlightened_end:xenon_laser',
+    'littlelogistics:fluid_barge',
+    'littlelogistics:fluid_car',
+    'littlelogistics:fluid_hopper',
+    'minecolonies:blockhutglassblower',
+    'moreminecarts:chunk_loader',
+    'moreminecarts:ender_pearl_stasis_chamber',
+    'moreminecarts:filter_unloader',
+    'moreminecarts:piston_lifter_rail',
+    'quark:building/crafting/stone_brick_lamp',
+    'shoppy:shaped_bartering_station',
+    'shoppy:shaped_shop_block',
+    'starbunclemania:fluid_jar',
+    'supplementaries:hourglass',
+    'supplementaries:jar',
+  ], 'minecraft:glass', '#forge:glass/colorless');
+
+  COLORS.forEach((color) => replaceInputID(`moreminecarts:color_detector_rail_${color}`, 'minecraft:glass', '#forge:glass/colorless'));
   
-  // Stick / Rod Unification
+  // Obsidian Compatibility
+  event.replaceInputID([
+    'minecraft:beacon',
+    'minecraft:enchanting_table',
+    'minecraft:ender_chest',
+    'ad_astra:reinforced_door',
+    'alexsmobs:transmutation_table',
+    'blue_skies:enchanting_table_compat',
+    'botania:corporea_index',
+    'botania:ender_hand',
+    'botania:ender_eye_block',
+    'botania:mana_void',
+    'botania:starfield',
+    'fluxnetworks:fluxconfigurator',
+    'fluxnetworks:fluxcore',
+    'mekanism:module_gyroscopic_stabilization_unit',
+    'minecolonies:blockhutnetherworker',
+    'quark:automation/crafting/ender_watcher',
+    'waystones:mossy_waystone',
+    'waystones:sandy_waystone',
+    'waystones:sharestone',
+    'waystones:waystone',
+  ],'minecraft:obsidian','#forge:obsidian');
+
+  // Stick / Rod Compatibility
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
   replaceInputID([
     'galosphere_delight:silver_kitchen_hammer',
     // TODO: Check which other recipes need sticks changed to use tags.
   ], 'minecraft:stick', '#forge:rods/wooden');
-
-  // Silver Unification
-  replaceInputID('galosphere:silver_panel', 'galosphere:silver_block', '#forge:storage_blocks/silver');
 
   ALL_VANILLA_WOOD_TYPES.forEach((wood_type) => {
     // Allow balanced crates to use any wooden chest, not just vanilla chests.
