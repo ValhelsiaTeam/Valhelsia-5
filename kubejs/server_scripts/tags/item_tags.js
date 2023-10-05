@@ -257,7 +257,7 @@ ServerEvents.tags('item', event => {
   event.add('forge:flour', [
     'pneumaticcraft:wheat_flour',
   ]);
-  
+
   event.add('forge:flour/wheat', [
     'pneumaticcraft:wheat_flour',
   ]);
@@ -341,11 +341,41 @@ ServerEvents.tags('item', event => {
   // ----- Seeds -----
   event.add('forge:seeds', [
     'enlightened_end:elevibloom_seeds',
+    'farmersrespite:tea_seeds',
   ]);
 
   event.add('forge:seeds/elevibloom', [
     'enlightened_end:elevibloom_seeds',
   ]);
+
+  event.add('forge:seeds/fiery_bean', [
+    'blue_skies:fiery_bean_seeds',
+  ]);
+
+  event.add('forge:seeds/hemp', [
+    'immersiveengineering:seed',
+  ]);
+
+  event.add('forge:seeds/magebloom', [
+    'ars_nouveau:magebloom_crop',
+  ]);
+
+  event.add('forge:seeds/pine_fruit', [
+    'blue_skies:pine_fruit_seeds',
+  ]);
+
+  event.add('forge:seeds/scalebloom', [
+    'blue_skies:scalebloom_seeds',
+  ]);
+
+  event.add('forge:seeds/tea', [
+    'farmersrespite:tea_seeds',
+  ]);
+
+  event.add('forge:seeds/winter_leaf', [
+    'blue_skies:winter_leaf_seeds',
+  ]);
+
 
   // ----- Slimeballs -----
   event.add('forge:slimeballs', [

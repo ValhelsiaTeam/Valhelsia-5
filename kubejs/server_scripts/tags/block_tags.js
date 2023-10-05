@@ -20,8 +20,32 @@
  * Block Tag Event Handler
  */
 ServerEvents.tags('block', event => {
+  
+  // Bee Growables
+  event.add('minecraft:bee_growables', [
+    'blue_skies:fiery_bean_seeds',
+    'blue_skies:pine_fruit_seeds',
+    'blue_skies:scalefruit_seeds',
+    'blue_skies:winter_leaf_seeds',
+    'enlightened_end:elevibloom_seeds',
+    'farmersrespite:tea_seeds',
+    'immersiveengineering:seed',
+  ]);
+
+  // Crops
+  event.add('minecraft:crops', [
+    'blue_skies:fiery_bean_seeds',
+    'blue_skies:pine_fruit_seeds',
+    'blue_skies:scalefruit_seeds',
+    'blue_skies:winter_leaf_seeds',
+    'enlightened_end:elevibloom_seeds',
+    'farmersrespite:tea_seeds',
+    'immersiveengineering:seed',
+  ]);
+
   // Missing Quark Revertable Chests
   event.add('quark:revertable_chests', [
     'ars_nouveau:archwood_chest'
   ]);
+
 });
