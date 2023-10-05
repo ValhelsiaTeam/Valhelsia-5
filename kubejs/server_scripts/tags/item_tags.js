@@ -178,6 +178,7 @@ ServerEvents.tags('item', event => {
   // ----- Dusts -----
   event.add('forge:dusts', [
     'botania:pixie_dust',
+    'create:wheat_flour',
     'enlightened_end:stardust',
     'galosphere_delight:allurite_shiny_powder',
     'galosphere_delight:lumiere_shiny_powder',
@@ -202,6 +203,10 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:dusts/warp', [
     'waystones:warp_dust',
+  ]);
+
+  event.add('forge:dusts/wheat', [
+    'create:wheat_flour',
   ]);
 
   // ----- Plates -----
@@ -246,6 +251,15 @@ ServerEvents.tags('item', event => {
 
   event.add('minecraft:planks', [
     'aether:skyroot_planks',
+  ]);
+
+  // ----- Flour -----
+  event.add('forge:flour', [
+    'pneumaticcraft:wheat_flour',
+  ]);
+  
+  event.add('forge:flour/wheat', [
+    'pneumaticcraft:wheat_flour',
   ]);
 
   // ----- Sandstone -----

@@ -122,6 +122,10 @@ ServerEvents.recipes(event => {
   replaceInput('create:electron_tube', '#valhelsia:electron_tubes');
   replaceInput('immersiveengineering:electron_tube', '#valhelsia:electron_tubes');
 
+  // Flour Compatibility
+  replaceInput('create:wheat_flour', '#forge:flour/wheat');
+  replaceInput('pneumaticcraft:wheat_flour', '#forge:flour/wheat');
+
   // Rope Compatibility
   replaceInput('farmersdelight:rope', '#valhelsia:ropes');
   replaceInput('supplementaries:rope', '#valhelsia:ropes');
@@ -130,17 +134,6 @@ ServerEvents.recipes(event => {
   replaceInput('biomesoplenty:rose_quartz_shard', '#valhelsia:rose_quartz');
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
   replaceInput('create:rose_quartz', '#valhelsia:rose_quartz');
-  
-  // Slime Compatibility
-  replaceInputID([
-    'minecraft:lead',
-    'minecraft:sticky_piston',
-    'botania:runic_altar/summer',
-    'forbidden_arcanus:wax',
-    'moreminecarts:coupler',
-    'supplementaries:item_lore_display',
-    'supplementaries:slingshot',
-  ], 'minecraft:slime_ball', '#forge:slimeballs');
 
   // Feather Compatibility
   replaceInputID([
@@ -218,6 +211,17 @@ ServerEvents.recipes(event => {
     'waystones:sharestone',
     'waystones:waystone',
   ],'minecraft:obsidian','#forge:obsidian');
+  
+  // Slime Compatibility
+  replaceInputID([
+    'minecraft:lead',
+    'minecraft:sticky_piston',
+    'botania:runic_altar/summer',
+    'forbidden_arcanus:wax',
+    'moreminecarts:coupler',
+    'supplementaries:item_lore_display',
+    'supplementaries:slingshot',
+  ], 'minecraft:slime_ball', '#forge:slimeballs');
 
   // Stick / Rod Compatibility
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
