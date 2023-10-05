@@ -144,6 +144,9 @@ JEIEvents.hideItems(event => {
     'domum_ornamentum:fancy_door',
     'domum_ornamentum:panel',
 
+    // Environmental
+    'environmental:apple_pie',
+
     // Every Compat
     'everycomp:all_woods',
 

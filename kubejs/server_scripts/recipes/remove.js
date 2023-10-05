@@ -102,6 +102,9 @@ ServerEvents.recipes(event => {
     'ecologics:surface_moss',
     'ecologics:moss_block',
 
+    // Environmental
+    'environmental:apple_pie', // Using the Farmer's Delight version instead.
+
     // Farmer's Delight
     'farmersdelight:cake_from_milk_bottle', // Redundant: Same as Neapolitan's recipe.
 
