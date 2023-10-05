@@ -17,14 +17,14 @@
         "value": "minecraft:is_ocean"
       },
       {
-        "type": "DIMENSION",
+        "type": "REGISTRY_NAME",
         "negate": true,
-        "value": "ad_astra:moon"
+        "value": "ad_astra:lunar_wastelands"
       },
       {
-        "type": "DIMENSION",
+        "type": "BIOME_TAG",
         "negate": true,
-        "value": "aether:the_aether"
+        "value": "aether:is_aether"
       }
     ]
   ]
