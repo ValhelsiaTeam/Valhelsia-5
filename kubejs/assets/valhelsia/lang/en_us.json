@@ -129,10 +129,13 @@
   "valhelsia.comment.fluids": "-----Missing Fluid Entries-----",
   "fluid_type.decorative_blocks.thatch": "Thatch",
 
-  "valhelsia.comment.description": "----- Missing Description Entries-----",
+  "valhelsia.comment.description": "-----Missing Description Entries-----",
   "desc.immersiveengineering.info.revolver.perk.cooldown.tier0": "%1$s",
   "desc.immersiveengineering.info.revolver.perk.noise.tier0": "%1$s",
   "desc.immersiveengineering.info.revolver.perk.luck.tier0": "%1$s",
+
+  "valhelsia.comment.misc": "-----Miscellaneous Missing Entries-----",
+  "tetra.variant_category.rod.label": "Rod",
 
   "valhelsia.comment.new_tooltips": "-----New Tooltips-----",
   "valhelsia.tooltip.how_get_jade": "This gemstone can be found in Jungle biomes.",
