@@ -93,6 +93,7 @@
     'immersiveengineering:crusher/ingot_steel',
     'immersiveengineering:crusher/ingot_uranium',
 
+    'immersiveengineering:crusher/glass',
     'immersiveengineering:crusher/nether_wart',
     'immersiveengineering:crusher/red_sandstone',
     'immersiveengineering:crusher/sandstone',
@@ -119,6 +120,12 @@
   crush('biomesoplenty:black_sand', 'minecraft:basalt');
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
   crush('immersiveengineering:slag_gravel', 'immersiveengineering:slag');
+
+  // Glass Crushing
+  crush('quark:clear_shard', 'minecraft:glass_bottle');
+  crush('3x quark:clear_shard', 'minecraft:glass');
+  crush('3x quark:dirty_shard', 'quark:dirty_glass');
+  COLORS.forEach((color) => crush(`3x quark:${color}_shard`, `minecraft:${color}_stained_glass`));
 
   // Dusts
   crush('immersiveengineering:dust_aluminum', '#forge:ingots/aluminum');
