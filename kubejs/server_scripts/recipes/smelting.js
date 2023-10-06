@@ -142,6 +142,8 @@ ServerEvents.recipes(event => {
   
   event.remove({id: 'ad_astra:recipes/diamond_from_blasting_venus_diamond_ore'});
   event.remove({id: 'ad_astra:recipes/diamond_from_smelting_venus_diamond_ore'});
+  event.remove({id: 'ad_astra:recipes/diamond_from_blasting_mars_diamond_ore'});
+  event.remove({id: 'ad_astra:recipes/diamond_from_smelting_mars_diamond_ore'});
   
   event.remove({id: 'ad_astra:recipes/iron_ingot_from_blasting_moon_iron_ore'});
   event.remove({id: 'ad_astra:recipes/iron_ingot_from_smelting_moon_iron_ore'});
