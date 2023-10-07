@@ -149,6 +149,8 @@ ServerEvents.recipes(event => {
     // Malum
     'malum:lead_from_sapballs', // Redundant - vanilla Lead recipe has changed.
     'malum:sticky_piston_from_sapballs', // Redundant - vanilla Sticky Piston recipe has changed.
+    'malum:runewood_sign', // Temporarily disabled due to crash.
+    'malum:soulwood_sign', // Temporarily disabled due to crash.
 
     // Mekanism
     'mekanism:charcoal',

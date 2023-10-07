@@ -185,6 +185,10 @@ JEIEvents.hideItems(event => {
     'immersiveposts:stick_electrum', // Using Create Crafts & Additions one.
     'immersiveposts:stick_gold', // Using Create Crafts & Additions one.
 
+    // Malum
+    'malum:runewood_sign', // Temporarily disabled due to crash.
+    'malum:soulwood_sign', // Temporarily disabled due to crash.
+
     // Mekanism
     'mekanism:block_charcoal',
     'mekanism:creative_fluid_tank',
