@@ -155,6 +155,11 @@ ServerEvents.recipes(event => {
 
   // Combiner
   event.recipes.mekanism.combining('biomesoplenty:rooted_sand', '3x minecraft:hanging_roots', 'minecraft:sand').id(`${ID_PREFIX}combining/rooted_sand`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"DFood"}', 'minecraft:player_head', 'farmersdelight:dog_food'));
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"JangroZ"}', 'minecraft:player_head', 'minecraft:sticky_piston'));
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"Khytwel"}', 'minecraft:player_head', 'valhelsia_structures:explorers_tent'));
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"murr__"}', 'minecraft:player_head', 'ae2:network_tool'));
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"Vaelzan"}', 'minecraft:player_head', 'quark:magenta_rune'));
 
   // Enrichment
   event.recipes.mekanism.enriching('minecraft:ender_pearl', '#forge:dusts/ender_pearl').id(`${ID_PREFIX}enriching/ender_pearl_from_dust`);
