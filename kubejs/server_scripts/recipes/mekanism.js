@@ -155,12 +155,12 @@ ServerEvents.recipes(event => {
 
   // Combiner
   event.recipes.mekanism.combining('biomesoplenty:rooted_sand', '3x minecraft:hanging_roots', 'minecraft:sand').id(`${ID_PREFIX}combining/rooted_sand`);
-  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"DFood"}', 'minecraft:player_head', 'farmersdelight:dog_food')).id(`${ID_PREFIX}easter_egg/dfood`);
-  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"JangroZ"}', 'minecraft:player_head', 'minecraft:sticky_piston')).id(`${ID_PREFIX}easter_egg/jangro`);
-  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"Khytwel"}', 'minecraft:player_head', 'valhelsia_structures:explorers_tent')).id(`${ID_PREFIX}easter_egg/khytwel`);
-  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"murr__"}', 'minecraft:player_head', 'ae2:network_tool')).id(`${ID_PREFIX}easter_egg/urmet`);
-  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"stal111"}', 'minecraft:player_head', 'forbidden_arcanus:corrupted_pixie_utrem_jar')).id(`${ID_PREFIX}easter_egg/stal`);
-  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"Vaelzan"}', 'minecraft:player_head', 'quark:magenta_rune')).id(`${ID_PREFIX}easter_egg/vaelzan`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"DFood"}'), 'minecraft:player_head', 'farmersdelight:dog_food').id(`${ID_PREFIX}easter_egg/dfood`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"JangroZ"}'), 'minecraft:player_head', 'minecraft:sticky_piston').id(`${ID_PREFIX}easter_egg/jangro`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"Khytwel"}'), 'minecraft:player_head', 'valhelsia_structures:explorers_tent').id(`${ID_PREFIX}easter_egg/khytwel`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"murr__"}'), 'minecraft:player_head', 'ae2:network_tool').id(`${ID_PREFIX}easter_egg/urmet`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"stal111"}'), 'minecraft:player_head', 'forbidden_arcanus:corrupted_pixie_utrem_jar').id(`${ID_PREFIX}easter_egg/stal`);
+  event.recipes.mekanism.combining(Item.of('minecraft:player_head', '{SkullOwner:"Vaelzan"}'), 'minecraft:player_head', 'quark:magenta_rune').id(`${ID_PREFIX}easter_egg/vaelzan`);
 
   // Enrichment
   event.recipes.mekanism.enriching('minecraft:ender_pearl', '#forge:dusts/ender_pearl').id(`${ID_PREFIX}enriching/ender_pearl_from_dust`);
