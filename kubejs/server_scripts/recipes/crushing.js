@@ -78,9 +78,13 @@
     'create:milling/granite',
     'create:milling/sandstone',
     'create:milling/terracotta',
+    'createaddition:compat/immersiveengineering/crushing/coke_block',
+    'createaddition:compat/immersiveengineering/crushing/coal_coke',
     'createaddition:compat/immersiveengineering/crushing/steel_ingot',
     'createaddition:crushing/diamond',
 
+    'immersiveengineering:crusher/coke',
+    'immersiveengineering:crusher/coke_block',
     'immersiveengineering:crusher/ingot_aluminum',
     'immersiveengineering:crusher/ingot_constantan',
     'immersiveengineering:crusher/ingot_copper',
@@ -129,6 +133,7 @@
 
   // Dusts
   crush('immersiveengineering:dust_aluminum', '#forge:ingots/aluminum');
+  crush('immersiveengineering:dust_coke', '#forge:coal_coke');
   crush('immersiveengineering:dust_constantan', '#forge:ingots/constantan');
   crush('immersiveengineering:dust_electrum', '#forge:ingots/electrum');
   crush('immersiveengineering:dust_nickel', '#forge:ingots/nickel');
@@ -141,6 +146,9 @@
   crush('mekanism:dust_lead', '#forge:ingots/lead');
   crush('mekanism:dust_uranium', '#forge:ingots/uranium');
   crush('mekanism:dust_steel', '#forge:ingots/steel');
+
+  // Dusts from blocks
+  crush('9x immersiveengineering:dust_coke', '#forge:storage_blocks/coal_coke');
   
 
   // Milling + Crushing
