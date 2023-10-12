@@ -148,9 +148,21 @@
   crush('mekanism:dust_steel', '#forge:ingots/steel');
 
   // Dusts from blocks
+  crush('9x immersiveengineering:dust_aluminum', '#forge:storage_blocks/aluminum');
   crush('9x immersiveengineering:dust_coke', '#forge:storage_blocks/coal_coke');
-  
+  crush('9x immersiveengineering:dust_constantan', '#forge:storage_blocks/constantan');
+  crush('9x immersiveengineering:dust_electrum', '#forge:storage_blocks/electrum');
+  crush('9x immersiveengineering:dust_nickel', '#forge:storage_blocks/nickel');
+  crush('9x immersiveengineering:dust_silver', '#forge:storage_blocks/silver');
 
+  crush('9x mekanism:dust_copper', '#forge:storage_blocks/copper');
+  crush('9x mekanism:dust_diamond', '#forge:storage_blocks/diamond');
+  crush('9x mekanism:dust_iron', '#forge:storage_blocks/iron');
+  crush('9x mekanism:dust_gold', '#forge:storage_blocks/gold');
+  crush('9x mekanism:dust_lead', '#forge:storage_blocks/lead');
+  crush('9x mekanism:dust_uranium', '#forge:storage_blocks/uranium');
+  crush('9x mekanism:dust_steel', '#forge:storage_blocks/steel');
+  
   // Milling + Crushing
   // Sandstone, Terracotta, and other soft materials can be milled.
   // Harder materials (stone, ore) should only be crushable, not millable.
