@@ -172,6 +172,9 @@ ServerEvents.recipes(event => {
   // Infusion
   event.recipes.mekanism.metallurgic_infusing('forbidden_arcanus:gilded_darkstone', 'forbidden_arcanus:darkstone', {infuse_type: 'mekanism:gold', amount: 100}).id(`${ID_PREFIX}/infusing/gold/gilded_darkstone`);
 
+  // Injection
+  event.recipes.mekanism.injecting(Item.of('farmersdelight:smoked_ham', "{display:{Name:'{\"translate\":\"item.valhelsia.steamed_ham\",\"fallback\":\"Steamed Ham\"}'}}"), 'farmersdelight:ham', '#mekanism:water_vapor');
+
   // Fungification
   fungify('minecraft:shroomlight', 'minecraft:glowstone');
   fungify('botania:metamorphic_fungal_stone', 'minecraft:stone');
