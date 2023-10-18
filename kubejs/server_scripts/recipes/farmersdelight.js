@@ -132,8 +132,8 @@ ServerEvents.recipes(event => {
   crush('4x galosphere:lumiere_shard', 'galosphere:lumiere_block', `${ID_PREFIX}cutting/lumiere_shard_from_lumiere_block`);
   
   // ----- Knife Recipes -----
-  cut([Item.of('minecraft:string', 2)], '#minecraft:wool').id(`${ID_PREFIX}cutting/string_from_wool`);
-  cut([Item.of('cnb:apple_slice', 4)], 'minecraft:apple').id(`${ID_PREFIX}cutting/apple_slice_from_apple`);
+  cut([Item.of('minecraft:string', 2)], '#minecraft:wool', `${ID_PREFIX}cutting/string_from_wool`);
+  cut([Item.of('cnb:apple_slice', 4)], 'minecraft:apple', `${ID_PREFIX}cutting/apple_slice_from_apple`);
 
   // ----- Cooking Pot Recipes -----
 
