@@ -58,7 +58,7 @@
    */
   const mill = (output, input, secondary) => {
     let itemID = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
-    event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${itemID}`);
+    
     if (typeof secondary != 'undefined') {
       if (Array.isArray(secondary)) {
         event.recipes.create.milling(output.concat(secondary), input).id(`${ID_PREFIX}create/milling/${itemID}`);
