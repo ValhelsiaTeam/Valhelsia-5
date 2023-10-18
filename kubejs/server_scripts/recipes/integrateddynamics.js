@@ -77,7 +77,7 @@ ServerEvents.recipes(event => {
    * @param {number} duration The duration of the operation (in ticks). Optional (default 100).
    * @param {number} amount The quantity of fluid created, per operation (in millibuckets). Optional (default 100).
    */
-  const squeezer = (output, input, fluid, amount, duration) => {
+  const squeezer = (input, output, fluid, amount, duration) => {
     if (typeof duration == 'undefined') {
       duration = 100;
     }
@@ -127,6 +127,7 @@ ServerEvents.recipes(event => {
   // TODO
 
   // Squeezer Recipes
-  squeezer(Item.of('#forge:dusts/coal_coke', 8), 'immersive_engineering:dust_hop_graphite');
+  // Note: Squeezer recipes have their input first. This is because the output can be either an item or a fluid.
+  squeezer(Item.of('#forge:dusts/coal_coke', 8), 'immersiveengineering:dust_hop_graphite');
 
 });
