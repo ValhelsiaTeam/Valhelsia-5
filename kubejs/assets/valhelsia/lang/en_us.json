@@ -45,6 +45,7 @@
 
   "valhelsia.comment.items": "-----Missing Item Names-----",
   "item.valhelsia.steamed_ham": "Steamed Ham",
+  "item.valhelsia.steamed_ham.lore": "What were you expecting? A burger?",
   "item.effortlessbuilding.randomizer_bag": "Randomizer Bag",
   "item.effortlessbuilding.golden_randomizer_bag": "Golden Randomizer Bag",
   "item.effortlessbuilding.diamond_randomizer_bag": "Diamond Randomizer Bag",
