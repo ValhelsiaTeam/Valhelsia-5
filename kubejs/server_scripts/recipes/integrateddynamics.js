@@ -50,7 +50,7 @@ ServerEvents.recipes(event => {
     }
 
     if (typeof input != 'undefined') {
-        recipeData.item = InputItem.of(input).toJson();
+        recipeData.item = Item.of(input).toJson();
         id = `${id}${mid}${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
     }
 
@@ -84,7 +84,7 @@ ServerEvents.recipes(event => {
 
     let recipeData = {
       type: 'integrateddynamics:squeezer',
-      item: InputItem.of(input).toJson(),
+      item: Item.of(input).toJson(),
       duration: duration,
       result: {}
     };
