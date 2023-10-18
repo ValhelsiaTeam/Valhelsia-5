@@ -189,7 +189,7 @@ ServerEvents.recipes(event => {
   COLORS.forEach((color) => replaceInputID(`moreminecarts:color_detector_rail_${color}`, 'minecraft:glass', '#forge:glass/colorless'));
   
   // Obsidian Compatibility
-  event.replaceInputID([
+  replaceInputID([
     'minecraft:beacon',
     'minecraft:enchanting_table',
     'minecraft:ender_chest',
