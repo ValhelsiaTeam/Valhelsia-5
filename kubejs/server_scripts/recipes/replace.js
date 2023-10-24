@@ -135,6 +135,10 @@ ServerEvents.recipes(event => {
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
   replaceInput('create:rose_quartz', '#valhelsia:rose_quartz');
 
+  // Dough Compatibility
+  replaceInput('create:dough', '#forge:dough/wheat');
+  replaceInput('farmersdelight:wheat_dough', '#forge:dough/wheat');
+
   // Feather Compatibility
   replaceInputID([
     'minecraft:writable_book',

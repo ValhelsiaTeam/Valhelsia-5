@@ -262,6 +262,19 @@ ServerEvents.tags('item', event => {
     'pneumaticcraft:wheat_flour',
   ]);
 
+  // ----- Dough -----
+  event.add('forge:dough', [
+    'farmersrespite:nether_wart_sourdough',
+    'minecolonies:cookie_dough',
+    'minecolonies:bread_dough',
+    'pneumaticcraft:sourdough',
+  ]);
+
+  event.add('forge:dough/wheat', [
+    'minecolonies:bread_dough',
+    'pneumaticcraft:sourdough',
+  ]);
+
   // ----- Sandstone -----
   event.add('forge:sandstone/colorless', [
     'quark:sandstone_bricks',
