@@ -274,6 +274,19 @@ ServerEvents.recipes(event => {
     W: 'minecraft:cobweb'
   }).id(`${ID_PREFIX}spider_webbing`);
 
+  // Brewin' and Chewin'
+  event.shaped('brewinandchewin:pizza', [
+    'CCC',
+    'MSO',
+    ' D '
+  ], {
+    C: '#valhelsia:cheese',
+    M: 'minecraft:brown_mushroom',
+    S: 'farmersdelight:tomato_sauce',
+    O: '#forge:vegetables/onion',
+    D: '#forge:dough/wheat',
+  })
+
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash', 'ash_block');
 
