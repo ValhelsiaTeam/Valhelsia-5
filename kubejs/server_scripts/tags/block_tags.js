@@ -48,4 +48,14 @@ ServerEvents.tags('block', event => {
     'ars_nouveau:archwood_chest'
   ]);
 
+  // Create
+  event.add('create:fan_processing_catalysts/haunting', [
+    'decorative_blocks:soul_brazier',
+    'valhelsia_structures:soul_brazier',
+  ]);
+
+  event.add('create:fan_processing_catalysts/smoking', [
+    'decorative_blocks:brazier',
+    'valhelsia_structures:brazier',
+  ]);
 });
