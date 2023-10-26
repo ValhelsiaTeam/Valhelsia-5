@@ -144,6 +144,9 @@ JEIEvents.hideItems(event => {
     'domum_ornamentum:fancy_door',
     'domum_ornamentum:panel',
 
+    // Engineer's Decor
+    'engineersdecor:test_block',
+    
     // Environmental
     'environmental:apple_pie',
 
