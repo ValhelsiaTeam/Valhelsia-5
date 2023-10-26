@@ -160,6 +160,7 @@ ServerEvents.recipes(event => {
     'mekanismtools:steel/tools/axe',
     'mekanismtools:steel/tools/shovel',
     'mekanismtools:steel/tools/hoe',
+    'mekanismtools:steel/tools/paxel',
     'mekanismtools:steel/armor/helmet',
     'mekanismtools:steel/armor/chestplate',
     'mekanismtools:steel/armor/leggings',
