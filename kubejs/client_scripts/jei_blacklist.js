@@ -154,6 +154,7 @@ JEIEvents.hideItems(event => {
     'everycomp:all_woods',
 
     // Farmer's Delight
+    'farmersdelight:fried_egg', // Replaced with Incubation version.
     'farmersdelight:rope',
 
     // Galosphere
