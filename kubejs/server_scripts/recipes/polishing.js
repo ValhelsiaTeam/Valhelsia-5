@@ -6,13 +6,14 @@
 //
 
 /**
- * @file Recipe additions for Grindstone Polishing (Sully's Mod)
+ * @file Recipe additions for Polishing with the Grindstone (Sully's Mod),
+ * and with Sandpaper (Create).
  * 
  * @copyright Valhelsia Inc 2023
  */
 
 /**
- * Grindstone Polishing Recipe Event Handler
+ * Polishing Recipe Event Handler
  */
 ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:polishing/';
@@ -26,10 +27,30 @@ ServerEvents.recipes(event => {
     event.custom({
       type: 'sullysmod:grindstone_polishing',
       experience: 1,
-      ingredient: InputItem.of(input).ingredient.toJson(),
+      ingredients: [InputItem.of(input).ingredient.toJson()],
       result: OutputItem.of(output).item.toJson(),
-      resultCount: 1
-    }).id(`${ID_PREFIX}${OutputItem.of(output).item.id.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
+    }).id(`${ID_PREFIX}grindstone/${OutputItem.of(output).item.id.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
+
+    event.recipes.create.sandpaper_polishing(output, input).id(`${ID_PREFIX}sandpaper/${OutputItem.of(output).item.id.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
+
   };
 
+  // Remove unused polishing recipes.
+  [
+    'create:sandpaper_polishing/polished_jade',
+    'create:sandpaper_polishing/rose_quartz',
+    'minecraft:sandpaper_polishing/iron_bars_from_polishing', // Create Deco has the wrong namespace.
+    'sullys_mod:grindstone_polishing/polished_jade_from_jade_ore',
+    'sullys_mod:grindstone_polishing/polished_jade_from_rough_jade',
+    'sullys_mod:grindstone_polishing/polished_jade_from_deepslate_jade_ore',
+  ].forEach((recipeID) => event.remove({id: recipeID}));
+
+  // General Polishing
+  polish('sullys_mod:polished_jade', 'sullys_mod:rough_jade');
+  polish('create:polished_rose_quartz', '#forge:gems/rose_quartz');
+  polish('createdeco:polished_iron_bars', 'minecraft:iron_bars');
+  polish('createdeco:polished_iron_bars_overlay', 'createdeco:iron_bars_overlay');
+
+  // Stone Polishing
+  // TODO
 });
