@@ -399,6 +399,11 @@ ServerEvents.tags('item', event => {
 
   // ----- Mod-specific Tags -----
 
+  // Applied Energistics 2
+  event.add('ae2:can_remove_color', [
+    'supplementaries:soap',
+  ]);
+
   // Create Slice & Dice
   event.add('sliceanddice:allowed_tools', [
     'galosphere_delight:silver_kitchen_hammer',
