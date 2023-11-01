@@ -247,5 +247,12 @@
   "item.minecraft.rotten_flesh": "Rotten Flesh",
   "item.minecraft.spider_eye": "Spider Eye",
   "item.minecraft.suspicious_stew": "Suspicious Stew",
-  "item.minecraft.tropical_fish": "Tropical Fish "
+  "item.minecraft.tropical_fish": "Tropical Fish ",
+
+  "valhelsia.comment.effects.descriptions": "-----Effect descriptions for the JEED mod-----",
+  "effect.deeperdarker.sculk_affinity.description": "Prevents vibrations from being emitted.",
+
+  "valhelsia.comment.enchantments.descriptions": "-----Enchantment descriptions for tooltips-----",
+  "enchantment.deeperdarker.catalysis.description": "Slain mobs spread sculk as though a catalyst were nearby",
+  "enchantment.deeperdarker.sculk_smite.description": "Deal increased damage to sculk mobs"
 }
