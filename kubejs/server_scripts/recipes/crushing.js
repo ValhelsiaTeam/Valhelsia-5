@@ -29,21 +29,22 @@
    * @param {(string|Item|Array)} secondary An optional secondary output.
    */
   const crush = (output, input, secondary) => {
-    let itemID = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
+    // The local name of the recipe ID (ie. ID without namespace).
+    let recipeIDLocal = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
 
     if (typeof secondary != 'undefined') {
       if (Array.isArray(secondary)) {
-        event.recipes.immersiveengineering.crusher(output, input, secondary, 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
-        event.recipes.create.crushing(output.concat(secondary), input).id(`${ID_PREFIX}create/${itemID}`);
+        event.recipes.immersiveengineering.crusher(output, input, secondary, 3200).id(`${ID_PREFIX}immersiveengineering/${recipeIDLocal}`);
+        event.recipes.create.crushing(output.concat(secondary), input).id(`${ID_PREFIX}create/${recipeIDLocal}`);
       } else {
-        event.recipes.immersiveengineering.crusher(output, input, [secondary], 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
-        event.recipes.create.crushing([output, secondary], input).id(`${ID_PREFIX}create/${itemID}`);
+        event.recipes.immersiveengineering.crusher(output, input, [secondary], 3200).id(`${ID_PREFIX}immersiveengineering/${recipeIDLocal}`);
+        event.recipes.create.crushing([output, secondary], input).id(`${ID_PREFIX}create/${recipeIDLocal}`);
       }
     } else {
-      event.recipes.immersiveengineering.crusher(output, input, [], 3200).id(`${ID_PREFIX}immersiveengineering/${itemID}`);
-      event.recipes.create.crushing(output, input).id(`${ID_PREFIX}create/${itemID}`);
+      event.recipes.immersiveengineering.crusher(output, input, [], 3200).id(`${ID_PREFIX}immersiveengineering/${recipeIDLocal}`);
+      event.recipes.create.crushing(output, input).id(`${ID_PREFIX}create/${recipeIDLocal}`);
     }
-    event.recipes.mekanism.crushing(output, input).id(`${ID_PREFIX}mekanism/${itemID}`);
+    event.recipes.mekanism.crushing(output, input).id(`${ID_PREFIX}mekanism/${recipeIDLocal}`);
     // TODO: Add Ars Nouveau Crushing (note: maybe separate, as it works very differently to the above).
     // TODO: Add MineColonies Crushing.
   };
@@ -57,16 +58,17 @@
    * @param {(string|Item)} secondary An optional secondary output.
    */
   const mill = (output, input, secondary) => {
-    let itemID = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
+    // The local name of the recipe ID (ie. ID without namespace).
+    let recipeIDLocal = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
     
     if (typeof secondary != 'undefined') {
       if (Array.isArray(secondary)) {
-        event.recipes.create.milling(output.concat(secondary), input).id(`${ID_PREFIX}create/milling/${itemID}`);
+        event.recipes.create.milling(output.concat(secondary), input).id(`${ID_PREFIX}create/milling/${recipeIDLocal}`);
       } else {
-        event.recipes.create.milling([output, secondary], input).id(`${ID_PREFIX}create/milling/${itemID}`);
+        event.recipes.create.milling([output, secondary], input).id(`${ID_PREFIX}create/milling/${recipeIDLocal}`);
       }
     } else {
-      event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${itemID}`);
+      event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${recipeIDLocal}`);
     }
     crush(output, input);
   };
@@ -115,7 +117,7 @@
     'mekanism:processing/gold/dust/from_ingot',
     'mekanism:processing/lead/dust/from_ingot',
     'mekanism:processing/uranium/dust/from_ingot',
-  ].forEach((recipeID) => event.remove({id: recipeID}));
+  ].forEach((recipeIDLocal) => event.remove({id: recipeIDLocal}));
 
   // Crushing
   crush('minecraft:red_sand', 'minecraft:granite');
