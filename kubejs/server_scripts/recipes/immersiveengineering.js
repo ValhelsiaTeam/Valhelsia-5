@@ -135,7 +135,7 @@ ServerEvents.recipes(event => {
   unpack('9x atmospheric:passion_vine', 'atmospheric:passion_vine_bundle');
   unpack('9x autumnity:snail_goo', 'autumnity:snail_goo_block');
   unpack('3x neapolitan:banana', 'neapolitan:banana_bunch');
-  unpack('9x neapolitan:banana_bunch', 'neapolitan:banana_crate');
+  unpack('9x neapolitan:banana', 'neapolitan:banana_crate');
 
   // Metal Press Gear Recipes
   event.recipes.immersiveengineering.metal_press('immersiveengineering:sawblade', '6x #forge:ingots/steel', 'immersiveengineering:mold_gear').id(`${ID_PREFIX}metal_press/sawblade`);
