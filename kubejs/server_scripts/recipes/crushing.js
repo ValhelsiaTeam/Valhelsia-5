@@ -77,6 +77,7 @@
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
   // For removal of crushing/milling recipes with no replacement, use remove.js instead.
   [
+    'create:crushing/netherrack',
     'create:milling/granite',
     'create:milling/sandstone',
     'create:milling/terracotta',
@@ -126,6 +127,7 @@
   crush('biomesoplenty:black_sand', 'minecraft:basalt');
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
   crush('immersiveengineering:slag_gravel', 'immersiveengineering:slag');
+  crush('create:cinder_flour', '#forge:netherrack', Item.of('create:cinder_flour').withChance(0.5));
 
   // Glass Crushing
   crush('quark:clear_shard', 'minecraft:glass_bottle');
