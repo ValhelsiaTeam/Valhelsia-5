@@ -77,6 +77,7 @@
   // Note: Only remove recipes here if they're being replaced immediately afterwards in this script.
   // For removal of crushing/milling recipes with no replacement, use remove.js instead.
   [
+    'create:compat/neapolitan/crushing/ice',
     'create:crushing/netherrack',
     'create:milling/granite',
     'create:milling/sandstone',
@@ -204,4 +205,5 @@
   mill('1x minecraft:coarse_dirt', 'decorative_blocks:rocky_dirt');
   mill('1x mekanism:sawdust', 'biomesoplenty:dead_branch');
   mill('4x minecraft:rotten_flesh', 'biomesoplenty:flesh');
+  mill('3x neapolitan:ice_cubes', 'minecraft:ice', Item.of('3x neapolitan:ice_cubes').withChance(0.25));
 });
