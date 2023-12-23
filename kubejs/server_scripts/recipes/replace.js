@@ -79,7 +79,7 @@ ServerEvents.recipes(event => {
 
   // ----- Fixes -----
   replaceOutputID('enlightened_end:regleam_iridescent_bismuth_sheets', 'enlightened_end:dazzling_bismuth_sheets', 'enlightened_end:iridescent_bismuth_sheets');
-  replaceInputID('minecraft:beacon', 'enlightened_end:xenon_gas', '#forge:obsidian');
+  replaceInputID('minecraft:beacon', 'enlightened_end:xenon_jar', '#forge:obsidian');
   replaceInputID('minecraft:ender_chest', 'enlightened_end:malachite', '#forge:obsidian');
 
   // ----- Compatibility -----
