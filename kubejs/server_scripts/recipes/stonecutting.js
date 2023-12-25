@@ -111,6 +111,9 @@ ServerEvents.recipes(event => {
   cut('2x v_slab_compat:pneumaticcraft/compressed_brick_vertical_slab', 'pneumaticcraft:compressed_stone');
   cut('pneumaticcraft:compressed_brick_wall', 'pneumaticcraft:compressed_stone');
 
+  // Tetra
+  cut('2x tetra:forged_platform_slab', 'tetra:forged_platform');
+
   // Twilight Forest
   cut('twilightforest:nagastone_pillar', 'twilightforest:nagastone');
   cut('twilightforest:etched_nagastone', 'twilightforest:nagastone');
