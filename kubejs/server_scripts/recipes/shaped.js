@@ -153,6 +153,20 @@ ServerEvents.recipes(event => {
       recipe.id(`${ID_PREFIX}${recipeID}`);
     }
   };
+  
+  /**
+   * Adds a new 'slab to block' shaped recipe (turning slabs back into blocks like Quark does).
+   * Automatically creates a recipe ID from the output block.
+   * 
+   * @param {*} output Block to craft.
+   * @param {*} input Slab to use.
+   */
+  const slab_to_block = (output, input) => {
+    let recipe = event.shaped(output, ['AA'], {A: input});
+    if (typeof recipeID == 'string') {
+      recipe.id(`${ID_PREFIX}slab_to_block/${OutputItem.of(output).item.id.replace(':','/')}`);
+    }
+  };
 
   // Valhelsia
   plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves', 'filled_akashic_tome');
@@ -329,6 +343,9 @@ ServerEvents.recipes(event => {
   // Ecologics
   shaped2x2('minecraft:moss_block', 'ecologics:surface_moss', 'moss_block');
 
+  // Engineer's Decor
+  slab_to_block('engineersdecor:clinker_brick_block', 'engineersdecor:clinker_brick_slab');
+
   // Farmer's Delight
   shaped3x3('farmersdelight:organic_compost', 'minecolonies:compost', 'organic_compost_from_minecolonies_compost');
   shaped2x2('farmersdelight:canvas', 'supplementaries:flax', 'canvas_from_flax');
@@ -377,6 +394,7 @@ ServerEvents.recipes(event => {
 
   // Tetra
   slab('tetra:forged_platform_slab', 'tetra:forged_platform');
+  slab_to_block('tetra:forged_platform', 'tetra:forged_platform_slab');
   
   // Twilight Forest
   wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');
