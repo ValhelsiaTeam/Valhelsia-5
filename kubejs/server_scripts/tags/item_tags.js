@@ -431,4 +431,21 @@ ServerEvents.tags('item', event => {
     'galosphere_delight:silver_kitchen_hammer',
   ]);
 
+  // Immersive Engineering
+  // Valid Tools for the Toolbox
+  event.add('immersiveengineering:toolbox/tools', [
+    'akashictome:tome',
+  ]);
+
+  // Valid Wiring for the Toolbox
+  event.add('immersiveengineering:toolbox/wiring', [
+    'createaddition:connector',
+    'createaddition:large_connector',
+    'createaddition:redstone_relay',
+    'createaddition:copper_spool',
+    'createaddition:gold_spool',
+    'createaddition:electrum_spool',
+    'createaddition:festive_spool',
+  ]);
+
 });
