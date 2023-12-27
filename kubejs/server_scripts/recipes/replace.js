@@ -215,6 +215,10 @@ ServerEvents.recipes(event => {
     'waystones:sharestone',
     'waystones:waystone',
   ],'minecraft:obsidian','#forge:obsidian');
+
+  // Obsidian Dust Compatibility
+  // Note: Not sure if the following will work, as replace doesn't always handle all recipe types.
+  replaceInputID('create:sequenced_assembly/sturdy_sheet', 'create:powdered_obsidian', '#forge:dusts/obsidian');
   
   // Slime Compatibility
   replaceInputID([
