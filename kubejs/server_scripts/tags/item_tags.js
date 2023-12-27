@@ -47,6 +47,11 @@ ServerEvents.tags('item', event => {
     'brewinandchewin:flaxen_cheese_wedge',
   ]);
 
+  event.add('valhelsia:capacitors', [
+    'createaddition:capacitor',
+    'pneumaticcraft:capacitor',
+  ]);
+
   // ----- Ores -----
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',

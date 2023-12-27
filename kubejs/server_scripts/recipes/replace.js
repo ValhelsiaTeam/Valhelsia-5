@@ -114,6 +114,10 @@ ServerEvents.recipes(event => {
   replaceInput('immersiveengineering:raw_block_silver', '#forge:storage_blocks/raw_silver');
   replaceInput('immersiveengineering:storage_uranium', '#forge:storage_blocks/uranium');
 
+  // Capacitor Compatibility
+  replaceInput('createaddition:capacitor', '#valhelsia:capacitors');
+  replaceInput('pneumaticcraft:capacitor', '#valhelsia:capacitors');
+
   // Cheese Compatibility
   replaceInput('ad_astra:cheese', '#valhelsia:cheese');
   replaceInput('brewinandchewin:flaxen_cheese_wedge', '#valhelsia:cheese');
