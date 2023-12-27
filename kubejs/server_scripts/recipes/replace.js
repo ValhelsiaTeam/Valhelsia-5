@@ -235,6 +235,12 @@ ServerEvents.recipes(event => {
     'supplementaries:slingshot',
   ], 'minecraft:slime_ball', '#forge:slimeballs');
 
+  
+  // Spool (or Coil) Compatibility
+  replaceInput('createaddition:copper_spool', '#valhelsia:spools/copper');
+  replaceInput('immersiveengineering:wirecoil_copper', '#valhelsia:spools/copper');
+  replaceInput('immersiveengineering:wirecoil_electrum', '#valhelsia:spools/electrum');
+
   // Stick / Rod Compatibility
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:stick', '#forge:rods/wooden');
   replaceInputID([

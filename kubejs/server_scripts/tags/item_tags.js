@@ -20,15 +20,30 @@
 ServerEvents.tags('item', event => {
 
   // ----- Valhelsia Tags -----
+  event.add('valhelsia:ash', [
+    'supplementaries:ash',
+    'darkerdepths:ash',
+  ]);
+  
+  event.add('valhelsia:capacitors', [
+    'createaddition:capacitor',
+    'pneumaticcraft:capacitor',
+  ]);
+
+  event.add('valhelsia:cheese', [
+    'ad_astra:cheese',
+    'brewinandchewin:flaxen_cheese_wedge',
+  ]);
+
+  event.add('valhelsia:electron_tubes', [
+    'create:electron_tube',
+    'immersiveengineering:electron_tube',
+  ]);
+
   event.add('valhelsia:ropes', [
     'farmersdelight:rope',
     'immersiveengineering:wirecoil_structure_rope',
     'supplementaries:rope',
-  ]);
-
-  event.add('valhelsia:ash', [
-    'supplementaries:ash',
-    'darkerdepths:ash',
   ]);
 
   event.add('valhelsia:rose_quartz', [
@@ -37,19 +52,49 @@ ServerEvents.tags('item', event => {
     'create:rose_quartz',
   ]);
 
-  event.add('valhelsia:electron_tubes', [
-    'create:electron_tube',
-    'immersiveengineering:electron_tube',
+  event.add('valhelsia:spools', [
+    'createaddition:copper_spool',
+    'createaddition:gold_spool',
+    'createaddition:electrum_spool',
+    'createaddition:festive_spool',
+    'immersiveengineering:wirecoil_copper',
+    'immersiveengineering:wirecoil_electrum',
+    'immersiveengineering:wirecoil_steel',
+    'immersiveengineering:wirecoil_structure_rope',
+    'immersiveengineering:wirecoil_structure_steel',
+    'immersiveengineering:wirecoil_redstone',
+    'immersiveengineering:wirecoil_copper_ins',
+    'immersiveengineering:wirecoil_electrum_ins',
+    'malum:esoteric_spool',
   ]);
 
-  event.add('valhelsia:cheese', [
-    'ad_astra:cheese',
-    'brewinandchewin:flaxen_cheese_wedge',
+  event.add('valhelsia:spools/copper', [
+    'createaddition:copper_spool',
+    'immersiveengineering:wirecoil_copper',
+    'immersiveengineering:wirecoil_copper_ins',
+  ]);
+  
+  event.add('valhelsia:spools/electrum', [
+    'createaddition:electrum_spool',
+    'immersiveengineering:wirecoil_electrum',
+    'immersiveengineering:wirecoil_electrum_ins',
   ]);
 
-  event.add('valhelsia:capacitors', [
-    'createaddition:capacitor',
-    'pneumaticcraft:capacitor',
+  event.add('valhelsia:spools/gold', [
+    'createaddition:gold_spool',
+  ]);
+
+  event.add('valhelsia:spools/redstone', [
+    'immersiveengineering:wirecoil_redstone',
+  ]);
+  
+  event.add('valhelsia:spools/rope', [
+    'immersiveengineering:wirecoil_rope',
+  ]);
+
+  event.add('valhelsia:spools/steel', [
+    'immersiveengineering:wirecoil_steel',
+    'immersiveengineering:wirecoil_structure_steel',
   ]);
 
   // ----- Ores -----
