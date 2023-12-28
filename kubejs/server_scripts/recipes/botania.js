@@ -135,9 +135,13 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('mekanism:deepslate_uranium_ore', 'minecraft:deepslate', 150);
   event.recipes.botania.orechid('sullysmod:deepslate_jade_ore', 'minecraft:deepslate', 50);
   
-
   // Orechid - Netherrack
   event.recipes.botania.orechid_ignem('malum:blazing_quartz_ore', 'minecraft:netherrack', 9800);
+
+  // Orechid - End Stone
+  event.recipes.botania.orechid('enlightened_end:bismuth_ore', 'minecraft:end_stone', 150);
+  event.recipes.botania.orechid('enlightened_end:irradium_ore', 'minecraft:end_stone', 150);
+  event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 150);
 
   // Orechid - Modded Stone
 
