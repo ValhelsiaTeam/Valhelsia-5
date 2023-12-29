@@ -79,6 +79,7 @@
   [
     'create:compat/neapolitan/crushing/ice',
     'create:crushing/netherrack',
+    'create:crushing/nether_wart_block',
     'create:milling/granite',
     'create:milling/sandstone',
     'create:milling/terracotta',

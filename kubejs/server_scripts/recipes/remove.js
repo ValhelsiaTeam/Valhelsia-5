@@ -79,6 +79,14 @@ ServerEvents.recipes(event => {
     'blue_skies:furnace_compat', // Quark provides an alternative.
 
     // Create
+    
+    // These are duplicated in the mod itself, as the recycling recipes cover the base stone too.
+    'create:crushing/asurine',
+    'create:crushing/crimsite',
+    'create:crushing/diorite',
+    'create:crushing/ochrum',
+    'create:crushing/tuff',
+    'create:crushing/veridium',
 
     // Create Crafts & Additions
     'createaddition:crafting/electrum_ingot', // Using Immersive Engineering version.
