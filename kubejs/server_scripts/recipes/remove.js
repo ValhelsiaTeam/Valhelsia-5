@@ -57,6 +57,7 @@ ServerEvents.recipes(event => {
     'aether:skyroot_jukebox',
     'aether:skyroot_grindstone',
     'aether:skyroot_iron_vanilla_shield',
+    'aether:skyroot_lectern',
     'aether:skyroot_loom',
     'aether:skyroot_note_block',
     'aether:skyroot_piston',
