@@ -130,6 +130,10 @@ ServerEvents.recipes(event => {
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block', `${ID_PREFIX}cutting/rose_quartz_shard_from_rose_quartz_block`);
   crush('4x galosphere:allurite_shard', 'galosphere:allurite_block', `${ID_PREFIX}cutting/allurite_shard_from_allurite_block`);
   crush('4x galosphere:lumiere_shard', 'galosphere:lumiere_block', `${ID_PREFIX}cutting/lumiere_shard_from_lumiere_block`);
+
+  // Working around a bug in Neapolitan. They have a typo in their own recipe.
+  event.remove({id: 'neapolitan:ice_cutting'});
+  crush('4x neapolitan:ice_cubes', 'minecraft:ice', `${ID_PREFIX}cutting/ice_cubes_from_ice`); 
   
   // ----- Knife Recipes -----
   cut([Item.of('minecraft:string', 2)], '#minecraft:wool', `${ID_PREFIX}cutting/string_from_wool`);
