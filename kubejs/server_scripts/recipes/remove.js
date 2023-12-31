@@ -31,7 +31,8 @@ ServerEvents.recipes(event => {
   [
     // Minecraft
     'minecraft:cake', // Duplicate Recipe.
-    'minecraft:daylight_detector', // AE2 provides an alternative.
+    'minecraft:comparator', // AE2 provides a better alternative.
+    'minecraft:daylight_detector', // AE2 provides a better alternative.
     'minecraft:ladder',
     'minecraft:furnace', // Quark provides an alternative.
 
