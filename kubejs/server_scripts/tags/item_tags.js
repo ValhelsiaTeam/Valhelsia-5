@@ -48,6 +48,7 @@ ServerEvents.tags('item', event => {
     'minecraft:chicken',
     'minecraft:mutton',
     'minecraft:porkchop',
+    'minecraft:rabbit',
     'minecraft:red_mushroom',
     'abnormals_delight:duck_fillet',
     'abnormals_delight:venison_shanks',
@@ -71,6 +72,7 @@ ServerEvents.tags('item', event => {
     'blue_skies:carabeef',
     'blue_skies:monitor_tail',
     'blue_skies:venison',
+    'ecologics:crab_claw',
     'enlightened_end:raw_stalker',
     'environmental:duck',
     'environmental:venison',
@@ -80,6 +82,7 @@ ServerEvents.tags('item', event => {
     'farmersdelight:minced_beef',
     'farmersdelight:mutton_chops',
     'neapolitan:adzuki_beans',
+    'quark:crab_leg',
     'twilightforest:raw_meef',
     'twilightforest:raw_venison',
   ]);
@@ -90,6 +93,7 @@ ServerEvents.tags('item', event => {
     'minecraft:cooked_chicken',
     'minecraft:cooked_mutton',
     'minecraft:cooked_porkchop',
+    'minecraft:cooked_rabbit',
     'abnormals_delight:cooked_duck_fillet',
     'abnormals_delight:cooked_venison_shanks',
     'alexsdelight:bison_patty',
@@ -110,6 +114,7 @@ ServerEvents.tags('item', event => {
     'blue_skies:cooked_carabeef',
     'blue_skies:cooked_monitor_tail',
     'blue_skies:cooked_venison',
+    'ecologics:crab_meat',
     'enlightened_end:cooked_stalker',
     'environmental:cooked_duck',
     'environmental:cooked_venison',
@@ -121,6 +126,7 @@ ServerEvents.tags('item', event => {
     'farmersdelight:smoked_ham', // or steamed. ;)
     'incubation:fried_egg',
     'neapolitan:roasted_adzuki_beans',
+    'quark:cooked_crab_leg',
     'twilightforest:cooked_meef',
     'twilightforest:cooked_venison',
   ]);
