@@ -228,6 +228,10 @@ ServerEvents.recipes(event => {
   // Obsidian Dust Compatibility
   // Note: Not sure if the following will work, as replace doesn't always handle all recipe types.
   replaceInputID('create:sequenced_assembly/sturdy_sheet', 'create:powdered_obsidian', '#forge:dusts/obsidian');
+
+  // Quartz Dust Compatibility
+  replaceInputID('ae2:blasting/silicon_from_certus_quartz_dust', 'ae2:certus_quartz_dust', '#ae2:all_quartz_dust');
+  replaceInputID('ae2:smelting/silicon_from_certus_quartz_dust', 'ae2:certus_quartz_dust', '#ae2:all_quartz_dust');
   
   // Slime Compatibility
   replaceInputID([

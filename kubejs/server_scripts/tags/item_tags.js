@@ -40,11 +40,13 @@ ServerEvents.tags('item', event => {
     'immersiveengineering:electron_tube',
   ]);
 
+  // Syrups might not be the best word - represents sweet liquids that can be interchangeable in some recipes.
   event.add('valhelsia:syrups', [
     'minecraft:honey_bottle',
     'autumnity:syrup_bottle',
     'malum:holy_syrup',
     'malum:unholy_syrup',
+    'upgrade_aquatic:mulberry_jam_bottle',
   ]);
   
   event.add('valhelsia:raw_proteins', [
@@ -651,6 +653,10 @@ ServerEvents.tags('item', event => {
   // ----- Mod-specific Tags -----
 
   // Applied Energistics 2
+  event.add('ae2:all_quartz_dusts', [
+    'mekanism:quartz_dust',
+  ]);
+  
   event.add('ae2:can_remove_color', [
     'supplementaries:soap',
   ]);
