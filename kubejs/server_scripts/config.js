@@ -57,7 +57,7 @@ const CONFIG_COMMAND_PERMISSION_LEVEL = 3;
 const DEFAULT_CONFIG = {
   debug: false, // Debug mode - used to log additional information in scripts.
   developer: false, // Developer mode - enables several additional commands to ease development.
-  expert: false, // Expert mode - enables harder recipes.
+  overhaul: false, // Recipe Overhaul mode - enables overhauled recipes.
 };
  
 /**

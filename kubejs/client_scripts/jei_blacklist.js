@@ -271,4 +271,13 @@ JEIEvents.hideItems(event => {
     'woodworks:azalea_leaf_pile',
     'woodworks:flowering_azalea_leaf_pile'
   ]);
+
+  // Remove items disabled by Recipe Overhaul Mode.
+  if (!global.config.overhaul) {
+    return;
+  }
+
+  event.hide([
+    'moreminecarts:silica_steel_mix',
+  ]);
 });
