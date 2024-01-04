@@ -122,6 +122,11 @@ ServerEvents.recipes(event => {
   replaceInput('ad_astra:cheese', '#valhelsia:cheese');
   replaceInput('brewinandchewin:flaxen_cheese_wedge', '#valhelsia:cheese');
 
+  // Cherry Compatibility
+  replaceInput('blue_skies:cherry', '#forge:fruits/cherry');
+  replaceInput('environmental:cherries', '#forge:fruits/cherry');
+  replaceInput('forbidden_arcanus:cherry_peach', '#forge:fruits/cherry');
+
   // Electron Tube Compatibility
   replaceInput('create:electron_tube', '#valhelsia:electron_tubes');
   replaceInput('immersiveengineering:electron_tube', '#valhelsia:electron_tubes');

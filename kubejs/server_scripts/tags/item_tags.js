@@ -312,6 +312,17 @@ ServerEvents.tags('item', event => {
     'pneumaticcraft:wheat_flour',
   ]);
 
+  // ----- Fruits -----
+  event.add('forge:fruits', [
+    'blue_skies:cherry',
+    'forbidden_arcanus:cherry_peach',
+  ]);
+
+  event.add('forge:fruits/cherry', [
+    'blue_skies:cherry',
+    'forbidden_arcanus:cherry_peach',
+  ]);
+
   // ----- Dough -----
   event.add('forge:dough', [
     'farmersrespite:nether_wart_sourdough',
@@ -479,6 +490,17 @@ ServerEvents.tags('item', event => {
   // Create Slice & Dice
   event.add('sliceanddice:allowed_tools', [
     'galosphere_delight:silver_kitchen_hammer',
+  ]);
+
+  // Environmental
+  event.add('environmental:deer_food', [
+    'blue_skies:cherry',
+    'forbidden_arcanus:cherry_peach',
+  ]);
+  
+  event.add('environmental:deer_tempt_items', [
+    'blue_skies:cherry',
+    'forbidden_arcanus:cherry_peach',
   ]);
 
   // Immersive Engineering
