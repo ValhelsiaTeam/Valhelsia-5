@@ -49,6 +49,8 @@ ServerEvents.tags('item', event => {
     'minecraft:mutton',
     'minecraft:porkchop',
     'minecraft:red_mushroom',
+    'abnormals_delight:duck_fillet',
+    'abnormals_delight:venison_shanks',
     'alexsdelight:bison_mince',
     'alexsdelight:kangaroo_shank',
     'alexsdelight:loose_moose_rib',
@@ -64,14 +66,22 @@ ServerEvents.tags('item', event => {
     'alexsmobs:moose_ribs',
     'alexsmobs:raw_catfish',
     'aquamirae:spinefish',
+    'autumnity:turkey',
+    'autumnity:turkey_piece',
     'blue_skies:carabeef',
     'blue_skies:monitor_tail',
+    'blue_skies:venison',
+    'enlightened_end:raw_stalker',
+    'environmental:duck',
+    'environmental:venison',
     'farmersdelight:bacon',
     'farmersdelight:chicken_cuts',
     'farmersdelight:ham',
     'farmersdelight:minced_beef',
     'farmersdelight:mutton_chops',
     'neapolitan:adzuki_beans',
+    'twilightforest:raw_meef',
+    'twilightforest:raw_venison',
   ]);
 
   event.add('valhelsia:cooked_proteins', [
@@ -80,6 +90,8 @@ ServerEvents.tags('item', event => {
     'minecraft:cooked_chicken',
     'minecraft:cooked_mutton',
     'minecraft:cooked_porkchop',
+    'abnormals_delight:cooked_duck_fillet',
+    'abnormals_delight:cooked_venison_shanks',
     'alexsdelight:bison_patty',
     'alexsdelight:cooked_bison',
     'alexsdelight:cooked_bunfungus',
@@ -93,8 +105,14 @@ ServerEvents.tags('item', event => {
     'alexsmobs:cooked_lobster_tail',
     'alexsmobs:cooked_moose_ribs',
     'aquamirae:cooked_spinefish',
+    'autumnity:cooked_turkey',
+    'autumnity:cooked_turkey_piece',
     'blue_skies:cooked_carabeef',
     'blue_skies:cooked_monitor_tail',
+    'blue_skies:cooked_venison',
+    'enlightened_end:cooked_stalker',
+    'environmental:cooked_duck',
+    'environmental:cooked_venison',
     'farmersdelight:beef_patty',
     'farmersdelight:cooked_bacon',
     'farmersdelight:cooked_chicken_cuts',
@@ -103,6 +121,8 @@ ServerEvents.tags('item', event => {
     'farmersdelight:smoked_ham', // or steamed. ;)
     'incubation:fried_egg',
     'neapolitan:roasted_adzuki_beans',
+    'twilightforest:cooked_meef',
+    'twilightforest:cooked_venison',
   ]);
 
   event.add('valhelsia:proteins', [
@@ -412,6 +432,16 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:cooked_beef', [
     'blue_skies:cooked_carabeef',
+  ]);
+
+  event.add('forge:raw_venison', [
+    'blue_skies:venison',
+    'twilightforest:raw_venison',
+  ]);
+  
+  event.add('forge:cooked_venison', [
+    'blue_skies:cooked_venison',
+    'twilightforest:cooked_venison',
   ]);
 
   // ----- Netherrack -----
