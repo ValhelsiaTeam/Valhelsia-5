@@ -11,7 +11,7 @@
  * These are mostly for recipe input unification, but sometimes have other uses.
  * 
  * @see item_tags_remove.js
- * @copyright Valhelsia Inc 2022-2023
+ * @copyright Valhelsia Inc 2022-2024
  */
 
 /**
@@ -38,6 +38,13 @@ ServerEvents.tags('item', event => {
   event.add('valhelsia:electron_tubes', [
     'create:electron_tube',
     'immersiveengineering:electron_tube',
+  ]);
+
+  event.add('valhelsia:syrups', [
+    'minecraft:honey_bottle',
+    'autumnity:syrup_bottle',
+    'malum:holy_syrup',
+    'malum:unholy_syrup',
   ]);
   
   event.add('valhelsia:raw_proteins', [
@@ -136,6 +143,7 @@ ServerEvents.tags('item', event => {
   event.add('valhelsia:proteins', [
     '#valhelsia:raw_proteins',
     '#valhelsia:cooked_proteins',
+    '#minecraft:fishes', // Because some fish aren't tagged with the Forge tags for fish.
   ]);
 
   event.add('valhelsia:ropes', [
@@ -424,7 +432,15 @@ ServerEvents.tags('item', event => {
 
   // ----- Fruits -----
   event.add('forge:fruits', [
+    'minecraft:chorus_fruit',
+    'minecraft:melon_slice',
+    'minecraft:popped_chorus_fruit',
+    'blue_skies:black_brewberry',
     'blue_skies:cherry',
+    'blue_skies:crescent_fruit',
+    'blue_skies:pine_fruit',
+    'blue_skies:pink_brewberry',
+    'blue_skies:scalefruit',
     'forbidden_arcanus:cherry_peach',
   ]);
 
@@ -433,7 +449,42 @@ ServerEvents.tags('item', event => {
     'forbidden_arcanus:cherry_peach',
   ]);
 
+  // Note: Includes things that aren't technically berries but are used culinarily as berries.
+  event.add('forge:fruits/berry', [
+    'minecraft:glow_berries',
+    'minecraft:sweet_berries',
+    'aether:blue_berry',
+    'aether:enchanted_berry',
+    'blue_skies:cherry',
+    'forbidden_arcanus:cherry_peach',
+    'neapolitan:strawberries',
+    'neapolitan:white_strawberries',
+  ]);
+
+  // ----- Vegetables ------
+
+  event.add('forge:vegetables', [
+    'farmersdelight:cabbage',
+    'farmersdelight:cabbage_leaf',
+  ]);
+
+  event.add('forge:vegetables/cabbage', [
+    'farmersdelight:cabbage',
+    'farmersdelight:cabbage_leaf',
+  ]);
+
   // ----- Meat & Protein -----
+  event.add('forge:food/meat', [
+    'blue_skies:carabeef',
+    'blue_skies:cooked_carabeef',
+    'blue_skies:cooked_monitor_tail',
+    'blue_skies:cooked_venison',
+    'blue_skies:monitor_tail',
+    'blue_skies:venison',
+    'twilightforest:cooked_venison',
+    'twilightforest:raw_venison',
+  ]);
+
   event.add('forge:raw_beef', [
     'blue_skies:carabeef',
   ]);
