@@ -39,6 +39,76 @@ ServerEvents.tags('item', event => {
     'create:electron_tube',
     'immersiveengineering:electron_tube',
   ]);
+  
+  event.add('valhelsia:raw_proteins', [
+    '#forge:eggs',
+    '#forge:raw_fishes',
+    'minecraft:beef',
+    'minecraft:brown_mushroom',
+    'minecraft:chicken',
+    'minecraft:mutton',
+    'minecraft:porkchop',
+    'minecraft:red_mushroom',
+    'alexsdelight:bison_mince',
+    'alexsdelight:kangaroo_shank',
+    'alexsdelight:loose_moose_rib',
+    'alexsdelight:raw_bison',
+    'alexsdelight:raw_bunfungus',
+    'alexsdelight:raw_bunfungus_drumstick',
+    'alexsdelight:raw_catfish_slice',
+    'alexsmobs:blobfish',
+    'alexsmobs:cosmic_cod',
+    'alexsmobs:flying_fish',
+    'alexsmobs:kangaroo_meat',
+    'alexsmobs:lobster_tail',
+    'alexsmobs:moose_ribs',
+    'alexsmobs:raw_catfish',
+    'aquamirae:spinefish',
+    'blue_skies:carabeef',
+    'blue_skies:monitor_tail',
+    'farmersdelight:bacon',
+    'farmersdelight:chicken_cuts',
+    'farmersdelight:ham',
+    'farmersdelight:minced_beef',
+    'farmersdelight:mutton_chops',
+    'neapolitan:adzuki_beans',
+  ]);
+
+  event.add('valhelsia:cooked_proteins', [
+    '#forge:cooked_fishes',
+    'minecraft:cooked_beef',
+    'minecraft:cooked_chicken',
+    'minecraft:cooked_mutton',
+    'minecraft:cooked_porkchop',
+    'alexsdelight:bison_patty',
+    'alexsdelight:cooked_bison',
+    'alexsdelight:cooked_bunfungus',
+    'alexsdelight:cooked_bunfungus_drumstick',
+    'alexsdelight:cooked_catfish_slice',
+    'alexsdelight:cooked_centipede_leg',
+    'alexsdelight:cooked_kangaroo_shank',
+    'alexsdelight:cooked_loose_moose_rib',
+    'alexsmobs:cooked_catfish',
+    'alexsmobs:cooked_kangaroo_meat',
+    'alexsmobs:cooked_lobster_tail',
+    'alexsmobs:cooked_moose_ribs',
+    'aquamirae:cooked_spinefish',
+    'blue_skies:cooked_carabeef',
+    'blue_skies:cooked_monitor_tail',
+    'farmersdelight:beef_patty',
+    'farmersdelight:cooked_bacon',
+    'farmersdelight:cooked_chicken_cuts',
+    'farmersdelight:cooked_mutton_chops',
+    'farmersdelight:fried_egg',
+    'farmersdelight:smoked_ham', // or steamed. ;)
+    'incubation:fried_egg',
+    'neapolitan:roasted_adzuki_beans',
+  ]);
+
+  event.add('valhelsia:proteins', [
+    '#valhelsia:raw_proteins',
+    '#valhelsia:cooked_proteins',
+  ]);
 
   event.add('valhelsia:ropes', [
     'farmersdelight:rope',
@@ -303,13 +373,25 @@ ServerEvents.tags('item', event => {
     'aether:skyroot_planks',
   ]);
 
-  // ----- Flour -----
+  // ----- Flour & Dough -----
   event.add('forge:flour', [
     'pneumaticcraft:wheat_flour',
   ]);
 
   event.add('forge:flour/wheat', [
     'pneumaticcraft:wheat_flour',
+  ]);
+
+  event.add('forge:dough', [
+    'farmersrespite:nether_wart_sourdough',
+    'minecolonies:cookie_dough',
+    'minecolonies:bread_dough',
+    'pneumaticcraft:sourdough',
+  ]);
+
+  event.add('forge:dough/wheat', [
+    'minecolonies:bread_dough',
+    'pneumaticcraft:sourdough',
   ]);
 
   // ----- Fruits -----
@@ -323,17 +405,13 @@ ServerEvents.tags('item', event => {
     'forbidden_arcanus:cherry_peach',
   ]);
 
-  // ----- Dough -----
-  event.add('forge:dough', [
-    'farmersrespite:nether_wart_sourdough',
-    'minecolonies:cookie_dough',
-    'minecolonies:bread_dough',
-    'pneumaticcraft:sourdough',
+  // ----- Meat & Protein -----
+  event.add('forge:raw_beef', [
+    'blue_skies:carabeef',
   ]);
 
-  event.add('forge:dough/wheat', [
-    'minecolonies:bread_dough',
-    'pneumaticcraft:sourdough',
+  event.add('forge:cooked_beef', [
+    'blue_skies:cooked_carabeef',
   ]);
 
   // ----- Netherrack -----
@@ -357,6 +435,7 @@ ServerEvents.tags('item', event => {
     'rechiseled:netherrack_tiles',
     'rechiseled:netherrack_tiles_connecting',
   ]);
+
 
   // ----- Sandstone -----
   event.add('forge:sandstone/colorless', [
