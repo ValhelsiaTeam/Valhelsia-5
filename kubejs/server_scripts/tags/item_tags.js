@@ -81,6 +81,7 @@ ServerEvents.tags('item', event => {
     'farmersdelight:ham',
     'farmersdelight:minced_beef',
     'farmersdelight:mutton_chops',
+    'forbidden_arcanus:tentacle',
     'neapolitan:adzuki_beans',
     'quark:crab_leg',
     'twilightforest:raw_meef',
@@ -124,6 +125,7 @@ ServerEvents.tags('item', event => {
     'farmersdelight:cooked_mutton_chops',
     'farmersdelight:fried_egg',
     'farmersdelight:smoked_ham', // or steamed. ;)
+    'forbidden_arcanus:cooked_tentacle',
     'incubation:fried_egg',
     'neapolitan:roasted_adzuki_beans',
     'quark:cooked_crab_leg',
@@ -633,6 +635,12 @@ ServerEvents.tags('item', event => {
     'createaddition:gold_spool',
     'createaddition:electrum_spool',
     'createaddition:festive_spool',
+  ]);
+
+  // Malum
+  event.add('malum:gross_foods', [
+    'alexsdelight:maggot_salad',
+    'alexsmobs:maggot',
   ]);
 
 });
