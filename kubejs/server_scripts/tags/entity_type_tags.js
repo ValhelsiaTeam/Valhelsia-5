@@ -7,7 +7,7 @@
 
 /**
  * @file Entity Type Tag additions for Valhelsia 5.
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2024
  */
 
 /**
@@ -26,14 +26,35 @@ ServerEvents.tags('entity_type', event => {
     'minecraft:phantom',
     'minecraft:cave_spider',
     'minecraft:wither_skeleton',
-    'alexsmobs:underminer',
+    'alexsmobs:bone_serpent',
     'alexsmobs:murmur',
-    'quark:wraith',
-    'quark:forgotten',
+    'alexsmobs:skelewag',
+    'alexsmobs:underminer',
+    'aquamirae:captain_cornelia',
+    'aquamirae:tortured_soul',
+    'environmental:zombie_deer',
     'goblintraders:goblin_trader',
     'goblintraders:vein_goblin_trader',
+    'minecolonies:mummy',
+    'minecolonies:pharao',
+    'quark:forgotten',
+    'quark:wraith',
+    'rottencreatures:burned',
+    'rottencreatures:dead_beard',
+    'rottencreatures:frostbitten',
+    'rottencreatures:immortal',
+    'rottencreatures:mummy',
+    'rottencreatures:swampy',
+    'rottencreatures:undead_miner',
+    'rottencreatures:zap',
     'savage_and_ravage:skeleton_villager',
+    'twilightforest:death_tome',
+    'twilightforest:hedge_spider',
+    'twilightforest:king_spider',
+    'twilightforest:lich',
     'twilightforest:skeleton_druid',
+    'twilightforest:swarm_spider',
+    'twilightforest:wraith',
   ]);
 
 });

@@ -114,6 +114,7 @@ ServerEvents.tags('item', event => {
     'alexsdelight:cooked_centipede_leg',
     'alexsdelight:cooked_kangaroo_shank',
     'alexsdelight:cooked_loose_moose_rib',
+    'alexsmobs:boiled_emu_egg',
     'alexsmobs:cooked_catfish',
     'alexsmobs:cooked_kangaroo_meat',
     'alexsmobs:cooked_lobster_tail',
@@ -656,7 +657,7 @@ ServerEvents.tags('item', event => {
   event.add('ae2:all_quartz_dusts', [
     'mekanism:quartz_dust',
   ]);
-  
+
   event.add('ae2:can_remove_color', [
     'supplementaries:soap',
   ]);

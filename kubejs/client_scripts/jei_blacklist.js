@@ -11,7 +11,7 @@
  * 
  * For consistency, Item / Fluid IDs should be in the order of Minecraft entries first, then by mod in alphabetical order.
  *  
- * @copyright Valhelsia Inc 2022-2023
+ * @copyright Valhelsia Inc 2022-2024
  */
 
 /**
