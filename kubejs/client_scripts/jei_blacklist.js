@@ -19,6 +19,11 @@
  */
 JEIEvents.hideItems(event => {
   event.hide([
+    // Spawn Eggs
+    /:.*spawn_egg/, // Hides most spawn eggs.
+    /_se$/, // Ars Nouveau likes to be different.
+    /(cnb|minecolonies):.*egg$/, // As do CNB and MineColonies...
+    'hunterillager:spawnegg_hunterillager', // ...and Hunter Illager.
 
     // Minecraft
     'minecraft:barrier',
@@ -273,6 +278,8 @@ JEIEvents.hideItems(event => {
   ]);
 
   // Remove items disabled by Recipe Overhaul Mode.
+  // Note: Not sure if the config will work for client scripts as-is. Might
+  // require implementing the config in client_scripts too?
   if (!global.config.overhaul) {
     return;
   }
