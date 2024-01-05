@@ -168,6 +168,45 @@ ServerEvents.recipes(event => {
   ], 'minecraft:feather', '#forge:feathers');
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers');
 
+  // Leather Compatibility
+  replaceInputID([
+    'minecraft:book',
+    'aether:aether_saddle',
+    'alexsmobs:falconry_glove',
+    'alexsmobs:falconry_hood',
+    'alexsmobs:falconry_hood_alt',
+    'alexsmobs:pocket_sand',
+    'aquamirae:remnants_saber',
+    'aquamirae:three_bolt_boots',
+    'aquamirae:three_bolt_leggings',
+    'aquamirae:three_bolt_suit',
+    'ars_nouveau:annotated_codex',
+    'blue_skies:camel_saddle_with_iron',
+    'blue_skies:camel_saddle_with_ventium',
+    'botania:bellows',
+    'botania:drum_canopy',
+    'botania:drum_gathering',
+    'botania:drum_wild',
+    'botania:ender_hand',
+    'botania:knockback_belt',
+    'botania:travel_belt',
+    'cnb:crafting/shaped/sporeling_backpack',
+    'domesticationinnovation:drum',
+    'effortlessbuilding:diamond_randomizer_bag',
+    'effortlessbuilding:golden_randomizer_bag',
+    'effortlessbuilding:randomizer_bag',
+    'farmersrespite:kettle',
+    'minecolonies:blockhutfield',
+    'minecolonies:build_goggles',
+    'minecolonies:clipboard',
+    'minecolonies:questlog',
+    'minecolonies:resourcescroll',
+    'quark:tools/crafting/seed_pouch',
+    'supplementaries:bellows',
+    'upgrade_aquatic:bedroll',
+    'xercamusic:drum',
+  ], 'minecraft:leather', '#forge:leather');
+
   // Glass Compatibility
   replaceInputID([
     'minecraft:beacon',
