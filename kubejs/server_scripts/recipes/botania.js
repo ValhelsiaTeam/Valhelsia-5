@@ -16,6 +16,26 @@
  */
 ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:botania/';
+
+  /**
+   * Cost of small conjuration duplication. Examples oc small cost items
+   * are plants that have mainly decorative use, such as grasses and
+   * roots.
+   */
+  const CONJ_COST_SML = 800;
+
+  /**
+   * Cost of medium conjuration duplication. Examples of medium cost items
+   * are plants that have a functional use, such as wild vegetables,
+   * or plants that are larger than grasses or roots but not quite full blocks.
+   */
+  const CONJ_COST_MED = 1000;
+
+  /**
+   * Cost of large conjuration duplication. Examples of large cost items
+   * are full-block sized plants (stems, logs, etc.).
+   */
+  const CONJ_COST_LRG = 2000;
   
   /**
    * Creates a conjuration recipe to duplicate an item with a mana pool. 
@@ -25,7 +45,7 @@ ServerEvents.recipes(event => {
    */
   const conj2x = (item, mana) => {
     if (typeof mana == 'undefined') {
-      mana = 800;
+      mana = CONJ_COST_SML;
     }
 
     event.recipes.botania.mana_infusion(`2x ${item}`, item, mana, 'botania:conjuration_catalyst').id(`${ID_PREFIX}conjuration/${item.replace(':','/')}`);
@@ -44,10 +64,10 @@ ServerEvents.recipes(event => {
   conj2x('minecraft:hanging_roots');
   conj2x('minecraft:nether_sprouts');
   conj2x('minecraft:warped_roots');
-  conj2x('minecraft:small_dripleaf', 1000);
+  conj2x('minecraft:small_dripleaf', CONJ_COST_MED);
 
   conj2x('atmospheric:arid_sprouts');
-  conj2x('atmospheric:yucca_branch', 1000);
+  conj2x('atmospheric:yucca_branch');
 
   conj2x('biomesoplenty:barley');
   conj2x('biomesoplenty:bush');
@@ -56,39 +76,41 @@ ServerEvents.recipes(event => {
   conj2x('biomesoplenty:dead_grass');
   conj2x('biomesoplenty:desert_grass');
   conj2x('biomesoplenty:dune_grass');
-  conj2x('biomesoplenty:huge_clover_petal', 1000);
+  conj2x('biomesoplenty:huge_clover_petal', CONJ_COST_MED);
   conj2x('biomesoplenty:reed');
   conj2x('biomesoplenty:sea_oats');
   conj2x('biomesoplenty:sprout');
   conj2x('biomesoplenty:watergrass');
 
-  conj2x('blue_skies:cryo_root', 1000);
-  conj2x('blue_skies:lucentroot', 1000);
+  conj2x('blue_skies:cryo_root', CONJ_COST_MED);
+  conj2x('blue_skies:lucentroot', CONJ_COST_MED);
 
   conj2x('darkerdepths:dry_sprouts');
-  conj2x('darkerdepths:glowshroom', 1000);
-  conj2x('darkerdepths:glowshroom_block', 2000);
-  conj2x('darkerdepths:glowshroom_stem', 2000);
-  conj2x('darkerdepths:long_roots', 1000);
+  conj2x('darkerdepths:glowshroom', CONJ_COST_MED);
+  conj2x('darkerdepths:glowshroom_block', CONJ_COST_LRG);
+  conj2x('darkerdepths:glowshroom_stem', CONJ_COST_LRG);
+  conj2x('darkerdepths:long_roots', CONJ_COST_MED);
   conj2x('darkerdepths:lush_sprouts');
   conj2x('darkerdepths:mossy_sprouts');
   conj2x('darkerdepths:roots');
   
   conj2x('environmental:mycelium_sprouts');
 
-  conj2x('farmersdelight:wild_cabbages', 1000);
-  conj2x('farmersdelight:wild_onions', 1000);
-  conj2x('farmersdelight:wild_carrots', 1000);
-  conj2x('farmersdelight:wild_potatoes', 1000);
-  conj2x('farmersdelight:wild_rice', 1000);
-  conj2x('farmersdelight:sandy_shrub', 800);
+  conj2x('farmersdelight:wild_cabbages', CONJ_COST_MED);
+  conj2x('farmersdelight:wild_onions', CONJ_COST_MED);
+  conj2x('farmersdelight:wild_carrots', CONJ_COST_MED);
+  conj2x('farmersdelight:wild_potatoes', CONJ_COST_MED);
+  conj2x('farmersdelight:wild_rice', CONJ_COST_MED);
+  conj2x('farmersdelight:sandy_shrub');
 
-  conj2x('farmersrespite:wild_tea_bush', 1000);
-  conj2x('farmersrespite:wild_coffee_bush', 1000);
+  conj2x('farmersrespite:wild_tea_bush', CONJ_COST_MED);
+  conj2x('farmersrespite:wild_coffee_bush', CONJ_COST_MED);
 
-  conj2x('forbidden_arcanus:petrified_root', 1000);
+  conj2x('forbidden_arcanus:petrified_root', CONJ_COST_MED);
 
-  conj2x('supplementaries:wild_flax', 1000);
+  conj2x('supplementaries:wild_flax', CONJ_COST_MED);
+
+  conj2x('twilightforest:moss_patch');
 
   // Elven Trade
   // event.recipes.botania.elven_trade(['output_here'], 'input_here');
