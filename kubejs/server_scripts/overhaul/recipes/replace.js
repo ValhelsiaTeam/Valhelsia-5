@@ -84,6 +84,7 @@ ServerEvents.recipes(event => {
     event.replaceOutput({type: recipeType}, from, to);
   };
 
+  /// ----- Generic Replacements -----
 
   // Bottle -> Jar
   replaceInputID([
@@ -97,5 +98,30 @@ ServerEvents.recipes(event => {
     'fairylights:letter_bunting',
     'xercamusic:music_sheet',
   ], 'minecraft:ink_sac', 'supplementaries:antique_ink');
+
+
+  // ----- Mod-specific Replacements -----
+
+  // Xerca's Music Maker Mod
+
+  // Tonewoods
+  replaceInputID('xercamusic:cello', 'minecraft:stick', 'minecraft:spruce_planks');
+  replaceInputID('xercamusic:cello', 'minecraft:dark_oak_planks', ['autumnity:maple_planks', 'blue_skies:maple_planks']);
+  replaceInputID('xercamusic:guitar', 'minecraft:stick', 'biomesoplenty:mahogany_planks');
+  replaceInputID('xercamusic:guitar', 'minecraft:oak_planks', 'atmospheric:rosewood_planks');
+  replaceInputID('xercamusic:redstone_guitar', 'minecraft:stick', ['autumnity:maple_planks', 'blue_skies:maple_planks']);
+  replaceInputID('xercamusic:redstone_guitar', 'minecraft:oak_planks', 'ecologics:walnut_planks');
+  replaceInputID('xercamusic:violin', 'minecraft:spruce_planks', ['autumnity:maple_planks', 'blue_skies:maple_planks']);
+
+  // Metals
+  replaceInputID([
+    'xercamusic:french_horn',
+    'xercamusic:saxophone',
+    'xercamusic:tubular_bell',
+  ], 'minecraft:gold_nugget', '#forge:nuggets/brass');
+
+  replaceInputID('xercamusic:cymbal', 'minecraft:gold_nugget', '#forge:nuggets/bronze');
+  replaceInputID('xercamusic:redstone_guitar', 'minecraft:string', '#forge:wires/steel');
+  replaceInputID('xercamusic:sansula', 'minecraft:gold_nugget', '#forge:nuggets/steel');
 
 });

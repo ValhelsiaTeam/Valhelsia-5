@@ -33,6 +33,8 @@ ServerEvents.recipes(event => {
     'storagedrawers:diamond_storage_upgrade',
     'storagedrawers:emerald_storage_upgrade',
     'supplementaries:globe_sepia',
+    'xercamusic:lyre',
+    'xercamusic:xylophone',
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // Remove recipes by input.

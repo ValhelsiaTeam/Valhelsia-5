@@ -19,7 +19,7 @@ ServerEvents.recipes(event => {
     return;
   }
 
-  const ID_PREFIX = 'valhelsia:overhaul/crafting/';
+  const ID_PREFIX = 'valhelsia:overhaul/crafting/shapeless/';
 
   // Supplementaries
   event.shapeless('supplementaries:globe_sepia', ['supplementaries:globe', 'supplementaries:antique_ink', '#forge:dyes/brown']).id(`${ID_PREFIX}sepia_globe`);

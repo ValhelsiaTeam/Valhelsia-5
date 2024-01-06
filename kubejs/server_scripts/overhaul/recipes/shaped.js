@@ -23,7 +23,7 @@ ServerEvents.recipes(event => {
     return;
   }
 
-  const ID_PREFIX = 'valhelsia:overhaul/crafting/';
+  const ID_PREFIX = 'valhelsia:overhaul/crafting/shaped/';
 
   // Convenience Functions:
 
@@ -166,10 +166,10 @@ ServerEvents.recipes(event => {
   ], {
     S: 'ars_nouveau:archwood_slab',
     G: 'forbidden_arcanus:runic_glass'
-  });
+  }).id(`${ID_PREFIX}containment_jar`);
 
   // Cave Enhancements
-  plusWrapped('cave_enhancements:amethyst_flute', 'supplementaries:flute', 'minecraft:amethyst_shard');
+  plusWrapped('cave_enhancements:amethyst_flute', 'supplementaries:flute', 'minecraft:amethyst_shard', 'amethyst_flute');
 
   // Storage Drawers
   // Gated behind having steel production.
@@ -193,5 +193,22 @@ ServerEvents.recipes(event => {
     E: 'minecraft:emerald_block',
     U: 'minecraft:storagedrawers:upgrade_template'
   }).id(`${ID_PREFIX}emerald_storage_upgrade`);
+
+  // Xerca's Music Maker Mod
+  event.shaped('xercamusic:lyre', [
+    'S S',
+    ' T ',
+  ], {
+    S: '#forge:rods/wooden',
+    T: 'minecraft:turtle_helmet'
+  }).id(`${ID_PREFIX}lyre`);
+
+  event.shaped('xercamusic:xylophone', [
+    'BBB',
+    'TTT',
+  ], {
+    B: 'atmospheric:rosewood_planks',
+    T: '#forge:rods/steel'
+  }).id(`${ID_PREFIX}xylophone`);
 
 });
