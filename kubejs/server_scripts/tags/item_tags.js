@@ -24,6 +24,11 @@ ServerEvents.tags('item', event => {
     'supplementaries:ash',
     'darkerdepths:ash',
   ]);
+
+  event.add('valhelsia:bowls', [
+    'minecraft:bowl',
+    'ecologics:coconut_husk',
+  ]);
   
   event.add('valhelsia:capacitors', [
     'createaddition:capacitor',
@@ -38,15 +43,6 @@ ServerEvents.tags('item', event => {
   event.add('valhelsia:electron_tubes', [
     'create:electron_tube',
     'immersiveengineering:electron_tube',
-  ]);
-
-  // Syrups might not be the best word - represents sweet liquids that can be interchangeable in some recipes.
-  event.add('valhelsia:syrups', [
-    'minecraft:honey_bottle',
-    'autumnity:syrup_bottle',
-    'malum:holy_syrup',
-    'malum:unholy_syrup',
-    'upgrade_aquatic:mulberry_jam_bottle',
   ]);
   
   event.add('valhelsia:raw_proteins', [
@@ -160,6 +156,15 @@ ServerEvents.tags('item', event => {
     'cave_enhancements:rose_quartz',
     'create:rose_quartz',
   ]);
+  
+  // Syrups might not be the best word - represents sweet liquids that can be interchangeable in some recipes.
+  event.add('valhelsia:syrups', [
+    'minecraft:honey_bottle',
+    'autumnity:syrup_bottle',
+    'malum:holy_syrup',
+    'malum:unholy_syrup',
+    'upgrade_aquatic:mulberry_jam_bottle',
+  ]);
 
   event.add('valhelsia:spools', [
     'createaddition:copper_spool',
@@ -204,6 +209,12 @@ ServerEvents.tags('item', event => {
   event.add('valhelsia:spools/steel', [
     'immersiveengineering:wirecoil_steel',
     'immersiveengineering:wirecoil_structure_steel',
+  ]);
+
+  event.add('valhelsia:wax', [
+    'minecraft:honeycomb',
+    'forbidden_arcanus:wax',
+    'immersivepetroleum:paraffin_wax',
   ]);
 
   // ----- Ores -----
@@ -676,6 +687,11 @@ ServerEvents.tags('item', event => {
   event.add('environmental:deer_tempt_items', [
     'blue_skies:cherry',
     'forbidden_arcanus:cherry_peach',
+  ]);
+
+  // Farmer's Delight
+  event.add('farmersdelight:serving_containers', [
+    'ecologics:coconut_husk',
   ]);
 
   // Immersive Engineering
