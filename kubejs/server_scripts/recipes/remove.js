@@ -156,6 +156,27 @@ ServerEvents.recipes(event => {
     'immersiveengineering:crafting/raw_lead_to_raw_block_lead',
     'immersiveengineering:crafting/raw_uranium_to_raw_block_uranium',
 
+    // Immersive Petroleum
+    // Paraffin Waxing is now tied in with regular waxing:
+    'immersivepetroleum:candle',
+    'immersivepetroleum:ersatz_leather',
+    'immersivepetroleum:cut_copper_paraffin_waxed',
+    'immersivepetroleum:exposed_cut_copper_paraffin_waxed',
+    'immersivepetroleum:oxidized_cut_copper_paraffin_waxed',
+    'immersivepetroleum:weathered_cut_copper_paraffin_waxed',
+    'immersivepetroleum:copper_block_paraffin_waxed',
+    'immersivepetroleum:exposed_copper_paraffin_waxed',
+    'immersivepetroleum:oxidized_copper_paraffin_waxed',
+    'immersivepetroleum:weathered_copper_paraffin_waxed',
+    'immersivepetroleum:cut_copper_slab_paraffin_waxed',
+    'immersivepetroleum:exposed_cut_copper_slab_paraffin_waxed',
+    'immersivepetroleum:oxidized_cut_copper_slab_paraffin_waxed',
+    'immersivepetroleum:weathered_cut_copper_slab_paraffin_waxed',
+    'immersivepetroleum:cut_copper_stairs_paraffin_waxed',
+    'immersivepetroleum:exposed_cut_copper_stairs_paraffin_waxed',
+    'immersivepetroleum:oxidized_cut_copper_stairs_paraffin_waxed',
+    'immersivepetroleum:weathered_cut_copper_stairs_paraffin_waxed',
+
     // Malum
     'malum:lead_from_sapballs', // Redundant - vanilla Lead recipe has changed.
     'malum:sticky_piston_from_sapballs', // Redundant - vanilla Sticky Piston recipe has changed.

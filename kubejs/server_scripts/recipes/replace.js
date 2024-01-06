@@ -283,7 +283,6 @@ ServerEvents.recipes(event => {
     'supplementaries:slingshot',
   ], 'minecraft:slime_ball', '#forge:slimeballs');
 
-  
   // Spool (or Coil) Compatibility
   replaceInput('createaddition:copper_spool', '#valhelsia:spools/copper');
   replaceInput('immersiveengineering:wirecoil_copper', '#valhelsia:spools/copper');
@@ -295,6 +294,99 @@ ServerEvents.recipes(event => {
     'galosphere_delight:silver_kitchen_hammer',
     // TODO: Check which other recipes need sticks changed to use tags.
   ], 'minecraft:stick', '#forge:rods/wooden');
+
+  // Wax Compatibility
+  replaceInputID([
+    'minecraft:candle',
+
+    'minecraft:waxed_copper_block_from_honeycomb',
+    'minecraft:waxed_exposed_copper_from_honeycomb',
+    'minecraft:waxed_oxidized_copper_from_honeycomb',
+    'minecraft:waxed_weathered_copper_from_honeycomb',
+    
+    'minecraft:waxed_cut_copper_from_honeycomb',
+    'minecraft:waxed_exposed_cut_copper_from_honeycomb',
+    'minecraft:waxed_oxidized_cut_copper_from_honeycomb',
+    'minecraft:waxed_weathered_cut_copper_from_honeycomb',
+    
+    'minecraft:waxed_cut_copper_slab_from_honeycomb',
+    'minecraft:waxed_exposed_cut_copper_slab_from_honeycomb',
+    'minecraft:waxed_oxidized_cut_copper_slab_from_honeycomb',
+    'minecraft:waxed_weathered_cut_copper_slab_from_honeycomb',
+
+    'minecraft:waxed_cut_copper_stairs_from_honeycomb',
+    'minecraft:waxed_exposed_cut_copper_stairs_from_honeycomb',
+    'minecraft:waxed_oxidized_cut_copper_stairs_from_honeycomb',
+    'minecraft:waxed_weathered_cut_copper_stairs_from_honeycomb',
+
+    'brewinandchewin:keg',
+
+    'buzzier_bees:candles/soul_candle',
+
+    'cave_enhancements:spectacle_candle',
+
+    'cave_enhancements:waxed_redstone_receiver_from_honeycomb',
+    'cave_enhancements:waxed_exposed_redstone_receiver_from_honeycomb',
+    'cave_enhancements:waxed_oxidized_redstone_receiver_from_honeycomb',
+    'cave_enhancements:waxed_weathered_redstone_receiver_from_honeycomb',
+
+    'create:crafting/copper/waxed_copper_shingles_from_honeycomb',
+    'create:crafting/copper/waxed_exposed_copper_shingles_from_honeycomb',
+    'create:crafting/copper/waxed_oxidized_copper_shingles_from_honeycomb',
+    'create:crafting/copper/waxed_weathered_copper_shingles_from_honeycomb',
+
+    'create:crafting/copper/waxed_copper_shingle_stairs_from_honeycomb',
+    'create:crafting/copper/waxed_exposed_copper_shingle_stairs_from_honeycomb',
+    'create:crafting/copper/waxed_oxidized_copper_shingle_stairs_from_honeycomb',
+    'create:crafting/copper/waxed_weathered_copper_shingle_stairs_from_honeycomb',
+    
+    'create:crafting/copper/waxed_copper_tiles_from_honeycomb',
+    'create:crafting/copper/waxed_exposed_copper_tiles_from_honeycomb',
+    'create:crafting/copper/waxed_oxidized_copper_tiles_from_honeycomb',
+    'create:crafting/copper/waxed_weathered_copper_tiles_from_honeycomb',
+    
+    'create:crafting/copper/waxed_copper_tile_slab_from_honeycomb',
+    'create:crafting/copper/waxed_exposed_copper_tile_slab_from_honeycomb',
+    'create:crafting/copper/waxed_oxidized_copper_tile_slab_from_honeycomb',
+    'create:crafting/copper/waxed_weathered_copper_tile_slab_from_honeycomb',
+    
+    'create:crafting/copper/waxed_copper_tile_stairs_from_honeycomb',
+    'create:crafting/copper/waxed_exposed_copper_tile_stairs_from_honeycomb',
+    'create:crafting/copper/waxed_oxidized_copper_tile_stairs_from_honeycomb',
+    'create:crafting/copper/waxed_weathered_copper_tile_stairs_from_honeycomb',
+
+    'enlightened_end:waxed_bismuth_block',
+    'enlightened_end:waxed_bismuth_glass',
+    'enlightened_end:waxed_bismuth_glass_pane',
+    'enlightened_end:waxed_bismuth_lamp',
+    'enlightened_end:waxed_bismuth_sheet_slab',
+    'enlightened_end:waxed_bismuth_sheet_wall',
+    'enlightened_end:waxed_bismuth_sheets',
+
+    'immersiveengineering:crafting/ersatz_leather',
+
+    'quark:building/crafting/vertslabs/wax/waxed_cut_copper_vertical_slab_hc',
+    'quark:building/crafting/vertslabs/wax/waxed_exposed_cut_copper_vertical_slab_hc',
+    'quark:building/crafting/vertslabs/wax/waxed_oxidized_cut_copper_vertical_slab_hc',
+    'quark:building/crafting/vertslabs/wax/waxed_weathered_cut_copper_vertical_slab_hc',
+
+    'quark:world/crafting/waxed_black_corundum',
+    'quark:world/crafting/waxed_blue_corundum',
+    'quark:world/crafting/waxed_green_corundum',
+    'quark:world/crafting/waxed_indigo_corundum',
+    'quark:world/crafting/waxed_orange_corundum',
+    'quark:world/crafting/waxed_red_corundum',
+    'quark:world/crafting/waxed_violet_corundum',
+    'quark:world/crafting/waxed_white_corundum',
+    'quark:world/crafting/waxed_yellow_corundum',
+
+    'sullysmod:waxed_copper_button_from_honeycomb',
+    'sullysmod:waxed_exposed_copper_button_from_honeycomb',
+    'sullysmod:waxed_weathered_copper_button_from_honeycomb',
+    'sullysmod:waxed_oxidized_copper_button_from_honeycomb',
+  ], 'minecraft:honeycomb', '#valhelsia:wax');
+
+  replaceInputID('forbidden_arcanus:purifying_soap', 'forbidden_arcanus:wax', '#valhelsia:wax');
 
   ALL_VANILLA_WOOD_TYPES.forEach((wood_type) => {
     // Allow balanced crates to use any wooden chest, not just vanilla chests.
