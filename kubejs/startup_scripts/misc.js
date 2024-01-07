@@ -8,9 +8,10 @@
 /**
  * @file Misc startup script contents.
  * 
- * @copyright Valhelsia Inc 2023
+ * @copyright Valhelsia Inc 2023-2024
  */
 
+Platform.getInfo('valhelsia').name = 'Valhelsia';
 Platform.mods.kubejs.name = 'Valhelsia';
 Platform.mods.abnormals_delight.name = 'Abnormals\' Delight';
 Platform.mods.galosphere_delight.name = 'Galosphere Delight';
