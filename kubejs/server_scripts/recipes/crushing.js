@@ -70,7 +70,8 @@
     } else {
       event.recipes.create.milling(output, input).id(`${ID_PREFIX}create/milling/${recipeIDLocal}`);
     }
-    crush(output, input);
+    
+    crush(output, input, secondary);
   };
 
   // Remove unused crushing/milling recipes.
