@@ -17,7 +17,7 @@
 		#Multiplier of effectiveness of Lava that is adjacent to the Heat Generator.
 		heatGenerationLava = "10"
 		#Add this amount of Joules to the energy produced by a heat generator if it is in an 'ultrawarm' dimension, in vanilla this is just the Nether.
-		heatGenerationNether = "50"
+		heatGenerationNether = "200"
 		#The amount of lava in mB that gets consumed to transfer heatGeneration Joules to the Heat Generator.
 		#Range: 1 ~ 24000
 		heatGenerationFluidRate = 10
