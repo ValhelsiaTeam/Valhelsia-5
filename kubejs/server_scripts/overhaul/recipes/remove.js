@@ -26,6 +26,7 @@ ServerEvents.recipes(event => {
   // Remove recipes by recipe ID.
   [
     'ars_nouveau:mob_jar',
+    'botania:redstone_root',
     'caveenhancements:amethyst_flute',
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',

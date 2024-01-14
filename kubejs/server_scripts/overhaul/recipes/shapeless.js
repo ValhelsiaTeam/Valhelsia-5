@@ -21,6 +21,9 @@ ServerEvents.recipes(event => {
 
   const ID_PREFIX = 'valhelsia:overhaul/crafting/shapeless/';
 
+  // Botania
+  event.shapless('botania:redstone_root', 'minecraft:hanging_roots');
+
   // Supplementaries
   event.shapeless('supplementaries:globe_sepia', ['supplementaries:globe', 'supplementaries:antique_ink', '#forge:dyes/brown']).id(`${ID_PREFIX}sepia_globe`);
 });
