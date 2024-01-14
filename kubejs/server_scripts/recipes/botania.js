@@ -166,6 +166,10 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 150);
 
   // Orechid - Modded Stone
+  event.recipes.botania.orechid('ad_astra:moon_cheese_ore', 'ad_astra:moon_stone', 320);
+  event.recipes.botania.orechid('ad_astra:moon_desh_ore', 'ad_astra:moon_stone', 600);
+  event.recipes.botania.orechid('ad_astra:moon_iron_ore', 'ad_astra:moon_stone', 1080);
+  event.recipes.botania.orechid('ad_astra:moon_ice_shard_ore', 'ad_astra:moon_stone', 850);
 
   // Marimorphosis
   // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
