@@ -188,6 +188,13 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('ad_astra:venus_gold_ore', 'ad_astra:venus_stone', 450);
   event.recipes.botania.orechid('ad_astra:venus_diamond_ore', 'ad_astra:venus_stone', 200);
 
+  // Ad Astra, Glacio
+  event.recipes.botania.orechid('ad_astra:glacio_coal_ore', 'ad_astra:glacio_stone', 3000);
+  event.recipes.botania.orechid('ad_astra:glacio_copper_ore', 'ad_astra:glacio_stone', 4300);
+  event.recipes.botania.orechid('ad_astra:glacio_ice_shard_ore', 'ad_astra:glacio_stone', 300);
+  event.recipes.botania.orechid('ad_astra:glacio_iron_ore', 'ad_astra:glacio_stone', 900);
+  event.recipes.botania.orechid('ad_astra:glacio_lapis_ore', 'ad_astra:glacio_stone', 50);
+
   // Marimorphosis
   // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
 });
