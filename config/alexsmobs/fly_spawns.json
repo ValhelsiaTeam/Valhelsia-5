@@ -22,6 +22,51 @@
         "value": "ad_astra:lunar_wastelands"
       },
       {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:infernal_venus_barrens"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:venus_wastelands"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:glacio_ice_peaks"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:glacio_snowy_barrens"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:martian_canyon_creek"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:martian_polar_caps"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:martian_wastelands"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:mercury_deltas"
+      },
+      {
+        "type": "REGISTRY_NAME",
+        "negate": true,
+        "value": "ad_astra:orbit"
+      },
+      {
         "type": "BIOME_TAG",
         "negate": true,
         "value": "aether:is_aether"
