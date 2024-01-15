@@ -161,9 +161,10 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid_ignem('malum:blazing_quartz_ore', 'minecraft:netherrack', 9800);
 
   // Orechid - End Stone
-  event.recipes.botania.orechid('enlightened_end:bismuth_ore', 'minecraft:end_stone', 150);
-  event.recipes.botania.orechid('enlightened_end:irradium_ore', 'minecraft:end_stone', 150);
-  event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 150);
+  event.recipes.botania.orechid('enlightened_end:bismuth_ore', 'minecraft:end_stone', 900);
+  event.recipes.botania.orechid('enlightened_end:irradium_ore', 'minecraft:end_stone', 450);
+  event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 1200);
+  event.recipes.botania.orechid('enlightened_end:adamantite_node', 'minecraft:end_stone', 30);
 
   // Orechid - Modded Stone
   // Ad Astra, Moon
