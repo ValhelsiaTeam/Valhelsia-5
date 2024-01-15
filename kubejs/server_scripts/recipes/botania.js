@@ -166,17 +166,21 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 150);
 
   // Orechid - Modded Stone
-  // Ad Astra Moon
+  // Ad Astra, Moon
   event.recipes.botania.orechid('ad_astra:moon_cheese_ore', 'ad_astra:moon_stone', 320);
   event.recipes.botania.orechid('ad_astra:moon_desh_ore', 'ad_astra:moon_stone', 600);
   event.recipes.botania.orechid('ad_astra:moon_iron_ore', 'ad_astra:moon_stone', 1080);
   event.recipes.botania.orechid('ad_astra:moon_ice_shard_ore', 'ad_astra:moon_stone', 850);
 
-  // Ad Astra Mars
+  // Ad Astra, Mars
   event.recipes.botania.orechid('ad_astra:mars_iron_ore', 'ad_astra:mars_stone', 1350);
   event.recipes.botania.orechid('ad_astra:mars_ostrum_ore', 'ad_astra:mars_stone', 530);
   event.recipes.botania.orechid('ad_astra:mars_diamond_ore', 'ad_astra:mars_stone', 150);
   event.recipes.botania.orechid('ad_astra:mars_ice_shard_ore', 'ad_astra:mars_stone', 850);
+
+  // Ad Astra, Mercury (note: Mercury only contains Iron Ore so adding Magma Blocks just so it doesn't generate only iron)
+  event.recipes.botania.orechid('ad_astra:mercury_iron_ore', 'ad_astra:mercury_stone', 1450);
+  event.recipes.botania.orechid('minecraft:magma_block', 'ad_astra:mercury_stone', 800);
 
   // Marimorphosis
   // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
