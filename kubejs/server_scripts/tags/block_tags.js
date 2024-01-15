@@ -43,6 +43,24 @@ ServerEvents.tags('block', event => {
     'immersiveengineering:seed',
   ]);
 
+  // Missing Ore Tags
+  event.add('forge:ores', [
+    'enlightened_end:bismuth_ore',
+    'enlightened_end:irradium_ore',
+  ]);
+
+  event.add('forge:ores/adamantite', [
+    'enlightened_end:adamantite_node',
+  ])
+
+  event.add('forge:ores/bismuth', [
+    'enlightened_end:bismuth_ore',
+  ])
+
+  event.add('forge:ores/irradium', [
+    'enlightened_end:irradium_ore',
+  ])
+
   // Missing Quark Revertable Chests
   event.add('quark:revertable_chests', [
     'ars_nouveau:archwood_chest'

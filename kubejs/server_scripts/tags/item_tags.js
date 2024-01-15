@@ -221,9 +221,14 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',
     'darkerdepths:limestone_silver_ore',
+    'enlightened_end:adamantite_node',
     'enlightened_end:bismuth_ore',
     'enlightened_end:irradium_ore',
     'enlightened_end:malachite_ore',
+  ]);
+
+  event.add('forge:ores/adamantite', [
+    'enlightened_end:adamantite_node',
   ]);
 
   event.add('forge:ores/bismuth', [
