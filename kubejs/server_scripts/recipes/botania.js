@@ -202,6 +202,11 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('aether:zanite_ore', 'aether:holystone', 230);
 
   // Blue Skies, Everbright
+  event.recipes.botania.orechid('blue_skies:everbright_aquite_ore', 'blue_skies:turquoise_stone', 600);
+  event.recipes.botania.orechid('blue_skies:everbright_charoite_ore', 'blue_skies:turquoise_stone', 50);
+  event.recipes.botania.orechid('blue_skies:everbright_diopside_ore', 'blue_skies:turquoise_stone', 50);
+  event.recipes.botania.orechid('blue_skies:everbright_moonstone_ore', 'blue_skies:turquoise_stone', 2300);
+  event.recipes.botania.orechid('blue_skies:everbright_pyrope_ore', 'blue_skies:turquoise_stone', 900);
 
   // Blue Skies, Everdawn
 
