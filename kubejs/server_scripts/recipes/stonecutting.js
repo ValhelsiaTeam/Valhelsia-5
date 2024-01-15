@@ -35,7 +35,7 @@ ServerEvents.recipes(event => {
     for (let i = 0; i < items.length; i++) {
       for (let j = 0; j < items.length; j++) {
         if (i != j) {
-          event.stonecutting(items[i], items[j]).id(`${ID_PREFIX}/conversion/${OutputItem.of(items[i]).item.id.replace(':', '_')}_from_${OutputItem.of(items[j]).item.id.replace(':', '_')}`);
+          event.stonecutting(items[i], items[j]).id(`${ID_PREFIX}conversion/${OutputItem.of(items[i]).item.id.replace(':', '_')}_from_${OutputItem.of(items[j]).item.id.replace(':', '_')}`);
         }
       }
     }
