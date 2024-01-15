@@ -8,7 +8,7 @@
 /**
  * @file Recipe additions for Botania's recipe types.
  * 
- * @copyright Valhelsia Inc 2023
+ * @copyright Valhelsia Inc 2023-2024
  */
 
 /**
@@ -180,14 +180,14 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('ad_astra:mars_ice_shard_ore', 'ad_astra:mars_stone', 850);
 
   // Ad Astra, Mercury (note: Mercury only contains Iron Ore so adding Magma Blocks just so it doesn't generate only iron)
-  event.recipes.botania.orechid('ad_astra:mercury_iron_ore', 'ad_astra:mercury_stone', 1450);
-  event.recipes.botania.orechid('minecraft:magma_block', 'ad_astra:mercury_stone', 800);
+  event.recipes.botania.orechid_ignem('ad_astra:mercury_iron_ore', 'ad_astra:mercury_stone', 1450);
+  event.recipes.botania.orechid_ignem('minecraft:magma_block', 'ad_astra:mercury_stone', 800);
 
   // Ad Astra, Venus
-  event.recipes.botania.orechid('ad_astra:venus_coal_ore', 'ad_astra:venus_stone', 5000);
-  event.recipes.botania.orechid('ad_astra:venus_calorite_ore', 'ad_astra:venus_stone', 700);
-  event.recipes.botania.orechid('ad_astra:venus_gold_ore', 'ad_astra:venus_stone', 450);
-  event.recipes.botania.orechid('ad_astra:venus_diamond_ore', 'ad_astra:venus_stone', 200);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_coal_ore', 'ad_astra:venus_stone', 5000);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_calorite_ore', 'ad_astra:venus_stone', 700);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_gold_ore', 'ad_astra:venus_stone', 450);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_diamond_ore', 'ad_astra:venus_stone', 200);
 
   // Ad Astra, Glacio
   event.recipes.botania.orechid('ad_astra:glacio_coal_ore', 'ad_astra:glacio_stone', 3000);
