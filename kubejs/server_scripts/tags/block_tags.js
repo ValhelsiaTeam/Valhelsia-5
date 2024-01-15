@@ -47,11 +47,18 @@ ServerEvents.tags('block', event => {
   event.add('forge:ores', [
     'enlightened_end:bismuth_ore',
     'enlightened_end:irradium_ore',
+    'forbidden_arcanus:arcane_crystal_ore',
+    'forbidden_arcanus:deepslate_arcane_crystal_ore',
   ]);
 
   event.add('forge:ores/adamantite', [
     'enlightened_end:adamantite_node',
   ])
+
+  event.add('forge:ores/arcane_crystal', [
+    'forbidden_arcanus:arcane_crystal_ore',
+    'forbidden_arcanus:deepslate_arcane_crystal_ore',
+  ]);
 
   event.add('forge:ores/bismuth', [
     'enlightened_end:bismuth_ore',
