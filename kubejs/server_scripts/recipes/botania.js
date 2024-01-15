@@ -196,9 +196,9 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('ad_astra:glacio_lapis_ore', 'ad_astra:glacio_stone', 50);
 
   // The Aether
-  event.recipes.botania.orechid('aether:ambrosium_ore', 'aether:holystone', 950);
-  event.recipes.botania.orechid('aether:gravitite_ore', 'aether:holystone', 10);
-  event.recipes.botania.orechid('aether:zanite_ore', 'aether:holystone', 90);
+  event.recipes.botania.orechid('aether:ambrosium_ore', 'aether:holystone', 1250);
+  event.recipes.botania.orechid('aether:gravitite_ore', 'aether:holystone', 40);
+  event.recipes.botania.orechid('aether:zanite_ore', 'aether:holystone', 230);
 
   // Blue Skies, Everbright
 
