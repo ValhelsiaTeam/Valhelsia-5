@@ -209,6 +209,12 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('blue_skies:everbright_pyrope_ore', 'blue_skies:turquoise_stone', 900);
 
   // Blue Skies, Everdawn
+  event.recipes.botania.orechid('blue_skies:everdawn_aquite_ore', 'blue_skies:lunar_stone', 600);
+  event.recipes.botania.orechid('blue_skies:everdawn_charoite_ore', 'blue_skies:lunar_stone', 50);
+  event.recipes.botania.orechid('blue_skies:everdawn_diopside_ore', 'blue_skies:lunar_stone', 50);
+  event.recipes.botania.orechid('blue_skies:everdawn_moonstone_ore', 'blue_skies:lunar_stone', 1850);
+  event.recipes.botania.orechid('blue_skies:everdawn_pyrope_ore', 'blue_skies:lunar_stone', 800);
+  event.recipes.botania.orechid('blue_skies:horizonite_ore', 'blue_skies:lunar_stone', 100);
 
   // Marimorphosis
   // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
