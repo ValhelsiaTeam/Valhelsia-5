@@ -28,6 +28,7 @@ ServerEvents.recipes(event => {
     'ars_nouveau:mob_jar',
     'botania:redstone_root',
     'caveenhancements:amethyst_flute',
+    'mekanism:teleportation_core',
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',
     'moreminecarts:silica_steel_smelting',

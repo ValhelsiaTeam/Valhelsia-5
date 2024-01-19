@@ -171,6 +171,18 @@ ServerEvents.recipes(event => {
   // Cave Enhancements
   plusWrapped('cave_enhancements:amethyst_flute', 'supplementaries:flute', 'minecraft:amethyst_shard', 'amethyst_flute');
 
+  // Mekanism
+  event.shaped('mekanism:teleportation_core', [
+    'PAP',
+    'CWC',
+    'PAP'
+  ], {
+    P: 'ae2:fluix_pearl',
+    A: '#forge:alloys/ultimate',
+    C: 'integrateddynamics:crystalized_chorus_chunk',
+    W: 'waystones:warp_stone'
+  }).id(`${ID_PREFIX}teleportation_core`);
+
   // Storage Drawers
   // Gated behind having steel production.
   event.shaped('storagedrawers:emerald_storage_upgrade', [
