@@ -12,10 +12,6 @@
  * fit our vision for a cohesive modpack. These are often harder to make, but not
  * always. As such, it's not really an "expert mode" as it is just our take on things.
  * 
- * Contains several convenience functions for frequently used replacement approaches.
- * The majority of the recipe changes in this script are to convert recipe inputs to
- * use tags instead of specific items, or adjusting the output where we have a prefered mod to use.
- * 
  * @copyright Valhelsia Inc 2024
  */
 
@@ -26,63 +22,6 @@ ServerEvents.recipes(event => {
   if (!global.config.overhaul) {
     return;
   }
-
-  // ----- Convenience Functions -----
-
-  /**
-   * Replaces a given input ingredient in all KubeJS-compatible recipes.
-   * @param {*} from Original ingredient.
-   * @param {*} to New ingredient.
-   */
-  const replaceInput = (from, to) => {
-    event.replaceInput({}, from, to);
-  };
-
-  /**
-   * Replaces a given output item in all KubeJS-compatible recipes.
-   * @param {*} from Original output item.
-   * @param {*} to New output item.
-   */
-  const replaceOutput = (from, to) => {
-    event.replaceOutput({}, from, to);
-  };
-
-  /**
-   * Replaces input ingredients in one or more recipes, by recipe ID.
-   * @param {string|Array} recipes One or more recipe IDs to replace ingredients in.
-   * @param {*} from Original ingredient.
-   * @param {*} to New ingredient.
-   */
-  const replaceInputID = (recipes, from, to) => {
-    if (Array.isArray(recipes)) {
-      recipes.forEach((recipeID) => event.replaceInput({id: recipeID}, from, to));
-    } else {
-      event.replaceInput({id: recipes}, from, to);
-    }
-  };
-
-  /**
-   * Replaces output items in one or more recipes, by recipe ID.
-   * @param {string|Array} recipes One or more recipe IDs to replace items in.
-   * @param {*} from Original item.
-   * @param {*} to New item.
-   */
-  const replaceOutputID = (recipes, from, to) => {
-    if (Array.isArray(recipes)) {
-      recipes.forEach((recipeID) => event.replaceOutput({id: recipeID}, from, to));
-    } else {
-      event.replaceOutput({id: recipes}, from, to);
-    }
-  };
-
-  // Replace inputs / outputs by recipe type.
-  const replaceInputType = (recipeType, from, to) => {
-    event.replaceInput({type: recipeType}, from, to);
-  };
-
-  const replaceOutputType = (recipeType, from, to) => {
-    event.replaceOutput({type: recipeType}, from, to);
-  };
 
   /// ----- Generic Replacements -----
 
@@ -101,6 +40,7 @@ ServerEvents.recipes(event => {
 
 
   // ----- Mod-specific Replacements -----
+
 
   // Xerca's Music Maker Mod
 

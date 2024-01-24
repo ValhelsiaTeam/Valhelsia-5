@@ -433,6 +433,16 @@ ServerEvents.tags('item', event => {
     'aether:skyroot_planks',
   ]);
 
+  // ----- Electronics -----
+  event.add('forge:circuits', [
+    'immersiveengineering:circuit_board',
+    'pneumaticcraft:printed_circuit_board',
+  ]);
+
+  event.add('forge:circuits/elite', [
+    'pneumaticcraft:printed_circuit_board', // Elite seems appropriate. *shrug*
+  ]);
+
   // ----- Flour & Dough -----
   event.add('forge:flour', [
     'pneumaticcraft:wheat_flour',
