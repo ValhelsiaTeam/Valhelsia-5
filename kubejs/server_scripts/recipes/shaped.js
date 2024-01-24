@@ -330,18 +330,6 @@ ServerEvents.recipes(event => {
     D: 'minecraft:iron_ingot'
   }).id(`${ID_PREFIX}steel_paxel`);
 
-  // Sophisticated Backpacks
-  event.shaped('sophisticatedbackpacks:backpack', [
-    'ACA',
-    'BDB',
-    'BBB'
-  ], {
-    A: '#valhelsia:ropes',
-    B: '#forge:leather',
-    C: 'quark:ravager_hide',
-    D: '#forge:chests/wooden'
-  }).id(`${ID_PREFIX}backpack`);
-
   // Supplementaries
   event.shaped('supplementaries:quiver', [
     'L L',

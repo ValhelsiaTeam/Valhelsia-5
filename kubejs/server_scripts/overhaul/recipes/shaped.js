@@ -74,6 +74,17 @@ ServerEvents.recipes(event => {
   }).id(`${ID_PREFIX}teleportation_core`);
 
   // ----- Sophisticated Backpacks -----
+  event.shaped('sophisticatedbackpacks:backpack', [
+    'RHR',
+    'LCL',
+    'LLL'
+  ], {
+    R: '#valhelsia:ropes',
+    L: '#forge:leather',
+    H: 'quark:ravager_hide',
+    C: '#forge:chests/wooden'
+  }).id(`${ID_PREFIX}backpack`);
+
   // Gated behind having visited the End, but otherwise cheap - void shale is plentiful.
   event.shaped('sophisticatedbackpacks:void_upgrade', [
     'VLV',

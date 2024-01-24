@@ -38,6 +38,7 @@ ServerEvents.recipes(event => {
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',
     'moreminecarts:silica_steel_smelting',
+    'sophisticatedbackpacks:backpack',
     'sophisticatedbackpacks:void_upgrade',
     'sophisticatedbackpacks:advanced_void_upgrade',
     'storagedrawers:diamond_storage_upgrade',

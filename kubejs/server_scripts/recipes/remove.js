@@ -232,9 +232,6 @@ ServerEvents.recipes(event => {
     // Quark Oddities
     'quark:oddities/crafting/backpack', // Removed entirely.
 
-    // Sophisticated Backpacks
-    'sophisticatedbackpacks:backpack', // Replaced with a different recipe.
-
     // Twilight Forest
     'twilightforest:uncrafting_table', // Removed entirely.
 
