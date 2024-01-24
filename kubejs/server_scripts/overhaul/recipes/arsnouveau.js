@@ -47,7 +47,7 @@ ServerEvents.recipes(event => {
     }).id(recipe_id);
   };
 
-  // Ars Nouveau
+  // Spellbook Upgrades
   book_upgrade('ars_nouveau:apprentice_spell_book', [
     {item: 'forbidden_arcanus:obsidian_skull'},
     {item: 'sullysmod:polished_jade'},
@@ -73,4 +73,19 @@ ServerEvents.recipes(event => {
   ],
   'ars_nouveau:apprentice_spell_book',
   `${ID_PREFIX}archmage_spell_book_upgrade`);
+
+  // Glyphs
+  event.recipes.ars_nouveau.glyph(
+    'ars_nouveau:glyph_hex',
+    [
+      'ars_nouveau:abjuration_essence',
+      'minecraft:fermented_spider_eye',
+      'minecraft:wither_rose',
+      'malum:hex_ash',
+      'malum:hex_ash',
+      'malum:hex_ash',
+    ], 
+    10
+  );
+
 });
