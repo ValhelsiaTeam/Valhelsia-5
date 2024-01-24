@@ -18,4 +18,5 @@ MoreJSEvents.registerPotionBrewing((event) => {
 
   event.addPotionBrewing('biomesoplenty:rose_quartz_shard', 'minecraft:awkward', 'cave_enhancements:reversal');
   event.addPotionBrewing('create:rose_quartz', 'minecraft:awkward', 'cave_enhancements:reversal');
+  event.addPotionBrewing('spirit:soul_powder', 'minecraft:invisibility', 'deeperdarker:sculk_affinity');
 });

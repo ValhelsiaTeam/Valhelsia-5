@@ -366,9 +366,11 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts', [
     'botania:pixie_dust',
     'create:wheat_flour',
+    'deeperdarker:soul_dust',
     'enlightened_end:stardust',
     'galosphere_delight:allurite_shiny_powder',
     'galosphere_delight:lumiere_shiny_powder',
+    'spirit:soul_powder',
     'waystones:warp_dust',
   ]);
 
@@ -382,6 +384,11 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:dusts/pixie', [
     'botania:pixie_dust',
+  ]);
+
+  event.add('forge:dusts/soul', [
+    'deeperdarker:soul_dust',
+    'spirit:soul_powder',
   ]);
 
   event.add('forge:dusts/stardust', [

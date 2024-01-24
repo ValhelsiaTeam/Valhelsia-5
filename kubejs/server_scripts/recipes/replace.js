@@ -283,6 +283,10 @@ ServerEvents.recipes(event => {
     'supplementaries:slingshot',
   ], 'minecraft:slime_ball', '#forge:slimeballs');
 
+  // Soul Dust Compatibility
+  replaceInput('deeperdarker:soul_dust', '#forge:dusts/soul');
+  replaceInput('spirit:soul_powder', '#forge:dusts/soul');
+
   // Spool (or Coil) Compatibility
   replaceInput('createaddition:copper_spool', '#valhelsia:spools/copper');
   replaceInput('immersiveengineering:wirecoil_copper', '#valhelsia:spools/copper');
