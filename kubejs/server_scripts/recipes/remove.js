@@ -33,6 +33,7 @@ ServerEvents.recipes(event => {
     'minecraft:cake', // Duplicate Recipe.
     'minecraft:comparator', // AE2 provides a better alternative.
     'minecraft:daylight_detector', // AE2 provides a better alternative.
+    'minecraft:furnace_minecart', // Replaced with new recipe.
     'minecraft:ladder',
     'minecraft:furnace', // Quark provides an alternative.
 
@@ -70,9 +71,6 @@ ServerEvents.recipes(event => {
 
     // Ars Nouveau
     'ars_nouveau:archwood_to_chest', // Duplicate Recipe.
-    'ars_nouveau:novice_spell_book', // Replaced with a different recipe.
-    'ars_nouveau:apprentice_spell_book_upgrade', // Replaced with a different recipe.
-    'ars_nouveau:archmage_spell_book_upgrade', // Replaced with a different recipe.
 
     // Botania
     'botania:pure_daisy/sand', // Now made from Soulless Sand, which is made from Soul Sand.
@@ -224,6 +222,12 @@ ServerEvents.recipes(event => {
     'quark:building/crafting/compressed/carrot_crate', // Duplicate recipe.
     'quark:building/crafting/compressed/potato_crate', // Duplicate recipe.
     'quark:building/crafting/compressed/beetroot_crate', // Duplicate recipe.
+
+    'quark:tweaks/crafting/utility/misc/furnace_minecart', // Merged into one recipe.
+    'quark:tweaks/crafting/furnaces/blackstone_minecart', 
+    'quark:tweaks/crafting/furnaces/blackstone_minecart_tweaked',
+    'quark:tweaks/crafting/furnaces/deepslate_minecart',
+    'quark:tweaks/crafting/furnaces/deepslate_minecart_tweaked', 
 
     // Quark Oddities
     'quark:oddities/crafting/backpack', // Removed entirely.

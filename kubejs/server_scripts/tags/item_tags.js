@@ -44,6 +44,13 @@ ServerEvents.tags('item', event => {
     'create:electron_tube',
     'immersiveengineering:electron_tube',
   ]);
+
+  event.add('valhelsia:furnaces', [
+    'minecraft:furnace',
+    'nethersdelight:furnace',
+    'quark:deepslate_furnace',
+    'quark:blackstone_furnace',
+  ]);
   
   event.add('valhelsia:raw_proteins', [
     '#forge:eggs',

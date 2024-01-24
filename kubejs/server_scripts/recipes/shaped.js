@@ -158,48 +158,15 @@ ServerEvents.recipes(event => {
   plusWrapped(Item.of('akashictome:tome', AKASHIC_TOME_NBT), 'minecraft:book', '#forge:bookshelves', 'filled_akashic_tome');
 
   // Minecraft
-  shaped3x3('minecraft:cobweb', 'minecraft:string', 'cobweb');
-
-  event.shaped('minecraft:dispenser', [
-    'AAA',
-    'ABA',
-    'ACA'
+  event.shaped('minecraft:bookshelf', [
+    'PPP',
+    'BBB',
+    'PPP'
   ], {
-    A: '#forge:cobblestone',
-    B: 'minecraft:crossbow',
-    C: 'minecraft:redstone'
-  }).id(`${ID_PREFIX}dispenser_with_crossbow`);
-
-  event.shaped('minecraft:chainmail_helmet', [
-    'AAA',
-    'A A'
-  ], {
-    A: 'minecraft:chain'
-  }).id(`${ID_PREFIX}chainmail_helmet`);
-
-  event.shaped('minecraft:chainmail_chestplate', [
-    'A A',
-    'AAA',
-    'AAA'
-  ], {
-    A: 'minecraft:chain'
-  }).id(`${ID_PREFIX}chainmail_chestplate`);
-
-  event.shaped('minecraft:chainmail_leggings', [
-    'AAA',
-    'A A',
-    'A A'
-  ], {
-    A: 'minecraft:chain'
-  }).id(`${ID_PREFIX}chainmail_leggings`);
-
-  event.shaped('minecraft:chainmail_boots', [
-    'A A',
-    'A A'
-  ], {
-    A: 'minecraft:chain'
-  }).id(`${ID_PREFIX}chainmail_boots`);
-
+    P: '#minecraft:planks',
+    B: 'minecraft:book'
+  }).id(`${ID_PREFIX}bookshelf`);
+  
   event.shaped('minecraft:bundle', [
     'SCS',
     'C C',
@@ -209,62 +176,72 @@ ServerEvents.recipes(event => {
     C: 'farmersdelight:canvas'
   }).id(`${ID_PREFIX}bundle`);
 
-  event.shaped('minecraft:bookshelf', [
-    'AAA',
-    'BBB',
-    'AAA'
+  event.shaped('minecraft:chainmail_helmet', [
+    'CCC',
+    'C C'
   ], {
-    A: '#minecraft:planks',
-    B: 'minecraft:book'
-  }).id(`${ID_PREFIX}bookshelf`);
+    C: 'minecraft:chain'
+  }).id(`${ID_PREFIX}chainmail_helmet`);
+
+  event.shaped('minecraft:chainmail_chestplate', [
+    'C C',
+    'CCC',
+    'CCC'
+  ], {
+    C: 'minecraft:chain'
+  }).id(`${ID_PREFIX}chainmail_chestplate`);
+
+  event.shaped('minecraft:chainmail_leggings', [
+    'CCC',
+    'C C',
+    'C C'
+  ], {
+    C: 'minecraft:chain'
+  }).id(`${ID_PREFIX}chainmail_leggings`);
+
+  event.shaped('minecraft:chainmail_boots', [
+    'C C',
+    'C C'
+  ], {
+    A: 'minecraft:chain'
+  }).id(`${ID_PREFIX}chainmail_boots`);
+
+  shaped3x3('minecraft:cobweb', 'minecraft:string', 'cobweb');
   
+  event.shaped('minecraft:dispenser', [
+    'CCC',
+    'CBC',
+    'CRC'
+  ], {
+    C: '#forge:cobblestone',
+    B: 'minecraft:crossbow',
+    R: 'minecraft:redstone'
+  }).id(`${ID_PREFIX}dispenser_with_crossbow`);
+
+  event.shaped('minecraft:furnace_minecart', [
+    'F',
+    'C',
+  ], {
+    F: '#valhelsia:furnaces',
+    C: 'minecraft:minecart'
+  }).id(`${ID_PREFIX}furnace_minecart`);
+  
+  event.shaped('minecraft:furnace_minecart', [
+    'IFI',
+    'III',
+  ], {
+    I: '#forge:ingots/iron',
+    F: '#valhelsia:furnaces'
+  }).id(`${ID_PREFIX}furnace_minecart_shortcut`);
+
   event.shaped('4x minecraft:ladder', [
-    'A A',
-    'ABA',
-    'A A'
+    'S S',
+    'SPS',
+    'S S'
   ], {
-    A: '#forge:rods/wooden',
-    B: '#minecraft:planks'
+    S: '#forge:rods/wooden',
+    P: '#minecraft:planks'
   }).id(`${ID_PREFIX}ladder`);
-
-  // Ars Nouveau
-  event.shaped('ars_nouveau:novice_spell_book', [
-    'ABC',
-    'DE ',
-    '   ',
-  ], {
-    A: 'minecraft:book',
-    B: 'forbidden_arcanus:deorum_shovel',
-    C: 'forbidden_arcanus:deorum_pickaxe',
-    D: 'forbidden_arcanus:deorum_axe',
-    E: 'forbidden_arcanus:deorum_sword',
-  }).id(`${ID_PREFIX}novice_spell_book`);
-
-  event.shaped('ars_nouveau:apprentice_spell_book', [
-    'ABC',
-    'CCD',
-    'DEE',
-  ], {
-    A: 'ars_nouveau:novice_spell_book',
-    B: 'forbidden_arcanus:obsidian_skull',
-    C: 'sullysmod:polished_jade',
-    D: 'create:polished_rose_quartz',
-    E: 'minecraft:blaze_rod',
-  }).id(`${ID_PREFIX}apprentice_spell_book`);
-
-  event.shaped('ars_nouveau:archmage_spell_book', [
-    'ABC',
-    'DDE',
-    'FFG',
-  ], {
-    A: 'ars_nouveau:apprentice_spell_book',
-    B: 'forbidden_arcanus:dark_nether_star',
-    C: 'ars_nouveau:wilden_tribute',
-    D: 'forbidden_arcanus:stellarite_piece',
-    E: 'alexsmobs:void_worm_eye',
-    F: 'forbidden_arcanus:dragon_scale',
-    G: 'minecraft:totem_of_undying',
-  }).id(`${ID_PREFIX}archmage_spell_book`);
 
   // Blue Skies
   event.shaped('3x blue_skies:spider_webbing', [

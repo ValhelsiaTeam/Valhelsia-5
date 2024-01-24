@@ -26,6 +26,9 @@ ServerEvents.recipes(event => {
   // Remove recipes by recipe ID.
   [
     'ars_nouveau:mob_jar',
+    'ars_nouveau:novice_spell_book',
+    'ars_nouveau:apprentice_spell_book_upgrade',
+    'ars_nouveau:archmage_spell_book_upgrade',
     'ars_nouveau:void_prism',
     'botania:mana_void',
     'botania:redstone_root',

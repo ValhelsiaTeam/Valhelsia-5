@@ -21,8 +21,17 @@ ServerEvents.recipes(event => {
 
   const ID_PREFIX = 'valhelsia:overhaul/crafting/shapeless/';
 
+  // Ars Nouveau
+  event.shaped('ars_nouveau:novice_spell_book', [
+    'minecraft:book',
+    'forbidden_arcanus:deorum_shovel',
+    'forbidden_arcanus:deorum_pickaxe',
+    'forbidden_arcanus:deorum_axe',
+    'forbidden_arcanus:deorum_sword',
+  ]).id(`${ID_PREFIX}novice_spell_book`);
+
   // Botania
-  event.shapless('botania:redstone_root', 'minecraft:hanging_roots');
+  event.shapeless('botania:redstone_root', 'minecraft:hanging_roots').id(`${ID_PREFIX}redstone_root`);
 
   // Supplementaries
   event.shapeless('supplementaries:globe_sepia', ['supplementaries:globe', 'supplementaries:antique_ink', '#forge:dyes/brown']).id(`${ID_PREFIX}sepia_globe`);
