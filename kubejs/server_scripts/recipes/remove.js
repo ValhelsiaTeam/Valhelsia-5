@@ -98,6 +98,9 @@ ServerEvents.recipes(event => {
     // Create Deco
     'minecraft:pressing/zinc_sheet', // Why is this in the Minecraft namespace?! Anyway, redundant item.
 
+    // Create: Steam 'n' Rails
+    'railways:jukeboxcart', // Etched provides a jukebox cart too.
+
     // Darker Depths
     'darkerdepths:rope', // Replaced with Supplementaries Rope
     'darkerdepths:silver_block', // Redundant

@@ -111,6 +111,9 @@ JEIEvents.hideItems(event => {
 
     // Create Deco
     'createdeco:zinc_sheet', // Using Create Crafts & Additions version.
+    
+    // Create: Steam 'n' Rails
+    'railways:jukeboxcart', // Using Etched version.
 
     // Decorative Blocks
     'decorative_blocks:blockstate_copy_item',
