@@ -252,6 +252,8 @@
 
   "valhelsia.comment.effects.descriptions": "-----Effect descriptions for the JEED mod-----",
   "effect.deeperdarker.sculk_affinity.description": "Prevents vibrations from being emitted.",
+  "effect.seasonals.rooted.description": "Hunger and Saturation fills up and the player heals due to natural regeneration. Once the effect ends the player loses all hunger and saturation rapidly. While the effect is active, no food can be consumed.",
+  "effect.seasonals.stuffed.description": "Gives 100% Knockback Resistance and Bonus Armor, but prevents jumping.",
 
   "valhelsia.comment.enchantments.descriptions": "-----Enchantment descriptions for tooltips-----",
   "enchantment.deeperdarker.catalysis.description": "Slain mobs spread sculk as though a catalyst were nearby",
