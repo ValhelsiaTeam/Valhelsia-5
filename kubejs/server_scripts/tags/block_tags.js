@@ -45,6 +45,8 @@ ServerEvents.tags('block', event => {
 
   // Missing Ore Tags
   event.add('forge:ores', [
+    'darkerdepths:aridrock_silver_ore',
+    'darkerdepths:limestone_silver_ore',
     'enlightened_end:bismuth_ore',
     'enlightened_end:irradium_ore',
     'forbidden_arcanus:arcane_crystal_ore',
@@ -64,9 +66,97 @@ ServerEvents.tags('block', event => {
     'enlightened_end:bismuth_ore',
   ])
 
+  event.add('forge:ores/blazing_quartz', [
+    'malum:blazing_quartz_ore',
+  ]);
+
   event.add('forge:ores/irradium', [
     'enlightened_end:irradium_ore',
   ])
+
+  event.add('forge:ores/quartz', [
+    'malum:natural_quartz_ore',
+    'malum:deepslate_quartz_ore',
+  ]);
+
+  event.add('forge:ores/soulstone', [
+    'malum:deepslate_soulstone_ore',
+    'malum:soulstone_ore',
+  ]);
+
+  event.add('forge:ores/silver', [
+    'darkerdepths:aridrock_silver_ore',
+    'darkerdepths:limestone_silver_ore',
+  ]);
+
+  // Missing Storage Block Tags
+  
+  event.add('forge:storage_blocks', [
+    'enlightened_end:adamantite_block',
+    'enlightened_end:bismuth_block',
+    'enlightened_end:depleted_irradium_block',
+    'enlightened_end:glacium_block',
+    'enlightened_end:irradium_block',
+    'enlightened_end:raw_bismuth_block',
+    'enlightened_end:raw_irradium_block',
+    'enlightened_end:stardust_block',
+    'enlightened_end:starsteel_block',
+    'moreminecarts:silica_steel_block',
+    'spirit:soul_steel_block',
+  ]);
+
+  event.add('forge:storage_blocks/adamantite', [
+    'enlightened_end:adamantite_block',
+  ]);
+
+  event.add('forge:storage_blocks/bismuth', [
+    'enlightened_end:bismuth_block',
+  ]);
+
+  event.add('forge:storage_blocks/depleted_irradium', [
+    'enlightened_end:depleted_irradium_block',
+  ]);
+
+  event.add('forge:storage_blocks/glacium', [
+    'enlightened_end:glacium_block',
+  ]);
+
+  event.add('forge:storage_blocks/irradium', [
+    'enlightened_end:irradium_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_bismuth', [
+    'enlightened_end:raw_bismuth_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_irradium', [
+    'enlightened_end:raw_irradium_block',
+  ]);
+
+  event.add('forge:storage_blocks/raw_soulstone', [
+    'malum:block_of_raw_soulstone',
+  ]);
+
+  event.add('forge:storage_blocks/soulstone', [
+    'malum:block_of_soulstone',
+  ]);
+
+  event.add('forge:storage_blocks/soul_steel', [
+    'malum:block_of_soul_stained_steel',
+    'spirit:soul_steel_block',
+  ]);
+
+  event.add('forge:storage_blocks/stardust', [
+    'enlightened_end:stardust_block',
+  ]);
+
+  event.add('forge:storage_blocks/starsteel', [
+    'enlightened_end:starsteel_block',
+  ]);
+
+  event.add('forge:storage_blocks/silica_steel', [
+    'moreminecarts:silica_steel_block',
+  ]);
 
   // Missing Quark Revertable Chests
   event.add('quark:revertable_chests', [

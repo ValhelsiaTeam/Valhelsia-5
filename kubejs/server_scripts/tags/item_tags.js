@@ -247,6 +247,10 @@ ServerEvents.tags('item', event => {
     'enlightened_end:bismuth_ore',
   ]);
 
+  event.add('forge:ores/blazing_quartz', [
+    'malum:blazing_quartz_ore',
+  ]);
+
   event.add('forge:ores/irradium', [
     'enlightened_end:irradium_ore',
   ]);
@@ -254,16 +258,22 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores/malachite', [
     'enlightened_end:malachite_ore',
   ]);
-
+  
   event.add('forge:ores/silver', [
     'darkerdepths:aridrock_silver_ore',
     'darkerdepths:limestone_silver_ore',
+  ]);
+
+  event.add('forge:ores/soulstone', [
+    'malum:deepslate_soulstone_ore',
+    'malum:soulstone_ore',
   ]);
 
   // ----- Raw Ores -----
   event.add('forge:raw_materials', [
     'enlightened_end:raw_bismuth',
     'enlightened_end:raw_irradium',
+    'malum:raw_soulstone',
   ]);
 
   event.add('forge:raw_materials/bismuth', [
@@ -272,6 +282,10 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:raw_materials/irradium', [
     'enlightened_end:raw_irradium',
+  ]);
+
+  event.add('forge:raw_materials/soulstone', [
+    'malum:raw_soulstone',
   ]);
 
   // ----- Ingots -----
@@ -287,18 +301,18 @@ ServerEvents.tags('item', event => {
     'enlightened_end:bismuth_ingot',
   ]);
 
-  event.add('forge:ingots/starsteel', [
-    'enlightened_end:starsteel_ingot',
-  ]);
-
   event.add('forge:ingots/silica_steel', [
     'moreminecarts:silica_steel',
   ]);
 
-  event.add('forge:ingots/soul_stained_steel', [
+  event.add('forge:ingots/soul_steel', [
     'malum:soul_stained_steel_ingot',
+    'spirit:soul_steel_ingot',
   ]);
 
+  event.add('forge:ingots/starsteel', [
+    'enlightened_end:starsteel_ingot',
+  ]);
   // ----- Storage Blocks -----
   event.add('forge:storage_blocks', [
     'enlightened_end:adamantite_block',
@@ -310,6 +324,8 @@ ServerEvents.tags('item', event => {
     'enlightened_end:raw_irradium_block',
     'enlightened_end:stardust_block',
     'enlightened_end:starsteel_block',
+    'malum:block_of_hex_ash',
+    'malum:block_of_raw_soulstone',
     'malum:block_of_soulstone',
     'malum:block_of_soul_stained_steel',
     'moreminecarts:silica_steel_block',
@@ -331,6 +347,10 @@ ServerEvents.tags('item', event => {
     'enlightened_end:glacium_block',
   ]);
 
+  event.add('forge:storage_blocks/hex_ash', [
+    'malum:block_of_hex_ash',
+  ]);
+
   event.add('forge:storage_blocks/irradium', [
     'enlightened_end:irradium_block',
   ]);
@@ -343,12 +363,17 @@ ServerEvents.tags('item', event => {
     'enlightened_end:raw_irradium_block',
   ]);
 
+  event.add('forge:storage_blocks/raw_soulstone', [
+    'malum:block_of_raw_soulstone',
+  ]);
+
   event.add('forge:storage_blocks/soulstone', [
     'malum:block_of_soulstone',
   ]);
 
-  event.add('forge:storage_blocks/soul_stained_steel', [
+  event.add('forge:storage_blocks/soul_steel', [
     'malum:block_of_soul_stained_steel',
+    'spirit:soul_steel_block',
   ]);
 
   event.add('forge:storage_blocks/stardust', [
@@ -373,7 +398,7 @@ ServerEvents.tags('item', event => {
     'enlightened_end:bismuth_nugget',
   ]);
 
-  event.add('forge:nuggets/soul_stained', [
+  event.add('forge:nuggets/soul_steel', [
     'malum:soul_stained_steel_nugget',
   ]);
 
@@ -389,12 +414,18 @@ ServerEvents.tags('item', event => {
     'enlightened_end:stardust',
     'galosphere_delight:allurite_shiny_powder',
     'galosphere_delight:lumiere_shiny_powder',
+    'malum:crushed_soulstone',
+    'malum:hex_ash',
     'spirit:soul_powder',
     'waystones:warp_dust',
   ]);
 
   event.add('forge:dusts/allurite', [
     'galosphere_delight:allurite_shiny_powder',
+  ]);
+
+  event.add('forge:dusts/hex_ash', [
+    'malum:hex_ash',
   ]);
 
   event.add('forge:dusts/lumiere', [
@@ -408,6 +439,10 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts/soul', [
     'deeperdarker:soul_dust',
     'spirit:soul_powder',
+  ]);
+
+  event.add('forge:dusts/soulstone', [
+    'malum:crushed_soulstone',
   ]);
 
   event.add('forge:dusts/stardust', [
@@ -429,8 +464,11 @@ ServerEvents.tags('item', event => {
 
   // ----- Gems -----
   event.add('forge:gems', [
+    'deeperdarker:soul_crystal',
     'enlightened_end:glacium',
     'enlightened_end:malachite',
+    'spirit:crude_soul_crystal',
+    'spirit:soul_crystal',
   ]);
   
   event.add('forge:gems/glacium', [
@@ -439,6 +477,12 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:gems/malachite', [
     'enlightened_end:malachite',
+  ]);
+
+  event.add('forge:gems/soul',[
+    'deeperdarker:soul_crystal',
+    'spirit:crude_soul_crystal',
+    'spirit:soul_crystal',
   ]);
 
   event.add('forge:gems/soulstone',[
