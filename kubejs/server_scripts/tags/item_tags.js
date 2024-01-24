@@ -279,6 +279,7 @@ ServerEvents.tags('item', event => {
     'createdeco:cast_iron_ingot',
     'enlightened_end:bismuth_ingot',
     'enlightened_end:starsteel_ingot',
+    'malum:soul_stained_steel_ingot',
     'moreminecarts:silica_steel',
   ]);
 
@@ -294,6 +295,10 @@ ServerEvents.tags('item', event => {
     'moreminecarts:silica_steel',
   ]);
 
+  event.add('forge:ingots/soul_stained_steel', [
+    'malum:soul_stained_steel_ingot',
+  ]);
+
   // ----- Storage Blocks -----
   event.add('forge:storage_blocks', [
     'enlightened_end:adamantite_block',
@@ -305,6 +310,8 @@ ServerEvents.tags('item', event => {
     'enlightened_end:raw_irradium_block',
     'enlightened_end:stardust_block',
     'enlightened_end:starsteel_block',
+    'malum:block_of_soulstone',
+    'malum:block_of_soul_stained_steel',
     'moreminecarts:silica_steel_block',
   ]);
 
@@ -336,6 +343,14 @@ ServerEvents.tags('item', event => {
     'enlightened_end:raw_irradium_block',
   ]);
 
+  event.add('forge:storage_blocks/soulstone', [
+    'malum:block_of_soulstone',
+  ]);
+
+  event.add('forge:storage_blocks/soul_stained_steel', [
+    'malum:block_of_soul_stained_steel',
+  ]);
+
   event.add('forge:storage_blocks/stardust', [
     'enlightened_end:stardust_block',
   ]);
@@ -356,6 +371,10 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:nuggets/bismuth', [
     'enlightened_end:bismuth_nugget',
+  ]);
+
+  event.add('forge:nuggets/soul_stained', [
+    'malum:soul_stained_steel_nugget',
   ]);
 
   event.add('forge:nuggets/starsteel', [
@@ -420,6 +439,10 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:gems/malachite', [
     'enlightened_end:malachite',
+  ]);
+
+  event.add('forge:gems/soulstone',[
+    'malum:processed_soulstone',
   ]);
 
   // ----- Logs / Wood -----
