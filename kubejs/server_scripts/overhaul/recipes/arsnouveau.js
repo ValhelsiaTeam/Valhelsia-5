@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
     return;
   }
 
-  const ID_PREFIX = 'valhelsia:overhaul/arsnouveau/';
+  const ID_PREFIX = 'valhelsia:overhaul/ars_nouveau/';
 
   /**
    * Creates a new recipe to upgrade an Ars Nouveau spellbook.
@@ -86,6 +86,6 @@ ServerEvents.recipes(event => {
       'malum:hex_ash',
     ], 
     10
-  );
+  ).id(`${ID_PREFIX}glyph_hex`);
 
 });
