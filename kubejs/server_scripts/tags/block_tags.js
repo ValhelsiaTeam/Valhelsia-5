@@ -158,11 +158,6 @@ ServerEvents.tags('block', event => {
     'moreminecarts:silica_steel_block',
   ]);
 
-  // Missing Quark Revertable Chests
-  event.add('quark:revertable_chests', [
-    'ars_nouveau:archwood_chest'
-  ]);
-
   // Create
   event.add('create:fan_processing_catalysts/haunting', [
     'decorative_blocks:soul_brazier',

@@ -817,5 +817,13 @@ ServerEvents.tags('item', event => {
     'alexsdelight:maggot_salad',
     'alexsmobs:maggot',
   ]);
+  
+  // Quark Revertable Chests
+  event.add('quark:revertable_chests', [
+    'ars_nouveau:archwood_chest',
+    /ad_astra:.*_chest$/,
+    /blue_skies:.*_chest$/,
+    /twilightforest:.*_chest$/,
+  ]);
 
 });
