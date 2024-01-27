@@ -59,6 +59,14 @@ ServerEvents.recipes(event => {
   event.recipes.botania.mana_infusion('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/kelp_to_seagrass`);
   event.recipes.botania.mana_infusion('minecraft:weeping_vines', 'minecraft:twisting_vines', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/twisting_vines_to_weeping_vines`);
   event.recipes.botania.mana_infusion('minecraft:twisting_vines', 'minecraft:weeping_vines', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/weeping_vines_to_twisting_vines`);
+
+  event.recipes.botania.mana_infusion('blue_skies:starlit_vine', 'blue_skies:bluebright_vine', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/bluebright_vine_to_starlit_vine`);
+  event.recipes.botania.mana_infusion('blue_skies:frostbright_vine', 'blue_skies:starlit_vine', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/starlit_vine_to_frostbright_vine`);
+  event.recipes.botania.mana_infusion('blue_skies:lunar_vine', 'blue_skies:frostbright_vine', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/frostbright_vine_to_lunar_vine`);
+  event.recipes.botania.mana_infusion('blue_skies:dusk_vine', 'blue_skies:lunar_vine', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/lunar_vine_to_dusk_vine`);
+  event.recipes.botania.mana_infusion('blue_skies:maple_vine', 'blue_skies:dusk_vine', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/dusk_vine_to_maple_vine`);
+  event.recipes.botania.mana_infusion('blue_skies:bluebright_vine', 'blue_skies:maple_vine', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/maple_vine_to_bluebright_vine`);
+
   event.recipes.botania.mana_infusion('darkerdepths:lush_sprouts', 'biomesoplenty:sprout', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/sprout_to_lush_sprouts`);
   
 
