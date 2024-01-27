@@ -57,6 +57,8 @@ ServerEvents.recipes(event => {
   // Mana Infusion - Alchemy
   event.recipes.botania.mana_infusion('minecraft:kelp', 'minecraft:seagrass', 200, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/seagrass_to_kelp`);
   event.recipes.botania.mana_infusion('minecraft:seagrass', 'minecraft:kelp', 200, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/kelp_to_seagrass`);
+  event.recipes.botania.mana_infusion('minecraft:weeping_vines', 'minecraft:twisting_vines', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/twisting_vines_to_weeping_vines`);
+  event.recipes.botania.mana_infusion('minecraft:twisting_vines', 'minecraft:weeping_vines', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/weeping_vines_to_twisting_vines`);
   event.recipes.botania.mana_infusion('darkerdepths:lush_sprouts', 'biomesoplenty:sprout', 500, 'botania:alchemy_catalyst').id(`${ID_PREFIX}alchemy/sprout_to_lush_sprouts`);
   
 
