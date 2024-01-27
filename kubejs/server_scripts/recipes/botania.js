@@ -93,9 +93,6 @@ ServerEvents.recipes(event => {
   conj2x('biomesoplenty:sprout');
   conj2x('biomesoplenty:watergrass');
 
-  conj2x('blue_skies:cryo_root', CONJ_COST_MED);
-  conj2x('blue_skies:lucentroot', CONJ_COST_MED);
-
   conj2x('darkerdepths:dry_sprouts');
   conj2x('darkerdepths:glowshroom', CONJ_COST_MED);
   conj2x('darkerdepths:glowshroom_block', CONJ_COST_LRG);
