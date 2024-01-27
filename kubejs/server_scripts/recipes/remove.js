@@ -129,6 +129,8 @@ ServerEvents.recipes(event => {
 
     // Immersive Engineering
     'immersiveengineering:crafting/paper_from_sawdust', // Removed since Mekanism method made this redundant.
+    'immersiveengineering:cloche/glow_berries', // Replaced with recipe that uses Glow Berry Pips
+    'immersiveengineering:cloche/sweet_berries', // Replaced with recipe that uses Sweet Berry Pips
     'immersiveengineering:metalpress/blaze_rod', // Replaced to avoid blaze powder duping - changed from 4 dust to 6.
     
     // Redundant IE Metal Recipes (either duplicate or replaced)

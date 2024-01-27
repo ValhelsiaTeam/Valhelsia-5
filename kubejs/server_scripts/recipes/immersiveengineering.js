@@ -118,14 +118,94 @@ ServerEvents.recipes(event => {
   event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5);
 
   // Cloche Recipes
-  event.recipes.immersiveengineering.cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', 1000, {type: 'generic', block: 'minecraft:crimson_fungus'});
-  event.recipes.immersiveengineering.cloche(['minecraft:warped_fungus'], 'minecraft:warped_fungus', 'minecraft:warped_nylium', 1000, {type: 'generic', block: 'minecraft:warped_fungus'});
-  event.recipes.immersiveengineering.cloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', 800, {type: 'crop', block: 'atmospheric:aloe_vera'});
-  event.recipes.immersiveengineering.cloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', 560, {type: 'crop', block: 'autumnity:foul_berry_bush'});
-  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:deorum_nugget'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:magical_farmland', 1600, {type: 'crop', block: 'forbidden_arcanus:golden_orchid'});
-  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_crystal_dust_speck'], 'forbidden_arcanus:nipa', 'forbidden_arcanus:magical_farmland', 1600, {type: 'generic', block: 'forbidden_arcanus:nipa'});
-  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:fungyss'], 'forbidden_arcanus:fungyss', 'minecraft:diorite', 1000, {type: 'generic', block: 'forbidden_arcanus:fungyss'});
-  event.recipes.immersiveengineering.cloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', 800, {type: 'crop', block: 'neapolitan:strawberry_bush'});
+  // Note: IE's default times also include 640 for wheat + glow berries, but I'd rather keep things more consistent.
+  const CLOCHE_TIME_FLOWERS = 480;
+  const CLOCHE_TIME_FRUITS = 560;
+  const CLOCHE_TIME_CROPS = 800;
+  const CLOCHE_TIME_MAGICAL = 1600;
+
+  // Temporary: These have been added to IE on GitHub but not released on CurseForge yet:
+  event.recipes.immersiveengineering.cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:crimson_fungus'}).id(`${ID_PREFIX}cloche/crimson_fungus`);
+  event.recipes.immersiveengineering.cloche(['minecraft:warped_fungus'], 'minecraft:warped_fungus', 'minecraft:warped_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:warped_fungus'}).id(`${ID_PREFIX}cloche/warped_fungus`);
+  ALL_VANILLA_FLOWERS.forEach((flower) => {
+    let itemID = `minecraft:${flower}`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/${flower}`);
+  });
+
+  event.recipes.immersiveengineering.cloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', CLOCHE_TIME_CROPS, {type: 'crop', block: 'atmospheric:aloe_vera'}).id(`${ID_PREFIX}cloche/aloe_vera`);
+
+  [
+    'water_hyacinth', 
+    'warm_monkey_brush', 
+    'hot_monkey_brush', 
+    'scalding_monkey_brush', 
+    'gilia', 
+    'yucca_flower', 
+    'tall_yucca_flower'
+  ].forEach((flower) => {
+    let itemID = `atmospheric:${flower}`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/${flower}`);
+  });
+
+  event.recipes.immersiveengineering.cloche(['autumnity:autumn_crocus'], 'autumnity:autumn_crocus', 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'autumnity:autumn_crocus'}).id(`${ID_PREFIX}cloche/autumn_crocus`);
+  event.recipes.immersiveengineering.cloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', CLOCHE_TIME_FRUITS, {type: 'crop', block: 'autumnity:foul_berry_bush'}).id(`${ID_PREFIX}cloche/foul_berries`);
+
+  event.recipes.immersiveengineering.cloche(['2x minecraft:glow_berries'], 'berry_good:glow_berry_pips', 'minecraft:moss', CLOCHE_TIME_FRUITS, {type: 'crop', block: 'minecraft:cave_vines'}).id(`${ID_PREFIX}cloche/glow_berries`);
+  event.recipes.immersiveengineering.cloche(['2x minecraft:sweet_berries'], 'berry_good:sweet_berry_pips', 'minecraft:dirt', CLOCHE_TIME_FRUITS, {type: 'crop', block: 'minecraft:sweet_berry_bush'}).id(`${ID_PREFIX}cloche/sweet_berries`);
+
+  event.recipes.immersiveengineering.cloche(['biomesoplenty:toadstool'], 'biomesoplenty:toadstool', ['minecraft:mycelium', 'minecraft:podzol'], CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'biomesoplenty:toadstool'}).id(`${ID_PREFIX}cloche/toadstool`);
+  ALL_BOP_FLOWERS.forEach((flower) => {
+    let itemID = `biomesoplenty:${flower}`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/bop_${flower}`);
+  });
+  
+  ALL_BLUE_SKIES_FLOWERS.forEach((flower) => {
+    // Note: Blue Skies flowers can all grow on either of the two Blue Skies dirt types, even if that isn't where they naturally grow - makes the script simpler.
+    let itemID = `blue_skies:${flower}`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, ['blue_skies:turquoise_dirt', 'blue_skies:lunar_dirt'], CLOCHE_TIME_FLOWERS, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/${flower}`)
+  });
+
+  COLORS.forEach((color) => {
+    // Botania Mystical Flowers
+    let itemID = `botania:${color}_mystical_flower`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, ['minecraft:dirt'], CLOCHE_TIME_MAGICAL, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/${color}_mystical_flower`);
+
+    // Botania Shimmering Mushrooms
+    itemID = `botania:${color}_mushroom`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, ['minecraft:mycelium', 'minecraft:podzol'], CLOCHE_TIME_MAGICAL, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/${color}_mushroom`);
+  });
+
+  event.recipes.immersiveengineering.cloche(['buzzier_bees:buttercup'], 'buzzier_bees:buttercup', 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'buzzier_bees:buttercup'}).id(`${ID_PREFIX}cloche/buttercup`);
+  event.recipes.immersiveengineering.cloche(['buzzier_bees:white_clover'], 'buzzier_bees:white_clover', 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'buzzier_bees:white_clover'}).id(`${ID_PREFIX}cloche/white_clover`);
+  event.recipes.immersiveengineering.cloche(['buzzier_bees:pink_clover'], 'buzzier_bees:pink_clover', 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'buzzier_bees:pink_clover'}).id(`${ID_PREFIX}cloche/pink_clover`);
+
+  [
+    'cartwheel',
+    'bluebell',
+    'violet',
+    'dianthus',
+    'red_lotus_flower',
+    'white_lotus_flower',
+    'yellow_hibiscus',
+    'orange_hibiscus',
+    'red_hibiscus',
+    'pink_hibiscus',
+    'magenta_hibiscus',
+    'purple_hibiscus',
+  ].forEach((flower) => {
+    let itemID = `environmental:${flower}`;
+    event.recipes.immersiveengineering.cloche([itemID], itemID, 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: itemID}).id(`${ID_PREFIX}cloche/environmental_${flower}`);
+  });
+
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:deorum_nugget'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:magical_farmland', CLOCHE_TIME_MAGICAL, {type: 'crop', block: 'forbidden_arcanus:golden_orchid'}).id(`${ID_PREFIX}cloche/golden_orchid`);
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_crystal_dust_speck'], 'forbidden_arcanus:nipa', 'forbidden_arcanus:magical_farmland', CLOCHE_TIME_MAGICAL, {type: 'generic', block: 'forbidden_arcanus:nipa'}).id(`${ID_PREFIX}cloche/nipa`);
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:fungyss'], 'forbidden_arcanus:fungyss', 'minecraft:diorite', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'forbidden_arcanus:fungyss'}).id(`${ID_PREFIX}cloche/fungyss`);
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:yellow_orchid'], 'forbidden_arcanus:yellow_orchid', 'minecraft:dirt', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'forbidden_arcanus:yellow_orchid'}).id(`${ID_PREFIX}cloche/yellow_orchid`);
+
+  event.recipes.immersiveengineering.cloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', CLOCHE_TIME_CROPS, {type: 'crop', block: 'neapolitan:strawberry_bush'}).id(`${ID_PREFIX}cloche/strawberries`);
+
+  event.recipes.immersiveengineering.cloche(['upgrade_aquatic:white_searocket'], 'upgrade_aquatic:white_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:white_searocket'}).id(`${ID_PREFIX}cloche/white_searocket`);
+  event.recipes.immersiveengineering.cloche(['upgrade_aquatic:pink_searocket'], 'upgrade_aquatic:pink_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:pink_searocket'}).id(`${ID_PREFIX}cloche/pink_searocket`);
   
   // Metal Press Unpacking Recipes
   unpack('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block');

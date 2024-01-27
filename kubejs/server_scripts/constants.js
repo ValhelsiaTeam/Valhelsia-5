@@ -76,3 +76,60 @@ const ALL_VANILLA_WOOD_TYPES = [
   'spruce',
   'warped',
 ];
+
+const ALL_VANILLA_FLOWERS = [
+  'allium',
+  'azure_bluet',
+  'blue_orchid',
+  'cornflower',
+  'dandelion',
+  'lilac',
+  'lily_of_the_valley',
+  'orange_tulip',
+  'oxeye_daisy',
+  'peony',
+  'pink_tulip',
+  'poppy',
+  'red_tulip',
+  'rose_bush',
+  'sunflower',
+  'white_tulip',
+  'wither_rose',
+];
+
+const ALL_BOP_FLOWERS = [
+  'rose',
+  'violet',
+  'lavender',
+  'wildflower',
+  'orange_cosmos',
+  'pink_daffodil',
+  'pink_hibiscus',
+  'glowflower',
+  'wilted_lily',
+  'burning_blossom',
+  'tall_lavender',
+  'blue_hydrangea',
+  'goldenrod',
+  'icy_iris',
+];
+
+const ALL_BLUE_SKIES_FLOWERS = [
+  'camellia',
+  'snowbloom',
+  'blush_blossom',
+  'polar_posy',
+  'chillweed',
+  'brittlebush',
+  'briskbloom',
+  'frose',
+  'midday_bayhop',
+  'moonlit_bloom',
+  'crystal_flower',
+  'blaze_bud',
+  'flare_floret',
+  'nightcress',
+  'muckweed',
+  'lucentroot',
+  
+];
