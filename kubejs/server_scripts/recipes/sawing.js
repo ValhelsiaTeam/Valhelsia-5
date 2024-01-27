@@ -18,16 +18,31 @@
  * Sawing Recipe Event Handler
  */
 ServerEvents.recipes(event => {
+  const ID_PREFIX = 'valhelsia:sawing/';
 
   /**
    * Creates a sawing recipe for multiple mods.
    * @param {(string|Item)} output The resulting item(s).
    * @param {(string|InputItem)} input A single ingredient to saw.
+   * @param {(string|Item|Array)} secondary An optional secondary output.
    */
-  const saw = (output, input) => {
-    event.recipes.immersiveengineering.sawmill(output, input);
+  const saw = (output, input, secondary) => {
+    let recipeIDLocal = `${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`;
 
-    // TODO: Expand this to allow secondary outputs and stripping.
+    if (typeof secondary != 'undefined') {
+      if (Array.isArray(secondary)) {
+        event.recipes.immersiveengineering.sawmill(output, input, secondary).id(`${ID_PREFIX}immersiveengineering/${recipeIDLocal}`);
+        event.recipes.create.cutting(output.concat(secondary), input).processingTime(50).id(`${ID_PREFIX}create/${recipeIDLocal}`);
+      } else {
+        event.recipes.immersiveengineering.sawmill(output, input, [secondary]).id(`${ID_PREFIX}immersiveengineering/${recipeIDLocal}`);
+        event.recipes.create.cutting([output, secondary], input).processingTime(50).id(`${ID_PREFIX}create/${recipeIDLocal}`);
+      }
+    } else {
+      event.recipes.immersiveengineering.sawmill(output, input).id(`${ID_PREFIX}immersiveengineering/${recipeIDLocal}`);
+      event.recipes.create.cutting(output, input).processingTime(50).id(`${ID_PREFIX}create/${recipeIDLocal}`);
+    }
+
+    // TODO: Expand this to allow stripping.
     // For future reference:
     // event.recipes.immersiveengineeringSawmill(output, input, [secondaries]) // Secondary output format: {stripping: true, output: 'item:id'}
     // event.recipes.immersiveengineeringSawmill(output, input, [secondaries], stripped)
