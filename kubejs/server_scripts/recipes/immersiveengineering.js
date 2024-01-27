@@ -118,14 +118,14 @@ ServerEvents.recipes(event => {
   event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5);
 
   // Cloche Recipes
-  //event.recipes.immersiveengineering.cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', 1000, {type: 'generic', block: 'minecraft:crimson_fungus'});
-  //event.recipes.immersiveengineering.cloche(['minecraft:warped_fungus'], 'minecraft:warped_fungus', 'minecraft:warped_nylium', 1000, {type: 'generic', block: 'minecraft:warped_fungus'});
-  //event.recipes.immersiveengineering.cloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', 800, {type: 'crop', block: 'atmospheric:aloe_vera'});
-  //event.recipes.immersiveengineering.cloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', 560, {type: 'crop', block: 'autumnity:foul_berry_bush'});
-  //event.recipes.immersiveengineering.cloche(['forbidden_arcanus:deorum_nugget'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:magical_farmland', 1600, {type: 'crop', block: 'forbidden_arcanus:golden_orchid'});
-  //event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_crystal_dust_speck'], 'forbidden_arcanus:nipa', 'forbidden_arcanus:magical_farmland', 1600, {type: 'generic', block: 'forbidden_arcanus:nipa'});
-  //event.recipes.immersiveengineering.cloche(['forbidden_arcanus:fungyss'], 'forbidden_arcanus:fungyss', 'minecraft:diorite', 1000, {type: 'generic', block: 'forbidden_arcanus:fungyss'});
-  //event.recipes.immersiveengineering.cloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', 800, {type: 'crop', block: 'neapolitan:strawberry_bush'});
+  event.recipes.immersiveengineering.cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', 1000, {type: 'generic', block: 'minecraft:crimson_fungus'});
+  event.recipes.immersiveengineering.cloche(['minecraft:warped_fungus'], 'minecraft:warped_fungus', 'minecraft:warped_nylium', 1000, {type: 'generic', block: 'minecraft:warped_fungus'});
+  event.recipes.immersiveengineering.cloche(['2x atmospheric:aloe_leaves', '2x minecraft:yellow_dye', 'atmospheric:aloe_kernels'], 'atmospheric:aloe_kernels', 'atmospheric:arid_sand', 800, {type: 'crop', block: 'atmospheric:aloe_vera'});
+  event.recipes.immersiveengineering.cloche(['2x autumnity:foul_berries'], 'autumnity:foul_berry_pips', 'minecraft:dirt', 560, {type: 'crop', block: 'autumnity:foul_berry_bush'});
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:deorum_nugget'], 'forbidden_arcanus:golden_orchid_seeds', 'forbidden_arcanus:magical_farmland', 1600, {type: 'crop', block: 'forbidden_arcanus:golden_orchid'});
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:arcane_crystal_dust_speck'], 'forbidden_arcanus:nipa', 'forbidden_arcanus:magical_farmland', 1600, {type: 'generic', block: 'forbidden_arcanus:nipa'});
+  event.recipes.immersiveengineering.cloche(['forbidden_arcanus:fungyss'], 'forbidden_arcanus:fungyss', 'minecraft:diorite', 1000, {type: 'generic', block: 'forbidden_arcanus:fungyss'});
+  event.recipes.immersiveengineering.cloche(['2x neapolitan:strawberries'], 'neapolitan:strawberry_pips', 'minecraft:dirt', 800, {type: 'crop', block: 'neapolitan:strawberry_bush'});
   
   // Metal Press Unpacking Recipes
   unpack('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block');
