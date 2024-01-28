@@ -132,6 +132,7 @@
   crush('4x biomesoplenty:rose_quartz_shard', 'biomesoplenty:rose_quartz_block');
   crush('immersiveengineering:slag_gravel', 'immersiveengineering:slag');
   crush('create:cinder_flour', '#forge:netherrack', Item.of('create:cinder_flour').withChance(0.5));
+  crush('immersiveengineering:dust_sulfur', 'biomesoplenty:brimstone');
 
   // Glass Crushing
   crush('quark:clear_shard', 'minecraft:glass_bottle');

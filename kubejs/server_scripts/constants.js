@@ -131,5 +131,4 @@ const ALL_BLUE_SKIES_FLOWERS = [
   'nightcress',
   'muckweed',
   'lucentroot',
-  
 ];

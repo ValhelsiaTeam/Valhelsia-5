@@ -11,7 +11,7 @@
  * Includes a function to add sawing recipes to multiple mods at the same time.
  * Also replaces some existing sawing recipes in order to unify them between mods.
  * 
- * @copyright Valhelsia Inc 2023
+ * @copyright Valhelsia Inc 2023-2024
  */
 
 /**
@@ -44,8 +44,8 @@ ServerEvents.recipes(event => {
 
     // TODO: Expand this to allow stripping.
     // For future reference:
-    // event.recipes.immersiveengineeringSawmill(output, input, [secondaries]) // Secondary output format: {stripping: true, output: 'item:id'}
-    // event.recipes.immersiveengineeringSawmill(output, input, [secondaries], stripped)
+    // event.recipes.immersiveengineering.sawmill(output, input, [secondaries]) // Secondary output format: {stripping: true, output: 'item:id'}
+    // event.recipes.immersiveengineering.sawmill(output, input, [secondaries], stripped)
 
     // TODO: Add other mods.
   };
