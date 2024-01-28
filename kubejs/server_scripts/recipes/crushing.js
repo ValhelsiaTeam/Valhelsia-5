@@ -11,7 +11,7 @@
  * Includes functions to add crushing and milling recipes to multiple mods at the same time.
  * Also replaces some existing crushing recipes in order to unify them between mods.
  * 
- * @copyright Valhelsia Inc 2023
+ * @copyright Valhelsia Inc 2023-2024
  */
 
 /**
@@ -139,6 +139,7 @@
   crush('3x quark:clear_shard', 'minecraft:glass');
   crush('3x quark:dirty_shard', 'quark:dirty_glass');
   COLORS.forEach((color) => crush(`3x quark:${color}_shard`, `minecraft:${color}_stained_glass`));
+  COLORS.forEach((color) => crush(`3x quark:${color}_shard`, `valhelsia_structures:${color}_metal_framed_glass`, Item.of('mekanism:dust_iron').withChance(0.0625)));
 
   // Dusts
   crush('immersiveengineering:dust_aluminum', '#forge:ingots/aluminum');
