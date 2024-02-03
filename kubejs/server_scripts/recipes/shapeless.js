@@ -59,13 +59,13 @@ ServerEvents.recipes(event => {
   event.shapeless('tetra:forged_platform', ['tetra:forged_platform_slab', 'tetra:forged_platform_slab']).id(`${ID_PREFIX}forged_platform_slab_to_forged_platform`);
 
   // Vertical Slabs Compat
-  event.shapeless('v_slab_compat:create:waxed_copper_shingle_vertical_slab', ['v_slab_compat:create/copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_copper_shingle_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_exposed_copper_shingle_vertical_slab', ['v_slab_compat:create/exposed_copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_exposed_copper_shingle_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_oxidized_copper_shingle_vertical_slab', ['v_slab_compat:create/oxidized_copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_oxidized_copper_shingle_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_weathered_copper_shingle_vertical_slab', ['v_slab_compat:create/weathered_copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_weathered_copper_shingle_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_copper_tile_vertical_slab', ['v_slab_compat:create/copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_copper_tile_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_exposed_copper_tile_vertical_slab', ['v_slab_compat:create/exposed_copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_exposed_copper_tile_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_oxidized_copper_tile_vertical_slab', ['v_slab_compat:create/oxidized_copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_oxidized_copper_tile_vertical_slab`);
-  event.shapeless('v_slab_compat:create:waxed_weathered_copper_tile_vertical_slab', ['v_slab_compat:create/weathered_copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_weathered_copper_tile_vertical_slab`);
-  event.shapeless('v_slab_compat:enlightened_end:waxed_bismuth_sheet_vertical_slab', ['v_slab_compat:enlightened_end/bismuth_sheet_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_bismuth_sheet_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_copper_shingle_vertical_slab', ['v_slab_compat:create/copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_copper_shingle_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_exposed_copper_shingle_vertical_slab', ['v_slab_compat:create/exposed_copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_exposed_copper_shingle_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_oxidized_copper_shingle_vertical_slab', ['v_slab_compat:create/oxidized_copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_oxidized_copper_shingle_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_weathered_copper_shingle_vertical_slab', ['v_slab_compat:create/weathered_copper_shingle_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_weathered_copper_shingle_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_copper_tile_vertical_slab', ['v_slab_compat:create/copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_copper_tile_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_exposed_copper_tile_vertical_slab', ['v_slab_compat:create/exposed_copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_exposed_copper_tile_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_oxidized_copper_tile_vertical_slab', ['v_slab_compat:create/oxidized_copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_oxidized_copper_tile_vertical_slab`);
+  event.shapeless('v_slab_compat:create/waxed_weathered_copper_tile_vertical_slab', ['v_slab_compat:create/weathered_copper_tile_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_weathered_copper_tile_vertical_slab`);
+  event.shapeless('v_slab_compat:enlightened_end/waxed_bismuth_sheet_vertical_slab', ['v_slab_compat:enlightened_end/bismuth_sheet_vertical_slab', '#valhelsia:wax']).id(`${ID_PREFIX}waxed_bismuth_sheet_vertical_slab`);
 });
