@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
    * @param {(string|InputItem)} input Input item(s).
    */
   const unpack = (output, input) => {
-    event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking').id(`${ID_PREFIX}unpacking/${OutputItem.of(output).item.id.replace(':','/')}`);
+    event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking').id(`${ID_PREFIX}unpacking/${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   }
 
   // Hammer Crushing Recipes
@@ -208,7 +208,7 @@ ServerEvents.recipes(event => {
   event.recipes.immersiveengineering.cloche(['upgrade_aquatic:white_searocket'], 'upgrade_aquatic:white_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:white_searocket'}).id(`${ID_PREFIX}cloche/white_searocket`);
   event.recipes.immersiveengineering.cloche(['upgrade_aquatic:pink_searocket'], 'upgrade_aquatic:pink_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:pink_searocket'}).id(`${ID_PREFIX}cloche/pink_searocket`);
   */
- 
+
   // Metal Press Unpacking Recipes
   unpack('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block');
   unpack('4x minecraft:nether_wart', 'minecraft:nether_wart_block');

@@ -203,7 +203,7 @@ ServerEvents.recipes(event => {
     'C C',
     'C C'
   ], {
-    A: 'minecraft:chain'
+    C: 'minecraft:chain'
   }).id(`${ID_PREFIX}chainmail_boots`);
 
   shaped3x3('minecraft:cobweb', 'minecraft:string', 'cobweb');

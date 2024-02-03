@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
   event.shapeless('quark:dusky_myalite', ['ars_nouveau:sourcestone', 'quark:myalite']).id(`${ID_PREFIX}dusky_myalite`);
 
   // Supplementaries
-  event.shapeless('supplementaries:antique_ink', ['minecraft:ink_sac', 'minecraft:glass_bottle', 'valhelsia:ash']).id(`${ID_PREFIX}antique_ink`);
+  event.shapeless('supplementaries:antique_ink', ['minecraft:ink_sac', 'minecraft:glass_bottle', '#valhelsia:ash']).id(`${ID_PREFIX}antique_ink`);
 
   // Tetra
   event.shapeless('tetra:forged_platform', ['tetra:forged_platform_slab', 'tetra:forged_platform_slab']).id(`${ID_PREFIX}forged_platform_slab_to_forged_platform`);

@@ -40,14 +40,14 @@ ServerEvents.recipes(event => {
     'create:sandpaper_polishing/polished_jade',
     'create:sandpaper_polishing/rose_quartz',
     'minecraft:sandpaper_polishing/iron_bars_from_polishing', // Create Deco has the wrong namespace.
-    'sullys_mod:grindstone_polishing/polished_jade_from_jade_ore',
-    'sullys_mod:grindstone_polishing/polished_jade_from_rough_jade',
-    'sullys_mod:grindstone_polishing/polished_jade_from_deepslate_jade_ore',
+    'sullysmod:grindstone_polishing/polished_jade_from_jade_ore',
+    'sullysmod:grindstone_polishing/polished_jade_from_rough_jade',
+    'sullysmod:grindstone_polishing/polished_jade_from_deepslate_jade_ore',
   ].forEach((recipeID) => event.remove({id: recipeID}));
 
   // General Polishing
-  polish('sullys_mod:polished_jade', 'sullys_mod:rough_jade');
-  polish('create:polished_rose_quartz', '#forge:gems/rose_quartz');
+  polish('sullysmod:polished_jade', 'sullysmod:rough_jade');
+  polish('create:polished_rose_quartz', '#valhelsia:rose_quartz');
   polish('createdeco:polished_iron_bars', 'minecraft:iron_bars');
   polish('createdeco:polished_iron_bars_overlay', 'createdeco:iron_bars_overlay');
 

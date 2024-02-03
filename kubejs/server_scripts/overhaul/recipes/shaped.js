@@ -252,7 +252,7 @@ ServerEvents.recipes(event => {
     'SSS'
   ], {
     S: '#forge:rods/steel',
-    E: 'minecraft:diamond',
+    D: 'minecraft:diamond',
     U: 'storagedrawers:upgrade_template'
   }).id(`${ID_PREFIX}diamond_storage_upgrade`);
 
