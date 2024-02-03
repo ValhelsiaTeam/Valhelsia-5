@@ -49,6 +49,7 @@ ServerEvents.recipes(event => {
 
   // Spellbook Upgrades
   book_upgrade('ars_nouveau:apprentice_spell_book', [
+    {item: 'ars_nouveau:novice_spell_book'},
     {item: 'forbidden_arcanus:obsidian_skull'},
     {item: 'sullysmod:polished_jade'},
     {item: 'sullysmod:polished_jade'},
@@ -62,6 +63,7 @@ ServerEvents.recipes(event => {
   `${ID_PREFIX}apprentice_spell_book_upgrade`);
   
   book_upgrade('ars_nouveau:archmage_spell_book', [
+    {item: 'ars_nouveau:apprentice_spell_book'},
     {item: 'forbidden_arcanus:dark_nether_star'},
     {item: 'ars_nouveau:wilden_tribute'},
     {item: 'forbidden_arcanus:stellarite_piece'},
