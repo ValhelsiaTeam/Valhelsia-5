@@ -124,6 +124,7 @@ ServerEvents.recipes(event => {
   const CLOCHE_TIME_CROPS = 800;
   const CLOCHE_TIME_MAGICAL = 1600;
 
+  /*
   // Temporary: These have been added to IE on GitHub but not released on CurseForge yet:
   event.recipes.immersiveengineering.cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:crimson_fungus'}).id(`${ID_PREFIX}cloche/crimson_fungus`);
   event.recipes.immersiveengineering.cloche(['minecraft:warped_fungus'], 'minecraft:warped_fungus', 'minecraft:warped_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:warped_fungus'}).id(`${ID_PREFIX}cloche/warped_fungus`);
@@ -206,7 +207,8 @@ ServerEvents.recipes(event => {
 
   event.recipes.immersiveengineering.cloche(['upgrade_aquatic:white_searocket'], 'upgrade_aquatic:white_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:white_searocket'}).id(`${ID_PREFIX}cloche/white_searocket`);
   event.recipes.immersiveengineering.cloche(['upgrade_aquatic:pink_searocket'], 'upgrade_aquatic:pink_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:pink_searocket'}).id(`${ID_PREFIX}cloche/pink_searocket`);
-  
+  */
+ 
   // Metal Press Unpacking Recipes
   unpack('9x minecraft:dried_kelp', 'minecraft:dried_kelp_block');
   unpack('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
