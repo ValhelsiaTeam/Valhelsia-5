@@ -98,6 +98,12 @@ ServerEvents.recipes(event => {
 
   // ----- Mod-specific Replacements -----
 
+  // Forbidden and Arcanus
+  replaceInputID('forbidden_arcanus:enchanted_golden_apple', 'forbidden_arcanus:deorum_ingot', '#forge:storage_blocks/deorum');
+
+  // Joy of Painting
+  replaceInputID('xercapaint:item_canvas', 'minecraft:paper', 'farmersdelight:canvas');
+
   // Xerca's Music Maker Mod
 
   // Tonewoods

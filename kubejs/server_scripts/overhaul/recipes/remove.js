@@ -25,7 +25,12 @@ ServerEvents.recipes(event => {
 
   // Remove recipes by recipe ID.
   [
+    'minecraft:bread', // Now requires dough + cooking.
+    'ars_elemental:glyph_conjure_terrain',
+    'ars_nouveau:glyph_break',
+    'ars_nouveau:glyph_conjure_water',
     'ars_nouveau:glyph_hex',
+    'ars_nouveau:glyph_pierce',
     'ars_nouveau:mob_jar',
     'ars_nouveau:novice_spell_book',
     'ars_nouveau:apprentice_spell_book_upgrade',
@@ -39,6 +44,7 @@ ServerEvents.recipes(event => {
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',
     'moreminecarts:silica_steel_smelting',
+    'quark:tweaks/crafting/utility/bent/bread',// Now requires dough + cooking.
     'sophisticatedbackpacks:backpack',
     'sophisticatedbackpacks:void_upgrade',
     'sophisticatedbackpacks:advanced_void_upgrade',

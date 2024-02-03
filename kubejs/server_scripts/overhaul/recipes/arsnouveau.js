@@ -76,7 +76,24 @@ ServerEvents.recipes(event => {
   'ars_nouveau:apprentice_spell_book',
   `${ID_PREFIX}archmage_spell_book_upgrade`);
 
-  // Glyphs
+  // Ars Nouveau Glyphs
+  event.recipes.ars_nouveau.glyph(
+    'ars_nouveau:glyph_break',
+    [
+      'forbidden_arcanus:deorum_blacksmith_gavel',
+    ],
+    3
+  ).id(`${ID_PREFIX}glyph_break`);
+
+  event.recipes.ars_nouveau.glyph(
+    'ars_nouveau:glyph_conjure_water',
+    [
+      'ars_nouveau:water_essence',
+      'botania:water_rod',
+    ],
+    5
+  ).id(`${ID_PREFIX}glyph_conjure_water`);
+
   event.recipes.ars_nouveau.glyph(
     'ars_nouveau:glyph_hex',
     [
@@ -89,5 +106,26 @@ ServerEvents.recipes(event => {
     ], 
     10
   ).id(`${ID_PREFIX}glyph_hex`);
+
+  event.recipes.ars_nouveau.glyph(
+    'ars_nouveau:glyph_pierce',
+    [
+      'ars_nouveau:pierce_arrow',
+      'ars_nouveau:wilden_spike',
+      'tetra:earthpiercer',
+    ],
+    5
+  ).id(`${ID_PREFIX}glyph_pierce`);
+
+  // Ars Elemental Glyphs
+  
+  event.recipes.ars_nouveau.glyph(
+    'ars_elemental:glyph_conjure_terrain',
+    [
+      'ars_nouveau:earth_essence',
+      'botania:dirt_rod',
+    ],
+    5
+  ).id(`${ID_PREFIX}glyph_conjure_terrain`);
 
 });
