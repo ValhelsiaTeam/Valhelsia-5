@@ -253,7 +253,7 @@ ServerEvents.recipes(event => {
   ], {
     S: '#forge:rods/steel',
     E: 'minecraft:diamond',
-    U: 'minecraft:storagedrawers:upgrade_template'
+    U: 'storagedrawers:upgrade_template'
   }).id(`${ID_PREFIX}diamond_storage_upgrade`);
 
   // Gated behind having steel production (and blocks of emerald instead of single emeralds).
@@ -264,7 +264,7 @@ ServerEvents.recipes(event => {
   ], {
     S: '#forge:rods/steel',
     E: 'minecraft:emerald_block',
-    U: 'minecraft:storagedrawers:upgrade_template'
+    U: 'storagedrawers:upgrade_template'
   }).id(`${ID_PREFIX}emerald_storage_upgrade`);
 
   // Gated behind having visited the End, but otherwise cheap - void shale is plentiful.
@@ -275,7 +275,7 @@ ServerEvents.recipes(event => {
   ], {
     V: 'enlightened_end:void_shale',
     O: '#forge:obsidian',
-    U: 'minecraft:storagedrawers:upgrade_template'
+    U: 'storagedrawers:upgrade_template'
   }).id(`${ID_PREFIX}drawer_void_upgrade`);
 
   // ----- Xerca's Music Maker Mod -----
