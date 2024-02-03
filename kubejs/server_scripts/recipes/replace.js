@@ -12,7 +12,7 @@
  * The majority of the recipe changes in this script are to convert recipe inputs to
  * use tags instead of specific items, or adjusting the output where we have a prefered mod to use.
  * 
- * @copyright Valhelsia Inc 2022-2023
+ * @copyright Valhelsia Inc 2022-2024
  */
 
 /**

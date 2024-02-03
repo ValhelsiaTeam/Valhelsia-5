@@ -22,7 +22,7 @@ ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:overhaul/crafting/shapeless/';
 
   // Ars Nouveau
-  event.shaped('ars_nouveau:novice_spell_book', [
+  event.shapeless('ars_nouveau:novice_spell_book', [
     'minecraft:book',
     'forbidden_arcanus:deorum_shovel',
     'forbidden_arcanus:deorum_pickaxe',
