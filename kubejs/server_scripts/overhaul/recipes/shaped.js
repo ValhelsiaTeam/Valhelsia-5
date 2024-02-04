@@ -287,7 +287,7 @@ ServerEvents.recipes(event => {
 
   // ----- Storage Drawers -----
   // Gated behind having steel production.
-  event.shaped('storagedrawers:emerald_storage_upgrade', [
+  event.shaped('storagedrawers:diamond_storage_upgrade', [
     'SSS',
     'DUD',
     'SSS'

@@ -131,6 +131,10 @@ ServerEvents.recipes(event => {
   replaceInput('create:electron_tube', '#valhelsia:electron_tubes');
   replaceInput('immersiveengineering:electron_tube', '#valhelsia:electron_tubes');
 
+  // Dough Compatibility
+  replaceInput('create:dough', '#forge:dough/wheat');
+  replaceInput('farmersdelight:wheat_dough', '#forge:dough/wheat');
+
   // Flour Compatibility
   replaceInput('create:wheat_flour', '#forge:flour/wheat');
   replaceInput('pneumaticcraft:wheat_flour', '#forge:flour/wheat');
@@ -144,9 +148,8 @@ ServerEvents.recipes(event => {
   replaceInput('cave_enhancements:rose_quartz', '#valhelsia:rose_quartz');
   replaceInput('create:rose_quartz', '#valhelsia:rose_quartz');
 
-  // Dough Compatibility
-  replaceInput('create:dough', '#forge:dough/wheat');
-  replaceInput('farmersdelight:wheat_dough', '#forge:dough/wheat');
+  // Wire Compatibility
+  replaceInput('immersiveengineering:wire_copper', '#forge:wires/copper');
 
   // Feather Compatibility
   replaceInputID([

@@ -110,6 +110,7 @@ ServerEvents.recipes(event => {
 
   // Engineer's Decor
   replaceInputID('engineersdecor:dependent/small_solar_panel_recipe', 'minecraft:quartz', 'mekanismgenerators:solar_panel');
+  replaceInput('engineersdecor:metal_bar', '#forge:rods/steel');
 
   // Forbidden and Arcanus
   replaceInputID('forbidden_arcanus:enchanted_golden_apple', 'forbidden_arcanus:deorum_ingot', '#forge:storage_blocks/deorum');

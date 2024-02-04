@@ -51,6 +51,12 @@ ServerEvents.tags('item', event => {
     'quark:deepslate_furnace',
     'quark:blackstone_furnace',
   ]);
+
+  event.add('valhelsia:nuts', [
+    'blue_skies:solnut',
+    'ecologics:walnut',
+    'windswept:chestnuts',
+  ]);
   
   event.add('valhelsia:raw_proteins', [
     '#forge:eggs',
