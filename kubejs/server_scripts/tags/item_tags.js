@@ -795,6 +795,13 @@ ServerEvents.tags('item', event => {
     'ecologics:coconut_husk',
   ]);
 
+  // Forbidden and Arcanus
+  event.add('forbidden_arcanus:clibano/creates_soul_fire', [
+    'blue_skies:soul_fragment',
+    'deeperdarker:soul_dust',
+    'spirit:soul_powder',
+  ]);
+
   // Immersive Engineering
   // Valid Tools for the Toolbox
   event.add('immersiveengineering:toolbox/tools', [
