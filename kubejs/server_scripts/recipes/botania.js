@@ -140,90 +140,90 @@ ServerEvents.recipes(event => {
   // event.recipes.botania.terra_plate('output_here', ['input_1', 'input_2'], 5000000);
 
   // Orechid - Stone
-  event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 7000);
-  event.recipes.botania.orechid('forbidden_arcanus:arcane_crystal_ore', 'minecraft:stone', 1000);
-  event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 4000);
-  event.recipes.botania.orechid('immersiveengineering:ore_nickel', 'minecraft:stone', 1500);
-  event.recipes.botania.orechid('immersiveengineering:ore_silver', 'minecraft:stone', 3000);
-  event.recipes.botania.orechid('mekanism:fluorite_ore', 'minecraft:stone', 5000);
-  event.recipes.botania.orechid('mekanism:lead_ore', 'minecraft:stone', 2000);
-  event.recipes.botania.orechid('mekanism:osmium_ore', 'minecraft:stone', 18000);
-  event.recipes.botania.orechid('mekanism:tin_ore', 'minecraft:stone', 4000);
-  event.recipes.botania.orechid('mekanism:uranium_ore', 'minecraft:stone', 1500);
-  event.recipes.botania.orechid('sullysmod:jade_ore', 'minecraft:stone', 1000);
+  event.recipes.botania.orechid('create:zinc_ore', 'minecraft:stone', 7000).id(`${ID_PREFIX}orechid/zinc_ore`);
+  event.recipes.botania.orechid('forbidden_arcanus:arcane_crystal_ore', 'minecraft:stone', 1000).id(`${ID_PREFIX}orechid/arcane_crystal_ore`);
+  event.recipes.botania.orechid('immersiveengineering:ore_aluminum', 'minecraft:stone', 4000).id(`${ID_PREFIX}orechid/bauxite_ore`);
+  event.recipes.botania.orechid('immersiveengineering:ore_nickel', 'minecraft:stone', 1500).id(`${ID_PREFIX}orechid/nickel_ore`);
+  event.recipes.botania.orechid('immersiveengineering:ore_silver', 'minecraft:stone', 3000).id(`${ID_PREFIX}orechid/silver_ore`);
+  event.recipes.botania.orechid('mekanism:fluorite_ore', 'minecraft:stone', 5000).id(`${ID_PREFIX}orechid/fluorite_ore`);
+  event.recipes.botania.orechid('mekanism:lead_ore', 'minecraft:stone', 2000).id(`${ID_PREFIX}orechid/lead_ore`);
+  event.recipes.botania.orechid('mekanism:osmium_ore', 'minecraft:stone', 18000).id(`${ID_PREFIX}orechid/osmium_ore`);
+  event.recipes.botania.orechid('mekanism:tin_ore', 'minecraft:stone', 4000).id(`${ID_PREFIX}orechid/tin_ore`);
+  event.recipes.botania.orechid('mekanism:uranium_ore', 'minecraft:stone', 1500).id(`${ID_PREFIX}orechid/uranium_ore`);
+  event.recipes.botania.orechid('sullysmod:jade_ore', 'minecraft:stone', 1000).id(`${ID_PREFIX}orechid/jade_ore`);
 
   // Orechid - Deepslate
-  event.recipes.botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate', 150);
-  event.recipes.botania.orechid('forbidden_arcanus:deepslate_arcane_crystal_ore', 'minecraft:deepslate', 75);
-  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_aluminum', 'minecraft:deepslate', 75);
-  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_nickel', 'minecraft:deepslate', 100);
-  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_silver', 'minecraft:deepslate', 125);
-  event.recipes.botania.orechid('irons_spellbooks:arcane_debris', 'minecraft:deepslate', 10);
-  event.recipes.botania.orechid('mekanism:deepslate_fluorite_ore', 'minecraft:deepslate', 100);
-  event.recipes.botania.orechid('mekanism:deepslate_lead_ore', 'minecraft:deepslate', 100);
-  event.recipes.botania.orechid('mekanism:deepslate_osmium_ore', 'minecraft:deepslate', 180);
-  event.recipes.botania.orechid('mekanism:deepslate_tin_ore', 'minecraft:deepslate', 150);
-  event.recipes.botania.orechid('mekanism:deepslate_uranium_ore', 'minecraft:deepslate', 150);
-  event.recipes.botania.orechid('sullysmod:deepslate_jade_ore', 'minecraft:deepslate', 50);
+  event.recipes.botania.orechid('create:deepslate_zinc_ore', 'minecraft:deepslate', 150).id(`${ID_PREFIX}orechid/deepslate_zinc_ore`);
+  event.recipes.botania.orechid('forbidden_arcanus:deepslate_arcane_crystal_ore', 'minecraft:deepslate', 75).id(`${ID_PREFIX}orechid/deepslate_arcane_crystal_ore`);
+  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_aluminum', 'minecraft:deepslate', 75).id(`${ID_PREFIX}orechid/deepslate_bauxite_ore`);
+  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_nickel', 'minecraft:deepslate', 100).id(`${ID_PREFIX}orechid/deepslate_nickel_ore`);
+  event.recipes.botania.orechid('immersiveengineering:deepslate_ore_silver', 'minecraft:deepslate', 125).id(`${ID_PREFIX}orechid/deepslate_silver_ore`);
+  event.recipes.botania.orechid('irons_spellbooks:arcane_debris', 'minecraft:deepslate', 10).id(`${ID_PREFIX}orechid/arcane_debris`);
+  event.recipes.botania.orechid('mekanism:deepslate_fluorite_ore', 'minecraft:deepslate', 100).id(`${ID_PREFIX}orechid/deepslate_fluorite_ore`);
+  event.recipes.botania.orechid('mekanism:deepslate_lead_ore', 'minecraft:deepslate', 100).id(`${ID_PREFIX}orechid/deepslate_lead_ore`);
+  event.recipes.botania.orechid('mekanism:deepslate_osmium_ore', 'minecraft:deepslate', 180).id(`${ID_PREFIX}orechid/deepslate_osmium_ore`);
+  event.recipes.botania.orechid('mekanism:deepslate_tin_ore', 'minecraft:deepslate', 150).id(`${ID_PREFIX}orechid/deepslate_tin_ore`);
+  event.recipes.botania.orechid('mekanism:deepslate_uranium_ore', 'minecraft:deepslate', 150).id(`${ID_PREFIX}orechid/deepslate_uranium_ore`);
+  event.recipes.botania.orechid('sullysmod:deepslate_jade_ore', 'minecraft:deepslate', 50).id(`${ID_PREFIX}orechid/deepslate_jade_ore`);
   
   // Orechid - Netherrack
-  event.recipes.botania.orechid_ignem('malum:blazing_quartz_ore', 'minecraft:netherrack', 9800);
+  event.recipes.botania.orechid_ignem('malum:blazing_quartz_ore', 'minecraft:netherrack', 9800).id(`${ID_PREFIX}orechid_ignem/blazing_quartz_ore`);
 
   // Orechid - End Stone
-  event.recipes.botania.orechid('enlightened_end:bismuth_ore', 'minecraft:end_stone', 900);
-  event.recipes.botania.orechid('enlightened_end:irradium_ore', 'minecraft:end_stone', 450);
-  event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 1200);
-  event.recipes.botania.orechid('enlightened_end:adamantite_node', 'minecraft:end_stone', 30);
+  event.recipes.botania.orechid('enlightened_end:bismuth_ore', 'minecraft:end_stone', 900).id(`${ID_PREFIX}orechid/bismuth_ore`);
+  event.recipes.botania.orechid('enlightened_end:irradium_ore', 'minecraft:end_stone', 450).id(`${ID_PREFIX}orechid/irradium_ore`);
+  event.recipes.botania.orechid('enlightened_end:malachite_ore', 'minecraft:end_stone', 1200).id(`${ID_PREFIX}orechid/malachite_ore`);
+  event.recipes.botania.orechid('enlightened_end:adamantite_node', 'minecraft:end_stone', 30).id(`${ID_PREFIX}orechid/adamantite_ore`);
 
   // Orechid - Modded Stone
   // Ad Astra, Moon
-  event.recipes.botania.orechid('ad_astra:moon_cheese_ore', 'ad_astra:moon_stone', 320);
-  event.recipes.botania.orechid('ad_astra:moon_desh_ore', 'ad_astra:moon_stone', 600);
-  event.recipes.botania.orechid('ad_astra:moon_iron_ore', 'ad_astra:moon_stone', 1080);
-  event.recipes.botania.orechid('ad_astra:moon_ice_shard_ore', 'ad_astra:moon_stone', 850);
+  event.recipes.botania.orechid('ad_astra:moon_cheese_ore', 'ad_astra:moon_stone', 320).id(`${ID_PREFIX}orechid/moon_cheese_ore`);
+  event.recipes.botania.orechid('ad_astra:moon_desh_ore', 'ad_astra:moon_stone', 600).id(`${ID_PREFIX}orechid/moon_desh_ore`);
+  event.recipes.botania.orechid('ad_astra:moon_iron_ore', 'ad_astra:moon_stone', 1080).id(`${ID_PREFIX}orechid/moon_iron_ore`);
+  event.recipes.botania.orechid('ad_astra:moon_ice_shard_ore', 'ad_astra:moon_stone', 850).id(`${ID_PREFIX}orechid/moon_ice_shard_ore`);
 
   // Ad Astra, Mars
-  event.recipes.botania.orechid('ad_astra:mars_iron_ore', 'ad_astra:mars_stone', 1350);
-  event.recipes.botania.orechid('ad_astra:mars_ostrum_ore', 'ad_astra:mars_stone', 550);
-  event.recipes.botania.orechid('ad_astra:mars_diamond_ore', 'ad_astra:mars_stone', 150);
-  event.recipes.botania.orechid('ad_astra:mars_ice_shard_ore', 'ad_astra:mars_stone', 850);
+  event.recipes.botania.orechid('ad_astra:mars_iron_ore', 'ad_astra:mars_stone', 1350).id(`${ID_PREFIX}orechid/mars_iron_ore`);
+  event.recipes.botania.orechid('ad_astra:mars_ostrum_ore', 'ad_astra:mars_stone', 550).id(`${ID_PREFIX}orechid/mars_ostrum_ore`);
+  event.recipes.botania.orechid('ad_astra:mars_diamond_ore', 'ad_astra:mars_stone', 150).id(`${ID_PREFIX}orechid/mars_diamond_ore`);
+  event.recipes.botania.orechid('ad_astra:mars_ice_shard_ore', 'ad_astra:mars_stone', 850).id(`${ID_PREFIX}orechid/mars_ice_shard_ore`);
 
   // Ad Astra, Mercury (note: Mercury only contains Iron Ore so adding Magma Blocks just so it doesn't generate only iron)
-  event.recipes.botania.orechid_ignem('ad_astra:mercury_iron_ore', 'ad_astra:mercury_stone', 1450);
-  event.recipes.botania.orechid_ignem('minecraft:magma_block', 'ad_astra:mercury_stone', 800);
+  event.recipes.botania.orechid_ignem('ad_astra:mercury_iron_ore', 'ad_astra:mercury_stone', 1450).id(`${ID_PREFIX}orechid_ignem/mercury_iron_ore`);
+  event.recipes.botania.orechid_ignem('minecraft:magma_block', 'ad_astra:mercury_stone', 800).id(`${ID_PREFIX}orechid_ignem/mercury_magma_block`);;
 
   // Ad Astra, Venus
-  event.recipes.botania.orechid_ignem('ad_astra:venus_coal_ore', 'ad_astra:venus_stone', 5000);
-  event.recipes.botania.orechid_ignem('ad_astra:venus_calorite_ore', 'ad_astra:venus_stone', 700);
-  event.recipes.botania.orechid_ignem('ad_astra:venus_gold_ore', 'ad_astra:venus_stone', 450);
-  event.recipes.botania.orechid_ignem('ad_astra:venus_diamond_ore', 'ad_astra:venus_stone', 200);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_coal_ore', 'ad_astra:venus_stone', 5000).id(`${ID_PREFIX}orechid/venus_coal_ore`);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_calorite_ore', 'ad_astra:venus_stone', 700).id(`${ID_PREFIX}orechid/venus_calorite_ore`);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_gold_ore', 'ad_astra:venus_stone', 450).id(`${ID_PREFIX}orechid/venus_gold_ore`);
+  event.recipes.botania.orechid_ignem('ad_astra:venus_diamond_ore', 'ad_astra:venus_stone', 200).id(`${ID_PREFIX}orechid/venus_diamond_ore`);
 
   // Ad Astra, Glacio
-  event.recipes.botania.orechid('ad_astra:glacio_coal_ore', 'ad_astra:glacio_stone', 3000);
-  event.recipes.botania.orechid('ad_astra:glacio_copper_ore', 'ad_astra:glacio_stone', 4300);
-  event.recipes.botania.orechid('ad_astra:glacio_ice_shard_ore', 'ad_astra:glacio_stone', 300);
-  event.recipes.botania.orechid('ad_astra:glacio_iron_ore', 'ad_astra:glacio_stone', 900);
-  event.recipes.botania.orechid('ad_astra:glacio_lapis_ore', 'ad_astra:glacio_stone', 50);
+  event.recipes.botania.orechid('ad_astra:glacio_coal_ore', 'ad_astra:glacio_stone', 3000).id(`${ID_PREFIX}orechid/glacio_coal_ore`);
+  event.recipes.botania.orechid('ad_astra:glacio_copper_ore', 'ad_astra:glacio_stone', 4300).id(`${ID_PREFIX}orechid/glacio_copper_ore`);
+  event.recipes.botania.orechid('ad_astra:glacio_ice_shard_ore', 'ad_astra:glacio_stone', 300).id(`${ID_PREFIX}orechid/glacio_ice_shard_ore`);
+  event.recipes.botania.orechid('ad_astra:glacio_iron_ore', 'ad_astra:glacio_stone', 900).id(`${ID_PREFIX}orechid/glacio_iron_ore`);
+  event.recipes.botania.orechid('ad_astra:glacio_lapis_ore', 'ad_astra:glacio_stone', 50).id(`${ID_PREFIX}orechid/glacio_lapis_ore`);
 
   // The Aether
-  event.recipes.botania.orechid('aether:ambrosium_ore', 'aether:holystone', 1250);
-  event.recipes.botania.orechid('aether:gravitite_ore', 'aether:holystone', 40);
-  event.recipes.botania.orechid('aether:zanite_ore', 'aether:holystone', 230);
+  event.recipes.botania.orechid('aether:ambrosium_ore', 'aether:holystone', 1250).id(`${ID_PREFIX}orechid/ambrosium_ore`);
+  event.recipes.botania.orechid('aether:gravitite_ore', 'aether:holystone', 40).id(`${ID_PREFIX}orechid/gravitite_ore`);
+  event.recipes.botania.orechid('aether:zanite_ore', 'aether:holystone', 230).id(`${ID_PREFIX}orechid/zanite_ore`);
 
   // Blue Skies, Everbright
-  event.recipes.botania.orechid('blue_skies:everbright_aquite_ore', 'blue_skies:turquoise_stone', 600);
-  event.recipes.botania.orechid('blue_skies:everbright_charoite_ore', 'blue_skies:turquoise_stone', 50);
-  event.recipes.botania.orechid('blue_skies:everbright_diopside_ore', 'blue_skies:turquoise_stone', 50);
-  event.recipes.botania.orechid('blue_skies:everbright_moonstone_ore', 'blue_skies:turquoise_stone', 2300);
-  event.recipes.botania.orechid('blue_skies:everbright_pyrope_ore', 'blue_skies:turquoise_stone', 900);
+  event.recipes.botania.orechid('blue_skies:everbright_aquite_ore', 'blue_skies:turquoise_stone', 600).id(`${ID_PREFIX}orechid/everbright_aquite_ore`);
+  event.recipes.botania.orechid('blue_skies:everbright_charoite_ore', 'blue_skies:turquoise_stone', 50).id(`${ID_PREFIX}orechid/everbright_charoite_ore`);
+  event.recipes.botania.orechid('blue_skies:everbright_diopside_ore', 'blue_skies:turquoise_stone', 50).id(`${ID_PREFIX}orechid/everbright_diopside_ore`);
+  event.recipes.botania.orechid('blue_skies:everbright_moonstone_ore', 'blue_skies:turquoise_stone', 2300).id(`${ID_PREFIX}orechid/everbright_moonstone_ore`);
+  event.recipes.botania.orechid('blue_skies:everbright_pyrope_ore', 'blue_skies:turquoise_stone', 900).id(`${ID_PREFIX}orechid/everbright_pyrope_ore`);
 
   // Blue Skies, Everdawn
-  event.recipes.botania.orechid('blue_skies:everdawn_aquite_ore', 'blue_skies:lunar_stone', 600);
-  event.recipes.botania.orechid('blue_skies:everdawn_charoite_ore', 'blue_skies:lunar_stone', 50);
-  event.recipes.botania.orechid('blue_skies:everdawn_diopside_ore', 'blue_skies:lunar_stone', 50);
-  event.recipes.botania.orechid('blue_skies:everdawn_moonstone_ore', 'blue_skies:lunar_stone', 1850);
-  event.recipes.botania.orechid('blue_skies:everdawn_pyrope_ore', 'blue_skies:lunar_stone', 800);
-  event.recipes.botania.orechid('blue_skies:horizonite_ore', 'blue_skies:lunar_stone', 100);
+  event.recipes.botania.orechid('blue_skies:everdawn_aquite_ore', 'blue_skies:lunar_stone', 600).id(`${ID_PREFIX}orechid/everdawn_aquite_ore`);
+  event.recipes.botania.orechid('blue_skies:everdawn_charoite_ore', 'blue_skies:lunar_stone', 50).id(`${ID_PREFIX}orechid/everdawn_charoite_ore`);
+  event.recipes.botania.orechid('blue_skies:everdawn_diopside_ore', 'blue_skies:lunar_stone', 50).id(`${ID_PREFIX}orechid/everdawn_diopside_ore`);
+  event.recipes.botania.orechid('blue_skies:everdawn_moonstone_ore', 'blue_skies:lunar_stone', 1850).id(`${ID_PREFIX}orechid/everdawn_moonstone_ore`);
+  event.recipes.botania.orechid('blue_skies:everdawn_pyrope_ore', 'blue_skies:lunar_stone', 800).id(`${ID_PREFIX}orechid/everdawn_pyrope_ore`);
+  event.recipes.botania.orechid('blue_skies:horizonite_ore', 'blue_skies:lunar_stone', 100).id(`${ID_PREFIX}orechid/horizonite_ore`);
 
   // Marimorphosis
   // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
