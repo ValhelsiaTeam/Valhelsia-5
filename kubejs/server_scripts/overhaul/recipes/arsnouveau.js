@@ -82,7 +82,7 @@ ServerEvents.recipes(event => {
     [
       'forbidden_arcanus:deorum_blacksmith_gavel',
     ],
-    3
+    27
   ).id(`${ID_PREFIX}glyph_break`);
 
   event.recipes.ars_nouveau.glyph(
@@ -91,7 +91,7 @@ ServerEvents.recipes(event => {
       'ars_nouveau:water_essence',
       'botania:water_rod',
     ],
-    5
+    55
   ).id(`${ID_PREFIX}glyph_conjure_water`);
 
   event.recipes.ars_nouveau.glyph(
@@ -99,7 +99,7 @@ ServerEvents.recipes(event => {
     [
       'forbidden_arcanus:slimec_pickaxe',
     ],
-    5
+    55
   ).id(`${ID_PREFIX}glyph_extract`);
 
   event.recipes.ars_nouveau.glyph(
@@ -112,7 +112,7 @@ ServerEvents.recipes(event => {
       'malum:hex_ash',
       'malum:hex_ash',
     ], 
-    10
+    160
   ).id(`${ID_PREFIX}glyph_hex`);
 
   event.recipes.ars_nouveau.glyph(
@@ -122,7 +122,7 @@ ServerEvents.recipes(event => {
       'ars_nouveau:wilden_spike',
       'upgrade_aquatic:guardian_spine',
     ],
-    5
+    55
   ).id(`${ID_PREFIX}glyph_pierce`);
 
   // Ars Elemental Glyphs
@@ -133,7 +133,7 @@ ServerEvents.recipes(event => {
       'ars_nouveau:earth_essence',
       'botania:dirt_rod',
     ],
-    5
+    55
   ).id(`${ID_PREFIX}glyph_conjure_terrain`);
 
 });
