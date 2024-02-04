@@ -18,7 +18,7 @@ ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:create/';
 
   // Mechanical Crafting
-  e.recipes.create.mechanical_crafting('valhelsia_structures:dungeon_door', [
+  event.recipes.create.mechanical_crafting('valhelsia_structures:dungeon_door', [
     'CCCCC',
     'HWCWH',
     'CWCWC',
