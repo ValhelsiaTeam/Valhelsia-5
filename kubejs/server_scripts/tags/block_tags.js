@@ -51,6 +51,7 @@ ServerEvents.tags('block', event => {
     'enlightened_end:irradium_ore',
     'forbidden_arcanus:arcane_crystal_ore',
     'forbidden_arcanus:deepslate_arcane_crystal_ore',
+    'irons_spellbooks:arcane_debris',
   ]);
 
   event.add('forge:ores/adamantite', [
@@ -60,6 +61,10 @@ ServerEvents.tags('block', event => {
   event.add('forge:ores/arcane_crystal', [
     'forbidden_arcanus:arcane_crystal_ore',
     'forbidden_arcanus:deepslate_arcane_crystal_ore',
+  ]);
+
+  event.add('forge:ores/arcane_debris', [
+    'irons_spellbooks:arcane_debris',
   ]);
 
   event.add('forge:ores/bismuth', [

@@ -39,7 +39,7 @@ ServerEvents.recipes(event => {
     'ars_nouveau:void_prism',
     'botania:mana_void',
     'botania:redstone_root',
-    'caveenhancements:amethyst_flute',
+    'cave_enhancements:amethyst_flute',
     'computercraft:computer_advanced',
     'computercraft:computer_normal',
     'computercraft:monitor_advanced',

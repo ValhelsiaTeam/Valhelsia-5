@@ -202,6 +202,8 @@ ServerEvents.recipes(event => {
     'effortlessbuilding:golden_randomizer_bag',
     'effortlessbuilding:randomizer_bag',
     'farmersrespite:kettle',
+    'irons_spellbooks:pumpkin_chestplate',
+    'irons_spellbooks:pumpkin_leggings',
     'minecolonies:blockhutfield',
     'minecolonies:build_goggles',
     'minecolonies:clipboard',
@@ -210,6 +212,7 @@ ServerEvents.recipes(event => {
     'quark:tools/crafting/seed_pouch',
     'supplementaries:bellows',
     'upgrade_aquatic:bedroll',
+    'windswept:snow_boots_from_silver',
     'xercamusic:drum',
   ], 'minecraft:leather', '#forge:leather');
 

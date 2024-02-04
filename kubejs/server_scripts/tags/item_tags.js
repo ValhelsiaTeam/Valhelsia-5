@@ -104,6 +104,8 @@ ServerEvents.tags('item', event => {
     'quark:crab_leg',
     'twilightforest:raw_meef',
     'twilightforest:raw_venison',
+    'windswept:goat',
+    'windswept:goat_shanks',
   ]);
 
   event.add('valhelsia:cooked_proteins', [
@@ -150,6 +152,8 @@ ServerEvents.tags('item', event => {
     'quark:cooked_crab_leg',
     'twilightforest:cooked_meef',
     'twilightforest:cooked_venison',
+    'windswept:cooked_goat',
+    'windswept:cooked_goat_shanks',
   ]);
 
   event.add('valhelsia:proteins', [
@@ -239,6 +243,7 @@ ServerEvents.tags('item', event => {
     'enlightened_end:irradium_ore',
     'enlightened_end:malachite_ore',
     'forbidden_arcanus:deepslate_arcane_crystal_ore',
+    'irons_spellbooks:arcane_debris',
   ]);
 
   event.add('forge:ores/adamantite', [
@@ -247,6 +252,10 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:ores/arcane_crystal', [
     'forbidden_arcanus:deepslate_arcane_crystal_ore',
+  ]);
+
+  event.add('forge:ores/arcane_debris', [
+    'irons_spellbooks:arcane_debris',
   ]);
 
   event.add('forge:ores/bismuth', [
@@ -299,8 +308,13 @@ ServerEvents.tags('item', event => {
     'createdeco:cast_iron_ingot',
     'enlightened_end:bismuth_ingot',
     'enlightened_end:starsteel_ingot',
+    'irons_spellbooks:arcane_ingot',
     'malum:soul_stained_steel_ingot',
     'moreminecarts:silica_steel',
+  ]);
+
+  event.add('forge:ingots/arcane', [
+    'irons_spellbooks:arcane_ingot',
   ]);
 
   event.add('forge:ingots/bismuth', [
