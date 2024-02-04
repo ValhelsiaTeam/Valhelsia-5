@@ -98,12 +98,18 @@ ServerEvents.recipes(event => {
 
   // ----- Mod-specific Replacements -----
 
+  // Ad Astra
+  replaceInputID('ad_astra:recipes/solar_panel', 'minecraft:blue_stained_glass', 'mekanismgenerators:solar_panel');
+
   // Applied Energistics 2
   replaceInputID('ae2:tools/network_memory_card', 'minecraft:iron_ingot', '#forge:plates/aluminum');
   replaceInputID('ae2:tools/network_memory_card', 'minecraft:gold_ingot', '#forge:plates/gold');
 
   // ComputerCraft
   replaceInputID('computercraft:computer_advanced_upgrade', 'minecraft:gold_ingot', '#forge:plates/gold');
+
+  // Engineer's Decor
+  replaceInputID('engineersdecor:dependent/small_solar_panel_recipe', 'minecraft:quartz', 'mekanismgenerators:solar_panel');
 
   // Forbidden and Arcanus
   replaceInputID('forbidden_arcanus:enchanted_golden_apple', 'forbidden_arcanus:deorum_ingot', '#forge:storage_blocks/deorum');
