@@ -39,6 +39,8 @@ ServerEvents.recipes(event => {
     'botania:mana_void',
     'botania:redstone_root',
     'caveenhancements:amethyst_flute',
+    'computercraft:computer_advanced',
+    'computercraft:computer_normal',
     'galosphere:silver_bomb',
     'mekanism:teleportation_core',
     'moreminecarts:silica_steel_mix',

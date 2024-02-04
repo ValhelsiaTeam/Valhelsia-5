@@ -98,6 +98,13 @@ ServerEvents.recipes(event => {
 
   // ----- Mod-specific Replacements -----
 
+  // Applied Energistics 2
+  replaceInputID('ae2:tools/network_memory_card', 'minecraft:iron_ingot', '#forge:plates/aluminum');
+  replaceInputID('ae2:tools/network_memory_card', 'minecraft:gold_ingot', '#forge:plates/gold');
+
+  // ComputerCraft
+  replaceInputID('computercraft:computer_advanced_upgrade', 'minecraft:gold_ingot', '#forge:plates/gold');
+
   // Forbidden and Arcanus
   replaceInputID('forbidden_arcanus:enchanted_golden_apple', 'forbidden_arcanus:deorum_ingot', '#forge:storage_blocks/deorum');
 

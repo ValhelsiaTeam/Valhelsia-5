@@ -24,10 +24,10 @@ ServerEvents.recipes(event => {
   // Ars Nouveau
   event.shapeless('ars_nouveau:novice_spell_book', [
     'minecraft:book',
-    'forbidden_arcanus:deorum_shovel',
-    'forbidden_arcanus:deorum_pickaxe',
-    'forbidden_arcanus:deorum_axe',
-    'forbidden_arcanus:deorum_sword',
+    ['botania:manasteel_shovel', 'forbidden_arcanus:deorum_shovel'],
+    ['botania:manasteel_pick', 'forbidden_arcanus:deorum_pickaxe'],
+    ['botania:manasteel_axe', 'forbidden_arcanus:deorum_axe'],
+    ['botania:manasteel_sword', 'forbidden_arcanus:deorum_sword'],
   ]).id(`${ID_PREFIX}novice_spell_book`);
 
   // Botania

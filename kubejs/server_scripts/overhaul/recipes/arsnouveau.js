@@ -112,7 +112,6 @@ ServerEvents.recipes(event => {
     [
       'ars_nouveau:pierce_arrow',
       'ars_nouveau:wilden_spike',
-      'tetra:earthpiercer',
     ],
     5
   ).id(`${ID_PREFIX}glyph_pierce`);

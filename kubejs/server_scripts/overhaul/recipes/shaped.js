@@ -194,6 +194,27 @@ ServerEvents.recipes(event => {
   // ----- Cave Enhancements -----
   plusWrapped('cave_enhancements:amethyst_flute', 'supplementaries:flute', 'minecraft:amethyst_shard', 'amethyst_flute');
 
+  // ----- CC: Tweaked -----
+  event.shaped('computercraft:computer_normal', [
+    'SSS',
+    'SMS',
+    'SCS'
+  ], {
+    S: '#forge:plates/iron',
+    M: 'computercraft:monitor_normal',
+    C: '#forge:circuits',
+  }).id(`${ID_PREFIX}computer_normal`);
+  
+  event.shaped('computercraft:computer_advanced', [
+    'SSS',
+    'SMS',
+    'SCS'
+  ], {
+    S: '#forge:plates/gold',
+    M: 'computercraft:monitor_advanced',
+    C: '#forge:circuits',
+  }).id(`${ID_PREFIX}computer_advanced`);
+
   // ----- Mekanism -----
   // Actually includes ender pearls for lore purposes. No idea why the original recipe didn't.
   event.shaped('mekanism:teleportation_core', [
