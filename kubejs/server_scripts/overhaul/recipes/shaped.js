@@ -221,7 +221,7 @@ ServerEvents.recipes(event => {
     'SBS'
   ], {
     S: '#forge:plates/iron',
-    M: '#ae2:illuminated_panel',
+    P: '#ae2:illuminated_panel',
     B: 'quark:iron_button',
   }).id(`${ID_PREFIX}monitor_normal`);
   
@@ -231,7 +231,7 @@ ServerEvents.recipes(event => {
     'SBS'
   ], {
     S: '#forge:plates/gold',
-    M: '#ae2:illuminated_panel',
+    P: '#ae2:illuminated_panel',
     B: 'quark:iron_button',
   }).id(`${ID_PREFIX}monitor_advanced`);
 
