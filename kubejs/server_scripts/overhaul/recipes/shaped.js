@@ -214,6 +214,26 @@ ServerEvents.recipes(event => {
     M: 'computercraft:monitor_advanced',
     C: '#forge:circuits',
   }).id(`${ID_PREFIX}computer_advanced`);
+  
+  event.shaped('computercraft:monitor_normal', [
+    'SSS',
+    'SPS',
+    'SBS'
+  ], {
+    S: '#forge:plates/iron',
+    M: '#ae2:illuminated_panel',
+    B: 'quark:iron_button',
+  }).id(`${ID_PREFIX}monitor_normal`);
+  
+  event.shaped('computercraft:monitor_advanced', [
+    'SSS',
+    'SPS',
+    'SBS'
+  ], {
+    S: '#forge:plates/gold',
+    M: '#ae2:illuminated_panel',
+    B: 'quark:iron_button',
+  }).id(`${ID_PREFIX}monitor_advanced`);
 
   // ----- Mekanism -----
   // Actually includes ender pearls for lore purposes. No idea why the original recipe didn't.

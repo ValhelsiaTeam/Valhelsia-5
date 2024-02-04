@@ -42,6 +42,8 @@ ServerEvents.recipes(event => {
     'caveenhancements:amethyst_flute',
     'computercraft:computer_advanced',
     'computercraft:computer_normal',
+    'computercraft:monitor_advanced',
+    'computercraft:monitor_normal',
     'galosphere:silver_bomb',
     'mekanism:teleportation_core',
     'moreminecarts:silica_steel_mix',
