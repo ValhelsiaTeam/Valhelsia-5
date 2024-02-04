@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
     'computercraft:monitor_advanced',
     'computercraft:monitor_normal',
     'galosphere:silver_bomb',
+    'immersivepetroleum:molotov_wool',
     'mekanism:teleportation_core',
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',

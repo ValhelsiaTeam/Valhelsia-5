@@ -168,6 +168,9 @@ ServerEvents.recipes(event => {
   ], 'minecraft:feather', '#forge:feathers');
   event.replaceInput({output:'#minecraft:arrows'}, 'minecraft:feather', '#forge:feathers');
 
+  // Fibre Compatibility
+  replaceInputID('immersiveengineering:crafting/hemp_fabric', 'immersiveengineering:hemp_fiber', ['immersiveengineering:hemp_fiber', 'supplementaries:flax']);
+
   // Leather Compatibility
   replaceInputID([
     'minecraft:book',
