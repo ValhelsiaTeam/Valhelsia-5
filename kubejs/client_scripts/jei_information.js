@@ -37,6 +37,14 @@ JEIEvents.information(event => {
   // Botania
   addInfo('botania:ender_air_bottle', 'valhelsia.information.botania.ender_air_bottle');
 
+  // Forbidden and Arcanus
+  addInfo('forbidden_arcanus:arcane_bone_meal', 'valhelsia.information.magical_farmland');
+  addInfo('forbidden_arcanus:deorum_ingot', 'valhelsia.information.deorum');
+  addInfo('forbidden_arcanus:deorum_nugget', 'valhelsia.information.deorum');
+  addInfo('forbidden_arcanus:golden_orchid_seeds', 'valhelsia.information.deorum');
+  addInfo('forbidden_arcanus:magical_farmland', 'valhelsia.information.magical_farmland');
+  addInfo('forbidden_arcanus:stellarite_piece', 'valhelsia.information.stellarite_piece');
+
   // Sully's Mod
   addInfo([
     'sullysmod:jade_ore', 
