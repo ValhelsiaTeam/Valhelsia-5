@@ -95,6 +95,14 @@ ServerEvents.recipes(event => {
   ).id(`${ID_PREFIX}glyph_conjure_water`);
 
   event.recipes.ars_nouveau.glyph(
+    'ars_nouveau:glyph_extract',
+    [
+      'forbidden_arcanus:slimec_pickaxe',
+    ],
+    5
+  ).id(`${ID_PREFIX}glyph_extract`);
+
+  event.recipes.ars_nouveau.glyph(
     'ars_nouveau:glyph_hex',
     [
       'ars_nouveau:abjuration_essence',
@@ -112,6 +120,7 @@ ServerEvents.recipes(event => {
     [
       'ars_nouveau:pierce_arrow',
       'ars_nouveau:wilden_spike',
+      'upgrade_aquatic:guardian_spine',
     ],
     5
   ).id(`${ID_PREFIX}glyph_pierce`);

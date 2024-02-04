@@ -29,6 +29,7 @@ ServerEvents.recipes(event => {
     'ars_elemental:glyph_conjure_terrain',
     'ars_nouveau:glyph_break',
     'ars_nouveau:glyph_conjure_water',
+    'ars_nouveau:glyph_extract',
     'ars_nouveau:glyph_hex',
     'ars_nouveau:glyph_pierce',
     'ars_nouveau:mob_jar',
