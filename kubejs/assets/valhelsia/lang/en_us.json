@@ -1,4 +1,7 @@
 {
+  "valhelsia.comment.language": "-----Valhelsia 5 Custom Language Entries-----",
+  "valhelsia.comment.language.copyright": "Copyright Valhelsia Inc 2022-2024",
+
   "valhelsia.comment.chat": "-----Chat Messages-----",
   "valhelsia.chat.first_start_message": "Welcome to Valhelsia 5! We have friendly Discord community to chat, offer help and support, and share pics and videos.",
   "valhelsia.chat.discord_link": "You're more than welcome to join us.\u00A7r\n",
@@ -153,12 +156,31 @@
 
   "valhelsia.comment.jei_information": "-----JEI Information Entries-----",
   "valhelsia.information.minecraft.crafting_firework_stars": "Firework stars are craftable with Gunpowder, any Dye, and optional Effect items (see the Minecraft Wiki).",
+  "valhelsia.information.minecraft.glow_berries": "Glow Berries can be crafted into Glow Berry Pips in order to be able to plant them.",
+  "valhelsia.information.minecraft.sweet_berries": "Sweet Berries can be crafted into Sweet Berry Pips in order to be able to plant them.",
+  "valhelsia.information.akashic_tome.filled_akashic_tome": "Crafting an Akashic Tome using four bookshelves will provide one filled with the starting manuals. The recipe that uses one bookshelf will be empty.",
+  "valhelsia.information.akashic_tome.reverting": "Right-click to select a book to read. Left-click in the air to revert the tome back to select a new book.",
+  "valhelsia.information.atmospheric.aloe_kernels": "Aloe Kernels can be planted on either Arid Sand or Red Arid Sand. When planted on Arid Sand they will grow Yellow Blossoms, and when on Red Arid Sand they instead grow faster.",
+  "valhelsia.information.atmospheric.yellow_blossoms": "Aloe Kernels that are planted on Red Arid Sand will eventually grow into Tall Aloe Vera, which blooms with Yellow Blossoms.",
+  "valhelsia.information.autumnity.sap_bottle": "Sap Bottles are created by right-clicking with a Glass Bottle on a Sappy Maple block. Sappy Maple blocks have a 25% chance to be created when stripping Autumnity Maple Logs or Wood with an axe.",
+  "valhelsia.information.autumnity.sappy_maple_log": "Sappy Maple Logs have a 25% chance to be created when stripping Autumnity Maple Logs. Right-clicking on Sappy Maple Log with a Glass Bottle will fill the bottle with sap.",
+  "valhelsia.information.autumnity.sappy_maple_wood": "Sappy Maple Wood has a 25% chance to be created when stripping Autumnity Maple Wood. Right-clicking on Sappy Maple Wood with a Glass Bottle will fill the bottle with sap.",
+  "valhelsia.information.autumnity.snail_goo_block_1": "Landing on a Snail Goo Block does not cause fall damage unless the player is sneaking.",
+  "valhelsia.information.autumnity.snail_goo_block_2": "Snail Goo Blocks cause movement on top of them to slow down unless they are touching water or a wet sponge, in which case they become slippery. Snails are not affected by snail goo blocks.",
+  "valhelsia.information.autumnity.snail_goo_block_3": "Entities that are touching the bottom of a non-slippery snail goo block will stick to the block, preventing them from falling. This does not apply to snails or entities that are sneaking.",
+  "valhelsia.information.autumnity.snail_goo_block_4": "Snail Goo Blocks act similarly to Slime Blocks and Honey Blocks when moved by a piston, but additionally won't stick to either Mulberry Jam Blocks or Aloe Gel Blocks",
   "valhelsia.information.botania.ender_air_bottle": "Right-click with an empty bottle while in The End to fill it with Ender Air.",
+  "valhelsia.information.farmersdelight.rice": "Rice can be grown by planting it on dirt that is in shallow water, rather than regular farmland.",
+  "valhelsia.information.farmersrespite.coffee_beans": "Coffee Beans can be grown on top of Basalt. They feed on nearby non-coffee crops.",
   "valhelsia.information.forbidden_arcanus.deorum": "Deorum can be grown by planting Golden Orchid Seeds on Magical Farmland.",
+  "valhelsia.information.forbidden_arcanus.fungyss_obtaining": "Fungyss is sold by Wandering Traders.",
+  "valhelsia.information.forbidden_arcanus.fungyss": "Fungyss can be planted on top of Diorite and then grown with Bone Meal.",
   "valhelsia.information.forbidden_arcanus.magical_farmland": "Farmland can be converted into Magical Farmland with Arcane Bone Meal.",
   "valhelsia.information.forbidden_arcanus.stellarite_piece": "Obtained by breaking Stella Arcanum without Silk Touch.",
   "valhelsia.information.forbidden_arcanus.yellow_orchid": "Can be found growing in Flower Forests.",
+  "valhelsia.information.neapolitan.banana_fronds": "A banana frond needs to be planted on Sand or Gravel to grow, and will only grow in the rain.",
   "valhelsia.information.sullysmod.obtaining_jade": "Jade can be found underground in Jungle biomes.",
+  "valhelsia.information.valhelsia_tweaks.candy": "Candy can be obtained only around Halloween time.",
   "valhelsia.information.xercapaint.crafting_palettes": "Palettes are crafted with three planks at the bottom of the crafting grid, and any combination of dyes.",
   "valhelsia.information.xercapaint.adding_dye": "More dyes can be added later by crafting a palette with any missing dye.",
 
@@ -262,6 +284,6 @@
   "effect.seasonals.stuffed.description": "Gives 100% Knockback Resistance and Bonus Armor, but prevents jumping.",
 
   "valhelsia.comment.enchantments.descriptions": "-----Enchantment descriptions for tooltips-----",
-  "enchantment.deeperdarker.catalysis.description": "Slain mobs spread sculk as though a catalyst were nearby",
-  "enchantment.deeperdarker.sculk_smite.description": "Deal increased damage to sculk mobs"
+  "enchantment.deeperdarker.catalysis.description": "Slain mobs spread sculk as though a catalyst were nearby.",
+  "enchantment.deeperdarker.sculk_smite.description": "Deal increased damage to sculk mobs."
 }
