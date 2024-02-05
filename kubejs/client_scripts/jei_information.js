@@ -38,12 +38,13 @@ JEIEvents.information(event => {
   addInfo('botania:ender_air_bottle', 'valhelsia.information.botania.ender_air_bottle');
 
   // Forbidden and Arcanus
-  addInfo('forbidden_arcanus:arcane_bone_meal', 'valhelsia.information.magical_farmland');
-  addInfo('forbidden_arcanus:deorum_ingot', 'valhelsia.information.deorum');
-  addInfo('forbidden_arcanus:deorum_nugget', 'valhelsia.information.deorum');
-  addInfo('forbidden_arcanus:golden_orchid_seeds', 'valhelsia.information.deorum');
-  addInfo('forbidden_arcanus:magical_farmland', 'valhelsia.information.magical_farmland');
-  addInfo('forbidden_arcanus:stellarite_piece', 'valhelsia.information.stellarite_piece');
+  addInfo('forbidden_arcanus:arcane_bone_meal', 'valhelsia.information.forbidden_arcanus.magical_farmland');
+  addInfo('forbidden_arcanus:deorum_ingot', 'valhelsia.information.forbidden_arcanus.deorum');
+  addInfo('forbidden_arcanus:deorum_nugget', 'valhelsia.information.forbidden_arcanus.deorum');
+  addInfo('forbidden_arcanus:golden_orchid_seeds', 'valhelsia.information.forbidden_arcanus.deorum');
+  addInfo('forbidden_arcanus:magical_farmland', 'valhelsia.information.forbidden_arcanus.magical_farmland');
+  addInfo('forbidden_arcanus:stellarite_piece', 'valhelsia.information.forbidden_arcanus.stellarite_piece');
+  addInfo('forbidden_arcanus:yellow_orchid', 'valhelsia.information.forbidden_arcanus.yellow_orchid');
 
   // Sully's Mod
   addInfo([
