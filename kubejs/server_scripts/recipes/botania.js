@@ -119,6 +119,7 @@ ServerEvents.recipes(event => {
   conj2x('supplementaries:wild_flax', CONJ_COST_MED);
 
   conj2x('twilightforest:moss_patch');
+  conj2x('twilightforest:torchberry_plant');
 
   // Elven Trade
   // event.recipes.botania.elven_trade(['output_here'], 'input_here');
