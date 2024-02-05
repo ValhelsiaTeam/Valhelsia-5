@@ -38,6 +38,7 @@ JEIEvents.information(event => {
 
   // Akashic Tome
   addInfo('akashic_tome:tome', 'valhelsia.information.akashic_tome.filled_akashic_tome');
+  addInfo('akashic_tome:tome', 'valhelsia.information.akashic_tome.reverting');
 
   // Atmospheric
   addInfo('atmospheric:aloe_kernels', 'valhelsia.information.atmospheric.aloe_kernels');
