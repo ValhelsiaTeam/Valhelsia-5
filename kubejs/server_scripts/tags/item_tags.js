@@ -541,9 +541,11 @@ ServerEvents.tags('item', event => {
     'pneumaticcraft:printed_circuit_board',
   ]);
 
-  event.add('forge:circuits/elite', [
-    // Elite seems appropriate for these two not due to material cost, but infrastructure required.
+  event.add('forge:circuits/advanced', [
     'create_connected:control_chip',
+  ]);
+
+  event.add('forge:circuits/elite', [
     'pneumaticcraft:printed_circuit_board', 
   ]);
 

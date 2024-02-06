@@ -127,6 +127,9 @@ ServerEvents.recipes(event => {
   replaceInput('environmental:cherries', '#forge:fruits/cherry');
   replaceInput('forbidden_arcanus:cherry_peach', '#forge:fruits/cherry');
 
+  // Circuit Compatibility
+  replaceInput('create_connected:control_chip', '#forge:circuits/advanced');
+
   // Electron Tube Compatibility
   replaceInput('create:electron_tube', '#valhelsia:electron_tubes');
   replaceInput('immersiveengineering:electron_tube', '#valhelsia:electron_tubes');
