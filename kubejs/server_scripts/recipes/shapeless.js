@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     '#forge:dusts/wood'
   ]).id(`${ID_PREFIX}compost_from_sawdust`);
 
-  event.shapeless('farmersdelight:barbeque_stick', [
+  event.shapeless('farmersdelight:barbecue_stick', [
     '#forge:vegetables/tomato',
     '#forge:vegetables/onion',
     '#valhelsia:cooked_proteins',

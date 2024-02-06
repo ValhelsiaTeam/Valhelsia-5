@@ -118,7 +118,7 @@ ServerEvents.recipes(event => {
     'environmental:apple_pie', // Using the Farmer's Delight version instead.
 
     // Farmer's Delight
-    'farmersdelight:barbeque_stick', // Replaced with a new recipe.
+    'farmersdelight:barbecue_stick', // Replaced with a new recipe.
     'farmersdelight:cake_from_milk_bottle', // Redundant: Same as Neapolitan's recipe.
     'farmersdelight:stuffed_potato', // Replaced with a new recipe.
     
