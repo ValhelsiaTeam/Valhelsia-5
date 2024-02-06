@@ -8,7 +8,7 @@
 /**
  * @file Recipe additions for Immersive Enginnering's crafting methods.
  * 
- * @copyright Valhelsia Inc 2023
+ * @copyright Valhelsia Inc 2023-2024
  */
 
 /**
@@ -77,13 +77,36 @@ ServerEvents.recipes(event => {
   };
 
   /**
+   * Cloche
+   * @param {Array<OutputItem>} output An array of items to output.
+   * @param {!string|!InputItem} input The 'seed' to use for the recipe.
+   * @param {!string|!InputItem|!Array} soil Allowed soil types for the plant to grow on.
+   * @param {number} time Growth time, in ticks.
+   * @param {Object} render See: https://github.com/BluSunrize/ImmersiveEngineering/blob/1.19.2/src/generated/resources/data/immersiveengineering/recipes/cloche/allium.json
+   */
+  const cloche = (output, input, soil, time, render) => {
+    if (Array.isArray(output)) {
+      event.custom({
+        type: 'immersiveengineering:cloche',
+        input: InputItem.of(input).toJson(),
+        render: render,
+        results: output,
+        soil: InputItem.of(soil).toJson(),
+        time: time
+      }).id(`${ID_PREFIX}cloche/${OutputItem.of(output[0]).item.id.replace(':','/')}`);
+    } else {
+      console.warn('Garden Cloche recipes require the output to be an array.');
+    }
+  };
+
+  /**
    * Creates an Immersive Engineering Unpacking Recipe.
    * @param {(string|Item)} output Output item(s).
    * @param {(string|InputItem)} input Input item(s).
    */
   const unpack = (output, input) => {
     event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking').id(`${ID_PREFIX}unpacking/${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
-  }
+  };
 
   // Hammer Crushing Recipes
   hammer_crush('ae2:certus_quartz_dust', '#forge:gems/certus_quartz');
@@ -123,6 +146,8 @@ ServerEvents.recipes(event => {
   const CLOCHE_TIME_FRUITS = 560;
   const CLOCHE_TIME_CROPS = 800;
   const CLOCHE_TIME_MAGICAL = 1600;
+
+  cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:crimson_fungus'});
 
   /*
   // Temporary: These have been added to IE on GitHub but not released on CurseForge yet:
@@ -207,6 +232,8 @@ ServerEvents.recipes(event => {
 
   event.recipes.immersiveengineering.cloche(['upgrade_aquatic:white_searocket'], 'upgrade_aquatic:white_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:white_searocket'}).id(`${ID_PREFIX}cloche/white_searocket`);
   event.recipes.immersiveengineering.cloche(['upgrade_aquatic:pink_searocket'], 'upgrade_aquatic:pink_searocket', 'minecraft:sand', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'upgrade_aquatic:pink_searocket'}).id(`${ID_PREFIX}cloche/pink_searocket`);
+
+  // TODO: Add Windswept Flowers when re-enabling Cloche recipes.
   */
 
   // Metal Press Unpacking Recipes
@@ -220,6 +247,7 @@ ServerEvents.recipes(event => {
   unpack('9x neapolitan:banana', 'neapolitan:banana_crate');
 
   // Metal Press Gear Recipes
+  event.recipes.immersiveengineering.metal_press('create:cogwheel', 'create:andesite_alloy', 'immersiveengineering:mold_gear').id(`${ID_PREFIX}metal_press/cogwheel`);
   event.recipes.immersiveengineering.metal_press('immersiveengineering:sawblade', '6x #forge:ingots/steel', 'immersiveengineering:mold_gear').id(`${ID_PREFIX}metal_press/sawblade`);
   event.recipes.immersiveengineering.metal_press('pneumaticcraft:compressed_iron_gear', '4x #forge:ingots/compressed_iron', 'immersiveengineering:mold_gear').id(`${ID_PREFIX}metal_press/compressed_iron_gear`);
 
