@@ -37,8 +37,8 @@ JEIEvents.information(event => {
   addInfo('minecraft:sweet_berries', 'valhelsia.information.minecraft.sweet_berries');
 
   // Akashic Tome
-  addInfo('akashic_tome:tome', 'valhelsia.information.akashic_tome.filled_akashic_tome');
-  addInfo('akashic_tome:tome', 'valhelsia.information.akashic_tome.reverting');
+  addInfo('akashictome:tome', 'valhelsia.information.akashictome.filled_akashic_tome');
+  addInfo('akashictome:tome', 'valhelsia.information.akashictome.reverting');
 
   // Atmospheric
   addInfo('atmospheric:aloe_kernels', 'valhelsia.information.atmospheric.aloe_kernels');
@@ -72,7 +72,6 @@ JEIEvents.information(event => {
   ], 'valhelsia.information.forbidden_arcanus.deorum');
   addInfo('forbidden_arcanus:fungyss', 'valhelsia.information.forbidden_arcanus.fungyss_obtaining');
   addInfo('forbidden_arcanus:fungyss', 'valhelsia.information.forbidden_arcanus.fungyss');
-  addInfo('forbidden_arcanus:golden_orchid_seeds', 'valhelsia.information.forbidden_arcanus.deorum');
   addInfo('forbidden_arcanus:magical_farmland', 'valhelsia.information.forbidden_arcanus.magical_farmland');
   addInfo('forbidden_arcanus:stellarite_piece', 'valhelsia.information.forbidden_arcanus.stellarite_piece');
   addInfo('forbidden_arcanus:yellow_orchid', 'valhelsia.information.forbidden_arcanus.yellow_orchid');
