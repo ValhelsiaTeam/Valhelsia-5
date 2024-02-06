@@ -19,17 +19,17 @@ ServerEvents.recipes(event => {
 
   // Mechanical Crafting
   event.recipes.create.mechanical_crafting('valhelsia_structures:dungeon_door', [
-    'CCCCC',
-    'HWCWH',
-    'CWCWC',
-    'HSCSH',
-    'CCCCC'
+    'CCCC',
+    'HWWH',
+    'CWWC',
+    'HSSH',
+    'CCCC'
   ], {
     C: '#forge:ingots/cast_iron',
     W: 'minecraft:dark_oak_planks',
     H: 'create:shaft',
     S: '#forge:plates/cast_iron',
-  });
+  }).id(`${ID_PREFIX}mechanical_crafting/dungeon_door`);
 
   // Mixing
   event.recipes.create.mixing([Fluid.of('minecraft:milk 250')], [Fluid.of('minecraft:water 250'), '#valhelsia:nuts']).heated().id(`${ID_PREFIX}mixing/milk_from_nuts`);
