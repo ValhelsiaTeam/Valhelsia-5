@@ -48,6 +48,19 @@ ServerEvents.recipes(event => {
     '#forge:dusts/wood'
   ]).id(`${ID_PREFIX}compost_from_sawdust`);
 
+  event.shapeless('farmersdelight:barbeque_stick', [
+    '#forge:vegetables/tomato',
+    '#forge:vegetables/onion',
+    '#valhelsia:cooked_proteins',
+    '#forge:rods/wooden',
+  ]).id(`${ID_PREFIX}barbeque_stick`);
+
+  event.shapeless('farmersdelight:stuffed_potato', [
+    'minecraft:baked_potato',
+    '#forge:vegetables/onion',
+    '#valhelsia:cooked_proteins',
+  ]).id(`${ID_PREFIX}stuffed_potato`);
+
   // Quark
   event.shapeless('2x quark:myalite', ['minecraft:cobblestone', 'minecraft:amethyst_block', 'quark:myalite_crystal']).id(`${ID_PREFIX}myalite`);
   event.shapeless('quark:dusky_myalite', ['ars_nouveau:sourcestone', 'quark:myalite']).id(`${ID_PREFIX}dusky_myalite`);
