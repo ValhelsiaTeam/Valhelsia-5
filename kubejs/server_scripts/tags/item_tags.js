@@ -536,12 +536,15 @@ ServerEvents.tags('item', event => {
 
   // ----- Electronics -----
   event.add('forge:circuits', [
+    'create_connected:control_chip',
     'immersiveengineering:circuit_board',
     'pneumaticcraft:printed_circuit_board',
   ]);
 
   event.add('forge:circuits/elite', [
-    'pneumaticcraft:printed_circuit_board', // Elite seems appropriate. *shrug*
+    // Elite seems appropriate for these two not due to material cost, but infrastructure required.
+    'create_connected:control_chip',
+    'pneumaticcraft:printed_circuit_board', 
   ]);
 
   // ----- Flour & Dough -----
