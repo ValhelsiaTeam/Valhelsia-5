@@ -15,6 +15,17 @@
  */
 ServerEvents.tags('entity_type', event => {
 
+  // Expand Ars Nouveau Magic Find to other mobs.
+  event.add('ars_nouveau:magic_find', [
+    // TODO: Go through Aether, Malum, etc. for more.
+    'artifacts:mimic',
+    'conjurer_illager:conjurer',
+    'twilightforest:death_tome',
+    'twilightforest:lich',
+    'twilightforest:skeleton_druid',
+    'twilightforest:wraith',
+  ]);
+
   // Add Halloween Event Candy to Spoopy Mobs
   event.add('valhelsia_tweaks:drops_candy', [
     'minecraft:zombie',

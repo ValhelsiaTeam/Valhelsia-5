@@ -53,7 +53,7 @@ ServerEvents.recipes(event => {
     '#forge:vegetables/onion',
     '#valhelsia:cooked_proteins',
     '#forge:rods/wooden',
-  ]).id(`${ID_PREFIX}barbeque_stick`);
+  ]).id(`${ID_PREFIX}barbecue_stick`);
 
   event.shapeless('farmersdelight:stuffed_potato', [
     'minecraft:baked_potato',

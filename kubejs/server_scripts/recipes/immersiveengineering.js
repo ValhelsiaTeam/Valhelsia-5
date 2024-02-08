@@ -147,7 +147,7 @@ ServerEvents.recipes(event => {
   const CLOCHE_TIME_CROPS = 800;
   const CLOCHE_TIME_MAGICAL = 1600;
 
-  cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:crimson_fungus'});
+  //cloche(['minecraft:crimson_fungus'], 'minecraft:crimson_fungus', 'minecraft:crimson_nylium', CLOCHE_TIME_FLOWERS, {type: 'generic', block: 'minecraft:crimson_fungus'});
 
   /*
   // Temporary: These have been added to IE on GitHub but not released on CurseForge yet:
