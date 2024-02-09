@@ -20,6 +20,12 @@ ServerEvents.tags('entity_type', event => {
     // TODO: Go through Aether, Malum, etc. for more.
     'artifacts:mimic',
     'conjurer_illager:conjurer',
+    'irons_spellbooks:archevoker',
+    'irons_spellbooks:cryomancer',
+    'irons_spellbooks:dead_king',
+    'irons_spellbooks:necromancer',
+    'irons_spellbooks:priest',
+    'irons_spellbooks:pyromancer',
     'twilightforest:death_tome',
     'twilightforest:lich',
     'twilightforest:skeleton_druid',
