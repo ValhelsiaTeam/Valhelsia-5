@@ -76,6 +76,19 @@ ServerEvents.recipes(event => {
   'ars_nouveau:apprentice_spell_book',
   `${ID_PREFIX}archmage_spell_book_upgrade`);
 
+  // Enchanting Apparatus
+  event.recipes.ars_nouveau.enchanting_apparatus(
+    [
+      'minecraft:ender_eye',
+      'alexsmobs:guster_eye',
+      'botania:third_eye',
+      'quark:ender_watcher',
+    ],
+    'ars_nouveau:scryers_crystal',
+    'ars_nouveau:enchanters_eye',
+    1000,
+  );
+
   // Ars Nouveau Glyphs
   event.recipes.ars_nouveau.glyph(
     'ars_nouveau:glyph_break',

@@ -26,6 +26,8 @@ ServerEvents.tags('entity_type', event => {
     'irons_spellbooks:necromancer',
     'irons_spellbooks:priest',
     'irons_spellbooks:pyromancer',
+    'minecraft:evoker',
+    'minecraft:illusioner',
     'twilightforest:death_tome',
     'twilightforest:lich',
     'twilightforest:skeleton_druid',

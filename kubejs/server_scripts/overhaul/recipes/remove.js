@@ -27,6 +27,7 @@ ServerEvents.recipes(event => {
   [
     'minecraft:bread', // Now requires dough + cooking.
     'ars_elemental:glyph_conjure_terrain',
+    'ars_nouveau:enchanters_eye',
     'ars_nouveau:glyph_break',
     'ars_nouveau:glyph_conjure_water',
     'ars_nouveau:glyph_extract',
