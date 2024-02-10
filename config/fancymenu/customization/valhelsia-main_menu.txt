@@ -1,0 +1,842 @@
+type = fancymenu_layout
+
+layout-meta {
+  identifier = title_screen
+  render_custom_elements_behind_vanilla = false
+  last_edited_time = 1707575709852
+  is_enabled = true
+  randommode = false
+  randomgroup = 1
+  randomonlyfirsttime = false
+  layout_index = 0
+  [loading_requirement_container_meta:0b7c8c96-e946-41dc-8b9d-f67db955c227-1707575697206] = [groups:][instances:]
+}
+
+menu_background {
+  panorama_name = valhelsia
+  background_type = panorama
+}
+
+customization {
+  action = backgroundoptions
+  keepaspectratio = false
+}
+
+scroll_list_customization {
+  preserve_scroll_list_header_footer_aspect_ratio = true
+  render_scroll_list_header_shadow = true
+  render_scroll_list_footer_shadow = true
+  show_scroll_list_header_footer_preview_in_editor = false
+}
+
+element {
+  source = [source:local]kubejs/assets/custom-menu/textures/gui/valhelsia.png
+  element_type = image
+  instance_identifier = 06f4d2a6-41be-4fbe-8e61-98ce912fa3461639130597244
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-centered
+  x = -77
+  y = 5
+  width = 155
+  height = 66
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 8ccc7655-ba6f-4c2e-b0c1-4e8f8603e1b5-1707574719557
+  [loading_requirement_container_meta:8ccc7655-ba6f-4c2e-b0c1-4e8f8603e1b5-1707574719557] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = fbe306f1-46c3-4076-8f9e-72a515cf7b22-1707574719558
+  [executable_action_instance:f3e1b179-f970-40b3-b02c-cdd7afd9ba01-1707574719559][action_type:openlink] = https://www.bisecthosting.com/Valhelsia?r=valhelsia+6+modpack
+  [executable_block:fbe306f1-46c3-4076-8f9e-72a515cf7b22-1707574719558][type:generic] = [executables:f3e1b179-f970-40b3-b02c-cdd7afd9ba01-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\bisecthosting-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\bisecthosting-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  hoverlabel =      Rent a Server
+  label =      Rent a Server
+  element_type = custom_button
+  instance_identifier = e1182d0c-9cca-4b58-8c64-917c5255cbf61639131781664
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 2
+  y = -1
+  width = 160
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 90c1c73f-cf91-4b76-b589-9d5f6be762cb-1707574719559
+  [loading_requirement_container_meta:90c1c73f-cf91-4b76-b589-9d5f6be762cb-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 308c0df7-f2be-4419-9305-37b833560600-1707574719559
+  [executable_action_instance:00a19a45-cfc3-4d89-b63b-231b4a0cb263-1707574719559][action_type:openlink] = https://valhelsia.net/
+  [executable_block:308c0df7-f2be-4419-9305-37b833560600-1707574719559][type:generic] = [executables:00a19a45-cfc3-4d89-b63b-231b4a0cb263-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\valhelsia-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\valhelsia-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -68
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 5359361c-9ac2-4303-94a1-aceddd227372-1707574719559
+  [loading_requirement_container_meta:5359361c-9ac2-4303-94a1-aceddd227372-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 0b285a20-d672-44a2-bb1b-d153c731ca5f-1707574719559
+  [executable_action_instance:4dfbf712-dba5-4dbe-acf6-58f4afa713d5-1707574719559][action_type:openlink] = https://discord.gg/rdfQuaM
+  [executable_block:0b285a20-d672-44a2-bb1b-d153c731ca5f-1707574719559][type:generic] = [executables:4dfbf712-dba5-4dbe-acf6-58f4afa713d5-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\discord-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\discord-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -16
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 44976fc2-33f3-437f-bcfa-fbb91b0d18f0-1707574719559
+  [loading_requirement_container_meta:44976fc2-33f3-437f-bcfa-fbb91b0d18f0-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 57909fca-e8ef-4e62-9d0e-f568bd6f56ec-1707574719559
+  [executable_action_instance:30b4b328-9b2f-44f3-ab01-67e2fc4cca9d-1707574719559][action_type:openlink] = https://twitter.com/Valhelsia
+  [executable_block:57909fca-e8ef-4e62-9d0e-f568bd6f56ec-1707574719559][type:generic] = [executables:30b4b328-9b2f-44f3-ab01-67e2fc4cca9d-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\twitter-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\twitter-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = 36
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = ba49e73f-bd79-4e5a-b8c0-d2c5a07c2728-1707574719559
+  [loading_requirement_container_meta:ba49e73f-bd79-4e5a-b8c0-d2c5a07c2728-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 308c0df7-f2be-4419-9305-37b833560600-1707574719559
+  [executable_action_instance:00a19a45-cfc3-4d89-b63b-231b4a0cb263-1707574719559][action_type:openlink] = https://valhelsia.net/
+  [executable_block:308c0df7-f2be-4419-9305-37b833560600-1707574719559][type:generic] = [executables:00a19a45-cfc3-4d89-b63b-231b4a0cb263-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\valhelsia-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\valhelsia-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -68
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 5359361c-9ac2-4303-94a1-aceddd227372-1707574719559
+  [loading_requirement_container_meta:5359361c-9ac2-4303-94a1-aceddd227372-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 0b285a20-d672-44a2-bb1b-d153c731ca5f-1707574719559
+  [executable_action_instance:4dfbf712-dba5-4dbe-acf6-58f4afa713d5-1707574719559][action_type:openlink] = https://discord.gg/rdfQuaM
+  [executable_block:0b285a20-d672-44a2-bb1b-d153c731ca5f-1707574719559][type:generic] = [executables:4dfbf712-dba5-4dbe-acf6-58f4afa713d5-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\discord-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\discord-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -16
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 44976fc2-33f3-437f-bcfa-fbb91b0d18f0-1707574719559
+  [loading_requirement_container_meta:44976fc2-33f3-437f-bcfa-fbb91b0d18f0-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 57909fca-e8ef-4e62-9d0e-f568bd6f56ec-1707574719559
+  [executable_action_instance:30b4b328-9b2f-44f3-ab01-67e2fc4cca9d-1707574719559][action_type:openlink] = https://twitter.com/Valhelsia
+  [executable_block:57909fca-e8ef-4e62-9d0e-f568bd6f56ec-1707574719559][type:generic] = [executables:30b4b328-9b2f-44f3-ab01-67e2fc4cca9d-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\twitter-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\twitter-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = 36
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = ba49e73f-bd79-4e5a-b8c0-d2c5a07c2728-1707574719559
+  [loading_requirement_container_meta:ba49e73f-bd79-4e5a-b8c0-d2c5a07c2728-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 308c0df7-f2be-4419-9305-37b833560600-1707574719559
+  [executable_action_instance:00a19a45-cfc3-4d89-b63b-231b4a0cb263-1707574719559][action_type:openlink] = https://valhelsia.net/
+  [executable_block:308c0df7-f2be-4419-9305-37b833560600-1707574719559][type:generic] = [executables:00a19a45-cfc3-4d89-b63b-231b4a0cb263-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\valhelsia-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\valhelsia-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -68
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 5359361c-9ac2-4303-94a1-aceddd227372-1707574719559
+  [loading_requirement_container_meta:5359361c-9ac2-4303-94a1-aceddd227372-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 0b285a20-d672-44a2-bb1b-d153c731ca5f-1707574719559
+  [executable_action_instance:4dfbf712-dba5-4dbe-acf6-58f4afa713d5-1707574719559][action_type:openlink] = https://discord.gg/rdfQuaM
+  [executable_block:0b285a20-d672-44a2-bb1b-d153c731ca5f-1707574719559][type:generic] = [executables:4dfbf712-dba5-4dbe-acf6-58f4afa713d5-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\discord-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\discord-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = -16
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 44976fc2-33f3-437f-bcfa-fbb91b0d18f0-1707574719559
+  [loading_requirement_container_meta:44976fc2-33f3-437f-bcfa-fbb91b0d18f0-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 57909fca-e8ef-4e62-9d0e-f568bd6f56ec-1707574719559
+  [executable_action_instance:30b4b328-9b2f-44f3-ab01-67e2fc4cca9d-1707574719559][action_type:openlink] = https://twitter.com/Valhelsia
+  [executable_block:57909fca-e8ef-4e62-9d0e-f568bd6f56ec-1707574719559][type:generic] = [executables:30b4b328-9b2f-44f3-ab01-67e2fc4cca9d-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\twitter-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\twitter-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = custom_button
+  instance_identifier = 7c68450c-412d-4e46-9da3-efb2475272d91639404252418
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-centered
+  x = 36
+  y = -45
+  width = 32
+  height = 32
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = ba49e73f-bd79-4e5a-b8c0-d2c5a07c2728-1707574719559
+  [loading_requirement_container_meta:ba49e73f-bd79-4e5a-b8c0-d2c5a07c2728-1707574719559] = [groups:][instances:]
+}
+
+element {
+  button_element_executable_block_identifier = 5d590572-6cf0-4ced-9b42-16f5e8ca679a-1707574719559
+  [executable_action_instance:4421649a-42c0-4761-a19a-a8bbe704a504-1707574719559][action_type:openlink] = https://www.youtube.com/watch?v=DPbvoJlBRkw
+  [executable_block:5d590572-6cf0-4ced-9b42-16f5e8ca679a-1707574719559][type:generic] = [executables:4421649a-42c0-4761-a19a-a8bbe704a504-1707574719559;]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\transparent-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\transparent-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  hoverlabel = Menu Music by Rush Garcia (@Tit0Rush)
+  label = Menu Music by Rush Garcia (@Tit0Rush)
+  element_type = custom_button
+  instance_identifier = ad44474f-b48b-4165-ad55-4159608991a81665565901304
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = bottom-right
+  x = -198
+  y = -22
+  width = 198
+  height = 12
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = e2e696c5-073e-4649-a9bf-111cec02b10e-1707574719559
+  [loading_requirement_container_meta:e2e696c5-073e-4649-a9bf-111cec02b10e-1707574719559] = [groups:][instances:]
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 1ac0aa75-a9e7-4109-b604-8083b679fbd0-1707574855987
+  [executable_block:1ac0aa75-a9e7-4109-b604-8083b679fbd0-1707574855987][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 97641
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 616
+  y = 4
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = dfd7581a-b265-49c9-a842-2160cb253874-1707574855987
+  [loading_requirement_container_meta:dfd7581a-b265-49c9-a842-2160cb253874-1707574855987] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 7f5a42b7-95f9-4256-98e9-b09bba15f7c1-1707574855987
+  [executable_block:7f5a42b7-95f9-4256-98e9-b09bba15f7c1-1707574855987][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 976411
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 616
+  y = 4
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 393772c9-448e-4674-93da-cb65a84674c2-1707574855987
+  [loading_requirement_container_meta:393772c9-448e-4674-93da-cb65a84674c2-1707574855987] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = c0b58b7f-6d98-4de4-9427-586bca832f36-1707574855987
+  [executable_block:c0b58b7f-6d98-4de4-9427-586bca832f36-1707574855987][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 9764
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 616
+  y = 4
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = a71ad7e6-af78-46f7-acd8-495df8b7920f-1707574855987
+  [loading_requirement_container_meta:a71ad7e6-af78-46f7-acd8-495df8b7920f-1707574855987] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 1c39fd3e-0c49-40b0-9247-e204b69a8c04-1707574719549
+  [executable_block:1c39fd3e-0c49-40b0-9247-e204b69a8c04-1707574719549][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\multiplayer-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\multiplayer-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label =      Multiplayer
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_multiplayer_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 2
+  y = -39
+  width = 160
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = cea8b467-4f12-4bb1-93b1-ea365abb4783-1707574719549
+  [loading_requirement_container_meta:cea8b467-4f12-4bb1-93b1-ea365abb4783-1707574719549] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = fc9c2b13-b69a-4cfa-b1cc-17d9ca917748-1707574719552
+  [executable_block:fc9c2b13-b69a-4cfa-b1cc-17d9ca917748-1707574719552][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\singleplayer-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\singleplayer-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label =      Singleplayer
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_singleplayer_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -161
+  y = -39
+  width = 160
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = c1b7d44e-1fd9-474f-ba91-548973ab003a-1707574719552
+  [loading_requirement_container_meta:c1b7d44e-1fd9-474f-ba91-548973ab003a-1707574719552] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 62c09e41-4041-4b67-ad4b-26d40b1d6504-1707574719552
+  [executable_block:62c09e41-4041-4b67-ad4b-26d40b1d6504-1707574719552][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 376346
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 196
+  y = 180
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = a5a41a6d-6832-4697-80db-9d86733df13f-1707574719552
+  [loading_requirement_container_meta:a5a41a6d-6832-4697-80db-9d86733df13f-1707574719552] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 9bc348d6-9786-4f2f-8767-85463166360a-1707574855987
+  [executable_block:9bc348d6-9786-4f2f-8767-85463166360a-1707574855987][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = 0
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = -50
+  y = -50
+  width = 20
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = true
+  element_loading_requirement_container_identifier = 48b254d5-1a1c-437b-8840-77851e93c4c0-1707574855987
+  [loading_requirement_container_meta:48b254d5-1a1c-437b-8840-77851e93c4c0-1707574855987] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 1b8d2236-3de5-4eb4-827a-e9e237d28313-1707574719552
+  [executable_block:1b8d2236-3de5-4eb4-827a-e9e237d28313-1707574719552][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_realms_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 322
+  y = 180
+  width = 98
+  height = 20
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 8c9f3754-5226-43bf-824c-fb43eb87b3d0-1707574719552
+  [loading_requirement_container_meta:8c9f3754-5226-43bf-824c-fb43eb87b3d0-1707574719552] = [groups:][instances:]
+  is_hidden = true
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 3dd365c9-9e2a-4830-9631-d440cf543955-1707574719552
+  [executable_block:3dd365c9-9e2a-4830-9631-d440cf543955-1707574719552][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\exit-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\exit-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label =      Quit Game
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_quit_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 2
+  y = 37
+  width = 160
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 3286b4e5-7b37-406e-bef9-f69febbc5f8b-1707574719552
+  [loading_requirement_container_meta:3286b4e5-7b37-406e-bef9-f69febbc5f8b-1707574719552] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 9cc2fcaa-940f-4a84-b7a0-85c36c894568-1707574719551
+  [executable_block:9cc2fcaa-940f-4a84-b7a0-85c36c894568-1707574719551][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\accessibility-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\accessibility-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_accessibility_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = 165
+  y = 37
+  width = 35
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 9a96ae8d-e8d9-479f-89d5-9e98c917855e-1707574719551
+  [loading_requirement_container_meta:9a96ae8d-e8d9-479f-89d5-9e98c917855e-1707574719551] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 85cc7ea6-bf04-484a-bd46-0df47c336d56-1707574719552
+  [executable_block:85cc7ea6-bf04-484a-bd46-0df47c336d56-1707574719552][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\mods-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\mods-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label =      Mods
+  element_type = vanilla_button
+  instance_identifier = forge_titlescreen_mods_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -161
+  y = -1
+  width = 160
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 125ccf76-5cc4-4c28-ae5c-2c39778ffdbe-1707574719552
+  [loading_requirement_container_meta:125ccf76-5cc4-4c28-ae5c-2c39778ffdbe-1707574719552] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = d7d9b628-921c-4bca-9ea2-44008b4fb3c1-1707574719552
+  [executable_block:d7d9b628-921c-4bca-9ea2-44008b4fb3c1-1707574719552][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\language-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\language-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label = 
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_language_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -199
+  y = 37
+  width = 35
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = d652b039-21b8-4fb9-b057-16db7dbf5549-1707574719552
+  [loading_requirement_container_meta:d652b039-21b8-4fb9-b057-16db7dbf5549-1707574719552] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 73fde152-34e0-4eb4-80ff-86b53676fe98-1707574719552
+  [executable_block:73fde152-34e0-4eb4-80ff-86b53676fe98-1707574719552][type:generic] = [executables:]
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  hoverlabel = 
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_copyright_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 442
+  y = 327
+  width = 196
+  height = 10
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 5b91f6df-b71f-4104-bc9f-dce77af0f901-1707574719552
+  [loading_requirement_container_meta:5b91f6df-b71f-4104-bc9f-dce77af0f901-1707574719552] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+vanilla_button {
+  button_element_executable_block_identifier = 8cdcdf81-71e6-48d9-aca2-a965179a6861-1707574719551
+  [executable_block:8cdcdf81-71e6-48d9-aca2-a965179a6861-1707574719551][type:generic] = [executables:]
+  backgroundnormal = [source:local]kubejs\assets\custom-menu\textures\gui\options-button.png
+  backgroundhovered = [source:local]kubejs\assets\custom-menu\textures\gui\options-hover-button.png
+  restartbackgroundanimations = true
+  loopbackgroundanimations = true
+  label =    Options...
+  element_type = vanilla_button
+  instance_identifier = mc_titlescreen_options_button
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = mid-centered
+  x = -161
+  y = 37
+  width = 160
+  height = 35
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 9997880f-887a-4061-b0b2-4e0552a5cae6-1707574719551
+  [loading_requirement_container_meta:9997880f-887a-4061-b0b2-4e0552a5cae6-1707574719551] = [groups:][instances:]
+  is_hidden = false
+  automated_button_clicks = 0
+}
+
+deep_element {
+  element_type = title_screen_logo
+  instance_identifier = deep:title_screen_logo
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-left
+  x = 183
+  y = 30
+  width = 274
+  height = 52
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = fe96f8bb-cc97-4e5b-8a48-f31898440028-1707574855987
+  [loading_requirement_container_meta:fe96f8bb-cc97-4e5b-8a48-f31898440028-1707574855987] = [groups:][instances:]
+  is_hidden = true
+}
+
+deep_element {
+  element_type = title_screen_branding
+  instance_identifier = deep:title_screen_branding
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-left
+  x = 2
+  y = 286
+  width = 128
+  height = 49
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 2d30ff58-3ccf-401f-a937-b6bbad03e782-1707574855987
+  [loading_requirement_container_meta:2d30ff58-3ccf-401f-a937-b6bbad03e782-1707574855987] = [groups:][instances:]
+  is_hidden = false
+}
+
+deep_element {
+  element_type = title_screen_splash
+  instance_identifier = deep:title_screen_splash
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = vanilla
+  x = 0
+  y = 0
+  width = 60
+  height = 30
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 9d64c886-58fb-42bc-82b0-f52f4197712a-1707574855987
+  [loading_requirement_container_meta:9d64c886-58fb-42bc-82b0-f52f4197712a-1707574855987] = [groups:][instances:]
+  is_hidden = true
+}
+
+deep_element {
+  element_type = title_screen_realms_notification
+  instance_identifier = deep:title_screen_realms_notification
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-left
+  x = 423
+  y = 184
+  width = 13
+  height = 13
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 778381d0-98b3-4ac2-90f1-0f2796d5a8c3-1707574855987
+  [loading_requirement_container_meta:778381d0-98b3-4ac2-90f1-0f2796d5a8c3-1707574855987] = [groups:][instances:]
+  is_hidden = true
+}
+
+deep_element {
+  element_type = title_screen_forge_copyright
+  instance_identifier = deep:title_screen_forge_copyright
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-left
+  x = 411
+  y = 317
+  width = 228
+  height = 9
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = 579b7bac-744a-4dd5-93e7-1747579a23f9-1707574855987
+  [loading_requirement_container_meta:579b7bac-744a-4dd5-93e7-1747579a23f9-1707574855987] = [groups:][instances:]
+  is_hidden = true
+}
+
+deep_element {
+  element_type = title_screen_forge_top
+  instance_identifier = deep:title_screen_forge_top
+  appearance_delay = no_delay
+  appearance_delay_seconds = 1.0
+  fade_in = false
+  fade_in_speed = 1.0
+  anchor_point = top-left
+  x = 186
+  y = 4
+  width = 268
+  height = 19
+  stretch_x = false
+  stretch_y = false
+  stay_on_screen = false
+  element_loading_requirement_container_identifier = dc8baa18-20dd-4e3b-8726-2ca243726d1c-1707574855987
+  [loading_requirement_container_meta:dc8baa18-20dd-4e3b-8726-2ca243726d1c-1707574855987] = [groups:][instances:]
+  is_hidden = true
+}
+
