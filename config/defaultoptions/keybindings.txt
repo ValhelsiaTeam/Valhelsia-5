@@ -135,3 +135,4 @@ key_pneumaticcraft.armor.upgrade.block_tracker.module.hackables:key.keyboard.unk
 key_pneumaticcraft.armor.upgrade.scuba:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.jet_boots.module.builder_mode:key.keyboard.unknown:NONE
 key_pneumaticcraft.armor.upgrade.block_tracker.module.end_portal:key.keyboard.unknown:NONE
+key_key.immersivepetroleum.projector.flip:key.keyboard.unknown:NONE
