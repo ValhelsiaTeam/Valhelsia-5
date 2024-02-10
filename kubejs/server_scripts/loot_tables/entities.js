@@ -64,6 +64,33 @@ ServerEvents.entityLootTables(event => {
     });
   });
 
+  // Twilight Forest - Hydra
+  event.modifyEntity('twilightforest:hydra', table => {
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('irons_spellbooks:fire_rune');
+    });
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('irons_spellbooks:arcane_essence', 1, [0, 8]).lootingEnchant([0, 1], 1);
+    });
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('irons_spellbooks:scroll').addFunction({
+        function: 'irons_spellbooks:randomize_spell',
+        quality: {
+          min: 0.25,
+          max: 0.85
+        },
+        school: 'irons_spellbooks:fire'
+      });
+    });
+    table.addPool(pool => {
+      pool.rolls = [1, 3];
+      pool.addLootTable('irons_spellbooks:magic_items/great_ink');
+    });
+  });
+
   // Twilight Forest - Lich
   event.modifyEntity('twilightforest:lich', table => {
     table.addPool(pool => {
@@ -73,12 +100,44 @@ ServerEvents.entityLootTables(event => {
     table.addPool(pool => {
       pool.rolls = 1;
       pool.addItem('irons_spellbooks:scroll').addFunction({
-          "function": "irons_spellbooks:randomize_spell",
-          "quality": {
-            "min": 0.0,
-            "max": 0.3
-          }
-        }).randomChanceWithLooting(0.25, 0.05);
+        function: 'irons_spellbooks:randomize_spell',
+        quality: {
+          min: 0.0,
+          max: 0.3
+        }
+      }).randomChanceWithLooting(0.25, 0.05);
     });
   });
+
+  // Twilight Forest - Ur-ghast
+  // TODO
+  // event.modifyEntity('twilight_forest:ur_ghast), table => {});
+
+  // Twilight Forest - Snow Queen
+  event.modifyEntity('twilightforest:snow_queen', table => {
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('irons_spellbooks:ice_rune');
+    });
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('irons_spellbooks:arcane_essence', 1, [0, 8]).lootingEnchant([0, 1], 1);
+    });
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('irons_spellbooks:scroll').addFunction({
+        function: 'irons_spellbooks:randomize_spell',
+        quality: {
+          min: 0.25,
+          max: 0.85
+        },
+        school: 'irons_spellbooks:ice'
+      });
+    });
+    table.addPool(pool => {
+      pool.rolls = [1, 3];
+      pool.addLootTable('irons_spellbooks:magic_items/great_ink');
+    });
+  });
+
 });
