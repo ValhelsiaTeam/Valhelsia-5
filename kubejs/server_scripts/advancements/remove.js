@@ -7,7 +7,7 @@
 
 /**
  * @file Removes unused / undesired advancements from the pack.
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2024
  */
 
 /**
@@ -17,7 +17,7 @@
  * @const {!string[]}
  */
 const ADVANCEMENTS_TO_REMOVE = [
-  // TODO: Remove unused advancements here.
+  'irons_spellbooks:advancements/grant_patchouli.json',
 ];
 
 /**
