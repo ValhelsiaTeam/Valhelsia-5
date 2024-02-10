@@ -10,6 +10,7 @@ maxFps:120
 resourcePacks:["vanilla","mod_resources","Everycomp Generated Pack","V Slab Compat Generated Pack","quark:emote_resources","Betterjukebox Generated Pack","Supplementaries Generated Pack","builtin/default_ctm_resources","builtin/glass_pane_fix_resources","resources/Updated Engineering","file/Valhelsia Paintings.zip","file/xali\u0027s Enhanced Jungle Wood v1.2.zip","file/xali\u0027s Enhanced Vanilla v1.11.1.zip","file/Valhelsia UI.zip","file/xali\u0027s Bushy Leaves v3.5.0.zip"]
 incompatibleResourcePacks:["quark:emote_resources","file/xali\u0027s Enhanced Jungle Wood v1.2.zip","file/xali\u0027s Bushy Leaves v3.5.0.zip"]
 mipmapLevels:0
+tutorialStep:none
 soundCategory_master:0.5
 soundCategory_music:0.25
 soundCategory_record:1.0
