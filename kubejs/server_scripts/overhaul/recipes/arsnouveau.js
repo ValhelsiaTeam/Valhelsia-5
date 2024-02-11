@@ -87,7 +87,7 @@ ServerEvents.recipes(event => {
     'ars_nouveau:scryers_crystal',
     'ars_nouveau:enchanters_eye',
     1000,
-  );
+  ).id(`${ID_PREFIX}enchanters_eye`);
 
   // Ars Nouveau Glyphs
   event.recipes.ars_nouveau.glyph(
