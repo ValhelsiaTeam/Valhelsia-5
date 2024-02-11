@@ -49,7 +49,7 @@ function generate_tips(ctx) {
 
   if (tipCount > 0) {
     // This is mostly to provide some visual feedback that the command actually ran.
-    ctx.source.sendSuccess(Text.translate('commands.valhelsia.developer.tips_generated', `${tipCount}'.`), true);
+    ctx.source.sendSuccess(Text.translate('commands.valhelsia.developer.tips_generated', `${tipCount}`), true);
   }
 
   return tipCount;
