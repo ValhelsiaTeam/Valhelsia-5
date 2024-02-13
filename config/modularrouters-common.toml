@@ -157,7 +157,7 @@
 	senderModule2EnergyCost = 0
 	#Energy cost (FE) to run one operation for the Sender Module Mk3
 	#Range: > 0
-	senderModule3EnergyCost = 0
+	senderModule3EnergyCost = 200
 	#Energy cost (FE) to run one operation for the Vacuum Module
 	#Range: > 0
 	vacuumModuleEnergyCost = 0
