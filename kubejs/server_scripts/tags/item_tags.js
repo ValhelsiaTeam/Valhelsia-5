@@ -480,6 +480,13 @@ ServerEvents.tags('item', event => {
   // ----- Plates -----
   event.add('forge:plates', [
     'createdeco:cast_iron_sheet',
+    'mekanism:hdpe_sheet',
+    'pneumaticcraft:plastic',
+  ]);
+
+  event.add('forge:plates/plastic', [
+    'mekanism:hdpe_sheet',
+    'pneumaticcraft:plastic',
   ]);
 
   // ----- Gems -----
