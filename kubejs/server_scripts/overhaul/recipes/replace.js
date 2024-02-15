@@ -118,6 +118,9 @@ ServerEvents.recipes(event => {
   // Joy of Painting
   replaceInputID('xercapaint:item_canvas', 'minecraft:paper', 'farmersdelight:canvas');
 
+  // Modular Routers
+  replaceInputID('modularrouters:modular_router', 'minecraft:iron_bars', '#forge:plates/aluminum');
+
   // Xerca's Music Maker Mod
 
   // Tonewoods
