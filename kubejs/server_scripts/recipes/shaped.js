@@ -66,6 +66,20 @@ ServerEvents.recipes(event => {
   };
 
   /**
+   * Adds a new ring shaped recipe (donut without corners)
+   * 
+   * @param {*} output Item(s) to craft.
+   * @param {*} input Recipe ingredients.
+   * @param {string} [recipeID] ID of the recipe.
+   */
+    const ring = (output, input, recipeID) => {
+      let recipe = event.shaped(output, [' A ', 'A A', ' A '], {A: input});
+      if (typeof recipeID == 'string') {
+        recipe.id(`${ID_PREFIX}${recipeID}`);
+      }
+    };
+
+  /**
    * Adds a new wrapped shaped recipe.
    * 
    * @param {*} output Item(s) to craft.
@@ -317,6 +331,9 @@ ServerEvents.recipes(event => {
   shaped3x3('immersiveengineering:storage_silver', '#forge:ingots/silver', 'silver_block_from_silver_ingots');
   shaped3x3('immersiveengineering:storage_steel', '#forge:ingots/steel', 'steel_block_from_steel_ingots');
   shaped3x3('immersiveengineering:ingot_silver', '#forge:nuggets/silver', 'silver_ingot_from_silver_nuggets');
+
+  // Iron's Spellbooks
+  ring('irons_spellbooks:silver_ring', '#forge:ingots/silver', 'silver_ring');
 
   // Mekanism Tools
   event.shaped('mekanismtools:steel_paxel', [
