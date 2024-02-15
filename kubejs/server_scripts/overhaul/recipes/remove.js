@@ -48,6 +48,8 @@ ServerEvents.recipes(event => {
     'galosphere:silver_bomb',
     'immersivepetroleum:molotov_wool',
     'mekanism:teleportation_core',
+    'modularrouters:sender_module_3',
+    'modularrouters:void_module',
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',
     'moreminecarts:silica_steel_smelting',

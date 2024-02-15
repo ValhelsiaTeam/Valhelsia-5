@@ -248,6 +248,29 @@ ServerEvents.recipes(event => {
     W: 'waystones:warp_stone'
   }).id(`${ID_PREFIX}teleportation_core`);
 
+  // ----- Modular Routers -----
+  event.shaped('modularrouters:sender_module_3', [
+    'PEP',
+    'CUC',
+    'PTP'
+  ], {
+    P: 'ae2:fluix_pearl',
+    E: 'minecraft:ender_chest',
+    C: 'integrateddynamics:crystalized_chorus_chunk',
+    U: 'modularrouters:sender_module_2',
+    T: 'enlightened_end:teleporter'
+  }).id(`${ID_PREFIX}sender_module_3`);
+
+  event.shaped('modularrouters:void_module', [
+    'VOV',
+    'OBO',
+    'VOV',
+  ], {
+    V: 'enlightened_end:void_shale',
+    O: '#forge:obsidian',
+    B: 'modularrouters:blank_module'
+  }).id(`${ID_PREFIX}void_module`);
+
   // ----- Sophisticated Backpacks -----
   event.shaped('sophisticatedbackpacks:backpack', [
     'RHR',
