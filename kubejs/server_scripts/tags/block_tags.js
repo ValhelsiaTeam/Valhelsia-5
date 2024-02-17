@@ -173,4 +173,28 @@ ServerEvents.tags('block', event => {
     'decorative_blocks:brazier',
     'valhelsia_structures:brazier',
   ]);
+
+  // Windowlogging
+  event.add('windowlogging:window', [
+    'create:andesite_bars',
+    'create:brass_bars',
+    'create:copper_bars',
+    'createdeco:andesite_bars',
+    'createdeco:andesite_bars_overlay',
+    'createdeco:brass_bars',
+    'createdeco:brass_bars_overlay',
+    'createdeco:cast_iron_bars',
+    'createdeco:cast_iron_bars_overlay',
+    'createdeco:copper_bars',
+    'createdeco:copper_bars_overlay',
+    'createdeco:gold_bars',
+    'createdeco:gold_bars_overlay',
+    'createdeco:iron_bars_overlay',
+    'createdeco:netherite_bars',
+    'createdeco:netherite_bars_overlay',
+    'createdeco:polished_iron_bars',
+    'createdeco:polished_iron_bars_overlay',
+    'createdeco:zinc_bars',
+    'createdeco:zinc_bars_overlay',
+  ]);
 });
