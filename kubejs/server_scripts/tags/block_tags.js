@@ -112,8 +112,8 @@ ServerEvents.tags('block', event => {
     'integrateddynamics:crystalized_menril_brick_slab',
     'integrateddynamics:crystalized_chorus_block_slab',
     'integrateddynamics:crystalized_chorus_brick_slab',
-    'supplementaries:daub_slab',
-    'supplementaries:daub_frame_slab',
+    'suppsquared:daub_slab',
+    'suppsquared:daub_frame_slab',
     'upgrade_aquatic:luminous_prismarine_slab',
     // TODO: Create Deco
   ]);
@@ -181,6 +181,9 @@ ServerEvents.tags('block', event => {
     'enlightened_end:ethereal_bismuth_stairs',
     'enlightened_end:serene_bismuth_stairs',
     'enlightened_end:iridescent_bismuth_stairs',
+    'suppsquared:daub_stairs',
+    'suppsquared:daub_frame_stairs',
+    'upgrade_aquatic:luminous_prismarine_stairs',
     // TODO: Create Deco
   ]);
 
@@ -331,9 +334,10 @@ ServerEvents.tags('block', event => {
 
   // Quark
   event.add('quark:vertical_slabs', [
-    'supplementaries:daub_vertical_slab',
     'supplementaries:lapis_bricks_vertical_slab',
-    'supplementaries:daub_frame_vertical_slab',
+    'supplementaries:ash_brick_vertical_slab',
+    'suppsquared:daub_vertical_slab',
+    'suppsquared:daub_frame_vertical_slab',
     'upgrade_aquatic:luminous_prismarine_vertical_slab',
     // TODO: Create Deco
   ]);
