@@ -13,7 +13,7 @@
  * 
  * @see block_tags_remove.js
  * 
- * @copyright Valhelsia Inc 2022
+ * @copyright Valhelsia Inc 2022-2024
  */
 
 /**
@@ -78,7 +78,10 @@ ServerEvents.tags('block', event => {
     'integrateddynamics:crystalized_menril_brick_slab',
     'integrateddynamics:crystalized_chorus_block_slab',
     'integrateddynamics:crystalized_chorus_brick_slab',
-    // TODO: Create Deco (also missing quark:vertical_slabs)
+    'supplementaries:daub_slab',
+    'supplementaries:daub_frame_slab',
+    'upgrade_aquatic:luminous_prismarine_slab',
+    // TODO: Create Deco
     // TODO: Enlightend
   ]);
 
@@ -211,6 +214,15 @@ ServerEvents.tags('block', event => {
   event.add('create:fan_processing_catalysts/smoking', [
     'decorative_blocks:brazier',
     'valhelsia_structures:brazier',
+  ]);
+
+  // Quark
+  event.add('quark:vertical_slabs', [
+    'supplementaries:daub_vertical_slab',
+    'supplementaries:lapis_bricks_vertical_slab',
+    'supplementaries:daub_frame_vertical_slab',
+    'upgrade_aquatic:luminous_prismarine_vertical_slab',
+    // TODO: Create Deco
   ]);
 
   // Windowlogging
