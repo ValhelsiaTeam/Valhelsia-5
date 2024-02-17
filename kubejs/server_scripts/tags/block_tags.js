@@ -335,6 +335,13 @@ ServerEvents.tags('block', event => {
     'valhelsia_structures:brazier',
   ]);
 
+  // Mekanism
+  event.add('mekanism:cardboard_blacklist', [
+    'waystones:waystone',
+    'waystones:mossy_waystone',
+    'waystones:sandy_waystone'
+  ]);
+
   // Quark
   event.add('quark:vertical_slabs', [
     'supplementaries:lapis_bricks_vertical_slab',
