@@ -344,8 +344,22 @@ ServerEvents.tags('block', event => {
 
   // Quark
   event.add('quark:vertical_slabs', [
+    'darkerdepths:petrified_vertical_slab',
+    'darkerdepths:shale_vertical_slab',
+    'darkerdepths:polished_shale_vertical_slab',
+    'darkerdepths:shale_bricks_vertical_slab',
+    'darkerdepths:aridrock_vertical_slab',
+    'darkerdepths:polished_aridrock_vertical_slab',
+    'darkerdepths:aridrock_bricks_vertical_slab',
+    'darkerdepths:limestone_vertical_slab',
+    'darkerdepths:polished_limestone_vertical_slab',
+    'darkerdepths:limestone_bricks_vertical_slab',
+    'darkerdepths:grimestone_vertical_slab',
+    'darkerdepths:polished_grimestone_vertical_slab',
+    'darkerdepths:grimestone_bricks_vertical_slab',
+    'engineersdecor:clinker_brick_vertical_slab_structured',
     'supplementaries:lapis_bricks_vertical_slab',
-    'supplementaries:ash_brick_vertical_slab',
+    'supplementaries:ash_bricks_vertical_slab',
     'suppsquared:daub_vertical_slab',
     'suppsquared:daub_frame_vertical_slab',
     'upgrade_aquatic:luminous_prismarine_vertical_slab',
