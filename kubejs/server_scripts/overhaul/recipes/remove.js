@@ -45,6 +45,7 @@ ServerEvents.recipes(event => {
     'computercraft:computer_normal',
     'computercraft:monitor_advanced',
     'computercraft:monitor_normal',
+    'computercraft:speaker',
     'galosphere:silver_bomb',
     'immersivepetroleum:molotov_wool',
     'mekanism:teleportation_core',

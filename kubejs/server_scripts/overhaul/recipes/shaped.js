@@ -235,6 +235,16 @@ ServerEvents.recipes(event => {
     B: 'quark:iron_button',
   }).id(`${ID_PREFIX}monitor_advanced`);
 
+  event.shaped('computercraft:speaker', [
+    'SSS',
+    'SBS',
+    'STS'
+  ], {
+    S: '#forge:plates/iron',
+    B: 'supplementaries:speaker_block',
+    T: '#valhelsia:electron_tubes',
+  }).id(`${ID_PREFIX}cc_speaker`);
+
   // ----- Mekanism -----
   // Actually includes ender pearls for lore purposes. No idea why the original recipe didn't.
   event.shaped('mekanism:teleportation_core', [
