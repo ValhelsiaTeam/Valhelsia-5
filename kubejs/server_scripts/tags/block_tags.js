@@ -118,6 +118,7 @@ ServerEvents.tags('block', event => {
     // TODO: Create Deco
   ]);
 
+  // Missing Stairs Tags
   event.add('minecraft:stairs', [
     'ae2:sky_stone_stairs',
     'ae2:smooth_sky_stone_stairs',
@@ -187,6 +188,7 @@ ServerEvents.tags('block', event => {
     // TODO: Create Deco
   ]);
 
+  // Missing Glass Panes Tags
   event.add('forge:glass_panes', [
     'enlightened_end:bismuth_glass_pane',
     'enlightened_end:waxed_bismuth_glass_pane',
@@ -253,7 +255,6 @@ ServerEvents.tags('block', event => {
   ]);
 
   // Missing Storage Block Tags
-  
   event.add('forge:storage_blocks', [
     'enlightened_end:adamantite_block',
     'enlightened_end:bismuth_block',
@@ -321,6 +322,8 @@ ServerEvents.tags('block', event => {
     'moreminecarts:silica_steel_block',
   ]);
 
+  // ----- Mod-specific Tags -----
+
   // Create
   event.add('create:fan_processing_catalysts/haunting', [
     'decorative_blocks:soul_brazier',
@@ -367,6 +370,15 @@ ServerEvents.tags('block', event => {
     'quark:paper_wall',
     'quark:paper_wall_big',
     'quark:paper_wall_sakura',
+    'quark:red_corundum_pane',
+    'quark:orange_corundum_pane',
+    'quark:yellow_corundum_pane',
+    'quark:green_corundum_pane',
+    'quark:blue_corundum_pane',
+    'quark:indigo_corundum_pane',
+    'quark:violet_corundum_pane',
+    'quark:white_corundum_pane',
+    'quark:black_corundum_pane',
     'valhelsia_structures:paper_wall',
   ]);
 
