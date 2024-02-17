@@ -93,6 +93,20 @@ ServerEvents.tags('block', event => {
     // TODO: Enlightend
   ]);
 
+  event.add('forge:glass_panes', [
+    'enlightened_end:bismuth_glass_pane',
+    'enlightened_end:waxed_bismuth_glass_pane',
+    'enlightened_end:dazzling_bismuth_glass_pane',
+    'enlightened_end:verdant_bismuth_glass_pane',
+    'enlightened_end:poise_bismuth_glass_pane',
+    'enlightened_end:ethereal_bismuth_glass_pane',
+    'enlightened_end:serene_bismuth_glass_pane',
+    'enlightened_end:iridescent_bismuth_glass_pane',
+    'forbidden_arcanus:deorum_glass_pane',
+    'moreminecarts:organic_glass_pane',
+    'moreminecarts:chiseled_organic_glass_pane',
+  ]);
+
   // Missing Ore Tags
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',
