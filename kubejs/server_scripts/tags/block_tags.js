@@ -85,6 +85,14 @@ ServerEvents.tags('block', event => {
     // TODO: Enlightend
   ]);
 
+  event.add('minecraft:stairs', [
+    // TODO: AE2
+    // TODO: Ars Nouveau
+    // TODO: Cave Enhancements
+    // TODO: Create Deco
+    // TODO: Enlightend
+  ]);
+
   // Missing Ore Tags
   event.add('forge:ores', [
     'darkerdepths:aridrock_silver_ore',
@@ -247,6 +255,10 @@ ServerEvents.tags('block', event => {
     'createdeco:polished_iron_bars_overlay',
     'createdeco:zinc_bars',
     'createdeco:zinc_bars_overlay',
+    'quark:paper_wall',
+    'quark:paper_wall_big',
+    'quark:paper_wall_sakura',
+    'valhelsia_structures:paper_wall',
   ]);
 
   event.add('windowlogging:windowable', [
