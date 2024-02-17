@@ -404,6 +404,12 @@ ServerEvents.tags('block', event => {
   ]);
 
   event.add('windowlogging:windowable', [
-    '#quark:vertical_slabs'
+    'engineersdecor:dark_shingle_roof_slabslice',
+    'engineersdecor:old_industrial_wood_slabslice',
+    'engineersdecor:halfslab_rebar_concrete',
+    'immersiveengineering:concrete_sheet',
+    'immersiveengineering:concrete_quarter',
+    'immersiveengineering:concrete_three_quarter',
+    '#quark:vertical_slabs',
   ]);
 });
