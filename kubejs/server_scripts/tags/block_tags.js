@@ -42,6 +42,45 @@ ServerEvents.tags('block', event => {
     'farmersrespite:tea_seeds',
     'immersiveengineering:seed',
   ]);
+  
+  // Missing Slab Tags
+  event.add('minecraft:slabs', [
+    'ae2:fluix_slab',
+    'ae2:quartz_slab',
+    'ae2:cut_quartz_slab',
+    'ae2:smooth_quartz_slab',
+    'ae2:quartz_brick_slab',
+    'ae2:chiseled_quartz_slab',
+    'ae2:quartz_pillar_slab',
+    'ae2:sky_stone_slab',
+    'ae2:smooth_sky_stone_slab',
+    'ae2:sky_stone_brick_slab',
+    'ae2:sky_stone_small_brick_slab',
+    'ars_nouveau:sourcestone_slab',
+    'ars_nouveau:sourcestone_mosaic_slab',
+    'ars_nouveau:sourcestone_basketweave_slab',
+    'ars_nouveau:sourcestone_alternating_slab',
+    'ars_nouveau:sourcestone_large_bricks_slab',
+    'ars_nouveau:sourcestone_small_bricks_slab',
+    'ars_nouveau:smooth_sourcestone_slab',
+    'ars_nouveau:smooth_sourcestone_mosaic_slab',
+    'ars_nouveau:smooth_sourcestone_basketweave_slab',
+    'ars_nouveau:smooth_sourcestone_alternating_slab',
+    'ars_nouveau:smooth_sourcestone_large_bricks_slab',
+    'ars_nouveau:smooth_sourcestone_small_bricks_slab',
+    'ars_nouveau:gilded_sourcestone_mosaic_slab',
+    'ars_nouveau:gilded_sourcestone_basketweave_slab',
+    'ars_nouveau:gilded_sourcestone_alternating_slab',
+    'ars_nouveau:gilded_sourcestone_large_bricks_slab',
+    'ars_nouveau:gilded_sourcestone_small_bricks_slab',
+    'engineersdecor:dark_shingle_roof_slab',
+    'integrateddynamics:crystalized_menril_block_slab',
+    'integrateddynamics:crystalized_menril_brick_slab',
+    'integrateddynamics:crystalized_chorus_block_slab',
+    'integrateddynamics:crystalized_chorus_brick_slab',
+    // TODO: Create Deco (also missing quark:vertical_slabs)
+    // TODO: Enlightend
+  ]);
 
   // Missing Ore Tags
   event.add('forge:ores', [
@@ -196,5 +235,9 @@ ServerEvents.tags('block', event => {
     'createdeco:polished_iron_bars_overlay',
     'createdeco:zinc_bars',
     'createdeco:zinc_bars_overlay',
+  ]);
+
+  event.add('windowlogging:windowable', [
+    '#quark:vertical_slabs'
   ]);
 });
