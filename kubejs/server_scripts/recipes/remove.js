@@ -227,11 +227,13 @@ ServerEvents.recipes(event => {
     'quark:building/crafting/compressed/potato_crate', // Duplicate recipe.
     'quark:building/crafting/compressed/beetroot_crate', // Duplicate recipe.
 
+    'quark:tweaks/crafting/utility/misc/easy_sticks', // Conflicts with beam recipes.
     'quark:tweaks/crafting/utility/misc/furnace_minecart', // Merged into one recipe.
     'quark:tweaks/crafting/furnaces/blackstone_minecart', 
     'quark:tweaks/crafting/furnaces/blackstone_minecart_tweaked',
     'quark:tweaks/crafting/furnaces/deepslate_minecart',
     'quark:tweaks/crafting/furnaces/deepslate_minecart_tweaked', 
+
 
     // Quark Oddities
     'quark:oddities/crafting/backpack', // Removed entirely.
