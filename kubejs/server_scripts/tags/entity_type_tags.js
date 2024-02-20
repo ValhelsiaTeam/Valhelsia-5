@@ -15,6 +15,17 @@
  */
 ServerEvents.tags('entity_type', event => {
 
+  // Blacklist some overpowered drygmy mobs (mainly bosses).
+  event.add('ars_nouveau:drygmy_blacklist', [
+    'irons_spellbooks:dead_king',
+    'twilightforest:alpha_yeti',
+    'twilightforest:hydra',
+    'twilightforest:lich',
+    'twilightforest:naga',
+    'twilightforest:snow_queen',
+    'twilightforest:ur_ghast',
+  ]);
+
   // Expand Ars Nouveau Magic Find to other mobs.
   event.add('ars_nouveau:magic_find', [
     // TODO: Go through Aether, Malum, etc. for more.
