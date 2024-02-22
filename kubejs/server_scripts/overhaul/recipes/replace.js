@@ -105,8 +105,11 @@ ServerEvents.recipes(event => {
   replaceInputID('ae2:tools/network_memory_card', 'minecraft:iron_ingot', '#forge:plates/aluminum');
   replaceInputID('ae2:tools/network_memory_card', 'minecraft:gold_ingot', '#forge:plates/gold');
 
+  // Botania
+  replaceInputID('botania:cacophonium', 'minecraft:copper_ingot', '#forge:ingots/brass');
+
   // ComputerCraft
-  replaceInputID('computercraft:computer_advanced_upgrade', 'minecraft:gold_ingot', '#forge:plates/gold');
+  replaceInputID('computercraft:computer_advanced_upgrade', '#forge:ingots/gold', '#forge:plates/gold');
 
   // Engineer's Decor
   replaceInputID('engineersdecor:dependent/small_solar_panel_recipe', 'minecraft:quartz', 'mekanismgenerators:solar_panel');
