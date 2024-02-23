@@ -99,6 +99,8 @@ ServerEvents.recipes(event => {
   replaceInput('ad_astra:calorite_plate', '#forge:plates/calorite');
   replaceInput('ad_astra:desh_plate', '#forge:plates/desh');
   replaceInput('ad_astra:steel_plate', '#forge:plates/steel');
+  replaceInput('create:iron_sheet', '#forge:plates/iron');
+  replaceInput('create:golden_sheet', '#forge:plates/gold');
 
   // Nugget Compatibility
   replaceInput('galosphere:silver_nugget', '#forge:nuggets/silver');
