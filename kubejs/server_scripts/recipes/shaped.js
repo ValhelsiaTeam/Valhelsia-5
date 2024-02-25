@@ -257,6 +257,15 @@ ServerEvents.recipes(event => {
     P: '#minecraft:planks'
   }).id(`${ID_PREFIX}ladder`);
 
+  // Biomes 'o' Plenty
+  event.shaped('3x biomesoplenty:hanging_cobweb', [
+    'W',
+    'W',
+    'W'
+  ], {
+    W: 'minecraft:cobweb'
+  }).id(`${ID_PREFIX}hanging_cobweb`);
+
   // Blue Skies
   event.shaped('3x blue_skies:spider_webbing', [
     'WW', 

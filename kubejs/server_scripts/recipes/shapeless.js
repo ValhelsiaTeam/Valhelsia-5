@@ -22,6 +22,7 @@ ServerEvents.recipes(event => {
 
   // Biomes 'o' Plenty
   event.shapeless('2x biomesoplenty:orange_sand', ['minecraft:sand', 'minecraft:red_sand']).id(`${ID_PREFIX}orange_sand`);
+  event.shapeless('4x biomesoplenty:webbing', 'minecraft:cobweb').id(`${ID_PREFIX}webbing`);  
 
   // Create Crafts & Additions
   event.shapeless('createaddition:iron_wire', ['#forge:plates/iron', 'immersiveengineering:wirecutter']).id(`${ID_PREFIX}iron_wire_from_cutting`);
