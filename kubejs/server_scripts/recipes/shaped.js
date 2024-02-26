@@ -285,7 +285,7 @@ ServerEvents.recipes(event => {
     S: 'farmersdelight:tomato_sauce',
     O: '#forge:vegetables/onion',
     D: '#forge:dough/wheat',
-  })
+  }).id(`${ID_PREFIX}mushroom_pizza`);
 
   // Darker Depths
   shaped2x2('darkerdepths:ash_block', '#valhelsia:ash', 'ash_block');
