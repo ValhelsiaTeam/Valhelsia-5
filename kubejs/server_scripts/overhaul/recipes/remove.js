@@ -54,6 +54,7 @@ ServerEvents.recipes(event => {
     'moreminecarts:silica_steel_mix',
     'moreminecarts:silica_steel_blasting',
     'moreminecarts:silica_steel_smelting',
+    'pneumaticcraft:speed_upgrade', // Now only made with glycerol.
     'quark:tweaks/crafting/utility/bent/bread',// Now requires dough + cooking.
     'sophisticatedbackpacks:backpack',
     'sophisticatedbackpacks:void_upgrade',
