@@ -817,6 +817,12 @@ ServerEvents.tags('item', event => {
     /irons_spellbooks:.*_boots$/,
   ]);
 
+  // Ars Nouveau
+  event.add('ars_nouveau:whirlisprig/denied_drop', [
+    'atmospheric:red_arid_sand', // Bonemealable but not a plant.
+    'atmospheric:arid_sand', // Bonemealable but not a plant.
+  ]);
+
   // Create Slice & Dice
   event.add('sliceanddice:allowed_tools', [
     'galosphere_delight:silver_kitchen_hammer',
