@@ -819,8 +819,12 @@ ServerEvents.tags('item', event => {
 
   // Ars Nouveau
   event.add('ars_nouveau:whirlisprig/denied_drop', [
+    'minecraft:netherrack', // Why isn't this blocked by default? Drops from Nylium.
+    'aether:aether_dirt',
     'atmospheric:red_arid_sand', // Bonemealable but not a plant.
     'atmospheric:arid_sand', // Bonemealable but not a plant.
+    'blue_skies:lunar_dirt',
+    'blue_skies:turquoise_dirt',
   ]);
 
   // Create Slice & Dice
