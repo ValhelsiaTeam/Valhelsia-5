@@ -367,7 +367,7 @@ ServerEvents.recipes(event => {
   }).id(`${ID_PREFIX}quiver`);
 
   // Tetra
-  slab('tetra:forged_platform_slab', 'tetra:forged_platform');
+  slab('tetra:forged_platform_slab', 'tetra:forged_platform', 'forged_platform_slab_from_forged_platform');
   
   // Twilight Forest
   wrapped('8x twilightforest:nagastone', 'twilightforest:naga_scale', 'minecraft:stone', 'nagastone');

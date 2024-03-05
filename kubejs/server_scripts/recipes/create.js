@@ -17,6 +17,9 @@
 ServerEvents.recipes(event => {
   const ID_PREFIX = 'valhelsia:create/';
 
+  // Filling
+  event.recipes.create.filling('irons_spellbooks:blood_vial', [Fluid.of('biomesoplenty:blood 250'), 'minecraft:glass_bottle']).id(`${ID_PREFIX}filling/blood_vial`);
+
   // Mechanical Crafting
   event.recipes.create.mechanical_crafting('valhelsia_structures:dungeon_door', [
     'CCCC',
@@ -33,4 +36,5 @@ ServerEvents.recipes(event => {
 
   // Mixing
   event.recipes.create.mixing([Fluid.of('minecraft:milk 250')], [Fluid.of('minecraft:water 250'), '#valhelsia:nuts']).heated().id(`${ID_PREFIX}mixing/milk_from_nuts`);
+
 });
