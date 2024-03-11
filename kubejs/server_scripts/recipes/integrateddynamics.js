@@ -8,7 +8,7 @@
 /**
  * @file Recipe additions for Integrated Dynamics.
  * 
- * @copyright Valhelsia Inc 2023
+ * @copyright Valhelsia Inc 2023-2024
  */
 
 /**
@@ -129,5 +129,6 @@ ServerEvents.recipes(event => {
   // Squeezer Recipes
   // Note: Squeezer recipes have their input first. This is because the output can be either an item or a fluid.
   squeezer(Item.of('#forge:dusts/coal_coke', 8), 'immersiveengineering:dust_hop_graphite');
+  squeezer(Item.of('irons_spellbooks:arcane_debris'), [Item.of('irons_spellbooks:arcane_salvage'), Item.of('irons_spellbooks:arcane_salvage').withChance(0.75)]);
 
 });
