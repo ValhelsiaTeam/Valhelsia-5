@@ -282,5 +282,6 @@ ServerEvents.recipes(event => {
 
   // New smelting recipes.
   smelt('biomesoplenty:dried_salt', 'mekanism:block_salt');
+  smelt('irons_spellbooks:arcane_salvage', 'irons_spellbooks:arcane_debris');
   cook('minecraft:bread', '#forge:dough/wheat', 0.35);
 });

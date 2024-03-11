@@ -108,6 +108,9 @@ ServerEvents.recipes(event => {
     event.recipes.immersiveengineering.metal_press(output, input, 'immersiveengineering:mold_unpacking').id(`${ID_PREFIX}unpacking/${OutputItem.of(output).item.id.replace(':', '/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
 
+  // Arc Furnace Recipes
+  event.recipes.immersiveengineering.arc_furnace(['2x irons_spellbooks:arcane_salvage'], 'irons_spellbooks:arcane_debris', [], '#forge:slag', 100, 512000).id(`${ID_PREFIX}arc_furnace/arcane_salvage`);
+
   // Hammer Crushing Recipes
   hammer_crush('ae2:certus_quartz_dust', '#forge:gems/certus_quartz');
   hammer_crush('ae2:ender_dust', 'minecraft:ender_pearl');
@@ -135,10 +138,10 @@ ServerEvents.recipes(event => {
   squeezer('minecraft:water', 'minecraft:snow', 125);
 
   // Additional Blast Furnace Fuel Sources
-  event.recipes.immersiveengineering.blast_furnace_fuel('#mekanism:enriched/carbon').time(600);
+  event.recipes.immersiveengineering.blast_furnace_fuel('#mekanism:enriched/carbon').time(600).id(`${ID_PREFIX}blast_furnace_fuel/enriched_carbon`);
 
   // Additional Fertilizers
-  event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5);
+  event.recipes.immersiveengineering.fertilizer('minecolonies:compost').growthModifier(1.5).id(`${ID_PREFIX}fertilizer/minecolonies_compost`);;
 
   // Cloche Recipes
   // Note: IE's default times also include 640 for wheat + glow berries, but I'd rather keep things more consistent.
