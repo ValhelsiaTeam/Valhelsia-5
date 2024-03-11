@@ -168,6 +168,7 @@ ServerEvents.recipes(event => {
   event.recipes.mekanism.enriching('forbidden_arcanus:arcane_crystal', '#forge:dusts/arcane_crystal').id(`${ID_PREFIX}enriching/arcane_crystal_from_dust`);
   event.recipes.mekanism.enriching('galosphere:allurite_shard', '#forge:dusts/allurite').id(`${ID_PREFIX}enriching/allurite_shard_from_dust`);
   event.recipes.mekanism.enriching('galosphere:lumiere_shard', '#forge:dusts/lumiere').id(`${ID_PREFIX}enriching/lumiere_shard_from_dust`);
+  event.recipes.mekanism.enriching('2x irons_spellbooks:arcane_salvage', 'irons_spellbooks:arcane_debris').id(`${ID_PREFIX}enriching/arcane_debris_to_salvage`);
 
   // Infusion
   event.recipes.mekanism.metallurgic_infusing('forbidden_arcanus:gilded_darkstone', 'forbidden_arcanus:darkstone', {infuse_type: 'mekanism:gold', amount: 100}).id(`${ID_PREFIX}/infusing/gold/gilded_darkstone`);
