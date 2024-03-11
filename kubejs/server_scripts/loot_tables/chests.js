@@ -22,6 +22,7 @@ ServerEvents.chestLootTables(event => {
     'valhelsia_structures:castle',
     'valhelsia_structures:desert_house',
     'valhelsia_structures:player_house',
+    'valhelsia_structures:kitchen',
   ].forEach(function(chestID) {
     event.modify(chestID, table => {
       table.addPool(pool => {
@@ -61,6 +62,36 @@ ServerEvents.chestLootTables(event => {
       pool.addItem('minecraft:raw_gold', 7, [2, 5]);
       pool.addItem('minecraft:raw_copper', 7, [2, 5]);
       pool.addItem('minecraft:copper_ingot', 7, [1, 3]);
+    });
+  });
+
+  // Additional Castle Ruin Loot
+  event.modify('valhelsia_structures:castle_ruin', table => {
+    table.addPool(pool => {
+      pool.rolls = [0, 1];
+      pool.addItem('savage_and_ravage:blast_proof_plating', 15, [2, 4]);
+      pool.addItem('irons_spellbooks:iron_spell_book', 10);
+      pool.addItem('mekanismtools:bronze_sword', 10);
+      pool.addItem('mekanismtools:bronze_axe', 10);
+      pool.addItem('immersiveengineering:sword_steel', 5);
+      pool.addItem('immersiveengineering:axe_steel', 5);
+      pool.addItem('savage_and_ravage:cleaver_of_beheading', 5);
+      pool.addItem(Item.of('minecraft:player_head', '{SkullOwner:"Ollari0n"}'), 5);
+    });
+  });
+
+  // Additional Witch Hut Loot
+  event.modify('valhelsia_structures:witch_hut', table => {
+    table.addPool(pool => {
+      pool.rolls = [1, 2];
+      pool.addItem('malum:hex_ash', 15, [2, 4]);
+      pool.addItem('irons_spellbooks:cinder_essence', 12, [1, 3]);
+      pool.addItem('irons_spellbooks:gold_spell_book', 10);
+      pool.addItem('irons_spellbooks:diamond_spell_book', 5);
+      pool.addItem('forbidden_arcanus:corrupt_soul', 5);
+      pool.addItem('ars_nouveau:wixie_shards', 5);
+      pool.addItem('ars_nouveau:wand', 3);
+      pool.addItem('ars_nouveau:dominion_wand', 2);
     });
   });
 
