@@ -59,6 +59,11 @@
   "item.minecraft.tipped_arrow.effect.dolphins_grace": "Arrow of Dolphin's Grace",
   "item.minecraft.tipped_arrow.effect.haste": "Arrow of Haste",
 
+  "valhelsia.comment.biomes": "-----Missing Biome Names-----",
+  "biome.deeperdarker.deeplands": "Deeplands",
+  "biome.deeperdarker.echoing_forest": "Echoing Forest",
+  "biome.deeperdarker.overcast_columns": "Overcast Columns",
+
   "valhelsia.comment.blocks": "-----Missing Block Names-----",
   "block.immersiveengineering.toolbox_block": "Toolbox",
   "block.moreminecarts.hologram_rail": "Hologram Rail",
