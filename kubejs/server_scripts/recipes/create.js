@@ -36,5 +36,6 @@ ServerEvents.recipes(event => {
 
   // Mixing
   event.recipes.create.mixing([Fluid.of('minecraft:milk 250')], [Fluid.of('minecraft:water 250'), '#valhelsia:nuts']).heated().id(`${ID_PREFIX}mixing/milk_from_nuts`);
+  event.recipes.create.mixing([Fluid.of('immersiveengineering:phenolic_resin 250')], [Fluid.of('immersiveengineering:acetaldehyde 250'), 'darkerdepths:resin']).heated().id(`${ID_PREFIX}mixing/phenolic_resin_from_resin`);
 
 });

@@ -257,6 +257,9 @@ ServerEvents.recipes(event => {
     P: '#minecraft:planks'
   }).id(`${ID_PREFIX}ladder`);
 
+  // The Aether
+  wrapped('aether:golden_amber', 'darkerdepths:amber', '#forge:nuggets/gold',`${ID_PREFIX}golden_amber_from_amber`);
+
   // Biomes 'o' Plenty
   event.shaped('3x biomesoplenty:hanging_cobweb', [
     'W',
