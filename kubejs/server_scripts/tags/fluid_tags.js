@@ -30,4 +30,13 @@ ServerEvents.tags('fluid', event => {
     'sliceanddice:fertilizer',
     'sliceanddice:flowing_fertilizer',
   ]);
+
+  event.add('forge:ethene', [
+    'immersivepetroleum:ethylene',
+  ]);
+
+  event.add('forge:ethylene', [
+    "mekanism:ethene",
+    "mekanism:flowing_ethene",
+  ]);
 });
