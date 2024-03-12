@@ -204,6 +204,7 @@
   mill('4x minecraft:bone_meal', 'enlightened_end:stalker_tooth');
   mill('9x minecraft:bone_meal', 'malum:grim_talc');
   mill('9x minecraft:bone_meal', 'upgrade_aquatic:thrasher_tooth');
+  mill('3x minecraft:bone_meal', 'deeperdarker:sculk_bone', [Item.of('3x minecraft:bone_meal').withChance(0.25), Item.of('deeperdarker:soul_dust').withChance(0.25)]);
 
   // Other Milling
   mill('4x minecraft:nether_wart', 'minecraft:nether_wart_block');
