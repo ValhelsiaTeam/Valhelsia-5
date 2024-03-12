@@ -16,17 +16,14 @@
 ServerEvents.chestLootTables(event => {
 
   // Additional Cooking Chest Loot
-  // Note: It might be better to tailor this to each structure in the future.
-  // This is just an initial implementation to get some interesting loot injected.
   [
-    'valhelsia_structures:castle',
     'valhelsia_structures:desert_house',
     'valhelsia_structures:player_house',
     'valhelsia_structures:kitchen',
   ].forEach(function(chestID) {
     event.modify(chestID, table => {
       table.addPool(pool => {
-        pool.rolls = [1, 3];
+        pool.rolls = [1, 4];
         pool.addItem('farmersdelight:cooked_bacon', 18, [2, 3]);
         pool.addItem('farmersdelight:cooked_cod_slice', 18, [2, 3]);
         pool.addItem('farmersdelight:cooked_salmon_slice', 18, [2, 3]);
@@ -44,6 +41,10 @@ ServerEvents.chestLootTables(event => {
         pool.addItem('farmersrespite:kettle', 3);
         pool.addItem('farmersrespite:tea_seeds', 10, [2, 6]);
         pool.addItem('farmersrespite:coffee_beans', 10, [2, 6]);
+        pool.addItem('brewinandchewin:tankard', 6, [4, 8]);
+        pool.addItem('brewinandchewin:beer', 10);
+        pool.addItem('brewinandchewin:mead', 10);
+        pool.addItem('brewinandchewin:flaxen_cheese_wedge', 8, [2, 6]);
       });
     });
   });
