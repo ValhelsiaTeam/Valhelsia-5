@@ -24,6 +24,16 @@ ServerEvents.entityLootTables(event => {
     });
   });
   
+  // Minecraft - Pillager
+  event.modifyEntity('minecraft:pillager', table => {
+    table.addPool(pool => {
+      pool.rolls = 1;
+      pool.addItem('immersiveengineering:ingot_silver');
+      pool.killedByPlayer();
+      pool.randomChanceWithLooting(0.11, 0.02);
+    });
+  });
+  
   // Minecraft - Stray
   event.modifyEntity('minecraft:stray', table => {
     table.addPool(pool => {
