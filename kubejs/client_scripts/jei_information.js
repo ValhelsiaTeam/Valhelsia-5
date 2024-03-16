@@ -28,6 +28,7 @@ JEIEvents.information(event => {
    * @param {string} textID The language entry for the information.
    */
   const addInfo = (items, textID) => {
+    // TODO: Allow the IDs to be in an array to add multiple entries to the same item at once.
     event.addItem(items, Text.translate(textID));
   };
 
@@ -87,11 +88,19 @@ JEIEvents.information(event => {
     'sullysmod:polished_jade',
   ], 'valhelsia.information.sullysmod.obtaining_jade');
 
+  // Twilight Forest
+  addInfo([
+    'twilightforest:brittle_potion_flask',
+    'twilightforest:greater_potion_flask',
+  ], 'valhelsia.information.twilightforest.potion_flask')
+
   // Valhelsia
-  addInfo('valhelsia_tweaks:candy_corn', 'valhelsia.information.valhelsia_tweaks.candy');
-  addInfo('valhelsia_tweaks:lemon_candy', 'valhelsia.information.valhelsia_tweaks.candy');
-  addInfo('valhelsia_tweaks:cherry_lollipop', 'valhelsia.information.valhelsia_tweaks.candy');
-  addInfo('valhelsia_tweaks:spicy_mango_lollipop', 'valhelsia.information.valhelsia_tweaks.candy');
+  addInfo([
+    'valhelsia_tweaks:candy_corn',
+    'valhelsia_tweaks:lemon_candy',
+    'valhelsia_tweaks:cherry_lollipop',
+    'valhelsia_tweaks:spicy_mango_lollipop',
+  ], 'valhelsia.information.valhelsia_tweaks.candy');
 
   // Xercapaint / Joy of Painting
   addInfo('xercapaint:item_palette', 'valhelsia.information.xercapaint.crafting_palettes');
