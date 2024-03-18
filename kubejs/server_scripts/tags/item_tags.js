@@ -249,6 +249,10 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores/adamantite', [
     'enlightened_end:adamantite_node',
   ]);
+  
+  event.add('forge:ores/ambrosium', [
+    'aether:ambrosium_ore',
+  ]);
 
   event.add('forge:ores/arcane_crystal', [
     'forbidden_arcanus:deepslate_arcane_crystal_ore',
@@ -264,6 +268,10 @@ ServerEvents.tags('item', event => {
 
   event.add('forge:ores/blazing_quartz', [
     'malum:blazing_quartz_ore',
+  ]);
+
+  event.add('forge:ores/gravitite', [
+    'aether:gravitite_ore',
   ]);
 
   event.add('forge:ores/irradium', [
@@ -282,6 +290,10 @@ ServerEvents.tags('item', event => {
   event.add('forge:ores/soulstone', [
     'malum:deepslate_soulstone_ore',
     'malum:soulstone_ore',
+  ]);
+  
+  event.add('forge:ores/zanite', [
+    'aether:zanite_ore',
   ]);
 
   // ----- Raw Ores -----

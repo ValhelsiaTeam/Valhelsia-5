@@ -382,6 +382,10 @@ ServerEvents.tags('block', event => {
     'enlightened_end:adamantite_node',
   ])
 
+  event.add('forge:ores/ambrosium', [
+    'aether:ambrosium_ore',
+  ]);
+
   event.add('forge:ores/arcane_crystal', [
     'forbidden_arcanus:arcane_crystal_ore',
     'forbidden_arcanus:deepslate_arcane_crystal_ore',
@@ -397,6 +401,10 @@ ServerEvents.tags('block', event => {
 
   event.add('forge:ores/blazing_quartz', [
     'malum:blazing_quartz_ore',
+  ]);
+
+  event.add('forge:ores/gravitite', [
+    'aether:gravitite_ore',
   ]);
 
   event.add('forge:ores/irradium', [
@@ -416,6 +424,10 @@ ServerEvents.tags('block', event => {
   event.add('forge:ores/silver', [
     'darkerdepths:aridrock_silver_ore',
     'darkerdepths:limestone_silver_ore',
+  ]);
+  
+  event.add('forge:ores/zanite', [
+    'aether:zanite_ore',
   ]);
 
   // Missing Storage Block Tags
