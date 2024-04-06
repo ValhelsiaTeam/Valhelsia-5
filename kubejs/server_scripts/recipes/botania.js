@@ -226,6 +226,8 @@ ServerEvents.recipes(event => {
   event.recipes.botania.orechid('blue_skies:everdawn_pyrope_ore', 'blue_skies:lunar_stone', 800).id(`${ID_PREFIX}orechid/everdawn_pyrope_ore`);
   event.recipes.botania.orechid('blue_skies:horizonite_ore', 'blue_skies:lunar_stone', 100).id(`${ID_PREFIX}orechid/horizonite_ore`);
 
+  // TODO: Deeper and Darker (Sculk Stone)
+
   // Marimorphosis
   // event.recipes.botania.marimorphosis('output_here', 'input_here', 1, ['plains'], 10);
 });
