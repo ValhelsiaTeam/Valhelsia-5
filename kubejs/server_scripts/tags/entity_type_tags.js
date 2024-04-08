@@ -17,6 +17,7 @@ ServerEvents.tags('entity_type', event => {
 
   // Blacklist some overpowered drygmy mobs (mainly bosses).
   event.add('ars_nouveau:drygmy_blacklist', [
+    'artifacts:mimic',
     'irons_spellbooks:dead_king',
     'twilightforest:alpha_yeti',
     'twilightforest:hydra',
