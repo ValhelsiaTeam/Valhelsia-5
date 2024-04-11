@@ -32,7 +32,7 @@
 	#Whether all players should get an Animal Dictionary when joining the world for the first time.
 	giveBookOnStartup = false
 	#Blacklist for items that mimicream cannot make a copy of. Ex: "minecraft:stone_sword", "alexsmobs:blood_sprayer"
-	mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster"]
+  mimicreamBlacklist = ["alexsmobs:blood_sprayer", "alexsmobs:hemolymph_blaster", "tetra:modular_sword", "tetra:modular_double", "tetra:modular_single", ""tetra:modular_bow", "tetra:modular_crossbow", "tetra:modular_shield"], "tetra:modular_toolbelt"
 	#0 = no mungus biome transformation. 1 = mungus changes blocks, but not chunk's biome. 2 = mungus transforms blocks and biome of chunk.
 	#Range: 0 ~ 2
 	mungusBiomeTransformationType = 2
