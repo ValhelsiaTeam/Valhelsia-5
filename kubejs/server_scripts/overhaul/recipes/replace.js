@@ -117,6 +117,10 @@ ServerEvents.recipes(event => {
 
   // Forbidden and Arcanus
   replaceInputID('forbidden_arcanus:enchanted_golden_apple', 'forbidden_arcanus:deorum_ingot', '#forge:storage_blocks/deorum');
+  
+  // Immersive Engineering
+  replaceInputID('immersiveengineering:crafting/empty_casing', '#forge:plates/copper', '#forge:plates/brass');
+  replaceInputID('immersiveengineering:metalpress/bullet_casing', '#forge:plates/copper', '#forge:plates/brass');
 
   // Joy of Painting
 
