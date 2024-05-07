@@ -23,13 +23,16 @@
 JEIEvents.information(event => {
 
   /**
-   * Adds a translated JEI information pane to one or more items.
+   * Adds translated JEI information pane(s) to one or more items.
    * @param {string|string[]} items The ID(s) of the item(s) to add.
-   * @param {string} textID The language entry for the information.
+   * @param {string|string[]} textID The language entry/entries for the information.
    */
   const addInfo = (items, textID) => {
-    // TODO: Allow the IDs to be in an array to add multiple entries to the same item at once.
-    event.addItem(items, Text.translate(textID));
+    if (Array.isArray(textID)) {
+      textID.forEach((id) => event.addItem(items, Text.translate(id)));
+    } else {
+      event.addItem(items, Text.translate(textID));
+    }
   };
 
   // Minecraft
@@ -38,8 +41,7 @@ JEIEvents.information(event => {
   addInfo('minecraft:sweet_berries', 'valhelsia.information.minecraft.sweet_berries');
 
   // Akashic Tome
-  addInfo('akashictome:tome', 'valhelsia.information.akashictome.filled_akashic_tome');
-  addInfo('akashictome:tome', 'valhelsia.information.akashictome.reverting');
+  addInfo('akashictome:tome', ['valhelsia.information.akashictome.filled_akashic_tome', 'valhelsia.information.akashictome.reverting']);
 
   // Atmospheric
   addInfo('atmospheric:aloe_kernels', 'valhelsia.information.atmospheric.aloe_kernels');
@@ -49,10 +51,12 @@ JEIEvents.information(event => {
   addInfo('autumnity:sap_bottle', 'valhelsia.information.autumnity.sap_bottle');
   addInfo('autumnity:sappy_maple_log', 'valhelsia.information.autumnity.sappy_maple_log');
   addInfo('autumnity:sappy_maple_wood', 'valhelsia.information.autumnity.sappy_maple_wood');
-  addInfo('autumnity:snail_goo_block', 'valhelsia.information.autumnity.snail_goo_block_1');
-  addInfo('autumnity:snail_goo_block', 'valhelsia.information.autumnity.snail_goo_block_2');
-  addInfo('autumnity:snail_goo_block', 'valhelsia.information.autumnity.snail_goo_block_3');
-  addInfo('autumnity:snail_goo_block', 'valhelsia.information.autumnity.snail_goo_block_4');
+  addInfo('autumnity:snail_goo_block', [
+    'valhelsia.information.autumnity.snail_goo_block_1', 
+    'valhelsia.information.autumnity.snail_goo_block_2',
+    'valhelsia.information.autumnity.snail_goo_block_3',
+    'valhelsia.information.autumnity.snail_goo_block_4',
+  ]);
 
   // Botania
   addInfo('botania:ender_air_bottle', 'valhelsia.information.botania.ender_air_bottle');
@@ -71,8 +75,7 @@ JEIEvents.information(event => {
     'forbidden_arcanus:deorum_nugget',
     'forbidden_arcanus:golden_orchid_seeds',
   ], 'valhelsia.information.forbidden_arcanus.deorum');
-  addInfo('forbidden_arcanus:fungyss', 'valhelsia.information.forbidden_arcanus.fungyss_obtaining');
-  addInfo('forbidden_arcanus:fungyss', 'valhelsia.information.forbidden_arcanus.fungyss');
+  addInfo('forbidden_arcanus:fungyss', ['valhelsia.information.forbidden_arcanus.fungyss_obtaining', 'valhelsia.information.forbidden_arcanus.fungyss']);
   addInfo('forbidden_arcanus:magical_farmland', 'valhelsia.information.forbidden_arcanus.magical_farmland');
   addInfo('forbidden_arcanus:stellarite_piece', 'valhelsia.information.forbidden_arcanus.stellarite_piece');
   addInfo('forbidden_arcanus:yellow_orchid', 'valhelsia.information.forbidden_arcanus.yellow_orchid');
