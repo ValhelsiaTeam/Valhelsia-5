@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
           fluid: fluid,
           amount: amount
         },
-        input: InputItem.of(input).toJson(),
+        input: InputItem.of(input).ingredient.toJson(),
         energy: energy
     }).id(`${ID_PREFIX}fermenter/${fluid.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
@@ -71,7 +71,7 @@ ServerEvents.recipes(event => {
           fluid: fluid,
           amount: amount
         },
-        input: InputItem.of(input).toJson(),
+        input: InputItem.of(input).ingredient.toJson(),
         energy: energy
     }).id(`${ID_PREFIX}squeezer/${fluid.replace(':','/')}_from_${InputItem.of(input).ingredient.first.id.replace(':', '_')}`);
   };
@@ -88,10 +88,10 @@ ServerEvents.recipes(event => {
     if (Array.isArray(output)) {
       event.custom({
         type: 'immersiveengineering:cloche',
-        input: InputItem.of(input).toJson(),
+        input: InputItem.of(input).ingredient.toJson(),
         render: render,
         results: output,
-        soil: InputItem.of(soil).toJson(),
+        soil: InputItem.of(soil).ingredient.toJson(),
         time: time
       }).id(`${ID_PREFIX}cloche/${OutputItem.of(output[0]).item.id.replace(':','/')}`);
     } else {

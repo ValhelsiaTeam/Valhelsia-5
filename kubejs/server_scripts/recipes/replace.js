@@ -439,6 +439,7 @@ ServerEvents.recipes(event => {
   // Storage Blocks
   replaceOutput('darkerdepths:raw_silver_block', 'immersiveengineering:raw_block_silver');
   replaceOutput('darkerdepths:silver_block', 'immersiveengineering:storage_silver');
+  replaceOutput('galosphere:raw_silver_block', 'immersiveengineering:raw_block_silver');
   replaceOutput('galosphere:silver_block', 'immersiveengineering:storage_silver');
   replaceOutput('immersiveengineering:storage_lead', 'mekanism:block_lead');
   replaceOutput('immersiveengineering:raw_block_lead', 'mekanism:block_raw_lead');
